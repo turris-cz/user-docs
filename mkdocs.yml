@@ -1,0 +1,20 @@
+site_name: Turris Documentation
+site_description: Official Turris documentation for both hardware and software
+site_author: CZ.NIC z.s.p.o.
+copyright: GPLv3
+
+
+markdown_extensions:
+    - extra
+    - codehilite
+    - smarty
+    - toc
+    - wikilinks
+
+theme:
+    name: readthedocs
+
+plugins:
+    - search:
+        lang: ['en']
+        prebuild_index: True
