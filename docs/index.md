@@ -4,11 +4,19 @@ TODO some nice introduction.
 ## Basic configuration
 
 * Foris Guide (first setup)
-* System snapshots
+	* Turris 1.x
+	* Omnia
+	* MOX
 * Automatic updates
+* System snapshots
 
 ## Troubleshooting and error reporting
-
+* Guide to solving problems
+* Snapshots
+* Factory reset
+* Rescue
+* Reflashing firmware
+* Forum
 
 ## Services and use cases
 
@@ -17,24 +25,52 @@ TODO some nice introduction.
 * Failover with mwan3
 * NAS 
 * LXC containers
-* Pakon
-* Data collection
+* Parental Control
+* Guest Wi-Fi
+* Storage plugin
+* LTE
+* MOX booting from Omnia
 
-## Hardware reference
-
-* Turris Mox
-* Turris Omnia
-* Turris 1.x
+## Data Collection
+* Why?
+* How to setup?
+* What we are collecting
+* EULA
 
 ## Software reference
 
+* TurrisOS (úvod, co jsme, openWRT)
 * Foris
 * Updater
 * Schnapps
+* Pakon
+* Netmetr
+* Sentinel client
+
+* Surricata? - we use it "that way", here is link to official doc
+* KNOT - -||-
+* Nextcloud
+* HaaS
+
+## Hardware specific topics
+* MOX
+	* Rescue
+* Omnia
+	* Rescue
+* Turris 1.x
+	* Rescue
+	* Upgrade pack installation
+	* Migration
+
+## Hardware reference
+
+* Turris MOX
+* Turris Omnia
+* Turris 1.x
 
 ## Help us improve Turris
 
-* Localisation
+* Localisations
 * Test future releases
 * Help newcomers on forum
 * Report issues
@@ -44,4 +80,3 @@ TODO some nice introduction.
 
 * Turris OS and OpenWRT
 * Turris OS compilation from source code
-* 
