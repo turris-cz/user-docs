@@ -13,8 +13,25 @@ markdown_extensions:
 
 theme:
     name: readthedocs
+    #highlightjs: true
+    #hljs_languages:
+    #    - yaml
+    #    - rust
 
 plugins:
     - search:
         lang: ['en']
-        prebuild_index: True
+        prebuild_index: False
+
+nav:
+- Home: 'index.md'
+- Basics:
+    - First setup:
+        - 'Mox': 'basics/first-setup/mox_first_setup.md'
+        - 'Omnia': 'basics/first-setup/omnia.md'
+- Hardware specific topics:
+    - Mox:
+        - 'Reset and rescue': 'hw-spec/mox/mox_rescue_modes.md'
+        - 'MicroSD card Preparation': 'hw-spec/mox/mox_microsd.md'
+        - 'CPU module only': 'hw-spec/mox/mox_cpu_only.md'
+
