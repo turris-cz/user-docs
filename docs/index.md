@@ -3,15 +3,19 @@ TODO some nice introduction.
 
 ## Basic configuration
 
-* Foris Guide (first setup)
+* The first setup of your router - Foris Guide
+	* Turris MOX
+	* Turris Omnia
 	* Turris 1.x
-	* Omnia
-	* MOX
 * Automatic updates
-* System snapshots
+* Backup of your settings
+* Rescue
+	* Turris MOX
+	* Turris Omnia
+	* Turris 1.x
 
 ## Troubleshooting and error reporting
-* Guide to solving problems
+* Solving problems
 * Snapshots
 * Factory reset
 * Rescue
@@ -23,55 +27,52 @@ TODO some nice introduction.
 * OpenVPN
 * Root access with SSH
 * Failover with mwan3
-* NAS 
+* NAS
 * LXC containers
 * Parental Control
 * Guest Wi-Fi
 * Storage plugin
 * LTE
-* MOX booting from Omnia
+* Booting Turris MOX from other Turris
 
 ## Data Collection
 * Why?
 * How to setup?
 * What we are collecting
-* EULA
 
 ## Software reference
-
-* TurrisOS (úvod, co jsme, openWRT)
+* General overview of Turris OS
 * Foris
 * Updater
 * Schnapps
-* Pakon
+* Pakon - Parental Control
 * Netmetr
-* Sentinel client
+* Sentinel
+* Notification system
 
-* Surricata? - we use it "that way", here is link to official doc
-* KNOT - -||-
+### 3rd party software on Turris routers
+* Suricata
+* Knot Resolver
 * Nextcloud
 * HaaS
 
-## Hardware specific topics
-* MOX
-	* Rescue
-* Omnia
-	* Rescue
+## Migration guides
+* Turris OS 3.x → Turris OS 4.x / 5.x
 * Turris 1.x
-	* Rescue
-	* Upgrade pack installation
-	* Migration
+	* BTRFS migration
+
 
 ## Hardware reference
 
 * Turris MOX
 * Turris Omnia
 * Turris 1.x
+	* Upgrade pack installation
 
 ## Help us improve Turris
 
-* Localisations
-* Test future releases
+* Localization
+* Test upcoming releases
 * Help newcomers on forum
 * Report issues
 * Contribute code
@@ -79,4 +80,6 @@ TODO some nice introduction.
 ## Advanced topics
 
 * Turris OS and OpenWRT
-* Turris OS compilation from source code
+* [Turris OS compilation from source code](https://gitlab.labs.nic.cz/turris/turris-build)
+* [Updater documentation](https://turris.pages.labs.nic.cz/updater/)
+* [Knot Resolver documentation](https://knot-resolver.readthedocs.io/en/stable/)
