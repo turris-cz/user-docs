@@ -1,85 +1,43 @@
-# Official Turris Documentation
-TODO some nice introduction.
+# What is Turris project
 
-## Basic configuration
+Turris project encompasses both software and hardware development efforts
+aiming to provide open and secure routers. Devices that can be truly yours and
+you can trust.
 
-* The first setup of your router - Foris Guide
-	* Turris MOX
-	* Turris Omnia
-	* Turris 1.x
-* Automatic updates
-* Backup of your settings
-* Rescue
-	* Turris MOX
-	* Turris Omnia
-	* Turris 1.x
+## Openness
 
-## Troubleshooting and error reporting
-* Solving problems
-* Snapshots
-* Factory reset
-* Rescue
-* Reflashing firmware
-* Forum
+Our devices come with open source firmware. You can check what is running on
+your router line-by-line, see what we changed or you can even contribute yourself. All
+sources are available on our GitLab. You get full root account on your device
+and you can do whatever you want with it. We are not locking you out.
 
-## Services and use cases
+Apart from software, you'll get full schematics for your device so you can check
+out how we put it together.
 
-* OpenVPN
-* Root access with SSH
-* Failover with mwan3
-* NAS
-* LXC containers
-* Parental Control
-* Guest Wi-Fi
-* Storage plugin
-* LTE
-* Booting Turris MOX from other Turris
+## Security
 
-## Data Collection
-* Why?
-* How to setup?
-* What we are collecting
+We consider security as one of our main focus areas.
 
-## Software reference
-* General overview of Turris OS
-* Foris
-* Updater
-* Schnapps
-* Pakon - Parental Control
-* [Netmetr](basics/apps/netmetr)
-* Sentinel
-* Notification system
+### Safe defaults
 
-### 3rd party software on Turris routers
-* Suricata
-* Knot Resolver
-* Nextcloud
-* HaaS
+First step in security is setting up your unique password. Therefore we don't enable 
+internet connection unless user sets a password. We don't provide any
+defaults and you have to come with your own. We also encourage protecting your
+Wi-Fi with a password and we provide you with an easy way to create separate network
+for devices you don't trust. Last but not least, our devices come with DNSSEC
+validation enabled by default.
 
-## Migration guides
-* Turris OS 3.x → Turris OS 4.x / 5.x
-* Turris 1.x
-	* BTRFS migration
+### Updates
 
+No software is ever perfect. To keep up with a new security standards and to fix
+existing bugs and vulnerabilities, you need your router up to date all the
+time. We provide updates for all our devices to fix discovered issues but also
+to provide new features. Those updates can be even installed automatically.
 
-## Hardware reference
+### Data collection
 
-* Turris MOX
-* Turris Omnia
-* Turris 1.x
-	* Upgrade pack installation
-
-## Help us improve Turris
-
-* Localization
-* Test upcoming releases
-* Help newcomers on forum
-* Report issues
-* Contribute code
-
-## Advanced topics
-
-* Turris OS and OpenWRT
-* [Turris OS compilation from source code](https://gitlab.labs.nic.cz/turris/turris-build)
-* [Updater documentation](https://turris.pages.labs.nic.cz/updater/)
-* [Knot Resolver documentation](https://knot-resolver.readthedocs.io/en/stable/)
+To take things further, we provide an easy way to participate in our security
+research by collecting firewall logs and also information about other attack
+attempts. This data is analyzed, outputs are shared with security community and
+firewall on your router is updated with blacklist based on our findings to keep
+even your open services more secure.

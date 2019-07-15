@@ -24,7 +24,7 @@ plugins:
         prebuild_index: False
 
 nav:
-- Home: 'index.md'
+- Introduction: 'index.md'
 - Basics:
     - Applications:
         - 'Netmetr': 'basics/apps/netmetr.md'
