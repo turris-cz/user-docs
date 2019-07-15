@@ -21,6 +21,7 @@ theme:
 
 
 markdown_extensions:
+    - admonition
     - extra
     - codehilite
     - smarty
@@ -51,8 +52,11 @@ nav:
     - Applications:
         - 'Netmetr': 'basics/apps/netmetr.md'
     - First setup:
-        - 'Mox': 'basics/first-setup/mox_first_setup.md'
-        - 'Omnia': 'basics/first-setup/omnia.md'
+        - 'MOX': 'basics/first-setup/mox_first_setup.md'
+- Troubleshooting:
+    - Factory reset and rescue modes:
+        - 'MOX': 'hw-spec/mox/mox_rescue_modes.md'
+        - 'Omnia': 'hw-spec/omnia_rescue_modes.md'
 - Hardware specific topics:
     - Mox:
         - 'Reset and rescue': 'hw-spec/mox/mox_rescue_modes.md'
