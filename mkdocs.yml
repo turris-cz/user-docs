@@ -68,4 +68,6 @@ nav:
         - 'Reset and rescue': 'hw-spec/mox/mox_rescue_modes.md'
         - 'MicroSD card Preparation': 'hw-spec/mox/mox_microsd.md'
         - 'CPU module only': 'hw-spec/mox/mox_cpu_only.md'
+- Hardware documentation:
+    - Serial: 'hw/serial.md'
 
