@@ -26,6 +26,8 @@ plugins:
 nav:
 - Home: 'index.md'
 - Basics:
+    - Applications:
+        - 'Netmetr': 'basics/apps/netmetr.md'
     - First setup:
         - 'Mox': 'basics/first-setup/mox_first_setup.md'
         - 'Omnia': 'basics/first-setup/omnia.md'

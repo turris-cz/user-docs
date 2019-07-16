@@ -46,7 +46,7 @@ TODO some nice introduction.
 * Updater
 * Schnapps
 * Pakon - Parental Control
-* Netmetr
+* [Netmetr](basics/apps/netmetr)
 * Sentinel
 * Notification system
 
