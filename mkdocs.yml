@@ -12,7 +12,8 @@ markdown_extensions:
     - wikilinks
 
 theme:
-    name: readthedocs
+    name: mkdocs
+    custom_dir: 'turris_theme/'
     #highlightjs: true
     #hljs_languages:
     #    - yaml

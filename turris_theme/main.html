@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{%- block styles %}
+{{ super() }}
+<link href="{{ 'css/custom.css'|url }}" rel="stylesheet">
+{% endblock %}
+
+{% block site_name %}
+<a class="navbar-brand navbar-brand-turris" href="{{ nav.homepage.url|url }}">
+	<img src="{{ 'img/turris-logo-white.svg'|url }}" height="30" alt="Turris documentation"/>
+</a>
+{% endblock %}

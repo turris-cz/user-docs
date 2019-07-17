@@ -1,0 +1,10 @@
+
+.navbar-brand-turris {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navbar-default {
+	background-color: rgb(38, 38, 38);
+	background-image: none;
+};
