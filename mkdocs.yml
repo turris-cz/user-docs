@@ -66,6 +66,9 @@ nav:
         - 'Guest network': 'basics/guest-network/guest-network.md'
         - 'Netmetr': 'basics/apps/netmetr.md'
         - 'Storage': 'basics/storage-plugin/storage-plugin.md'
+    - LuCI:
+        - Introduction: basics/luci/luci.md
+        - Static IP: basics/luci/static_dhcp/static_dhcp.md
     - Applications:
         - 'LXC': 'geek/lxc/lxc.md'
         - 'Sentinel': 'basics/apps/sentinel.md'
