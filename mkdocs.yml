@@ -16,6 +16,8 @@ theme:
         accent: "turris"
     feature:
         tabs: false
+    static_templates:
+      - 404.html
 
 
 markdown_extensions:
