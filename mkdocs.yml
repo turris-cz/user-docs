@@ -4,25 +4,44 @@ site_author: CZ.NIC z.s.p.o.
 copyright: CC-BY-SA-4.0
 
 
+theme:
+    name: null
+    custom_dir: 'material-turris/material/'
+    logo: '/theme/turris-logo.svg'
+    favicon: '/theme/favicon.ico'
+    font: false
+    language: 'en'
+    palette:
+        primary: "turris"
+        accent: "turris"
+    feature:
+        tabs: false
+
+
 markdown_extensions:
     - extra
     - codehilite
     - smarty
     - toc
     - wikilinks
-
-theme:
-    name: mkdocs
-    custom_dir: 'turris_theme/'
-    #highlightjs: true
-    #hljs_languages:
-    #    - yaml
-    #    - rust
+    - admonition
 
 plugins:
     - search:
         lang: ['en']
         prebuild_index: False
+
+
+extra:
+  social:
+    - type: 'globe'
+      link: 'https://turris.cz'
+    - type: 'gitlab'
+      link: 'https://gitlab.labs.nic.cz/turris'
+    - type: 'github'
+      link: 'https://github.com/CZ-NIC'
+    - type: 'twitter'
+      link: 'https://twitter.com/turris_cz'
 
 nav:
 - Introduction: 'index.md'

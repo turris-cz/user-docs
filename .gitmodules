@@ -1,0 +1,3 @@
+[submodule "material-turris"]
+	path = material-turris
+	url = https://gitlab.labs.nic.cz/turris/mkdocs-material-turris.git
