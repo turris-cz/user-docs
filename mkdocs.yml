@@ -28,6 +28,15 @@ markdown_extensions:
     - toc
     - wikilinks
     - admonition
+    - pyembed.markdown
+
+theme:
+    name: readthedocs
+    #highlightjs: true
+    #hljs_languages:
+    #    - yaml
+    #    - rust
+>>>>>>> Really embed youtube video
 
 plugins:
     - search:

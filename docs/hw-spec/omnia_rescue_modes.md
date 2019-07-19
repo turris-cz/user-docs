@@ -45,7 +45,7 @@ LEDs turn green.
 
 How reset modes work is also explained in one of our video tutorials.
 
-[![Rescue modes tutorial](http://img.youtube.com/vi/ZrWzpsxqaRU/0.jpg)](https://youtu.be/ZrWzpsxqaRU)
+[!embed](http://www.youtube.com/watch?v=ZrWzpsxqaRU)
 
 ## Standard (re)boot
 
