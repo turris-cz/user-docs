@@ -55,6 +55,7 @@ nav:
         - 'What we collect': 'basics/collect/data.md'
         - 'How to setup?': 'basics/collect/howto.md'
     - Applications:
+        - 'Sentinel': 'basics/apps/sentinel.md'
         - 'Netmetr': 'basics/apps/netmetr.md'
     - First setup:
         - 'MOX': 'basics/first-setup/mox_first_setup.md'
