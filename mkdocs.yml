@@ -50,6 +50,10 @@ extra:
 nav:
 - Introduction: 'index.md'
 - Basics:
+    - Data Collection:
+        - 'Why?': 'basics/collect/why.md'
+        - 'What we collect': 'basics/collect/data.md'
+        - 'How to setup?': 'basics/collect/howto.md'
     - Applications:
         - 'Netmetr': 'basics/apps/netmetr.md'
     - First setup:
