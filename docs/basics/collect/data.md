@@ -5,8 +5,8 @@ There are multiple source of data we collect. Depending on the source used, the
 type of data varies.
 
 ### Firewall monitoring
-
-Firewall data is one of the key data sources for Sentinel. Using firewall data
+ 
+Firewall data is one of the key data sources for [Sentinel](/basics/apps/sentinel). Using firewall data
 we can determine which attackers tries to exploit potential vulnerabilities on
 a particular port. We collect attacker IP address and local port number.
 

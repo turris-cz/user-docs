@@ -6,7 +6,7 @@ to set up a secure home router that is capable of responding to current threats
 in almost real time. However a large amount of data is needed to identify an
 attacker and distinguish it from the usual traffic.
 
-The data collection system (Sentinel) is a key source of such a data. We use this
+The data collection system [Sentinel](/basics/apps/sentinel) is a key source of such a data. We use this
 data to build
 and distribute a dynamic firewall which afterwards helps to keep your router secure.
 Enabling data collection thus helps to protect your own router (and home) as well
