@@ -1,25 +1,51 @@
 First setup of Turris MOX 
 =========================
 
-1. Connect all desired MOX modules in a correct order. Commonly used setups are ABC, AB and AF. We recommend to check the correct combination of modules and their interoperability in our [MOX configurator](https://mox-configurator.turris.cz/).
-    
-	**Attention:** Shut down your device and disconnect from the power supply before connecting or disconnecting modules and/or upgrades. The hardware configuration of the device can not be changed at runtime.
+## Before you start
 
-	* If you would like to use Wi-Fi upgrade, plug it into the right module.	
-         * Wi-Fi SDIO upgrade should be connected on SDIO pins on the main board of MOX A. SDIO Wi-Fi upgrade has 8 pin header socket on one side and 6 pin header socket on the other and you shouldn't swap it's sides.
-         * Wi-Fi mPCIe upgrade should be connected in mPCIe slot on the main board og MOX B or G.
+{! basics/first-setup/mox_first_setup_warning.md !}
 
-2. If you got microSD card with your device insert it to microSD slot on the main board of MOX A.
-    If you want to use your own microSD card please follow [this page](/hw-spec/mox/mox_microsd/).
-3. Plug a cable to WAN port
-	* If you use module D (SFP) in your device, use it to connect to the internet.
-	* If you don't use module D (SFP) but you have some ethernet module (C or E) in your setup connect a cable from your ISP (or cable from your other device) to ethernet port on MOX A.
-	* If your setup has only one network port follow [this page](/hw-spec/mox/cpu_only/).
-4. Plug a cable to LAN port
-	* Connect your computer with another cable to other available ethernet port on the device.
-	* If you used an SFP module for connection to the internet in the previous step, use ethernet port on module   A for connecting your computer.
-	* If you already plugged a cable in ethernet port of module A in previuos step use another ethernet port on module C or E for connecting your computer.
-5. Connect the power supply to module A.
-	**Attention:** Use power adapter 12 V, 2.5 A.
-6. Wait few minutes for starting the device (and IP address configuration). Open an internet browser on your computer and point it to the address [http://192.168.1.1](http://192.168.1.1). Follow the first setup guide on your screen.
+## Connecting cables
+
+As MOX is really modular and therefore what is LAN and what is WAN side could
+be a little bit tricky. Decision adheres to the following rules.
+
+* If MOX has just one Ethernet port it is LAN
+* If MOX has SFP, SFP is WAN and the rest of ports is LAN (including
+  Ethernet port next to the power supply on MOX A)
+* If it has switch(es) and no SFP, then all ports in switch are LAN and the
+  port next to the power source on MOX A is WAN
+
+When setting up your MOX, connect the cable from your Internet service provider
+to WAN port and connect just your trusted device to LAN. **There is no password
+during initial setup**. To eliminate potential security risks, setup your MOX
+first, go through the update procedure and connect other untrusted devices only
+afterwards.
+
+### One Ethernet port device
+
+The trickiest case is if you have **only one Ethernet port**. Therefore we
+created a [special guide](mox_cpu_only.md) for the case with just one Ethernet
+port such as MOX Start, MOX Pocket Wi-Fi or MOX Power Wi-Fi.
+
+## Entering guide
+
+Once you have all cables connected, you can power up your MOX by connecting the
+power supply. Wait for your MOX to boot up. During boot LED will shine red and
+once booted up, it will start blinking in heartbeat pattern
+(blink-blink-pause).
+
+**First boot can take a while**. During that, MOX detects hardware and decides
+what is LAN and what is WAN based on your hardware configuration as described
+above. It also tries to detect running DHCP server on LAN side and if it finds
+one, it will switch itself into DHCP client mode. If it doesn't find one, it
+will configure itself as DHCP server.
+
+!!! tip
+	If you have a working zero-conf on your conputer, you can access your
+    router via <http://turris.local> address.
+
+When booted, you can access the first-run wizard by using a web browser and
+entering as URL address of your router. In case of MOX running as DHCP server, web
+interface will be at <http://192.168.1.1>.
 
