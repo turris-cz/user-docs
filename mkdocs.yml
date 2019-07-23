@@ -60,7 +60,7 @@ nav:
     - First setup:
         - 'MOX': 'basics/first-setup/mox_first_setup.md'
 - Troubleshooting:
-    - Factory reset and rescue modes:
+    - Rescue modes:
         - 'MOX': 'hw-spec/mox/mox_rescue_modes.md'
         - 'Omnia': 'hw-spec/omnia_rescue_modes.md'
 - Hardware specific topics:
