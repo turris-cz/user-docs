@@ -2,19 +2,16 @@
 
 ## Key features
 
-The F module expands your configuration with more USB 3.0 ports with transfer
+The MOX F module expands your configuration with more USB 3.0 ports with transfer
 speeds of up to 5 Gbps that you can use to connect external drives, TV tuners
 and other devices.
 
-If using module F use this module to power the whole set. It‘s possible to
-power the whole set from module F without using a power supply connector on
-module A. It is also possible to use both connectors at the same time.
+If using MOX F use this module to power the whole set. It‘s possible to power the whole set from MOX F without using the power supply from MOX A. It is also possible to use both power supplies from MOX A and F at the same time.
 
-Recommended average load for USB ports on module F while using all ports and
-using power supply on module F is 800mA maximum per port. This limit should be
+Recommended average load of USB ports on MOX F while using all ports and
+using power supply on MOX F is 800mA maximum per port. This limit should be
 more than enough for ordinary usage. If you need a little bit more we recommend
-using additional cooling. While using power supply on module A only the limit
-is significantly lower, up to unusable. The real limit depends on other
+using additional cooling. Using only power supply on MOX A significantly deacreases load limit of USB ports. It can drop up to unusable level. The real limit depends on other
 connected modules.
 
 ## Specification

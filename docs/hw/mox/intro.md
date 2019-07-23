@@ -15,7 +15,7 @@ If you want something ready to go, you can buy a Turris MOX as a complete set.
 [Pocket Wi-Fi](sets/pocketwifi.md) and [Power Wi-Fi](sets/powerwifi.md) are for
 completely wireless solution but configuration is a little bit trickier due to
 only one Ethernet port. The easiest to configure and the most common
-configuration is [Classic](sets/classic.md)). That one contains both Wi-Fi and
+configuration is [Classic](sets/classic.md). That one contains both Wi-Fi and
 Ethernet ports and thus is much easier to configure.
 
 For more advance use-cases, you might want to build your own MOX. For that you
