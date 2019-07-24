@@ -67,6 +67,7 @@ nav:
     - Applications:
         - 'Sentinel': 'basics/apps/sentinel.md'
         - 'Netmetr': 'basics/apps/netmetr.md'
+        - 'Netboot': 'basics/apps/netboot.md'
 - Hardware:
     - MOX:
         - About: 'hw/mox/intro.md'
