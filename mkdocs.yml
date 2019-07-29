@@ -52,15 +52,21 @@ extra:
 nav:
 - Introduction: 'index.md'
 - Basics:
+    - First setup:
+        - 'MOX': 'basics/first-setup/mox_first_setup.md'
     - Data Collection:
         - 'Why?': 'basics/collect/why.md'
         - 'What we collect': 'basics/collect/data.md'
         - 'How to setup?': 'basics/collect/howto.md'
+    - Foris:
+        - LAN: 'basics/foris-lan/foris-lan.md'
+        - WAN: 'basics/foris-wan/foris_wan.md'
+        - DNS: 'basics/foris-dns/foris-dns.md'
+        - 'Guest network': 'basics/guest-network/guest-network.md'
+        - 'Storage': 'basics/storage-plugin/storage-plugin.md'
     - Applications:
         - 'Sentinel': 'basics/apps/sentinel.md'
         - 'Netmetr': 'basics/apps/netmetr.md'
-    - First setup:
-        - 'MOX': 'basics/first-setup/mox_first_setup.md'
 - Troubleshooting:
     - Rescue modes:
         - 'MOX': 'hw-spec/mox/mox_rescue_modes.md'
