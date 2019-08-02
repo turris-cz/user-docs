@@ -63,11 +63,15 @@ nav:
         - WAN: 'basics/foris-wan/foris_wan.md'
         - DNS: 'basics/foris-dns/foris-dns.md'
         - 'Guest network': 'basics/guest-network/guest-network.md'
+        - 'Netmetr': 'basics/apps/netmetr.md'
         - 'Storage': 'basics/storage-plugin/storage-plugin.md'
     - Applications:
+        - 'LXC': 'geek/lxc/lxc.md'
         - 'Sentinel': 'basics/apps/sentinel.md'
-        - 'Netmetr': 'basics/apps/netmetr.md'
-        - 'Netboot': 'basics/apps/netboot.md'
+- Advanced:
+    - 'Netboot': 'basics/apps/netboot.md'
+    - 'OpenVPN': 'basics/openvpn/openvpn.md'
+    - 'Schnapps': 'geek/schnapps/schnapps.md'
 - Hardware:
     - MOX:
         - About: 'hw/mox/intro.md'
