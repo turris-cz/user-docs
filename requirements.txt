@@ -1,0 +1,5 @@
+mkdocs
+pyembed-markdown
+markdown-include
+markdown-toc
+markdown-extra
