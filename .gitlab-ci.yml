@@ -1,0 +1,12 @@
+variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+
+before_script:
+    - apt-get update
+    - apt-get install -y python-pip
+    - pip install --user -r ./requirements.txt
+
+build:
+    script:
+        - ~/.local/bin/mkdocs build
+
