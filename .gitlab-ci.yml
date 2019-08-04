@@ -9,4 +9,8 @@ before_script:
 build:
     script:
         - ~/.local/bin/mkdocs build
+    artifacts:
+        paths:
+            - site
+        expire_in: 1 week
 
