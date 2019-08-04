@@ -59,6 +59,7 @@ nav:
         - 'What we collect': 'basics/collect/data.md'
         - 'How to setup?': 'basics/collect/howto.md'
     - Foris:
+        - 'Secure access': 'basics/foris-https/https.md'
         - LAN: 'basics/foris-lan/foris-lan.md'
         - WAN: 'basics/foris-wan/foris_wan.md'
         - DNS: 'basics/foris-dns/foris-dns.md'
