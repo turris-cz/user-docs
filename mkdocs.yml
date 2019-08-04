@@ -100,4 +100,5 @@ nav:
         - 'Omnia': 'hw-spec/omnia_rescue_modes.md'
     - 'MOX MicroSD card': 'hw-spec/mox/mox_microsd.md'
     - Serial: 'hw/serial.md'
+    - Support: 'basics/support.md'
 
