@@ -55,6 +55,7 @@ nav:
 - Basics:
     - First setup:
         - 'MOX': 'basics/first-setup/mox_first_setup.md'
+        - 'Turris 1.X and Omnia': 'basics/first-setup/old_setup.md'
     - Data Collection:
         - 'Why?': 'basics/collect/why.md'
         - 'What we collect': 'basics/collect/data.md'
