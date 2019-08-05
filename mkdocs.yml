@@ -100,6 +100,8 @@ nav:
     - Rescue modes:
         - 'MOX': 'hw-spec/mox/mox_rescue_modes.md'
         - 'Omnia': 'hw-spec/omnia_rescue_modes.md'
+    - 'Serial boot':
+        - 'Omnia': 'hw-spec/omnia-serial-boot.md'
     - 'MOX MicroSD card': 'hw-spec/mox/mox_microsd.md'
     - Serial: 'hw/serial.md'
     - Support: 'basics/support.md'
