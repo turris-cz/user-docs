@@ -94,6 +94,7 @@ nav:
             - 'MOX G (Super Extension)': 'hw/mox/modules/g.md'
         - Add-ons: 'hw/mox/addons.md'
         - Hardware details: 'hw/mox/hw.md'
+    - Omnia: 'hw/omnia/omnia.md'
 - Troubleshooting:
     - Rescue modes:
         - 'MOX': 'hw-spec/mox/mox_rescue_modes.md'
