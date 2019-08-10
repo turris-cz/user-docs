@@ -96,6 +96,7 @@ nav:
         - Add-ons: 'hw/mox/addons.md'
         - Hardware details: 'hw/mox/hw.md'
     - Omnia: 'hw/omnia/omnia.md'
+    - Turris 1.X: 'hw/turris-1x/turris-1x.md'
 - Troubleshooting:
     - Rescue modes:
         - 'MOX': 'hw-spec/mox/mox_rescue_modes.md'
