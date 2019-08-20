@@ -70,3 +70,14 @@ The Moxtet system uses a standard PCIe connector, but with different signals.
 
 ![MOXTET Bus](moxtet.png)
 
+## HW Schematics
+
+For all MOX modules we also provide schematics
+
+ * [MOX A](Turris_Mox_A.pdf)
+ * [MOX B](Turris_Mox_B.pdf)
+ * [MOX C](Turris_Mox_C.pdf)
+ * [MOX D](Turris_Mox_D.pdf)
+ * [MOX E](Turris_Mox_E.pdf)
+ * [MOX F](Turris_Mox_F.pdf)
+ * [MOX G](Turris_Mox_G.pdf)
