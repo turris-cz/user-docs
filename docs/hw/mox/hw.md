@@ -36,6 +36,18 @@ For example, if you connect MOX D and use it as a WAN, then your traffic has to
 go through the switch(es) to the CPU, get natted/filtered/routed there and go
 through the switch(es) back to the final destination.
 
+<style>
+.md-typeset table:not([class]) {
+    font-size: 0.55rem;
+    padding: 0.4rem;
+    white-space: nowrap;
+    vertical-align: center;
+}
+.md-typeset table:not([class]) th {
+    min-width: 2rem;
+}
+</style>
+
 ## GPIO Pin Header
 
 !!! warning
@@ -45,7 +57,25 @@ through the switch(es) back to the final destination.
 You can find 34-pin GPIO connector On [MOX A](modules/a.md). Signals are as
 follows:
 
-![GPIO Pinout](gpio.png)
+| Description                 | Signal     | Pin   | Pin   | Signal       | Description                 |
+| :--------------------       | :--------: | :---: | :---: | :----------: | :-------------------------- |
+| System Ground               | GND        |  1    |  2    | +1V8         | GPIO Power Supply           |
+| Boot Configuration Option   | SetBoot.B0 |  3    |  4    | SetBoot.B1   | Boot Configuration Option   |
+| System Ground               | GND        |  5    |  6    | +1V8         | GPIO Power Supply           |
+| JTAG (GPIO1_21)             | JTAG.TDI   |  7    |  8    | JTAG.TDO     | JTAG (GPIO1_20)             |
+| JTAG (GPIO1_23)             | JTAG.TMS   |  9    | 10    | JTAG.CLK     | JTAG (GPIO1_22)             |
+| System and System Bus Reset | nRES       | 11    | 12    | JTAG.RSTn    | JTAG (GPIO1_24)             |
+| UART1 (GPIO1_26)            | UART1.TXD  | 13    | 14    | UART1.RXD    | UART1 (GPIO1_25)            |
+| System Ground               | GND        | 15    | 16    | ONE_WIRE     | One Wire (GPIO1_4)          |
+| GPIO 2 (PWM_3, LED_3)       | GPIO1_14   | 17    | 18    | GPIO1_13     | GPIO 2 (PWM_2, LED_2)       |
+| GPIO 2 (PWM_1, LED_1)       | GPIO1_12   | 19    | 20    | +1V8         | GPIO 2 (PWM_0, LED_0)       |
+| System Ground               | GND        | 21    | 22    | +1V8         | GPIO Power Supply           |
+| I2C 2 Bus (GPIO1_3)         | I2C2.SDA   | 23    | 24    | I2C2.SCL     | I2C 2 Bus (GPIO1_2)         |
+| System Ground               | GND        | 25    | 26    | +1V8         | GPIO Power Supply           |
+| U-Boot SPI NOR Flash Access | SPI.nSS0   | 27    | 28    | SPI.MISO     | U-Boot SPI NOR Flash Access |
+| U-Boot SPI NOR Flash Access | SPI.SCK    | 29    | 30    | SPI.MOSI     | U-Boot SPI NOR Flash Access |
+| System and System Bus Reset | nRES       | 31    | 32    | GND          | System Ground               |
+| System Ground               | GND        | 33    | 34    | +12V         | System Power Supply         |
 
 ## PoE Pin header
 
