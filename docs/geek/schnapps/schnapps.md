@@ -121,8 +121,9 @@ schnapps rollback 3
 ```
 The first command rolls back to the last snapshot. The second one rolls back to the specified snapshot (if it exists).
 
-!!! Always reboot your Turris after rolling back. Many files are processed only at boot thus unbooted Turris is in
-inconsistent state and some things may not work as you expected.
+!!! tip
+	Always reboot your Turris after rolling back. Many files are processed only at boot thus unbooted Turris is in
+	inconsistent state and some things may not work as you expected.
 
 ### Snapshot comparison
 
@@ -215,7 +216,8 @@ Most of the commands are described above. Only the third one is different. It's 
 it takes the path to the information file (and not to the tarball). After importing, a rollback snapshot is
 automatically created.
 
-!!! For an imported snapshot, no data deduplication is done and therefore it takes a lot of space.
+!!! warning
+	For an imported snapshot, no data deduplication is done and therefore it takes a lot of space.
 
 ### Remote manipulation with snapshots
 
@@ -250,7 +252,8 @@ schnapps sync -t pre,post
 The first command synchronizes all local snapshots to the remote server. The other command synchronizes only
 the snapshots having the given types (here pre and post).
 
-!!! The remote server must be properly configured in `/etc/config/schnapps` before running synchronization commands.
+!!! warning
+	The remote server must be properly configured in `/etc/config/schnapps` before running synchronization commands.
 
 The last schnapps command is `rlist` which displays remotely saved (uploaded or synchronized) snapshots:
 ```
