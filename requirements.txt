@@ -3,3 +3,4 @@ pyembed-markdown
 markdown-include
 markdown-toc
 markdown-extra
+git+https://github.com/miska/cell_row_span.git@everything

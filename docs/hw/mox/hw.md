@@ -37,9 +37,9 @@ go through the switch(es) to the CPU, get natted/filtered/routed there and go
 through the switch(es) back to the final destination.
 
 <style>
-.md-typeset table:not([class]) {
+.md-typeset table:not([class]) td {
     font-size: 0.55rem;
-    vertical-align: center;
+    vertical-align: middle;
 }
 .md-typeset table:not([class]) th {
     min-width: 2rem;
@@ -72,7 +72,7 @@ follows:
 | I2C 2 Bus (GPIO1_3)         | I2C2.SDA   | 23    | 24    | I2C2.SCL     | I2C 2 Bus (GPIO1_2)         |
 | System Ground               | GND        | 25    | 26    | +1V8         | GPIO Power Supply           |
 | U-Boot SPI NOR Flash Access | SPI.nSS0   | 27    | 28    | SPI.MISO     | U-Boot SPI NOR Flash Access |
-| U-Boot SPI NOR Flash Access | SPI.SCK    | 29    | 30    | SPI.MOSI     | U-Boot SPI NOR Flash Access |
+|_                           _| SPI.SCK    | 29    | 30    | SPI.MOSI     |_                           _|
 | System and System Bus Reset | nRES       | 31    | 32    | GND          | System Ground               |
 | System Ground               | GND        | 33    | 34    | +12V0        | System Power Supply         |
 
@@ -101,36 +101,36 @@ The Moxtet system uses a standard PCIe connector, but with different signals.
 | :----------------------------- | :--------: | :---: | :---: | :----------: | :------------------------------ |
 | System Ground                  | GND        |  A1   |  B1   | GND          | System Ground                   |
 | System Power Supply            | +12V0      |  A2   |  B2   | +12V0        | System Power Supply             |
-| System Power Supply            | +12V0      |  A3   |  B3   | +12V0        | System Power Supply             |
+|_                              _| +12V0      |  A3   |  B3   | +12V0        |_                               _|
 | System Bus Configuration (SPI) | MISO       |  A4   |  B4   | +5V0_PG      | Power Supplies Start-Up Control |
-| System Bus Configuration (SPI) | MOSI       |  A5   |  B5   | +3V3_PG      | Power Supplies Start-Up Control |
-| System Bus Configuration (SPI) | SCK        |  A6   |  B6   | +1V8_PG      | Power Supplies Start-Up Control |
-| System Bus Configuration (SPI) | SSn        |  A7   |  B7   | +1V5_PG      | Power Supplies Start-Up Control |
-| System and System Bus Reset    | SYSRSTn    |  A8   |  B8   | +1V35_PG     | Power Supplies Start-Up Control |
-| System Bus Device Reset        | DEVRSTn    |  A9   |  B9   | +1V2_PG      | Power Supplies Start-Up Control |
-| System Bus Interrupt           | INTn       |  A10  |  B10  | +1V15_PG     | Power Supplies Start-Up Control |
+|                                | MOSI       |  A5   |  B5   | +3V3_PG      |                                 |
+|                                | SCK        |  A6   |  B6   | +1V8_PG      |                                 |
+|_                              _| SSn        |  A7   |  B7   | +1V5_PG      |                                 |
+| System and System Bus Reset    | SYSRSTn    |  A8   |  B8   | +1V35_PG     |                                 |
+| System Bus Device Reset        | DEVRSTn    |  A9   |  B9   | +1V2_PG      |                                 |
+| System Bus Interrupt           | INTn       |  A10  |  B10  | +1V15_PG     |_                               _|
 | System Bus Power Supply        | +1V8       |  A11  |  B11  | GND          | System Ground                   |
 | System Ground                  | GND        |  A12  |  B12  | GND          | System Ground                   |
-| SerDes Support Signals Reserve | SD_RSVD.A13|  A13  |  B13  | SD.RX._P     | SerDes Reserve (for future use) |
-| SerDes Support Signals Reserve | SD_RSVD.A14|  A14  |  B14  | SD.RX._N     | SerDes Reserve (for future use) |
-| SerDes Support Signals Reserve | SD_RSVD.A15|  A15  |  B15  | SD.TX._P     | SerDes Reserve (for future use) |
-| SerDes Support Signals Reserve | SD_RSVD.A16|  A16  |  B16  | SD.TX._n     | SerDes Reserve (for future use) |
-| System Ground                  | GND        |  A17  |  B17   | GND          | System Ground                   |
-| Serial Management Interface Bus| SMI.MDC    |  A18  |  B18   | SGMII.TX._N  | SGMII (up to 2.5 Gbps)          |
-| Serial Management Interface Bus| SMI.MDIO   |  A19  |  B19   | SGMII.TX._P  | SGMII (up to 2.5 Gbps)          |
-| Not Used                       | NU         |  A20  |  B20   | SGMII.RX._N  | SGMII (up to 2.5 Gbps)          |
-| Not Used                       | NU         |  A21  |  B21   | SGMII.RX._P  | SGMII (up to 2.5 Gbps)          |
-| System Ground                  | GND        |  A22  |  B22   | GND          | System Ground                   |
-| System and System Bus I2C      | I2C.SCL    |  A23  |  B23   | USB2._P      | SUSB 2.0 (for miniPCIe)         |
-| System and System Bus I2C      | I2C.SDA    |  A24  |  B24   | USB2._N      | SUSB 2.0 (for miniPCIe)         |
-| Not Used                       | NU         |  A25  |  B25   | PCIE.RX._N   | PCIe 2.0                        |
-| Not Used                       | NU         |  A26  |  B26   | PCIE.RX._P   | PCIe 2.0                        |
-| System Ground                  | GND        |  A27  |  B27   | GND          | System Ground                   |
-| PCIe 2.0 Reset                 | PCIE_RESETn|  A28  |  B28   | PCIE.TX._N   | PCIe 2.0                        |
-| PCIe 2.0 Clock Request         | PCIE_CLKREQ|  A29  |  B29   | PCIE.TX._P   | PCIe 2.0                        |
-| Not Used                       | NU         |  A30  |  B30   | PCIE_CLK._P  | PCIe 2.0 Reference Clock        |
-| Not Used                       | NU         |  A31  |  B31   | PCIE_CLK._N  | PCIe 2.0 Reference Clock        |
-| System Ground                  | GND        |  A32  |  B32   | GND          | System Ground                   |
+| SerDes Support Signals Reserve (for future use) | SD_RSVD.A13|  A13  |  B13  | SD.RX._P     | SerDes Reserve (for future use) |
+|                                | SD_RSVD.A14|  A14  |  B14  | SD.RX._N     |                                 |
+|                                | SD_RSVD.A15|  A15  |  B15  | SD.TX._P     |                                 |
+|_                              _| SD_RSVD.A16|  A16  |  B16  | SD.TX._n     |_                               _|
+| System Ground                  | GND        |  A17  |  B17  | GND          | System Ground                   |
+| Serial Management Interface Bus (Ethernet)| SMI.MDC    |  A18  |  B18  | SGMII.TX._N  | SGMII (up to 2.5 Gbps)          |
+|_                              _| SMI.MDIO   |  A19  |  B19  | SGMII.TX._P  |                                 |
+| Not Used                       | NU         |  A20  |  B20  | SGMII.RX._N  |                                 |
+| Not Used                       | NU         |  A21  |  B21  | SGMII.RX._P  |_                               _|
+| System Ground                  | GND        |  A22  |  B22  | GND          | System Ground                   |
+| System and System Bus I2C      | I2C.SCL    |  A23  |  B23  | USB2._P      | USB 2.0 (for miniPCIe)          |
+|_                              _| I2C.SDA    |  A24  |  B24  | USB2._N      |_                               _|
+| Not Used                       | NU         |  A25  |  B25  | PCIE.RX._N   | PCIe 2.0                        |
+| Not Used                       | NU         |  A26  |  B26  | PCIE.RX._P   |_                               _|
+| System Ground                  | GND        |  A27  |  B27  | GND          | System Ground                   |
+| PCIe 2.0 Reset                 | PCIE_RESETn|  A28  |  B28  | PCIE.TX._N   | PCIe 2.0                        |
+| PCIe 2.0 Clock Request         | PCIE_CLKREQ|  A29  |  B29  | PCIE.TX._P   |_                               _|
+| Not Used                       | NU         |  A30  |  B30  | PCIE_CLK._P  | PCIe 2.0 Reference Clock        |
+| Not Used                       | NU         |  A31  |  B31  | PCIE_CLK._N  |_                               _|
+| System Ground                  | GND        |  A32  |  B32  | GND          | System Ground                   |
 
 ## HW Schematics
 
