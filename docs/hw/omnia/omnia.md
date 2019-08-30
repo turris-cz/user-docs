@@ -15,12 +15,17 @@ gig of RAM and also without WiFi.
 
 ## Network interfaces
 
-Turris Omnia has three physical Ethernet ports. One of them (_eth1_) is
+Turris Omnia has three physical Ethernet ports. One of them (_eth2_) is
 dedicated as WAN and connected directly to WAN port. That can be either metallic
 or SFP. If you plug in SFP module, the metallic port will get disconnected. If
 you unplug the module, metallic port will be functional again. In Turris OS 3.X
 this can be done at runtime, on newer version changing the configuration
 requires reboot.
+
+!!! warning
+    In Turris OS 3.X the names of the _eth1_ and _eth2_ interfaces were
+    reversed. So in Turris OS 3.X, _eth1_ was the one connected to WAN. We had
+    to rename them in Turris OS 4 due to fixes in vanilla kernel.
 
 The remaining two ports are connected to a fully manageable switch as shown on
 the picture bellow.
