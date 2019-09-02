@@ -28,6 +28,6 @@ Once update finishes, you will be redirected to the new Foris Guide and guided
 through the rest of the setup.
 
 !!! tip
-    On Turris Omnia, you can download the latest medkit and [flash your router
+    On Turris Omnia, you can download the latest [medkit](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz) and [flash your router
     via USB](../../hw/omnia/rescue_modes.md#re-flash-router) and therefore
     significantly decrease update time.
