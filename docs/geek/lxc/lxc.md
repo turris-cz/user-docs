@@ -20,7 +20,7 @@ Before you start using LXC
 
 Remember that standard Linux distributions are write-intensive and it is strongly discouraged to operate them on
 the internal [eMMC](https://en.wikipedia.org/wiki/MultiMediaCard#eMMC) flash storage. Please set up and use an
-external storage such as an USB HDD or SSD. Read the [Storage plugin](../../basics/storage-plugin/storage-plugin.md) page for more information how to do it.
+external storage such as an USB HDD or SSD. Read the [Storage plugin](../../basics/foris/storage-plugin/storage-plugin.md) page for more information how to do it.
 
 !!! danger
         Operating LXC on the internal flash storage may lead to rapid degradation and eventually to failure of the storage.

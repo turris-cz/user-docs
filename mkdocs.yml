@@ -61,22 +61,22 @@ nav:
         - 'What we collect': 'basics/collect/data.md'
         - 'How to setup?': 'basics/collect/howto.md'
     - Foris:
-        - 'Secure access': 'basics/foris-https/https.md'
-        - LAN: 'basics/foris-lan/foris-lan.md'
-        - WAN: 'basics/foris-wan/foris_wan.md'
-        - DNS: 'basics/foris-dns/foris-dns.md'
-        - 'Guest network': 'basics/guest-network/guest-network.md'
-        - 'Netmetr': 'basics/apps/netmetr.md'
-        - 'Storage': 'basics/storage-plugin/storage-plugin.md'
+        - 'Secure access': 'basics/foris/https/https.md'
+        - LAN: 'basics/foris/lan/foris-lan.md'
+        - WAN: 'basics/foris/wan/foris_wan.md'
+        - DNS: 'basics/foris/dns/foris-dns.md'
+        - 'Guest network': 'basics/foris/guest-network/guest-network.md'
+        - 'Storage': 'basics/foris/storage-plugin/storage-plugin.md'
     - LuCI:
         - Introduction: basics/luci/luci.md
         - Static IP: basics/luci/static_dhcp/static_dhcp.md
     - Applications:
-        - 'LXC': 'geek/lxc/lxc.md'
+        - 'Netmetr': 'basics/apps/netmetr.md'
+        - 'OpenVPN': 'basics/apps/openvpn/openvpn.md'
         - 'Sentinel': 'basics/apps/sentinel.md'
 - Advanced:
+    - 'LXC': 'geek/lxc/lxc.md'
     - 'Netboot': 'basics/apps/netboot.md'
-    - 'OpenVPN': 'basics/openvpn/openvpn.md'
     - 'Schnapps': 'geek/schnapps/schnapps.md'
 - Hardware:
     - MOX:
