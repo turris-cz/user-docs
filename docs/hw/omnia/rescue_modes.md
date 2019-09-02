@@ -107,7 +107,7 @@ want to avoid long upgrades during initial setup, please use the following
 method for restoring the operating system image.
 
 Download the latest version of Turris Omnia's system image from
-<https://repo.turris.cz/omnia/medkit/omnia-medkit-latest.tar.gz>. Save the
+<https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz>. Save the
 file `omnia-medkit-latest.tar.gz` to USB flash drive to the root directory. The
 Turris Omnia router supports following filesystems: _ext4, BtrFS, XFS and
 FAT32_. You can also download and put alongside `md5` or `sha512` file from the
