@@ -56,10 +56,7 @@ nav:
     - First setup:
         - 'MOX': 'basics/first-setup/mox_first_setup.md'
         - 'Turris 1.X and Omnia': 'basics/first-setup/old_setup.md'
-    - Data Collection:
-        - 'Why?': 'basics/collect/why.md'
-        - 'What we collect': 'basics/collect/data.md'
-        - 'How to setup?': 'basics/collect/howto.md'
+    - Data Collection: 'basics/collect.md'
     - Foris:
         - 'Secure access': 'basics/foris/https/https.md'
         - LAN: 'basics/foris/lan/foris-lan.md'
