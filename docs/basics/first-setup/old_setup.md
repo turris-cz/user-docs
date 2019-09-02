@@ -29,5 +29,5 @@ through the rest of the setup.
 
 !!! tip
     On Turris Omnia, you can download the latest medkit and [flash your router
-    via USB](../..//hw-spec/omnia_rescue_modes.md#re-flash-router) and therefore
+    via USB](../../hw/omnia/rescue_modes.md#re-flash-router) and therefore
     significantly decrease update time.
