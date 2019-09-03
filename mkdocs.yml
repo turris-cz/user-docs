@@ -77,6 +77,7 @@ nav:
         - 'Netmetr': 'basics/apps/netmetr.md'
         - 'OpenVPN': 'basics/apps/openvpn/openvpn.md'
         - 'Sentinel': 'basics/apps/sentinel.md'
+        - 'PaKon': 'basics/apps/pakon.md'
 - Advanced:
     - 'LXC': 'geek/lxc/lxc.md'
     - 'Netboot': 'basics/apps/netboot.md'
@@ -112,4 +113,3 @@ nav:
     - 'Serial boot':
         - 'Omnia': 'hw/omnia/serial-boot.md'
     - Support: 'basics/support.md'
-
