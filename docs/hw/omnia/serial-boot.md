@@ -15,7 +15,7 @@ into a mode in which it will download U-Boot over serial line and boot it.
 ## Requirements
 
 You'll need a computer running Linux and working serial cable connected to your
-Omnia. How to connect serial cable is documented in [other part](/hw/serial#turris-omnia)
+Omnia. How to connect serial cable is documented in [other part](../serial.md#turris-omnia)
 of this documentation.
 
 You will also need some binaries from our repository. They can be all found in
