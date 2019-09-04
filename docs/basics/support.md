@@ -67,7 +67,7 @@ the upper right corner and you can use that one to find more information about
 specific topic.
 
 Apart from official documentation, we also have a [community
-wiki](https://doc.turris.cz/doc/en/public/start) where you can find guides to
+wiki](https://wiki.turris.cz/doc/en/public/start) where you can find guides to
 some more complex setups that are not necessarily officially supported and
 might or might not work.
 
