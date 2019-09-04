@@ -1,4 +1,4 @@
-# Mox Classic
+# MOX Classic
 
 The most demanded configuration of Turris MOX router. Marvell Armada 3720 1 GHz
 dual core, 512 MB DDR3, GWAN/GLAN, USB 3.0, microSD slot, 2×2 MIMO a 3×3 MIMO
@@ -23,4 +23,3 @@ The MOX Classic configuration can be expanded with accessories. But there are
 many reasons to fall in love:
 
 {! hw/mox/sets/feature_list.md !}
-
