@@ -1,7 +1,7 @@
 # Turris Omnia
 
 Turris Omnia is powerful SOHO router. It is based on **Marvel Armada 385 CPU** -
-dual core armv7 running at **1.6 GHz**. Current version has **two gigs of RAM**
+dual-core armv7 running at **1.6 GHz**. Current version has **two gigs of RAM**.
 It uses as main storage **8 GB eMMC**. For **5GHz AC WiFi** connectivity, it
 contains Compex WLE900VX card based on Qualcomm Atheros QCA988x chipset
 (ath10k). To provide access to older devices capable only of **2,4 GHz** it is
@@ -28,7 +28,7 @@ requires reboot.
     to rename them in Turris OS 4 due to fixes in vanilla kernel.
 
 The remaining two ports are connected to a fully manageable switch as shown on
-the picture bellow.
+the picture below.
 
 ![Turris Omnia network interfaces](omnia-net.jpg)
 
