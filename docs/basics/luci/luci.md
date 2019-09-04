@@ -15,9 +15,9 @@ OpenWrt services.
 
 ## How is it different from Foris?
 Turris team has decided to develop its own web administration interface due to complexity of the existing LuCI interface
-for basic users. Thus, came into being [Foris](/basics/apps/foris), which is a simplified interface for administration
+for basic users. Thus, came into being [Foris](/basics/apps/foris/), which is a simplified interface for administration
 requirements of Turris routers. It has been created in order to provide users with a simple and extensible administration
 and network configuration tool.
 
 Although, there is a set of advanced administration requirements which are only possible to get done with LuCI. Such as
-[static IP addresses assignment](static_dhcp/static_dhcp).
+[static IP addresses assignment](static_dhcp/static_dhcp/).

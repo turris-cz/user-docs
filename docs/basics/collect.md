@@ -7,7 +7,7 @@ to set up a secure home router that is capable of responding to current threats
 in almost real time. However a large amount of data is needed to identify an
 attacker and distinguish it from the usual traffic.
 
-The data collection system [Sentinel](/basics/apps/sentinel) is a key source of such a data. We use this
+The data collection system [Sentinel](/basics/apps/sentinel/) is a key source of such a data. We use this
 data to build
 and distribute a dynamic firewall which afterwards helps to keep your router secure.
 Enabling data collection thus helps to protect your own router (and home) as well
@@ -19,8 +19,8 @@ There are multiple source of data we collect. Depending on the source used, the
 type of data varies.
 
 ### Firewall monitoring
- 
-Firewall data is one of the key data sources for [Sentinel](/basics/apps/sentinel). Using firewall data
+
+Firewall data is one of the key data sources for [Sentinel](/basics/apps/sentinel/). Using firewall data
 we can determine which attackers tries to exploit potential vulnerabilities on
 a particular port. We collect attacker IP address and local port number.
 
@@ -37,5 +37,5 @@ the attacker's IP address is collected by the software.
 
 ## How to set up data collection
 
-Setting up data collection is as simple as installing a [Sentinel](/basics/apps/sentinel) package using
+Setting up data collection is as simple as installing a [Sentinel](/basics/apps/sentinel/) package using
 Updater tab in Foris web interface.
