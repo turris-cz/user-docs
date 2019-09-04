@@ -61,10 +61,10 @@ in any way. Afterwards you can just click **Reload page**.
 
 ![Configuration disabled](conf-disabled.png)
 
-By checking the box **Configuration enabled** you let the plugin create a simplified VPN configuration. The reason
-for this step is for you to be able to have your personal OpenVPN configuration without getting it destroyed. After
-you click **Apply configuration**, you can temporarily lose connection to your router, you just need to refresh
-the page or wait.
+By checking the box **Configuration enabled** you let the plugin create a simplified VPN configuration.
+If you have already had your configuration (from your use of OpenVPN in the past) it is filled into the form.
+Otherwise the plugin creates a default configuration for you. After you click **Apply configuration**,
+you can temporarily lose connection to your router, you just need to refresh the page or wait a moment.
 
 ![Configuration enabled](conf-enabled.png)
 
