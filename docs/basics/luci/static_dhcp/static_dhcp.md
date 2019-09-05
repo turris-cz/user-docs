@@ -3,7 +3,7 @@
 Static DHCP server addresses assignment is useful when it's required that devices, connected to your network, will get 
 permanent IP address.
 
-Log in to [LuCI](../luci), then choose *DHCP and DNS* in top navigation menu.
+Log in to [LuCI](../luci.md), then choose *DHCP and DNS* in top navigation menu.
 
 ![Screenshot 1](screenshot_1.png)
 
