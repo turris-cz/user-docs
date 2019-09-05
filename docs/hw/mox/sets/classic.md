@@ -22,4 +22,6 @@ source, a microSD card, the [MOX B (Extension) module](../modules/b.md), [MOX C
 The MOX Classic configuration can be expanded with accessories. But there are
 many reasons to fall in love:
 
-{! hw/mox/sets/feature_list.md !}
+{% set conf = 'ASBWC' %}
+
+{% include 'hw/mox/sets/feature_list.md' %}

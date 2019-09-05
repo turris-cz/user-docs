@@ -21,5 +21,7 @@ Wi-Fi](powerwifi.md) set.
 The MOX Pocket Wi-Fi configuration can be significantly expanded with
 accessories. But there are many reasons to fall in love:
 
-{! hw/mox/sets/feature_list.md !}
+{% set conf = 'AS' %}
+
+{% include 'hw/mox/sets/feature_list.md' %}
 

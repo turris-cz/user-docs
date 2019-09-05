@@ -4,3 +4,4 @@ markdown-include
 markdown-toc
 markdown-extra
 git+https://github.com/Neepawa/cell_row_span.git
+git+https://github.com/miska/markdown-jinja.git

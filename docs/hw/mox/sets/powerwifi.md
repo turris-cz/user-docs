@@ -24,5 +24,7 @@ Wi-Fi add-on (SDIO)](../addons.md#wi-fi-sdio) and [MOX Wi-Fi add-on
 The MOX Power Wi-Fi configuration can be significantly expanded with
 accessories. But there are many reasons to fall in love:
 
-{! hw/mox/sets/feature_list.md !}
+{% set conf = 'ASBW' %}
+
+{% include 'hw/mox/sets/feature_list.md' %}
 

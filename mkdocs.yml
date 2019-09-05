@@ -27,6 +27,8 @@ markdown_extensions:
     - cell_row_span
     - extra
     - codehilite
+    - markdown_jinja:
+        fs_loader_dir: 'docs'
     - smarty
     - toc
     - wikilinks

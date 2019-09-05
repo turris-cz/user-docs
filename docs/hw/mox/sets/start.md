@@ -18,5 +18,7 @@ add-on (SDIO), the result is a Wi-Fi router with Bluetooth support.
 The MOX Start set is just the beginning. But there are many reasons to fall in
 love:
 
-{! hw/mox/sets/feature_list.md !}
+{% set conf = 'A' %}
+
+{% include 'hw/mox/sets/feature_list.md' %}
 

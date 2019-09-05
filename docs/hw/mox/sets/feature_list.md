@@ -12,4 +12,4 @@
 
 If you’re combining the set with other modules, make sure they are compatible.
 You can verify the order of modules and pass-through of PCIe and SGMII signals
-in the configurator on <https://mox-configurator.turris.cz>.
+in the configurator on [https://mox-configurator.turris.cz/](https://mox-configurator.turris.cz/{{ conf }}).
