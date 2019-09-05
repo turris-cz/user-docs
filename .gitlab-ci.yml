@@ -5,10 +5,15 @@ variables:
 
 before_script:
     - apt-get update
-    - apt-get install -y python3-pip git
+    - apt-get install -y python3-pip git wget
     - pip3 install --user -r ./requirements.txt
 
-build:
+stages:
+    - test
+    - deploy
+
+deploy:
+    stage: deploy
     script:
         - LC_ALL=C.UTF-8 LANG=C.UTF-8 ~/.local/bin/mkdocs build
     artifacts:
@@ -16,3 +21,7 @@ build:
             - site
         expire_in: 1 week
 
+test:
+    stage: test
+    script:
+        - PATH="$HOME/.local/bin:$PATH" ./test.sh
