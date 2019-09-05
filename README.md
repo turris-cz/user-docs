@@ -35,3 +35,19 @@ mkdocs serve
 ```
 
 If everything works well, you should see the documentation on <http://127.0.0.1:8000>.
+
+## Tips for writing
+
+### Links
+
+When writing links, use **relative path** and _.md_ extension. So for example
+[README](README.md). When documentation is build, they get converted to working
+links (without _.md_).
+
+### Admonition
+
+We have admonition extension, so you can use _note_, _tip_, _warning_ and other
+keywords for block-styled content. It needs to start with `!!!` or `???`.  More
+details can be found in [Admonition
+documentation](https://squidfunk.github.io/mkdocs-material/extensions/admonition/).
+
