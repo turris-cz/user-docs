@@ -26,6 +26,8 @@ markdown_extensions:
     - admonition
     - cell_row_span
     - extra
+    - pymdownx.details
+    - pymdownx.superfences
     - codehilite
     - markdown_jinja:
         fs_loader_dir: 'docs'
@@ -78,6 +80,7 @@ nav:
 - Advanced:
     - 'LXC': 'geek/lxc/lxc.md'
     - 'Netboot': 'basics/apps/netboot.md'
+    - 'Nextcloud': 'geek/nextcloud/nextcloud.md'
     - 'Schnapps': 'geek/schnapps/schnapps.md'
 - Hardware:
     - MOX:

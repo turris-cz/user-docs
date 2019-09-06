@@ -6,7 +6,8 @@ and the created data. But if you want to use applications which need to save lar
 an external storage device.
 
 !!! tip
-    If you want to use Nextcloud, LXC or other I/O intensive applications, don't put them on the internal flash,
+    If you want to use [Nextcloud](../../../geek/nextcloud/nextcloud.md),
+    [LXC](../../../geek/lxc/lxc.md) or other I/O intensive applications, don't put them on the internal flash,
     always use external storage! Also please make sure that your data will fit on the new drive before switching.
 
 The storage plugin allows you to easily move your `/srv` to an external drive. It both allows getting more space
