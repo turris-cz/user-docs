@@ -39,6 +39,8 @@ plugins:
     - search:
         lang: ['en']
         prebuild_index: False
+    - git-revision-date:
+        modify_md: False
 
 
 extra:
