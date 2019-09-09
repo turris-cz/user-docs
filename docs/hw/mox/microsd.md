@@ -32,11 +32,11 @@ likely need a Linux machine.
 You should have at least one partition on your micro SD card and the first one
 should be used by Turris OS.
 
-First we need to format it to Btrfs. Let's assume, that your micro SD is
+First, we need to format it to Btrfs. Let's assume, that your micro SD is
 `/dev/mmcbkl0`. If your card reader exposes itself as something else, you have
 to figure the device yourself, usually `dmesg` output is quite helpful.
 
-To format your MicroSD, use following command:
+To format your MicroSD, use the following command:
 
 ```
 mkfs.btrfs -f -L turris /dev/mmcblk0p1
