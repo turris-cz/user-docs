@@ -23,6 +23,10 @@ your MicroSD card.
 You can also prepare your micro SD card manually. To do that you would most
 likely need a Linux machine.
 
+!!! tip
+    You can use the manual setup to prepare any other media as well and MOX
+    will boot out of it. For example USB flash drive.
+
 ### FS layout
 
 You should have at least one partition on your micro SD card and the first one
