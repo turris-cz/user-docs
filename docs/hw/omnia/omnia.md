@@ -44,5 +44,6 @@ adding the header.
 
 ## Various documentation files
 
+* [Official datasheet](omnia2019eu_datasheet.pdf)
 * [Original printed manual](omnia_manual_en.pdf)
 * [Schematics for Turris Omnia](rtrom01-schema.pdf)
