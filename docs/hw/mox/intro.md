@@ -33,3 +33,12 @@ from the list of modules and add-ons how to extend it.
 * [MOX Wi-Fi add-on (SDIO)](addons.md#wi-fi-sdio) - dual-band SDIO Wi-Fi and Bluetooth card
 * [MOX Wi-Fi add-on (mPCIe)](addons.md#wi-fi-mpcie) - dual band mPCIe Wi-Fi card (faster)
 * [MOX PoE add-on](addons.md#poe) - 802.3at and 802.3af compliant module to power up the MOX
+
+### Official brochure
+
+We also have an official brochure with basic information about MOX and various
+modules, typically available on conferences and through our distributors. If
+you prefer one simple document explaining MOX over complex and detailed
+documentation, you can download it here.
+
+[MOX Brochure](MOX_Brochure.pdf)
