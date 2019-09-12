@@ -1,27 +1,28 @@
-image: "ubuntu:latest"
+image: "registry.labs.nic.cz/turris/user-docs"
 
 variables:
     GIT_SUBMODULE_STRATEGY: recursive
-
-before_script:
-    - apt-get update
-    - apt-get install -y python3-pip git wget
-    - pip3 install --user -r ./requirements.txt
 
 stages:
     - test
     - deploy
 
+test-compilation:
+    stage: test
+    script:
+        - mkdocs build --strict
+
+test-links:
+    stage: test
+    allow_failure: true
+    script:
+        - ./test-links.sh
+
 deploy:
     stage: deploy
     script:
-        - LC_ALL=C.UTF-8 LANG=C.UTF-8 ~/.local/bin/mkdocs build
+        - LC_ALL=C.UTF-8 LANG=C.UTF-8 mkdocs build
     artifacts:
         paths:
             - site
         expire_in: 1 week
-
-test:
-    stage: test
-    script:
-        - PATH="$HOME/.local/bin:$PATH" ./test.sh
