@@ -82,6 +82,7 @@ nav:
     - 'Netboot': 'basics/apps/netboot.md'
     - 'Nextcloud': 'geek/nextcloud/nextcloud.md'
     - 'Schnapps': 'geek/schnapps/schnapps.md'
+    - 'Early access': 'geek/testing.md'
 - Hardware:
     - MOX:
         - About: 'hw/mox/intro.md'
