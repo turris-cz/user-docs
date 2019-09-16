@@ -61,7 +61,6 @@ nav:
 - First setup:
     - 'MOX': 'basics/first-setup/mox_first_setup.md'
     - 'Turris 1.X and Omnia': 'basics/first-setup/old_setup.md'
-- Models: 'basics/models.md'
 - Basics:
     - Data Collection: 'basics/collect.md'
     - Foris:
@@ -85,6 +84,7 @@ nav:
     - 'Schnapps': 'geek/schnapps/schnapps.md'
     - 'Early access': 'geek/testing.md'
 - Hardware:
+    - Models: 'basics/models.md'
     - MOX:
         - About: 'hw/mox/intro.md'
         - Sets:
