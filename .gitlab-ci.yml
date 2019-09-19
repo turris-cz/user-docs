@@ -14,9 +14,14 @@ test-compilation:
 
 test-links:
     stage: test
-    allow_failure: true
     script:
         - ./test-links.sh
+
+test-remote-links:
+    stage: test
+    allow_failure: true
+    script:
+        - ./test-links.sh --remote
 
 deploy:
     stage: deploy
