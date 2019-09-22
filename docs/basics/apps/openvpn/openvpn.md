@@ -111,6 +111,7 @@ At this point you need to select and download a client for your platform, if you
 client is available for all possible platforms, you just need to find a manual for yours to set it up correctly.
 
 How to set the client side on various platforms:
+
 * [Windows](https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-windows/)
 * [Linux (command line)](https://openvpn.net/vpn-server-resources/how-to-connect-to-access-server-from-a-linux-computer/)
 * [Ubuntu Linux (NetworkManager)](https://torguard.net/knowledgebase.php?action=displayarticle&id=53)
