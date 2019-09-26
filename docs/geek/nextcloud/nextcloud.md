@@ -69,7 +69,7 @@ installing the package `nextcloud-install`  by issuing the following
 commands:
 
 ```
-echo 'Install("nextcloud-install")' >> /etc/updater/conf.d/auto.lua
+echo 'Install("nextcloud-install")' > /etc/updater/conf.d/nextcloud.lua
 pkgupdate
 ```
 
