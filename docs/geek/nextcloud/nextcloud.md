@@ -94,12 +94,12 @@ Once installed, you can access your Nextcloud instance by using an URL like
 you could simplify the access by using url <http://turris.local/nextcloud>.
 
 You can also enable access to your Nextcloud from anywhere on the Internet. You
-can either use VPN, which can be set up [really easily from Foris]
-(../../basics/apps/openvpn/openvpn.md) or you need to open up some ports
-in your firewall. Second option would allow anybody (including attackers) to
-try to log in to your Nextcloud instance and - if you don't change the Lighttpd
-configuration - to LuCI and Foris. Please don’t do that unless you are sure
-what you are doing. 
+can either use VPN, which can be set up [really easily from
+Foris](../../basics/apps/openvpn/openvpn.md) or you need to open up some ports in
+your firewall. Second option would allow anybody (including attackers) to try to
+log in to your Nextcloud instance and - if you don't change the Lighttpd
+configuration - to LuCI and Foris. Please don’t do that unless you are sure what
+you are doing. 
 
 Also bear in mind that if you are using Nextcloud from our repositories, **you
 shouldn't update the Nextcloud core manually** as that would get overwritten by
