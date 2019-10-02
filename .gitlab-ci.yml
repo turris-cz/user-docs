@@ -5,7 +5,7 @@ variables:
 
 stages:
     - test
-    - deploy
+    - build
 
 test-compilation:
     stage: test
@@ -23,8 +23,8 @@ test-remote-links:
     script:
         - ./test-links.sh --remote
 
-deploy:
-    stage: deploy
+build:
+    stage: build
     script:
         - LC_ALL=C.UTF-8 LANG=C.UTF-8 mkdocs build
     artifacts:
