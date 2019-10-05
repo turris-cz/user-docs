@@ -111,6 +111,7 @@ nav:
         - Revisions: 'hw/omnia/revisions.md'
     - Turris 1.X: 'hw/turris-1x/turris-1x.md'
 - Troubleshooting:
+    - Basics: 'basics/common_errors.md'
     - Rescue modes:
         - 'MOX': 'hw/mox/rescue_modes.md'
         - 'Omnia': 'hw/omnia/rescue_modes.md'
