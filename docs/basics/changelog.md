@@ -53,16 +53,18 @@ function render_changelog(changelog) {
 <p>${release_date.toString()}</p>
 <h5>Sources</h5>
 <p>Available on <a href="https://gitlab.labs.nic.cz/turris/turris-build/tree/${release.name}">Gitlab</a>.</p>
-<h5>Release notes</h5>
-<p><ul>`;
+<h5>Release notes</h5>`;
         message.pop();
+        let notes='<ul>';
         for (let line in message) {
-            const li = line.match(/^\s?\* (.*)/)
+            console.log(message[line]);
+            const li = message[line].match(/^\s?\* (.*)/)
             if (li) {
-                element.innerHTML += '<li>' + li[1] + '</li>';
+                notes += '<li>' + li[1] + '</li>';
             }
         }
-        element.innerHTML += '</ul></p>';
+        notes += '</ul>';
+        element.innerHTML += notes;
     };
 }
 
