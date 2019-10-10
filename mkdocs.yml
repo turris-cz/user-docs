@@ -61,7 +61,7 @@ nav:
 - First setup:
     - 'MOX': 'basics/first-setup/mox_first_setup.md'
     - 'Turris 1.X and Omnia': 'basics/first-setup/old_setup.md'
-- Basics:
+- Software:
     - Data Collection: 'basics/collect.md'
     - Foris:
         - 'Secure access': 'basics/foris/https/https.md'
@@ -75,15 +75,16 @@ nav:
         - Static IP: basics/luci/static_dhcp/static_dhcp.md
     - Applications:
         - 'Netmetr': 'basics/apps/netmetr.md'
+        - 'Nextcloud': 'geek/nextcloud/nextcloud.md'
         - 'OpenVPN': 'basics/apps/openvpn/openvpn.md'
-        - 'Sentinel': 'basics/apps/sentinel.md'
         - 'PaKon': 'basics/apps/pakon.md'
-- Advanced:
-    - 'LXC': 'geek/lxc/lxc.md'
-    - 'Netboot': 'basics/apps/netboot.md'
-    - 'Nextcloud': 'geek/nextcloud/nextcloud.md'
-    - 'Schnapps': 'geek/schnapps/schnapps.md'
+        - 'Sentinel': 'basics/apps/sentinel.md'
+    - Advanced:
+        - 'LXC': 'geek/lxc/lxc.md'
+        - 'Netboot': 'basics/apps/netboot.md'
+        - 'Schnapps': 'geek/schnapps/schnapps.md'
     - 'Early access': 'geek/testing.md'
+    - Changelog: 'basics/changelog.md'
 - Hardware:
     - Models: 'basics/models.md'
     - MOX:
