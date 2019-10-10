@@ -37,5 +37,19 @@ the attacker's IP address is collected by the software.
 
 ## How to set up data collection
 
-Setting up data collection is as simple as installing a [Sentinel](apps/sentinel.md) package using
-Updater tab in Foris web interface.
+The whole functionality is nowadays provided by [Sentinel](apps/sentinel.md).
+To get at least the basics going is to enable _Data collection_ software set in
+_Updater_ tab. This will install dynamic firewall and in later version (not
+available at the moment) also additional tab in Foris to control what data you
+want to collect and contribute.
+
+Enabling _Data collection_ list will install and enable dynamic firewall. To
+install additional software you can use either [LuCI](luci/luci.md)
+or ssh to install `sentinel-minipot` and `sentinel-nikola` packages.
+
+In CLI you can do so by running the following commands:
+
+```
+opkg update
+opkg install sentinel-nikola sentinel-minipot
+```
