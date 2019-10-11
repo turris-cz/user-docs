@@ -16,25 +16,26 @@ site-specific data as defined in the [FHS specification](https://en.wikipedia.or
 The storage plugin can't move other parts of the file system. But it doesn't matter because all data-intensive
 applications save their data into `/srv`.
     
-How to set up an external storage
----------------------------------
+First setup
+-----------
 
 Pick an external storage device, which you want to move your persistent data to. This can be for example a simple USB
 flash drive but it is strongly encouraged to use a regular HDD or SSD to get both higher speed and better durability.
-**Make sure that the storage device has no important data on it because it will be formatted!**
+
+!!! warning
+    Setting up external storage will destroy all data on newly selected storage. Make sure that the storage device has no important data on it.
 
 In case of an USB drive, insert it into the USB slot on your router. If you are using a different type of storage,
 make sure that it is properly inserted or connected to the router.
 
 Once the external storage is inserted, inside the tab Storage in Foris, select where your persistent
-data should be stored and press the **Format & Set** button.
+data should be stored and press the _Format & Set_ button.
 
 ![Storage devices](devices.png)
 
-You will be asked if you are ready to continue. If you are ready, press **OK**. Now, for applying the changes, you need to reboot your system.  
+You will be asked if you are ready to continue. If you are ready, press _OK_. Now, for applying the changes, you need to reboot your system.  
 
-You can do this by going to the
-**Notifications** tab and pressing **Reboot**.
+You can do this by going to the _Notifications_ tab and pressing _Reboot_.
 
 ![Reboot notification](reboot.png)
 
@@ -47,3 +48,46 @@ highlighted blue. This means that the operation was successful and your data wil
 the external disk.
 
 ![Device is ready](device-ready.png)
+
+Multiple drives
+---------------
+
+You can add additional drives anytime you need more space or redundancy. Simply
+select additional drive in the web interface.
+
+**Data on the newly selected drive will be deleted.** Data on old drives will
+be spread across all enabled drives.
+
+![Devices are ready](devices-ready.png)
+
+If you have more drives and want to remove/replace some of them, do so by
+unchecking them in in the Web UI and hitting _Format & Set_ button. Removing
+drive takes a long time as data need to be moved out of it first and 
+
+!!! tip
+    No additional reboot is needed to extend/shrink your storage. Actually
+    quite opposite - everything happens at runtime, so avoid reboot till you
+    get notification that everything successfully finished.
+
+
+Data redundancy
+---------------
+
+By default, adding more drives will increase the capacity available in `/srv`.
+If you are using your router to store important data, you might want to set
+redundancy for your drives. This can be currently done only in CLI by calling
+the following commands:
+
+```
+uci set storage.srv.raid=raid1
+uci commit storage
+```
+
+Then after hitting _Format & Set_ button without changing any drives, raid
+level will be set and data rearranged.
+
+Valid options are the following:
+
+* `raid1` - every piece of data is kept on two different drives (no matter how many drives you have), so if one drive fails, you can still get to your data
+* `single` - there is only one copy of data - more space, but not redundancy
+* `custom` - raid level is unchanged and only rebalance is done after adding/removing drive
