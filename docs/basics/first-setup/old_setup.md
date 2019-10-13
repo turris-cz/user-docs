@@ -31,3 +31,7 @@ through the rest of the setup.
     On Turris Omnia, you can download the latest [medkit](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz) and [flash your router
     via USB](../../hw/omnia/rescue_modes.md#re-flash-router) and therefore
     significantly decrease update time.
+
+After your router is fully set up you can start setting up additional services.
+For some inspiration, you might want to check some
+[highlights](../highlights.md) that we prepared.
