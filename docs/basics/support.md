@@ -40,7 +40,7 @@ interesting are `turris_version`, `dmesg`, `messages`, `dns` and `network`. If t
 problem suggests that other modules could also be useful, you can check them.
 The required logs will be downloaded if you click _Generate_ button.
 
-![Foris: Diagnostics](foris-diagnostics_new.png)
+![Foris: Diagnostics](foris-diagnostics.png)
 
 #### If you can't find the diagnostics
 
