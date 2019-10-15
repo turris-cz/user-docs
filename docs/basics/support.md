@@ -6,7 +6,7 @@ This section will point you to various ways of getting help with your router.
 
 This short manual will take you through the recommended steps, when discussing
 problems. Following these instructions should help to resolve your issues much
-faster. 
+faster.
 
  * A suitable subject for e-mail/issue/forum post
     * Good: 5GHz Card not visible | T-Mobile PPPoE won't connect
@@ -26,7 +26,7 @@ _Foris_ or as the output of command `crypto-wrapper serial-number`.
 !!! warning
     If you come across an error and it is possible not to reboot the router,
     **please don't reboot it** before collecting the logs. All logs are saved in
-    the router memory and they will be erased, if you reboot. 
+    the router memory and they will be erased, if you reboot.
 
 If you just rebooted the router, let it gather some data first. Logs from a
 freshly rebooted router, which have been downloaded before the occurrence of
@@ -40,7 +40,7 @@ interesting are `turris_version`, `dmesg`, `messages`, `dns` and `network`. If t
 problem suggests that other modules could also be useful, you can check them.
 The required logs will be downloaded if you click _Generate_ button.
 
-![Foris: Diagnostics](foris-diagnostics.png)
+![Foris: Diagnostics](foris-diagnostics_new.png)
 
 #### If you can't find the diagnostics
 
@@ -96,4 +96,3 @@ There is official Turris support available via e-mail
 deals with hardware issues and with serious software issues in supported
 software. It will not help you design your network nor it will fix any package
 available in OpenWRT.
-
