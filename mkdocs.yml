@@ -87,6 +87,7 @@ nav:
         - Versions: 'basics/tos_versions.md'
         - Changelog: 'basics/changelog.md'
         - 'Early access': 'geek/testing.md'
+        - '3.x migration': 'geek/tos3_migration.md'
 - Hardware:
     - Models: 'basics/models.md'
     - MOX:
