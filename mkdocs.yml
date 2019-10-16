@@ -83,8 +83,10 @@ nav:
         - 'LXC': 'geek/lxc/lxc.md'
         - 'Netboot': 'basics/apps/netboot.md'
         - 'Schnapps': 'geek/schnapps/schnapps.md'
-    - 'Early access': 'geek/testing.md'
-    - Changelog: 'basics/changelog.md'
+    - 'OS versions':
+        - Versions: 'basics/tos_versions.md'
+        - Changelog: 'basics/changelog.md'
+        - 'Early access': 'geek/testing.md'
 - Hardware:
     - Models: 'basics/models.md'
     - MOX:
