@@ -42,7 +42,7 @@ one, it will switch itself into DHCP client mode. If it doesn't find one, it
 will configure itself as DHCP server.
 
 !!! tip
-	If you have a working zero-conf on your conputer, you can access your
+	If you have a working zero-conf on your computer, you can access your
     router via <http://turris.local> address.
 
 When booted, you can access the first-run wizard by using a web browser and
