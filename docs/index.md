@@ -1,3 +1,12 @@
+#
+
+!!! warning
+    This documentation applies primarily to Turris OS version 4.0 and newer. You
+    might still be running Turris OS 3 and in that case you can find old official
+    documentation [on community wiki](https://wiki.turris.cz/doc/en/howto/start).
+    More info about Turris OS versions can also be found
+    [here](basics/tos_versions.md)
+
 # What is Turris project
 
 Turris project encompasses both software and hardware development efforts
