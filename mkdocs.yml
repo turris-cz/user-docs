@@ -104,7 +104,9 @@ nav:
             - 'MOX G (Super Extension)': 'hw/mox/modules/g.md'
         - Add-ons: 'hw/mox/addons.md'
         - Hardware details: 'hw/mox/hw.md'
-    - Omnia: 'hw/omnia/omnia.md'
+    - Omnia:
+        - About: 'hw/omnia/omnia.md'
+        - Revisions: 'hw/omnia/revisions.md'
     - Turris 1.X: 'hw/turris-1x/turris-1x.md'
 - Troubleshooting:
     - Rescue modes:
