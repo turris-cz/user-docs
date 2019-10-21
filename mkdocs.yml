@@ -60,7 +60,7 @@ nav:
 - Introduction: 'index.md'
 - First setup:
     - 'MOX': 'basics/first-setup/mox_first_setup.md'
-    - 'Turris 1.X and Omnia': 'basics/first-setup/old_setup.md'
+    - 'Turris 1.X and Omnia': 'basics/first-setup/simple_setup.md'
 - Software:
     - Data Collection: 'basics/collect.md'
     - Foris:

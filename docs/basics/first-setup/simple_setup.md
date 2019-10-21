@@ -11,8 +11,9 @@ You need to connect your computer to LAN port on your Turris router (see the
 labels on the back of your router). Then start the router and open up a web browser and
 navigate to configuration wizard. It can be found by default on
 <http://192.168.1.1>. Older firmwares do not support zero-conf, so you have to
-use IP address. Once there, you will be asked for password, to configure WAN
-interface and whether you want to enable updates.
+use IP address. Newer ones starting Turris OS 4.0 do, so you might be able to
+use <http://turris.local>. Once you enter wizard, you will be asked for
+password, to configure WAN interface and whether you want to enable updates.
 
 **Disabling updates is not recommended.** This documentation documents the
 latest version of Turris OS. If you have older version, it might be inaccurate.
