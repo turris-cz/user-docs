@@ -38,15 +38,45 @@ If everything works well, you should see the documentation on <http://127.0.0.1:
 
 ## Tips for writing
 
+### Headers
+
+For header, please try to stick to markdown notation using the following syntax:
+
+* ``# Header level 1``
+* ``## Header level 2``
+* ``### Header level 3``
+* ...
+
+It is more consistent once you get to more than three levels.
+
 ### Links
 
-When writing links, use **relative path** and _.md_ extension. So for example
+When writing links, use **relative path** and `.md` extension. So for example
 [README](README.md). When documentation is build, they get converted to working
-links (without _.md_).
+links (without `.md`).
+
+### Formating
+
+#### Italic
+
+Use `_italic_` whenever you are citing some label, like for example menu
+in we UI.
+
+#### Monospace
+
+Use  `` `monospace` `` whenever talking about commands or files or citing some
+code example.
+
+#### **Bold**
+
+Use `**bold**` to stress the important part. If you are describing some
+complex process and there is one step that is more important or more easily
+overlooked, you can stress it by making it bold. To stress importance even
+more, it might make sesne to use admonition.
 
 ### Admonition
 
-We have admonition extension, so you can use _note_, _tip_, _warning_ and other
+We have admonition extension, so you can use `note`, `tip`, `warning` and other
 keywords for block-styled content. It needs to start with `!!!` or `???`.  More
 details can be found in [Admonition
 documentation](https://squidfunk.github.io/mkdocs-material/extensions/admonition/).
