@@ -55,6 +55,17 @@ When writing links, use **relative path** and `.md` extension. So for example
 [README](README.md). When documentation is build, they get converted to working
 links (without `.md`).
 
+### Images
+
+When doing screenshots, crop the screenshot to cover only interesting areas and
+stick to the whole elements (try to avoid cut out buttons/labels).
+
+Use stock settings in your browser (preferably Firefox) and try to avoid any
+contamination by system themes.
+
+For highlighting the important part of the screenshot (if you need to, most of
+the time not necessary) use rectangular shape and 3-pixel red line `rgb(255, 0, 0)`
+
 ### Formating
 
 #### Italic
