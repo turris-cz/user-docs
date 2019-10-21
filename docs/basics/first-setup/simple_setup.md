@@ -15,7 +15,7 @@ use IP address. Newer ones starting Turris OS 4.0 do, so you might be able to
 use <http://turris.local>. Once you enter wizard, you will be asked for
 password, to configure WAN interface and whether you want to enable updates.
 
-**Disabling updates is not recommended.** This documentation documents the
+**Disabling updates is not recommended.** This documentation describes the
 latest version of Turris OS. If you have older version, it might be inaccurate.
 Apart from that disabling updates poses **security risk** as all the security
 and bug fixes wouldn't be installed.
