@@ -33,6 +33,10 @@ campain entered retail sales.
 It uses dual-core ARMv7 CPU Marvell Armada 385 at 1.6 GHz with 2 GB RAM.
 You can see more details on the [separate page](../hw/omnia/omnia.md).
 
+During the course of history, there were several hardware
+[revisions](../hw/omnia/revisions.md) with color being the most notable
+difference.
+
 ![Turris Omnia](omnia.jpg)
 
 ## Turris MOX

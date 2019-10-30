@@ -36,7 +36,9 @@ instead of black ones.
 This is second revamp of Turris Omnia board.
 
 The users most notable change is color change of chassis. Previous black color was
-switched to metallic silver.
+switched to metallic silver. It also comes preinstalled with Turris OS 4.X
+while previous versions were starting from 3.X version and had to upgrade to
+4.X first.
 
 This revision is manufactured only with Wi-Fi and with 2GB of RAM same as
 CZ11NIC20. It also features blue buttons instead of black ones of first revision.
