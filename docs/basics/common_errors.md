@@ -64,6 +64,19 @@ operated by CZ.NIC.
 
 There could be again multiple culprits.
 
+#### Disconnected/completely broken cable
+
+Surprisingly quite common error. Cable can get disconnected by accident without
+anybody noticing if somebody trips over it when moving furniture or for
+example by a pet.
+
+You can check whether your router has a network link (is connected to some
+powered up device) in section _Network Interfaces_ in Foris. The ones with a
+checkmark are connected to some powered up devices. This does **not** mean
+that cable is alright, but that at least it is somehow connected and working.
+
+![Interfaces](interfaces.png)
+
 #### ISP has some issues
 
 Sometimes even your ISP faces some outage. Sometimes they announce it on their
