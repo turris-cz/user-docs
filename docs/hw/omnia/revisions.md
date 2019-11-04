@@ -32,7 +32,8 @@ and with 2GB of RAM.
 As a minor but user noticeable change this revision introduced blue buttons
 instead of black ones. 
 
-## CZ11NIC23
+## CZ11NIC23 - in retail as Omnia 2019
+
 This is second revamp of Turris Omnia board.
 
 The users most notable change is color change of chassis. Previous black color was
