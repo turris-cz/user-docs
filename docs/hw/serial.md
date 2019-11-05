@@ -29,9 +29,9 @@ access UART:
 ![Serial cable connected to Turris MOX](serial_link_mox.jpg)
 
 Take extra care when connecting the red wire. On some cables, this is directly
-connected to +5V USB power. If that is the case, connecting it will fry the MOX. However on some cables like 6-wire USB cable supplied in
-some hacker packs, the red wire powers the cable itself and has to be connected
-to a +1V8 pin.
+connected to +5V USB power. If that is the case, connecting it will fry the MOX.
+However on some cables like 6-wire USB cable supplied in some hacker packs, the
+red wire powers the cable itself and has to be connected to a +1V8 pin.
 
 If you have PoE addon, you can find pins on addon itself. In this case it is:
 
@@ -61,8 +61,8 @@ Cable, TTL-232R-RPI.
 
 Turris 1.0 and 1.1 have the easiest access to the serial port. They already
 have micro USB connector on board on the left front side. You still need to
-remove the cover to get access to it, but afterward, all you need is to connect a micro
-USB cable and you are ready.
+remove the cover to get access to it, but afterward, all you need is to connect
+a micro USB cable and you are ready.
 
 ![Serial cable connected to Turris 1.1](serial_link_turris.jpg)
 

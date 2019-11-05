@@ -1,5 +1,4 @@
-First setup of Turris MOX (CPU Only)
-====================================
+# First setup of Turris MOX (CPU Only)
 
 This page is written for users who would like to configure their MOX device with
 only one Ethernet port. It means you have no SFP module (MOX D) and no Ethernet
@@ -59,15 +58,16 @@ it finds one, it will switch itself into DHCP client mode. If it doesn't find
 one, it will configure itself as DHCP server.
 
 If it is connected directly to your computer, you will end up with running DHCP
-server on your MOX. If connected to a local network, probably there is already running DHCP server, in that case MOX, will be its client.
+server on your MOX. If connected to a local network, probably there is already
+running DHCP server, in that case MOX, will be its client.
 
 !!! tip
 	If you have a working zero-conf on your conputer, you can access your
     router via <http://turris.local> address.
 
 When booted, you can access the first-run wizard by using a web browser and
-entering as URL address of your router. In case of your MOX running as DHCP server, web
-interface will be at <http://192.168.1.1>. If it ends up being DHCP
+entering as URL address of your router. In case of your MOX running as DHCP
+server, web interface will be at <http://192.168.1.1>. If it ends up being DHCP
 client, you either have to use administrative UI on your DHCP server (your main
 router in most cases) and figure out IP address of your MOX, or you can use
 zero-conf address <http://turris.local> if your computer is configured

@@ -1,5 +1,4 @@
-Storage plugin
-==============
+# Storage plugin
 
 Turris contains an eMMC flash memory card which is used as the system storage. It holds both the Turris OS itself
 and the created data. But if you want to use applications which need to save larger amounts of data you can use
@@ -16,8 +15,7 @@ site-specific data as defined in the [FHS specification](https://en.wikipedia.or
 The storage plugin can't move other parts of the file system. But it doesn't matter because all data-intensive
 applications save their data into `/srv`.
     
-First setup
------------
+## First setup
 
 Pick an external storage device, which you want to move your persistent data to. This can be for example a simple USB
 flash drive but it is strongly encouraged to use a regular HDD or SSD to get both higher speed and better durability.
@@ -49,8 +47,7 @@ the external disk.
 
 ![Device is ready](device-ready.png)
 
-Multiple drives
----------------
+## Multiple drives
 
 You can add additional drives anytime you need more space or redundancy. Simply
 select additional drive in the web interface.
@@ -70,8 +67,7 @@ drive takes a long time as data need to be moved out of it first and
     get notification that everything successfully finished.
 
 
-Data redundancy
----------------
+## Data redundancy
 
 By default, adding more drives will increase the capacity available in `/srv`.
 If you are using your router to store important data, you might want to set

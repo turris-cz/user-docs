@@ -1,8 +1,6 @@
-DNS settings in Foris
-=====================
+# DNS settings in Foris
 
-What is DNS
------------
+## What is DNS
 
 The [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System) (DNS) is a system which translates name
 addresses (such as `www.turris.cz`) to [IP addresses](https://en.wikipedia.org/wiki/IP_address) (e.g. `217.31.192.69`
@@ -17,8 +15,7 @@ your computer.
 In most cases, your computer sends DNS queries to your router (ie. Turris) which must have be configured properly.
 This documentation page explains how to set it.
 
-What is DNSSEC
---------------
+## What is DNSSEC
 
 Plain DNS responds have a big problem. Their data is transmitted without any measure for their integrity. It means
 if it is changed during the transfer you can't detect it any way. Some "bad guy" sitting on the wire can send you
@@ -46,8 +43,7 @@ To make DNSSEC work properly is also necessary to support it by all DNS servers/
 you and the authoritative DNS servers. This usually include your router and your ISP's DNS servers (if used). Read
 bellow how to set your Turris to work with DNSSEC.
 
-DNS in Foris
-------------
+## DNS in Foris
 
 Turris uses its own DNS resolver with DNSSEC support. It is capable of working independently or it can forward your
 DNS queries to your ISP's DNS resolver. Usually, it is better to use the ISP's resolver in
@@ -66,7 +62,7 @@ there is a very good reason to change it.
 
 ### DNS Forwarder
 
-The default setting is that all DNS queries are forwarded to your ISP's DNS servers (see the **WAN** section). It is
+The default setting is that all DNS queries are forwarded to your ISP's DNS servers (see the _WAN_ section). It is
 recommended to keep this setting unless there is a reason to do anything else. The other options currently are:
 
 * CZ.NIC (TLS)
@@ -113,20 +109,19 @@ You can enabled DHCP client names in the local DNS. This is disabled by default.
 resolve IP addresses for local host names. It can be useful if computers provide various services to each other
 (e.g. file sharing, DLNA media services...).
 
-When a computer requests its IP address via DHCP it sends its host name (this is the name you can see at the **LAN**
-page in the **DHCP clients** list). Remember each computer in your LAN must have an unique name to work properly.
+When a computer requests its IP address via DHCP it sends its host name (this is the name you can see at the _LAN_
+page in the _DHCP clients_ list). Remember each computer in your LAN must have an unique name to work properly.
 Ambiguous names will lead to unpredictable results. 
 
-Connection test
----------------
+## Connection test
 
-After you have set the DNS settings you can test the connectivity. Remember to press the **Save** button before
+After you have set the DNS settings you can test the connectivity. Remember to press the _Save_ button before
 you start the test. Note that sometimes it takes a while before the connection is fully initialized. So it might be
 useful to wait for a while before running this test.
 
 What particular results mean:
 
-* **DNS** - your router can successfully execute DNS queries and get responses
-* **DNSSEC** - your router can successfully execute DNSSEC queries and get correct (trustfully signed and intact)
+* _DNS_ - your router can successfully execute DNS queries and get responses
+* _DNSSEC_ - your router can successfully execute DNSSEC queries and get correct (trustfully signed and intact)
 	  responses
 

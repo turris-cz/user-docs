@@ -1,5 +1,4 @@
-First setup of Turris MOX 
-=========================
+# First setup of Turris MOX
 
 ## Before you start
 

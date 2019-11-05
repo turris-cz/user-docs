@@ -5,8 +5,8 @@
 [Nextcloud](https://nextcloud.com) is an application that provides nice web
 frontend to enable you to store data on your own server. This data can be
 files, calendar, contacts, news feed, to-do lists and much more. Files and PIM
-data are accessible using standard protocols such as _webdav_ or _carddav_
-and _caldav_. This makes it easy to setup your computers or phones to
+data are accessible using standard protocols such as **WebDAV** or **CardDAV**
+and **CalDAV**. This makes it easy to setup your computers or phones to
 synchronize with your own server so that you don't have to trust an external
 cloud provider with your personal data.
 
@@ -90,7 +90,8 @@ well. It will also create an admin account on your new Nextcloud server.
 ## Using Nextcloud
 
 Once installed, you can access your Nextcloud instance by using an URL like
-`http://your_router_lan_ip/nextcloud`. If your computer supports _zero-conf_,
+`http://your_router_lan_ip/nextcloud`. If your computer supports
+[zeroconf](https://en.wikipedia.org/wiki/Zero-configuration_networking),
 you could simplify the access by using url <http://turris.local/nextcloud>.
 
 You can also enable access to your Nextcloud from anywhere on the Internet. You

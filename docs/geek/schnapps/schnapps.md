@@ -1,12 +1,10 @@
-Schnapps
-========
+# Schnapps
 
 **Schnapps** is a command-line tool for manipulation with Btrfs
 [snapshots](https://en.wikipedia.org/wiki/Snapshot_(computer_storage)). It is useful especially when you want to
 make some experiments with your Turris.
 
-What is Btrfs
--------------
+## What is Btrfs
 
 [Btrfs](https://en.wikipedia.org/wiki/Btrfs) is a modern file system based on the
 [copy-on-write](https://en.wikipedia.org/wiki/Copy-on-write#In_computer_storage) principle. It has many important
@@ -17,8 +15,7 @@ it also supports more file systems supported by the Linux kernel (e.g. ext3, ext
 The most important feature of Btrfs is to work with snapshots. These snapshots can be created, deleted, compared,
 rolled back to, backed up and so on. Thanks to the nature of Btrfs all of these operations are fast and effective.
 
-What you can do with schnapps
------------------------------
+## What you can do with schnapps
 
 Although you can use standard Bfrfs tools to deal with snapshots schnapps is a high-level tool and provides more
 features. Filesystem snapshots can be not only manipulated locally but easily exported/imported and even uploaded

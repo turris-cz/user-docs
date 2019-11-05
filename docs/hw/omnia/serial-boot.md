@@ -54,8 +54,8 @@ again and again till it succeeds.
 Once you have U-Boot running, you can get various images for example via tftp
 and write it to nor.
 
-To download image from _tftp_ server you need to get your network started,
-decide where to load it and load it. Assuming you have _tftp_ server running on
+To download image from TFTP server you need to get your network started,
+decide where to load it and load it. Assuming you have TFTP server running on
 computer with ip 192.168.1.1 on WAN network, following U-Boot commands will get
 you image into RAM.
 
@@ -69,7 +69,7 @@ tftpboot ${kernel_addr_r} image
 Now you have a file originally called `image` in RAM on your router. To write
 to NOR you have to know where it belongs.
 
-To reflash U-Boot, your image file on _tftp_ will be
+To reflash U-Boot, your image file on TFTP will be
 [uboot-turris-omnia-spl.kwb](https://repo.turris.cz/omnia/nor_fw/uboot-turris-omnia-spl.kwb)
 and you need to write it from the beginning of the NOR.
 

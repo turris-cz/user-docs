@@ -24,7 +24,6 @@ Available reset modes:
 * 5 LEDs or more: Boot to rescue shell
 
 !!! tip
-
     Release the reset button immediately after the required number of LEDs
     starts shining (regardless of color). Do not unnecessarily prolong holding
     the reset button when the last LED is lit. By this you decrease a chance of
@@ -36,7 +35,6 @@ and then a light wave indicates the start the first stage boot during which
 LEDs turn green.
 
 !!! warning
-
     When LEDs turn red, it means that some highly sensitive operation is in
     process and data may be corrupted if it is interupted. Try not to reset
     router during the proccess or you might end up with corrupted
@@ -75,7 +73,7 @@ indicator mode.
 
 !!! tip
     Your current state is saved in a snapshot. You can later cheery-pick changes
-    you still want by using _schnapps_.
+    you still want by using [Schnapps](../../geek/schnapps/schnapps.md).
 
 ## Rollback to factory reset
 
@@ -93,7 +91,7 @@ latest snapshot (mode 2).
 
 !!! tip
     Your current state is saved in a snapshot. You can later cheery-pick changes
-    you still want by using _schnapps_.
+    you still want by using [Schnapps](../../geek/schnapps/schnapps.md).
 
 ## Re-flash router
 

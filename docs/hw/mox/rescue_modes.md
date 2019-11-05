@@ -85,14 +85,14 @@ This mode may help in situation when you lose network connectivity to your
 Turris MOX router during experiments or due to any other reason that is bound
 to the internal state of the router. You can simply return to the latest
 snapshot of the running system by selecting the proper reset mode. For more
-information about the snapshots please visit _schnapps_.
+information about the snapshots please visit [Schnapps](../../geek/schnapps/schnapps.md).
 
 During the course of the operation the LED is blinking. When the rollback
 operation is completed the router automatically restarts.
 
 !!! tip
     Your current state is saved in a snapshot. You can later cheery-pick changes
-    you still want by using _schnapps_.
+    you still want by using [Schnapps](../../geek/schnapps/schnapps.md).
 
 ## Rollback to factory reset
 
@@ -108,7 +108,7 @@ latest snapshot (mode 2).
 
 !!! tip
     Your current state is saved in a snapshot. You can later cheery-pick changes
-    you still want by using _schnapps_.
+    you still want by using [Schnapps](../../geek/schnapps/schnapps.md).
 
 ## Re-flash router
 
@@ -127,8 +127,8 @@ method for restoring the operating system image.
 Download the latest version of Turris MOX image form
 <https://repo.turris.cz/hbs/medkit/mox-medkit-latest.tar.gz>. Save the
 file `mox-medkit-latest.tar.gz` to USB flash drive or micro SD card to the root
-directory. The Turris MOX router supports following filesystems: _ext4, BtrFS
-and FAT32_. You can also download and put alongside `md5`, `sha512` or `sig`
+directory. The Turris MOX router supports following filesystems: **ext4, BtrFS
+and FAT32**. You can also download and put alongside `md5`, `sha512` or `sig`
 file from the same URL. Rescue mode will then verify the tarball first before
 flashing it. Connect the USB flash/insert the micro SD card to the Turris MOX
 router and use rescue mode mode 4.
@@ -157,8 +157,8 @@ address `192.168.1.1/24`. Pick a random IP address from the same network (for
 example `192.168.1.2/24`) and set it up manually on your computer. After that,
 you should be able to ssh as root to your router without need to enter
 password. You will end up in rescue mode with limited capabilities, but you
-have _schnapps_ at your disposal and you can mount rootfs from your micro SD
-card and do any changes you need.
+have [Schnapps](../../geek/schnapps/schnapps.md) at your disposal and you can
+mount rootfs from your micro SD card and do any changes you need.
 
 After finishing your fixes, don't forget to unmount any mounted filesystems and
 reboot the router.

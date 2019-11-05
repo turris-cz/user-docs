@@ -1,10 +1,8 @@
-LXC on Turris
-=============
+# LXC on Turris
 
 LXC allows you to run various Linux distributions on your Turris (e.g. Debian, Ubuntu or openSUSE).
 
-What is LXC
------------
+## What is LXC
 
 The Linux Containers ([LXC](https://en.wikipedia.org/wiki/LXC)) is an
 [OS-level virtualization](https://en.wikipedia.org/wiki/OS-level_virtualisation) method for running multiple containers
@@ -15,8 +13,7 @@ Because it is only a containerized environment and not a true virtualization it 
 other hand, only one kernel can run for all containers and this limits the scale of usable operating systems
 (only Linux distributions can be used and they must support the given kernel).
 
-Before you start using LXC
---------------------------
+## Before you start using LXC
 
 Remember that standard Linux distributions are write-intensive and it is strongly discouraged to operate them on
 the internal [eMMC](https://en.wikipedia.org/wiki/MultiMediaCard#eMMC) flash storage. Please set up and use an
@@ -26,20 +23,18 @@ external storage such as an USB HDD or SSD. Read the [Storage plugin](../../basi
         Operating LXC on the internal flash storage may lead to rapid degradation and eventually to failure of the storage.
         This may void your warranty. 
 
-LXC packages
-------------
+## LXC packages
 
-Although LXC can't be currently managed using Foris its packages can be installed in it. Go to the **Updater** page,
-check the **LXC utilities** and press the **Save and update** button. It will install the packages and you will
-be able to see the information about it at the **Notifications** page.
+Although LXC can't be currently managed using Foris its packages can be installed in it. Go to the _Updater_ page,
+check the _LXC utilities_ and press the _Save and update_ button. It will install the packages and you will
+be able to see the information about it at the _Notifications_ page.
 
 ![LXC utilities](lxc-util.png)
 
-LXC management in LuCI
-----------------------
+## LXC management in LuCI
 
-LXC containers can be created, deleted, started, stopped etc. through the LuCI - advanced administration web interface. Choose **LuCI OpenWRT
-advanced web configuration** at the homepage of your Turris and log into it. Then go to **Services -> LXC Containers**.
+LXC containers can be created, deleted, started, stopped etc. through the LuCI - advanced administration web interface. Choose _LuCI OpenWRT
+advanced web configuration_ at the homepage of your Turris and log into it. Then go to _Services -> LXC Containers_.
 
 *You will be warned that you will need a custom OpenWrt image. This warning may be ignored because Turris OS is
 such custom image and supports LXC.*
@@ -48,25 +43,25 @@ such custom image and supports LXC.*
 
 There are four parameters you can change to fit the LXC environment to your requirements:
 
-* **Containers URL** - The default is `repo.turris.cz/lxc` which is provided by the Turris team. This server provides
+* _Containers URL_ - The default is `repo.turris.cz/lxc` which is provided by the Turris team. This server provides
 a set of selected Linux distributions including Turris OS. These distributions are tested and should work properly.
 You can set `image.linuxcontainers.org` as well (which provides a larger set of distros) or write in your specific
 LXC image repository.
-* **Enable SSL** - Check this to enable SSL support. If you use `repo.turris.cz` as your repository this must be checked.
-* **Free Space Threshold** - The minimum free disk space (in KB) for LXC container creation. If the free space falls
+* _Enable SSL_ - Check this to enable SSL support. If you use `repo.turris.cz` as your repository this must be checked.
+* _Free Space Threshold_ - The minimum free disk space (in KB) for LXC container creation. If the free space falls
 under this value no new container may be created. The default value (100 MB) is usually suitable. 
-* **Free Temp Threshold** - The minimum free temporary disk space (in KB) for LXC container creation. If the temporary
+* _Free Temp Threshold_ - The minimum free temporary disk space (in KB) for LXC container creation. If the temporary
 free space falls under this value no new container may be created. The default value (100 MB) is usually suitable.
 
 ![LXC containers - Options](options.png)
 
-After done, press **Save & Apply** or **Save** to save your values. If you choose the first of the buttons it will
+After done, press _Save & Apply_ or _Save_ to save your values. If you choose the first of the buttons it will
 be applied immediately (and a new set of Linux distros will be downloaded).
 
 ### Create New Container
 
-There are only two things to do before creating a LXC container. Write its name into the **Name** field and choose
-the Linux distribution to install (from the **Template** drop-down list). Then press the **Create** button and
+There are only two things to do before creating a LXC container. Write its name into the _Name_ field and choose
+the Linux distribution to install (from the _Template_ drop-down list). Then press the _Create_ button and
 the process of the creation  of a new LXC container will start. This can take a while. In LuCI you cannot see the progress and if it
 fails, you might not find why.
 
@@ -81,25 +76,24 @@ a static IP address to the container or set a DHCP server to it. Setting up a po
 All the containers you have created are displayed in this section. You can do these operations (three of them
 have buttons and the others are available in the drop-down list):
 
-* **Start** - It starts the container (it it similar to turning-on a physical machine) if it is stopped. It will boot
+* _Start_ - It starts the container (it it similar to turning-on a physical machine) if it is stopped. It will boot
 and be ready to use in a moment.
-* **Stop** - It executes a clean shutdown of the container. If the container fails to cleanly exit in 60 seconds, it will
+* _Stop_ - It executes a clean shutdown of the container. If the container fails to cleanly exit in 60 seconds, it will
 be forced to stop.
-* **Delete** - It deletes the container. All the data stored inside will be lost. Running containers can't be deleted
+* _Delete_ - It deletes the container. All the data stored inside will be lost. Running containers can't be deleted
 (stop the container first if you want to delete it).
-* **Reboot** - It executes a clean reboot of the container (it is similar to the well-known Ctrl+Alt+Del keyboard
+* _Reboot_ - It executes a clean reboot of the container (it is similar to the well-known Ctrl+Alt+Del keyboard
 combination).
-* **Freeze** - It freezes (suspends) all processes in the container until they will be unfreezed (thawed).
-* **Unfreeze** - It unfreezes (thaws) previously freezed processes in the container.
-* **Configure** - It opens a text area where you can edit the container parameters. *Don't change anything unless you
+* _Freeze_ - It freezes (suspends) all processes in the container until they will be unfreezed (thawed).
+* _Unfreeze_ - It unfreezes (thaws) previously freezed processes in the container.
+* _Configure_ - It opens a text area where you can edit the container parameters. *Don't change anything unless you
 know what you want to do! Wrong values may lead to container malfunction.*
 
 ![Available Containers](available.png)
 
-The **Status** column contains green bullets for running containers and red bullets for not running containers.
+The _Status_ column contains green bullets for running containers and red bullets for not running containers.
 
-LXC management in CLI
----------------------
+## LXC management in CLI
 
 The command line interface (CLI) provides much large set of the LXC tools. Here are a few examples:
 
@@ -135,8 +129,7 @@ lxc-destroy -n test
 This command destroys the cointainer. It must be stopped before destroying.
 
 
-Connecting to your LXC container
---------------------------------
+## Connecting to your LXC container
 
 For your first connection to a new container has to be used a SSH connection to your Turris. Run a SSH client and
 connect to it. For example, if your router has the IPv4 address 192.168.1.1. Then you can use something like this:
@@ -163,8 +156,7 @@ a usage of SSH public key(s) for the authentification. After this procedure, you
 of the container can be obtained from the `lxc-ls` listing (see above) or by running `ip addr` inside the container
 (if your distro supports it).
 
-Starting the container at boot
-------------------------------
+## Starting the container at boot
 
 To enable automatic startup of your container at boot, you need to edit the configuration file: `/etc/config/lxc-auto`.
 
@@ -186,8 +178,7 @@ As you can see, you can configure multiple container sections. Every container h
 of them will be correctly halted during the shutdown. Set the `timeout` option to specify how much time in seconds
 the containers have to gracefully shut down before being killed. The default value is 300.
 
-FAQ
----
+## FAQ
 
 ###Alpine Linux
 

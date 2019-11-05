@@ -3,26 +3,26 @@
 Static DHCP server addresses assignment is useful when it's required that devices, connected to your network, will get 
 permanent IP address.
 
-Log in to [LuCI](../luci.md), then choose *DHCP and DNS* in top navigation menu.
+Log in to [LuCI](../luci.md), then choose _DHCP and DNS_ in top navigation menu.
 
 ![Screenshot 1](screenshot_1.png)
 
 You can see the list of the currently connected devices, which had assigned IP addresses from DHCP server, on the bottom
-of the page. Then click the *Add* button under that list.
+of the page. Then click the _Add_ button under that list.
 
 ![Screenshot 1](screenshot_2.png)
 
 Fill the new row with:
 
- * **Hostname** - any name you want to identify the device.
- * **MAC-Address** - Hardware identification number. It can be select from the list of list MAC addresses of connected
+ * _Hostname_ - any name you want to identify the device.
+ * _MAC-Address_ - Hardware identification number. It can be select from the list of list MAC addresses of connected
 devices or filled manually by selecting the *\-\-custom\-\-* option.
- * **IPv4-Address** - An IP address to be permanently assigned to a device identified by MAC address. It can be select
+ * _IPv4-Address_ - An IP address to be permanently assigned to a device identified by MAC address. It can be select
 from the list of last used IP addresses or filled manually by selecting the *\-\-custom\-\-* option.
 
 ![Screenshot 1](screenshot_3.png)
 
-You can add more devices by clicking *Add* button. If you are done, please don't forget to press *Save & Apply* button.
+You can add more devices by clicking _Add_ button. If you are done, please don't forget to press _Save & Apply_ button.
 
 !!! warning
     IP address changes will not take effect immediately. If the computer has an IP address, it waits until it expires
