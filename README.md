@@ -52,8 +52,8 @@ It is more consistent once you get to more than three levels.
 ### Links
 
 When writing links, use **relative path** and `.md` extension. So for example
-[README](README.md). When documentation is build, they get converted to working
-links (without `.md`).
+`[README](README.md)` will create a link like so: [README](README.md). When
+documentation is built, they get converted to working links (without `.md`).
 
 ### Images
 
