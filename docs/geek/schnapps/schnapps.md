@@ -232,9 +232,9 @@ specification for Nextcloud servers; use if you have a Nextcloud server
 
 Look at some examples:
 ```
-schnapps 8 webdav://user:password@my.webdav.server/ /snapshots
-schnapps nextcloud:/user:password@my.nextcloud.server/snapshots/
-schnapps 8 ssh://my.webdav.server/ /snapshots
+schnapps upload 8 webdav://user:password@my.webdav.server/ /snapshots
+schnapps upload nextcloud:/user:password@my.nextcloud.server/snapshots/
+schnapps upload 8 ssh://my.webdav.server/ /snapshots
 ```
 The first command uploads the snapshot numbered 8 to the specified WebDAV server to the specified directory.
 The user credentials are incorporated into the URL. The second example is similar but it uploads the current file
@@ -250,6 +250,9 @@ schnapps sync -t pre,post
 ```
 The first command synchronizes all local snapshots to the remote server. The other command synchronizes only
 the snapshots having the given types (here pre and post).
+
+Synchronizing snapshots requires explicitly calling one of these commands. In other words, snapshots are not
+automatically synchronized when being created, modified or deleted.
 
 !!! warning
 	The remote server must be properly configured in `/etc/config/schnapps` before running synchronization commands.
