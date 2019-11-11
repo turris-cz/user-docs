@@ -1,6 +1,8 @@
 # Netmetr
 
-**Netmetr** is a tool for measuring the actual quality of Internet access services,
+## What is Netmetr?
+
+Netmetr is a tool for measuring the actual quality of Internet access services,
 such as download and upload speed and latency. It allows users to perform
 thorough and detailed testing and get
 comprehensive information not only about the status of their particular connection,

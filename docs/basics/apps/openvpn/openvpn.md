@@ -2,7 +2,7 @@
 
 Starting with Turris OS 3.6, you can configure OpenVPN easily through the Foris web interface.
 
-## What is OpenVPN
+## What is OpenVPN?
 
 [OpenVPN](https://en.wikipedia.org/wiki/OpenVPN) is an open technology for
 [virtual private networks](https://en.wikipedia.org/wiki/Virtual_private_network). It works on the client-server

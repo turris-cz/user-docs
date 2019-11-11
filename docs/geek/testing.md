@@ -1,4 +1,4 @@
-# How to try future releases of Turris OS
+# How to try future releases of Turris OS?
  
 Do you want to contribute to better stability of Turris OS? Or would you just
 like to try the latest and greatest that is not yet released? Do you want to

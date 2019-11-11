@@ -1,6 +1,6 @@
 # DNS settings in Foris
 
-## What is DNS
+## What is DNS?
 
 The [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System) (DNS) is a system which translates name
 addresses (such as `www.turris.cz`) to [IP addresses](https://en.wikipedia.org/wiki/IP_address) (e.g. `217.31.192.69`
@@ -15,7 +15,7 @@ your computer.
 In most cases, your computer sends DNS queries to your router (ie. Turris) which must have be configured properly.
 This documentation page explains how to set it.
 
-## What is DNSSEC
+## What is DNSSEC?
 
 Plain DNS responds have a big problem. Their data is transmitted without any measure for their integrity. It means
 if it is changed during the transfer you can't detect it any way. Some "bad guy" sitting on the wire can send you

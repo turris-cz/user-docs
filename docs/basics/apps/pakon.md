@@ -1,5 +1,7 @@
 # PaKon - Network monitoring (Parental Control)
 
+## What is Pakon?
+
 PaKon is a tool for monitoring the activity of devices inside a local network.
 It collects and stores information about network activity and allows you to
 view and filter records.

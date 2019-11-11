@@ -7,11 +7,11 @@
     More info about Turris OS versions can also be found
     [here](basics/tos_versions.md)
 
-# What is Turris project
+# What is Turris project?
 
 Turris project encompasses both software and hardware development efforts
 aiming to provide open and secure routers. Devices that can be truly yours and
-you can trust.
+you can trust in.
 
 ## Openness
 

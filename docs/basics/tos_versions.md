@@ -14,7 +14,7 @@ For more detailed list of changes and versions history please see
 [changelog](changelog.md).
 
 
-## How to find out version of Turris OS on your router
+## How to find out version of Turris OS on your router?
 There are multiple ways how you can find out version of Turris OS running in your
 router. Few well advised ways are described here.
 

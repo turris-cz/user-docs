@@ -9,7 +9,7 @@ firmware updates and adaptive distributed firewall, the product is very secure.
 The Turris MOX is also open source – it runs a free Linux operating system
 (based on OpenWrt).
 
-## How it works
+## How it works?
 
 If you want something ready to go, you can get a Turris MOX as a complete set.
 [Pocket Wi-Fi](sets/pocketwifi.md) and [Power Wi-Fi](sets/powerwifi.md) are for

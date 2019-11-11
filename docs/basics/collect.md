@@ -1,6 +1,6 @@
 # Data Collection
 
-## Why enable Data Collection
+## Why enable Data Collection?
 
 One of the initial motives that led to the development of the Turris router was
 to set up a secure home router that is capable of responding to current threats
@@ -13,7 +13,7 @@ and distribute a dynamic firewall which afterwards helps to keep your router sec
 Enabling data collection thus helps to protect your own router (and home) as well
 as to protect the rest of the world.
 
-## What data we collect
+## What data do we collect?
 
 There are multiple source of data we collect. Depending on the source used, the
 type of data varies.
@@ -35,7 +35,7 @@ each protocol, answering "bad password" to each attempt to log in. We currently
 operate telnet Minipots. The entered user/password combination along with
 the attacker's IP address is collected by the software.
 
-## How to set up data collection
+## How to set up data collection?
 
 The whole functionality is nowadays provided by [Sentinel](apps/sentinel.md).
 To get at least the basics going is to enable _Data collection_ software set in

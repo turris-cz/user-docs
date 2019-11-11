@@ -1,5 +1,6 @@
 # Sentinel
 
+## What is Sentinel?
 Sentinel is our [data collection](../collect.md) system providing dynamic firewall. Router side of
 the system consists of data collect subsystem, subsystem for dynamic firewall and
 mechanism providing secure channel for data exchange.

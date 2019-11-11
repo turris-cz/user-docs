@@ -1,4 +1,4 @@
-# Nextcloud on Turris
+# Nextcloud server on Turris
 
 ## What is Nextcloud?
 

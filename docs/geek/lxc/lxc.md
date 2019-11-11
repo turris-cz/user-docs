@@ -1,13 +1,12 @@
 # LXC on Turris
 
-LXC allows you to run various Linux distributions on your Turris (e.g. Debian, Ubuntu or openSUSE).
 
-## What is LXC
+## What is LXC?
 
 The Linux Containers ([LXC](https://en.wikipedia.org/wiki/LXC)) is an
 [OS-level virtualization](https://en.wikipedia.org/wiki/OS-level_virtualisation) method for running multiple containers
 with a single Linux kernel. Each LXC container is isolated from the host environment and from the other containers.
-LXC allows to limit and prioritize system resources on the fly.
+LXC allows to limit and prioritize system resources on the fly. You can run various Linux distributions on your Turris (e.g. Debian, Ubuntu or openSUSE).
 
 Because it is only a containerized environment and not a true virtualization it offers very low overhead. On the
 other hand, only one kernel can run for all containers and this limits the scale of usable operating systems
