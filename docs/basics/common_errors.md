@@ -101,7 +101,7 @@ Double check your WAN settings in [Foris](foris/wan/foris_wan.md) to make sure
 it corresponds the recommended settings from your ISP and do WAN test from
 within the Foris.
 
-## My device can't configure all the equipment
+## Additional accessory doesn't work
 
 If your Turris Omnia can't setup your Wi-Fi card or if one of your MOX modules doesn't
 work, try to reproduce the issue first on the latest release. Ideally by
@@ -120,3 +120,13 @@ If you have hard time getting some third-party hardware working, make sure you h
 installed correct kernel module and firmware and that your device is supported
 by the kernel available in our releases. If all of that is true, you can try to
 ask for help with debugging it on our [forum](https://forum.turris.cz).
+
+## Turris MOX not booting over the network
+
+Make sure that your Turris MOX does not contain any media to boot from. Also
+make sure that your other router has _MOX netboot_ package list enabled in
+_Updater_ tab in Foris. Last but not least, booting over the network works
+only via the Ethernet connector on MOX A and after the first boot, only with
+the router it is paired with. Pairing is lost on factory reset of controlling
+router. To make sure your MOX is not paired with already, use [Factory
+reset](../hw/mox/rescue_modes.md#rollback-to-factory-reset).
