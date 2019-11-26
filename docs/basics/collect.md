@@ -18,6 +18,14 @@ as to protect the rest of the world.
 There are multiple source of data we collect. Depending on the source used, the
 type of data varies.
 
+## Can I see the data?
+
+You can browse the data we have collected through the Sentinel network on our
+web called [Sentinel View](https://view.sentinel.turris.cz/). You can browse
+there detected attackers, their favorite passwords, country of origin and such.
+
+![Sentinel View](sview.png)
+
 ### Firewall monitoring
 
 Firewall data is one of the key data sources for [Sentinel](apps/sentinel.md). Using firewall data
