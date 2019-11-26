@@ -21,7 +21,9 @@ Available reset modes:
 * 2 LEDs: Rollback to latest snapshot
 * 3 LEDs: Rollback to factory reset
 * 4 LEDs: Re-flash router from flash drive
-* 5 LEDs or more: Boot to rescue shell
+* 5 LEDs: Unsecure SSH on 192.168.1.1 (Omnia 2019 and newer)
+* 6 LEDs: Flash from the internet (Omnia 2019 and newer)
+* 7 LEDs: Rescue shell
 
 !!! tip
     Release the reset button immediately after the required number of LEDs
@@ -121,12 +123,65 @@ progress is the same as in case of rollback to the latest snapshot (mode 2).
 
 When the process has completed the task you may remove the USB flash.
 
+## Unsecure SSH on 192.168.1.1
+
+!!! warning
+    When used incorrectly, this operation exposes your Omnia unprotected on the
+    internet. Make sure to unplug all untrusted computers and internet
+    connection first.
+
+!!! info
+    This mode is for now avaialble only on Omnia 2019 and newer.
+
+5 LEDs (Power, 0, 1, 2, 3)
+
+This mode is meant to help you debug your issues without need for serial cable
+or rolling back snapshots. Before entering this mode, make sure that only your
+computer is directly connected to LAN4 port.
+
+When started, Omnia will set-up IPv4 network on it's LAN4 interface with static
+IP address `192.168.1.1/24`. Pick a random IP address from the same network
+(for example `192.168.1.2/24`) and set it up manually on your computer. After
+that, you should be able to ssh as root to your router without need to enter
+password. You will end up in rescue mode with limited capabilities, but you
+have [Schnapps](../../geek/schnapps/schnapps.md) at your disposal and you can
+mount rootfs from your micro SD card and do any changes you need.
+
+After finishing your fixes, don't forget to unmount any mounted filesystems and
+reboot the router.
+
+## Flash from the internet
+
+!!! warning
+    This operation erases all settings and all data stored in the router.
+
+!!! info
+    This mode is for now avaialble only on Omnia 2019 and newer.
+
+6 LEDs (Power, 0, 1, 2, 3, 4)
+
+If the Turris Omnia router operating system is broken beyond repair or if you
+want to avoid long upgrades during initial setup, please use the following
+method for restoring the operating system image.
+
+The Turris Omnia router will rewrite content of the internal memory with the
+system image downloaded from the internet.
+
+To use this mode, you need to plug your Turris Omnia to a network where it can
+get internet connection using DHCP. It will try to use only the WAN port Once
+it gets online, it will download latest medkit from our website alongside with
+it's signature. Verifies it and if everything works well, it will reflash
+itself.
+
+Process of rewriting the internal memory takes considerably longer time than
+snapshot rollback in the previous cases.
+
 ## Rescue shell
 
 !!! warning
     This option is for true geeks.
 
-5 or more LEDs (Power, 0, 1, 2, 3+)
+7 LEDs (Power, 0, 1, 2, 3, 4, WAN)
 
 This mode allows you to enter a read-only rescue image. You can use UART serial
 console to connect to the router's rescue shell.
