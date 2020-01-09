@@ -73,6 +73,8 @@ registering on our website - [HaaS.nic.cz](https://haas.nic.cz). Get your
 account there and in section _My Honeypot_ click on _Add new device_. After
 naming it, you will get a **token** to be used to send data.
 
+![HaaS Device](haas-device.png)
+
 Next step is to set it up on your router. To do so, you need to login to it via
 ssh and type in the following commands:
 
@@ -87,3 +89,5 @@ uci commit haas.settings.token
 Now sit and wait and if you have public IPv4 attackers should be showing in
 short while in your statistics page on [HaaS project
 website](https://haas.nic.cz).
+
+![HaaS Session](haas-session.png)
