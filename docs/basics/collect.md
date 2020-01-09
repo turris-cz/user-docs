@@ -61,3 +61,9 @@ In CLI you can do so by running the following commands:
 opkg update
 opkg install sentinel-nikola sentinel-minipot
 ```
+
+Currently there is no way to visualize what your router is collecting, it is
+being worked on, but you can see overall statistics from all routers on
+[Sentinel View](https://view.sentinel.turris.cz)
+
+
