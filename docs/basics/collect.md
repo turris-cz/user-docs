@@ -66,4 +66,24 @@ Currently there is no way to visualize what your router is collecting, it is
 being worked on, but you can see overall statistics from all routers on
 [Sentinel View](https://view.sentinel.turris.cz)
 
+### HaaS - Honeypot as a Service
 
+Currently the only way how to enable Honeypot as a service is from ssh after
+registering on our website - [HaaS.nic.cz](https://haas.nic.cz). Get your
+account there and in section _My Honeypot_ click on _Add new device_. After
+naming it, you will get a **token** to be used to send data.
+
+Next step is to set it up on your router. To do so, you need to login to it via
+ssh and type in the following commands:
+
+```
+opkg update
+opkg install haas-proxy
+uci set haas.settings.token="YOUR_TOKEN"
+uci commit haas.settings.token
+/etc/init.d/haas-proxy start
+```
+
+Now sit and wait and if you have public IPv4 attackers should be showing in
+short while in your statistics page on [HaaS project
+website](https://haas.nic.cz).
