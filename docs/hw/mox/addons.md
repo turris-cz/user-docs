@@ -13,7 +13,8 @@ you will get a Wi-Fi router with Bluetooth support.
 
 It contains AzureWave AW-CM276NF, internal FLEX antenna, gain 2 dBi for 2.4 GHz
 / 3 dBi for 5 GHz, chipset Marvell 88W8997, Bluetooth 4.2 with BLE support,
-transfer speeds 5 GHz up to 866 Mbps / 2.4 GHz up to 300 Mbps.
+transfer speeds 5 GHz up to 866 Mbps / 2.4 GHz up to 300 Mbps. Currently does
+not support 802.1x.
 
 ## Wi-Fi (mPCIe)
 
