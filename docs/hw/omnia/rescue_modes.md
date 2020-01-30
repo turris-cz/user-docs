@@ -110,7 +110,7 @@ Download the latest version of Turris Omnia's system image from
 <https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz>. Save the
 file `omnia-medkit-latest.tar.gz` to USB flash drive to the root directory. The
 Turris Omnia router supports following filesystems: _ext4, BtrFS, XFS and
-FAT32_. You can also download and put alongside `md5` or `sha512` file from the
+FAT32_. You can also download and put alongside `md5` or `sha256` file from the
 same URL.  Connect the USB flash to the Turris Omnia router and use reset
 button to select mode 4 (4 LEDs).
 
