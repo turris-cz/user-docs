@@ -9,6 +9,7 @@ Turris OS software is being released as a fixed set of packages for given versio
 | 2.x.x                   | 14.07 (Barrier Breaker)     | 17.2.2015 | 24.5.2016          | [Turris 1.x](models.md#turris-1x)                                         |
 | 3.x.x                   | 15.05 (Chaos Calmer)        | 24.5.2016 | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia)        |
 | 4.x.x                   | 18.06                       | 5.10.2019 | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox) |
+| 5.x.x                   | 19.07                       | -         | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox) |
 
 For more detailed list of changes and versions history please see
 [changelog](changelog.md).
