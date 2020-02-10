@@ -1,4 +1,5 @@
 # Turris Omnia revisions
+
 Turris Omnia router received during its manufacturing and public sale various
 small or even bigger changes. This is list of revisions and notes on those
 changes from users perspective.
@@ -6,7 +7,9 @@ changes from users perspective.
 To find the exact revision of Turris Omnia you can look on markings on PCB. In
 front of board on right side just behind LEDs there is code `CZ11NIC**`.
 
+
 ## CZ11NIC13
+
 This is first publicly available revision of Turris Omnia. It was sent to backers
 from Indiegogo campaign and was also first batch available in retail stores.
 
@@ -17,7 +20,9 @@ available version was with black chassis.
 Omnias were available with or without Wi-Fi and in configuration with 1GB and 2GB
 memory.
 
+
 ## CZ11NIC20
+
 This was first revamp of Turris Omnia. The primary change was that instead of two
 RAM chips there were four chips used on the board to achieve the same capacity of
 RAM.
@@ -30,7 +35,7 @@ and with 2GB of RAM.
     temporarily dropped because of problems getting required parts.
 
 As a minor but user noticeable change this revision introduced blue buttons
-instead of black ones. 
+instead of black ones.
 
 ## CZ11NIC23 - in retail as Omnia 2019 or Omnia 2020
 
