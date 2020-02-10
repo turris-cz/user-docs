@@ -32,7 +32,7 @@ and with 2GB of RAM.
 As a minor but user noticeable change this revision introduced blue buttons
 instead of black ones. 
 
-## CZ11NIC23 - in retail as Omnia 2019
+## CZ11NIC23 - in retail as Omnia 2019 or Omnia 2020
 
 This is second revamp of Turris Omnia board.
 
@@ -42,4 +42,5 @@ while previous versions were starting from 3.X version and had to upgrade to
 4.X first.
 
 This revision is manufactured only with Wi-Fi and with 2GB of RAM same as
-CZ11NIC20. It also features blue buttons instead of black ones of first revision.
+CZ11NIC20. It also may feature blue buttons instead of black ones in several
+batches.
