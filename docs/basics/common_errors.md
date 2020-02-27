@@ -113,8 +113,9 @@ You can do so by using rescue mode on both Turris
 [MOX](../hw/mox/rescue_modes.md).
 
 If it doesn't help, contact our [support](support.md) and provide us with
-diagnostics, which can provide us leads, where the issue might be. This is only concerning Turris provided hardware, we do not
-support every random USB gadget known to mankind.
+diagnostics, which can provide us leads, where the issue might be. This is only
+concerning Turris provided hardware, we do not support every random USB gadget
+known to mankind.
 
 If you have hard time getting some third-party hardware working, make sure you have
 installed correct kernel module and firmware and that your device is supported
