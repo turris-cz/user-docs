@@ -43,7 +43,14 @@ plugins:
         prebuild_index: False
     - git-revision-date:
         modify_md: False
-
+    - redirects:
+        redirect_maps:
+            'basics/first-setup/mox_firts_setup.md': 'first-setup/mox_firts_setup.md'
+            'basics/first-setup/simple_setup.md': 'first-setup/simple_setup.md'
+            'geek/testing.md': 'sw/testing.md'
+            'basics/changelog.md': 'sw/changelog.md'
+            'basics/models.md': 'sw/models/models.md'
+            'basics/support.md': 'sw/support/support.md'
 
 extra:
   social:

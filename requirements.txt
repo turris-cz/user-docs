@@ -4,6 +4,7 @@ markdown-include
 markdown-toc
 markdown-extra
 mkdocs-git-revision-date-plugin
+mkdocs-redirects
 pymdown-extensions
 git+https://github.com/Neepawa/cell_row_span.git
 git+https://github.com/miska/markdown-jinja.git
