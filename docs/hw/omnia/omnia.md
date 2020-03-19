@@ -46,4 +46,4 @@ adding the header.
 
 * [Official datasheet](omnia2019eu_datasheet.pdf)
 * [Original printed manual](omnia_manual_en.pdf)
-* [Schematics for Turris Omnia](rtrom01-schema.pdf)
+* [Schematics for Turris Omnia](CZ11NIC23_schematics.pdf)
