@@ -56,7 +56,7 @@ OpenWRT. Generallly considered dangerous and can seriously break or stop being
 built for some time without any warning.
 
 More information about development workflow can be found in the
-[turris-build repository](https://gitlab.labs.nic.cz/turris/turris-build/blob/master/WORKFLOW.adoc).
+[turris-build repository](https://gitlab.labs.nic.cz/turris/turris-build/blob/hbk/WORKFLOW.adoc).
 
 ## How to switch to various branches
 
