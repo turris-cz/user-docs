@@ -70,7 +70,7 @@ follows:
 | UART1 (GPIO1_26)            | UART1.TXD  | 13    | 14    | UART1.RXD    | UART1 (GPIO1_25)            |
 | System Ground               | GND        | 15    | 16    | ONE_WIRE     | One Wire (GPIO1_4)          |
 | GPIO 2 (PWM_3, LED_3)       | GPIO1_14   | 17    | 18    | GPIO1_13     | GPIO 2 (PWM_2, LED_2)       |
-| GPIO 2 (PWM_1, LED_1)       | GPIO1_12   | 19    | 20    | +1V8         | GPIO 2 (PWM_0, LED_0)       |
+| GPIO 2 (PWM_1, LED_1)       | GPIO1_12   | 19    | 20    | GPIO1_11     | GPIO 2 (PWM_0, LED_0)       |
 | System Ground               | GND        | 21    | 22    | +1V8         | GPIO Power Supply           |
 | I2C 2 Bus (GPIO1_3)         | I2C2.SDA   | 23    | 24    | I2C2.SCL     | I2C 2 Bus (GPIO1_2)         |
 | System Ground               | GND        | 25    | 26    | +1V8         | GPIO Power Supply           |
@@ -88,7 +88,7 @@ inaccessible, but you can use small one on PoE add-on.
 | :--------------------       | :--------: | :---: | :---: | :----------: | :------------------       |
 | System Ground               | GND        | 1     | 2     | +1V8         | GPIO Power Supply         |
 | Boot Configuration Option   | SetBoot.B0 | 3     | 4     | SetBoot.B1   | Boot Configuration Option |
-| System and System Bus Reset | nRES       | 5     | 6     | JTAG.RSTn    | JTAG (GPIO1_24)           |
+| System and System Bus Reset | nRES       | 5     | 6     | GND          | System Ground             |
 | UART1 (GPIO1_26)            | UART1.TXD  | 7     | 8     | UART1.RXD    | UART1 (GPIO1_25)          |
 
 ## MOXTET
