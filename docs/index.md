@@ -5,7 +5,7 @@
     might still be running Turris OS 3 and in that case you can find old official
     documentation [on community wiki](https://wiki.turris.cz/doc/en/howto/start).
     More info about Turris OS versions can also be found
-    [here](basics/tos_versions.md)
+    [here](basics/tos_versions.md).
 
 # What is Turris project?
 
