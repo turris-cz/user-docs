@@ -44,7 +44,8 @@ adding the header.
 
 ## Various documentation files
 
-* [Official datasheet](omnia2019eu_datasheet.pdf)
+* [Official datasheet for Turris Omnia 2020](omnia2020_datasheet.pdf)
+* [Official datasheet for Turris Omnia 2019](omnia2019eu_datasheet.pdf)
 * [Original printed manual](omnia_manual_en.pdf)
 * [Schematics for Turris Omnia CZ11NIC23](CZ11NIC23_schematics.pdf)
 * [Schematics for Turris Omnia CZ11NIC20](CZ11NIC23_schematics.pdf)
