@@ -36,8 +36,8 @@ the error, usually don't help us to identify the cause of the error.
 
 If you use the Foris interface to maintain your router, you can use it to
 generate logs using _Diagnostics_ page. The modules, which are usually the most
-interesting are `turris_version`, `dmesg`, `messages`, `dns` and `network`. If the nature of the
-problem suggests that other modules could also be useful, you can check them.
+interesting are `disk_full`, `messages`, `dns`, `installed` and `network`.
+If the nature of the problem suggests that other modules could also be useful, you can check them.
 The required logs will be downloaded if you click _Generate_ button.
 
 ![Foris: Diagnostics](foris-diagnostics.png)
