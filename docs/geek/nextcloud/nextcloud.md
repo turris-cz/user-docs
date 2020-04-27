@@ -105,3 +105,12 @@ you are doing.
 Also bear in mind that if you are using Nextcloud from our repositories, **you
 shouldn't update the Nextcloud core manually** as that would get overwritten by
 next update. So update just your extra apps and leave the core to us.
+
+### Trusted domains
+If you enable access to Nextcloud from WAN, you have to also disable trusted domains.
+This can be done manually or you can disable this feature by running nextcloud_disable_trusted_domains script.
+To do this, log to your router via ssh and run the command:
+
+```
+nextcloud_disable_trusted_domains
+```
