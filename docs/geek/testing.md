@@ -13,12 +13,12 @@ functions and varying stability - you can pick, which branch you want to test.
 Following list describes various branches you might want to try and their main
 functions. They are ordered from the most stable to the most experimental.
 
-### HBS -  _Here Be Snails_
+### HBS -  _Here Be Snails (Stable)_
 
 Default and most stable branch. Suggested for all users. This contains
 official releases and is what everybody is running by default.
 
-### HBT - _Here Be Turtles_
+### HBT - _Here Be Turtles (Testing)_
 
 Release candidate. This branch contains next Turris OS release just before the
 official release. Please join this branch to help us test the next release.
