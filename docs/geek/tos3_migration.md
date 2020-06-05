@@ -1,5 +1,5 @@
 # Migration from Turris OS 3.x
-Update from Turris OS 3.x to 4.0 or newer is big leap. There is more than three
+Update from Turris OS 3.x to 5.0 or newer is big leap. There is more than three
 years of significant development in OpenWrt. At the same time with this Turris
 team also took liberty to clean and rewrite some of theirs software. This means
 changes. Be prepared that some packages and features you are used to have might no
@@ -30,7 +30,7 @@ Turris OS 3.x.
 * Webcam package list was dropped.
 
 ##### Turris Omnia specifics
-* Turris OS 4.0+ no longer supports switching between SFP and metallic in runtime.
+* Turris OS 5.0+ no longer supports switching between SFP and metallic in runtime.
   Switch is performed on boot for that boot-loader update is required. This is not
   yet available and so you have to switch between SFP and metallic manually. To do
   so you can run following command:
