@@ -1,3 +1,43 @@
+<script type="text/javascript">
+//<!--
+function render_changelog(changelog, element) {
+    for (let i in changelog) {
+        const release = changelog[i];
+        const message = release.message.split('\n');
+        const release_date = new Date(release.commit.created_at);
+        element.innerHTML += `
+<h4 id="${release.name}">${message[0].replace('release','')}</h4>
+<h5>Date of release</h5>
+<p>${release_date.toString()}</p>
+<h5>Sources</h5>
+<p>Available on <a href="https://gitlab.labs.nic.cz/turris/turris-build/tree/${release.name}">Gitlab</a>.</p>
+<h5>Release notes</h5>`;
+        message.pop();
+        let notes='<ul>';
+        for (let line in message) {
+            console.log(message[line]);
+            const li = message[line].match(/^\s?\* (.*)/)
+            if (li) {
+                notes += '<li>' + li[1] + '</li>';
+            }
+        }
+        notes += '</ul>';
+        element.innerHTML += notes;
+    };
+}
+
+function changelog(version, span_id) {
+    const element = document.getElementById(span_id);
+	element.innerHTML = '';
+	fetch('https://gitlab.labs.nic.cz/api/v4/projects/turris%2fturris-build/repository/tags/?search=' + version).
+		then(res => res.json()).
+		then((json) => {
+			render_changelog(json, element);
+	});
+}
+//-->
+</script>
+
 # Changelog
 
 Here you can find a list of all releases and release notes starting from Turris
@@ -7,6 +47,33 @@ various repositories with additional packages like
 [turris-os-packages](https://gitlab.labs.nic.cz/turris/turris-os-packages).
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
+
+## Turris OS 5.0
+
+Turris OS 5 is based on top of [OpenWrt 19.07](https://openwrt.org/releases/19.07/start)
+with our feed and few patches. It supports [Turris MOX](../hw/mox/intro.md) and [Turris Omnia](../hw/omnia/omnia.md) and
+there is experimental support for [Turris 1.x](../hw/turris-1x/turris-1x.md) routers
+
+It misses feature, which was included in Turris OS 3.x like opinion to
+configure various honeypots and security data collection from web ui.
+This is going to be added to the minor versions of Turris OS 5.x.
+
+New features:
+
+* Added support for secondary IP addresses for DNS servers
+* Added possibility to add custom DNS forwarder
+* Added support for DVB tuners - Astrometa DVB-T2 and Xbox One
+* Redesigned Foris, which is being in development (opt-in)
+* Optional WPA3 support
+
+### Detailed changelog
+
+<span id="tos5">Loading changelog...</span>
+<script type="text/javascript">
+//<!--
+changelog("v5.", "tos5");
+//-->
+</script>
 
 ## Turris OS 4
 
@@ -36,42 +103,9 @@ New features:
 
 ### Detailed changelog
 
-<span id="tos4"></span>
-
+<span id="tos4">Loading changelog...</span>
 <script type="text/javascript">
 //<!--
-function render_changelog(changelog) {
-    const element = document.getElementById("tos4");
-
-    for (let i in changelog) {
-        const release = changelog[i];
-        const message = release.message.split('\n');
-        const release_date = new Date(release.commit.created_at);
-        element.innerHTML += `
-<h4 id="${release.name}">${message[0].replace('release','')}</h4>
-<h5>Date of release</h5>
-<p>${release_date.toString()}</p>
-<h5>Sources</h5>
-<p>Available on <a href="https://gitlab.labs.nic.cz/turris/turris-build/tree/${release.name}">Gitlab</a>.</p>
-<h5>Release notes</h5>`;
-        message.pop();
-        let notes='<ul>';
-        for (let line in message) {
-            console.log(message[line]);
-            const li = message[line].match(/^\s?\* (.*)/)
-            if (li) {
-                notes += '<li>' + li[1] + '</li>';
-            }
-        }
-        notes += '</ul>';
-        element.innerHTML += notes;
-    };
-}
-
-fetch('https://gitlab.labs.nic.cz/api/v4/projects/turris%2fturris-build/repository/tags/?search=v4.').
-    then(res => res.json()).
-    then((json) => {
-        render_changelog(json);
-});
+changelog("v4.", "tos4");
 //-->
 </script>
