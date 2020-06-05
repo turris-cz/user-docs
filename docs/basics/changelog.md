@@ -52,10 +52,10 @@ commit hashes the release is built from.
 
 Turris OS 5 is based on top of [OpenWrt 19.07](https://openwrt.org/releases/19.07/start)
 with our feed and few patches. It supports [Turris MOX](../hw/mox/intro.md) and [Turris Omnia](../hw/omnia/omnia.md) and
-there is experimental support for [Turris 1.x](../hw/turris-1x/turris-1x.md) routers
+there is an experimental support for [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
 
-It misses feature, which was included in Turris OS 3.x like opinion to
-configure various honeypots and security data collection from web ui.
+One important feature from Turris OS 3.x is still missing - possibility to
+configure honeypots and various aspects of security data collection from web ui.
 This is going to be added to the minor versions of Turris OS 5.x.
 
 New features:
@@ -68,10 +68,10 @@ New features:
 
 ### Detailed changelog
 
-<span id="tos5">Loading changelog...</span>
+<span id="tos50">Loading changelog...</span>
 <script type="text/javascript">
 //<!--
-changelog("v5.", "tos5");
+changelog("v5.0.", "tos50");
 //-->
 </script>
 
