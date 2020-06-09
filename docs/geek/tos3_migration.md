@@ -124,6 +124,30 @@ unnecessary `Install` and `Uninstall` lines.
 
 You can verify updater's functionality by running `pkgupdate`.
 
+##### Migration was successful but I received message that Btrfs support was removed
+This affects only Turris 1.0 and Turris 1.1 routers.
+
+This happens because name of package for Turris 1.x Btrfs support was changed. It
+was originally `turris-btrfs` and now is `turris1x-btrfs`. Old package with
+removal sends this message and it is removed because it is replaced by new one.
+
+This is just false warning but just to be sure check that you have
+`turris1x-btrfs` package installed in our system before reboot if you are running
+from Btrfs microSD card.
+
+##### Unable to finish URI for localrepo: Unable to open local file for reading
+This was reported to happen on migration start (immediately after starting
+migration) and manifests with error message such as:
+```
+Unable to finish URI (file:///usr/share/updater/localrepo/auto/Packages): Unable to open local file for reading
+```
+The import part here is that it tries to access file in
+`/usr/share/updater/localrepo` and fails. Please send [diagnostics to
+support](../basics/support.md) if you encounter this error. After that you can
+remove or move `/usr/share/updater/localrepo` directory (eq: `rm -rf
+/usr/share/updater/localrepo` and initialize migration again by running
+`updater-supervisor -d`.
+
 
 ## Plans for automatic migration
 Automatic migration for all routers running Turris OS 3.x is planned.
