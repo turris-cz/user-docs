@@ -99,6 +99,11 @@ updater-supervisor -d
 This sequence installs a package that triggers migration and starts Turris
 updater.
 
+!!! important
+    Do not run migration steps on Turris OS 4.0 or newer. These work only for
+    latest fixup of Turris OS 3.11. Also make sure that you run `opkg-cl` and not
+    `opkg` otherwise you can expect system to break with future updates.
+
 !!! warning
     Migration takes some time. It can take up to hour or more. During that time
     router can become unaccessible. Do not reboot or disconnect router from power
