@@ -52,17 +52,22 @@ won't finish.
 
 General considerations:
 
-* Make sure that you have at least 400MB of free space on root storage. This is
-  just rule of thumb. It depends in reality on amount of installed software you
+* Make sure that you have **at least** 400MB of free space on root storage. This
+  is just rule of thumb. It depends in reality on amount of installed software you
   have. It is possible that you need more or less than 400MB.
-* Make sure that you have enough free RAM (memory). At minimum approximately
+* Make sure that you have **enough free RAM** (memory). At minimum approximately
   100MB. You can stop memory hungry containers and other services if need to be.
 * Make sure that you have free time on your hands to let router perform migration.
-* Create backup of your settings before you start not only to potentially recover
-  it but also to provide it to support so Turris team can troubleshoot possible
-  problems.
+* **Create backup** of your settings before you start not only to potentially
+  recover it but also to provide it to support so Turris team can troubleshoot
+  possible problems.
 
-Consideratiions for advanced users:
+!!! warning
+    Do not attempt to upload backups created on Turris OS 3.x and before to Turris
+    OS 4.0 and newer and vice versa. Network configuration changed and you are
+    going to most likely cut yourself from access to router!
+
+Considerations for advanced users:
 
 * Backup packages you need from localrepo as they are going to be removed to
   prevent compatibility issues.
@@ -83,26 +88,19 @@ Migration is not yet executed automatically but it can be triggered manually.
     card. You are going to run out of storage space and factory reset would be the
     only option then.
 
-To start migration you have to have at least Turris OS 3.11.14 installed on your
+To start migration you have to have at least Turris OS 3.11.19 installed on your
 device. Please be sure about that before you attempt migration. To double check
 you can run `pkgupdate` from command line (over SSH). It should not ask you to
 confirm any changes.
 
-To initialize migration process you have to access router's command line (with
-SSH) and run following commands:
-```
-rm -rf /usr/share/updater/localrepo
-opkg-cl update
-opkg-cl install tos3to4
-updater-supervisor -d
-```
-This sequence installs a package that triggers migration and starts Turris
-updater.
+To initialize migration process you have to navigate to _Updater_ tab in Foris web
+interface. There you have to select package list _Migration to Turris OS 5.x_ and
+save that by clicking on _Save and update_ button.
 
-!!! important
-    Do not run migration steps on Turris OS 4.0 or newer. These work only for
-    latest fixup of Turris OS 3.11. Also make sure that you run `opkg-cl` and not
-    `opkg` otherwise you can expect system to break with future updates.
+![Migration to Turris OS 5.x trigger](tos3_migration_trigger.png)
+
+Next you have to approve installation of `tos3to4` package if you have approvals
+enabled. Migration starts immediately if you don't.
 
 !!! warning
     Migration takes some time. It can take up to hour or more. During that time
@@ -110,16 +108,19 @@ updater.
     supply during that time.
 
 !!! note
-    Updates approvals are disabled when migration is triggered to not halt
+    Updates approvals are disabled once `tos3to4` package is installed to not halt
     migration in situation when user is unable to approve subsequent continuation.
 
+Update is finished once **you receive notification** that migration was finished.
+Message in question starts with with sentence: _Migraton from Turris OS 3.x was
+completed._.
 
 ## Known problems and solutions
 You can encounter some problems that are caused by automatic migration.  Not all
 problems can be automatically removed. These are known problems and solutions for
 them.
 
-##### Migration was successful but updater now reports error about unavailable package
+##### Updater reports error about unavailable package
 This happens because you had installed some package that is no longer available
 in Turris OS. This is intended as a protection of functionality you set up.
 
@@ -130,7 +131,7 @@ unnecessary `Install` and `Uninstall` lines.
 
 You can verify updater's functionality by running `pkgupdate`.
 
-##### Migration was successful but I received message that Btrfs support was removed
+##### I received message that Btrfs support was removed
 This affects only Turris 1.0 and Turris 1.1 routers.
 
 This happens because name of package for Turris 1.x Btrfs support was changed. It
