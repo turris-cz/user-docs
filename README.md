@@ -61,7 +61,7 @@ When doing screenshots, crop the screenshot to cover only interesting areas and
 stick to the whole elements (try to avoid cut out buttons/labels).
 
 Use stock settings in your browser (preferably Firefox) and try to avoid any
-contamination by system themes.
+contamination by system themes. Switch your browser to English.
 
 For highlighting the important part of the screenshot (if you need to, most of
 the time not necessary) use rectangular shape and 3-pixel red line `rgb(255, 0, 0)`
@@ -71,7 +71,7 @@ the time not necessary) use rectangular shape and 3-pixel red line `rgb(255, 0, 
 #### Italic
 
 Use `_italic_` whenever you are citing some label, like for example menu
-in we UI.
+in the UI.
 
 #### Monospace
 

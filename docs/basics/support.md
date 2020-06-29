@@ -79,15 +79,16 @@ among themselves and to help each other even with unsupported scenarios.
 
 ### Issue tracker
 
-Turris OS is based on OpenWRT which is Linux distribution. As such it contains
+Turris OS is based on OpenWrt which is Linux distribution. As such it contains
 plenty of packages, but most of them are not maintained by Turris team. You can
 find list of packages maintained by Turris team in [Turris OS packages
-repository](https://gitlab.nic.cz/turris/turris-os-packages) and you can
-also file issues against them there.
+repository](https://gitlab.nic.cz/turris/turris-os-packages) and you can also file
+issues against them there, although before that please read [issue submission
+guide](../geek/contributing/issues.md).
 
 If you have an issue with a package not maintained by Turris team, you can file an
-issue against upstream tracker. Most of the upstream packages are maintained in
-[OpenWRT packages repository](https://github.com/openwrt/packages/).
+issue against upstream tracker. Please read [OpenWrt bug reporting
+guide](https://openwrt.org/bugs).
 
 ### Turris support
 
@@ -95,4 +96,4 @@ There is official Turris support available via e-mail
 [tech.support@turris.cz](mailto:tech.support@turris.cz). It is not 24/7 and it
 deals with hardware issues and with serious software issues in supported
 software. It will not help you design your network nor it will fix any package
-available in OpenWRT.
+available in OpenWrt.
