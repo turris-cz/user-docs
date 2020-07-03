@@ -50,7 +50,7 @@ extra:
     - type: 'globe'
       link: 'https://turris.cz'
     - type: 'gitlab'
-      link: 'https://gitlab.labs.nic.cz/turris'
+      link: 'https://gitlab.nic.cz/turris'
     - type: 'github'
       link: 'https://github.com/CZ-NIC'
     - type: 'twitter'

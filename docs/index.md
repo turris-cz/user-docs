@@ -17,7 +17,7 @@ you can trust in.
 
 Our devices come with open source firmware. You can check what is running on
 your router line-by-line, see what we changed or you can even contribute yourself. All
-sources are available on our [GitLab](https://gitlab.labs.nic.cz/turris). You get full root account on your device
+sources are available on our [GitLab](https://gitlab.nic.cz/turris). You get full root account on your device
 and you can do whatever you want with it. We are not locking you out.
 
 Apart from software, you'll get full schematics for your device so you can check

@@ -38,8 +38,8 @@ only after you stuck the UART adapter into the PC.
 
 ## Getting the recovery utility
 
-You will need the [`mox-imager`](https://gitlab.labs.nic.cz/turris/mox-imager) utility.
-You can either download [precompiled binaries](https://gitlab.labs.nic.cz/turris/mox-imager/uploads/ad55930e732f0689ded2933fc860e9c5/mox-imager-v0.1-binary-x86-amd64.tar.gz)
+You will need the [`mox-imager`](https://gitlab.nic.cz/turris/mox-imager) utility.
+You can either download [precompiled binaries](https://gitlab.nic.cz/turris/mox-imager/uploads/ad55930e732f0689ded2933fc860e9c5/mox-imager-v0.1-binary-x86-amd64.tar.gz)
 (for x86 and amd64 only) or download `mox-imager`'s source code and compile it.
 
 ### Downloading precompiled binaries
@@ -48,7 +48,7 @@ You can either download [precompiled binaries](https://gitlab.labs.nic.cz/turris
 $ cd /tmp
 $ mkdir mox-imager
 $ cd mox-imager
-$ wget https://gitlab.labs.nic.cz/turris/mox-imager/uploads/ad55930e732f0689ded2933fc860e9c5/mox-imager-v0.1-binary-x86-amd64.tar.gz
+$ wget https://gitlab.nic.cz/turris/mox-imager/uploads/ad55930e732f0689ded2933fc860e9c5/mox-imager-v0.1-binary-x86-amd64.tar.gz
 $ tar xf mox-imager-v0.1-binary-x86-amd64.tar.gz
 $ rm mox-imager-v0.1-binary-x86-amd64.tar.gz
 $ ls
@@ -66,7 +66,7 @@ will also need build essentials installed. On Ubuntu, this means installling pac
 
 ```
 $ cd /tmp
-$ wget https://gitlab.labs.nic.cz/turris/mox-imager/-/archive/v0.1/mox-imager-v0.1.tar.gz
+$ wget https://gitlab.nic.cz/turris/mox-imager/-/archive/v0.1/mox-imager-v0.1.tar.gz
 $ tar xf mox-imager-v0.1.tar.gz
 $ rm mox-imager-v0.1.tar.gz
 $ cd mox-imager-v0.1
@@ -79,9 +79,9 @@ After a successful build the directory should contain `mox-imager` binary.
 
 Since the current bootloader in your device is broken, you will have to get the
 original bootloader images. Download
-[`secure-firmware.bin`](https://gitlab.labs.nic.cz/turris/turris-os-packages/-/raw/master/hardware/mox/mox-support/files/secure-firmware.bin)
+[`secure-firmware.bin`](https://gitlab.nic.cz/turris/turris-os-packages/-/raw/master/hardware/mox/mox-support/files/secure-firmware.bin)
 and
-[`uboot`](https://gitlab.labs.nic.cz/turris/turris-os-packages/-/raw/master/hardware/mox/mox-support/files/uboot)
+[`uboot`](https://gitlab.nic.cz/turris/turris-os-packages/-/raw/master/hardware/mox/mox-support/files/uboot)
 and either place them into `/tmp`, put then on your MicroSD card or on a USB
 flash disk.
 

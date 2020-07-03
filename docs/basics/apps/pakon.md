@@ -109,7 +109,7 @@ You can filter the data by _time_, by _MAC address_ and by _hostname_. You can
 also display results aggregated by domain instead of displaying timeline data.
 
 Some domains are hidden in output by default - for example, advertisements,
-tracking, CDNs, OCSPs, browser service domains, which makes the output hard to read. You can show all records using the option `–no-filter`. The lists of filtered domains is in `/usr/share/pakon-light/domains_ignore/`. If there is a new CDN or you want to group multiple hostnames from the same domain to one, and you would like to share it with others and include it in a new Turris OS release, you can contribute it in [pakon-light-lists](https://gitlab.labs.nic.cz/turris/pakon-light-lists) repository.
+tracking, CDNs, OCSPs, browser service domains, which makes the output hard to read. You can show all records using the option `–no-filter`. The lists of filtered domains is in `/usr/share/pakon-light/domains_ignore/`. If there is a new CDN or you want to group multiple hostnames from the same domain to one, and you would like to share it with others and include it in a new Turris OS release, you can contribute it in [pakon-light-lists](https://gitlab.nic.cz/turris/pakon-light-lists) repository.
 
 ## A few sidenotes
 - In some cases, application level protocol is unknown - `?`.

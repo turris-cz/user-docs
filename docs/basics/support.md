@@ -82,7 +82,7 @@ among themselves and to help each other even with unsupported scenarios.
 Turris OS is based on OpenWRT which is Linux distribution. As such it contains
 plenty of packages, but most of them are not maintained by Turris team. You can
 find list of packages maintained by Turris team in [Turris OS packages
-repository](https://gitlab.labs.nic.cz/turris/turris-os-packages) and you can
+repository](https://gitlab.nic.cz/turris/turris-os-packages) and you can
 also file issues against them there.
 
 If you have an issue with a package not maintained by Turris team, you can file an

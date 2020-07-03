@@ -21,7 +21,7 @@ pip install --user -r requirements.txt
 If you are all set, you can clone this repository via `git`.
 
 ```
-git clone --recurse-submodules https://gitlab.labs.nic.cz/turris/user-docs.git
+git clone --recurse-submodules https://gitlab.nic.cz/turris/user-docs.git
 ```
 
 ### Run mkdocs
