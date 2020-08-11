@@ -242,6 +242,15 @@ system state and the target directory is a part of the URL. The third command us
 are omitted (it logs in as the current user and authenticates he/she by the key which must be preconfigured in
 `/etc/config/schnapps` or `~/.ssh/config` or added to the running `ssh-agent`).
 
+!!! important
+	SSH URLs can be specified with relative or absolute paths (e.g. `ssh://my.webdav.server:/upload` is absolute
+	and `ssh://my.webdav.server:upload` is relative; absolute paths always start with a slash). For absolute
+	paths, the remote root directory is mounted while for relative paths, the remote login-default directory
+	(usually the user's home) is mounted. The separating colon (`:`) may be omitted for absolute paths. If no
+	path is specified (with or without the colon), the login-default directory is mounted. The path specified
+	as a separate command line argument or a configuration value is always used relatively to the mount point
+	(it does not matter whether it is defined as absolute or relative).
+
 Synchronization of snapshots is an even higher level of operation. You can synchronize your local snapshots to
 a remote server using these commands:
 ```
