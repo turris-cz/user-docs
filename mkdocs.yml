@@ -112,6 +112,7 @@ nav:
     - Omnia:
         - About: 'hw/omnia/omnia.md'
         - Revisions: 'hw/omnia/revisions.md'
+    - Shield: 'hw/shield/shield.md'
     - Turris 1.X: 'hw/turris-1x/turris-1x.md'
 - Troubleshooting:
     - 'Common errors': 'basics/common_errors.md'

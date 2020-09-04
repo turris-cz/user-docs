@@ -52,7 +52,7 @@ commit hashes the release is built from.
 
 Turris OS 5.1 is based on top of [OpenWrt 19.07](https://openwrt.org/releases/19.07/start)
 with our feed and few patches. It supports [Turris MOX](../hw/mox/intro.md),
-[Turris Omnia](../hw/omnia/omnia.md) and Turris Shield.
+[Turris Omnia](../hw/omnia/omnia.md) and [Turris Shield](../hw/shield/shield.md).
 There is also an experimental support for [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
 
 This release contains new configuration frontend named reForis and several tabs

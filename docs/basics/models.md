@@ -6,6 +6,7 @@ produced.
 ## Turris 1.X
 
 ### Turris 1.0
+
 First-ever produced Turris router, part of the original security research,
 given away in the Czech Republic for a symbolic price of 1 CZK.
 Started with dual-core processor Freescale P2020, 1.2 GHz with 2 GB DDR3 RAM.
@@ -49,3 +50,14 @@ It uses dual-core ARMv8 CPU Marvell Armada 3720 with 512 MB/1 GB RAM.  You can
 read more about Turris MOX on the [separate page](../hw/mox/intro.md).
 
 ![Turris MOX](../hw/mox/mox.jpg)
+
+## Turris Shield
+
+Single-purpose device based on hardware platform of Turris MOX targeting people
+who wants to easily secure their entire home or office without having to change
+their modem or router.
+
+It uses dual-core ARMv8 CPU Marvell Armada 3720 with 512 MB RAM.  You can
+read more about Turris Shield on the [separate page](../hw/shield/shield.md).
+
+![Turris Shield](../hw/shield/shield.png)
