@@ -48,6 +48,38 @@ various repositories with additional packages like
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
 
+## Turris OS 5.1
+
+Turris OS 5.1 is based on top of [OpenWrt 19.07](https://openwrt.org/releases/19.07/start)
+with our feed and few patches. It supports [Turris MOX](../hw/mox/intro.md),
+[Turris Omnia](../hw/omnia/omnia.md) and Turris Shield.
+There is also an experimental support for [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+This release contains new configuration frontend named reForis and several tabs
+in Foris were deprecated in favor of reForis. In reForis you can find more
+detailed package selection as well as basic integration of Turris Sentinel.
+
+New features:
+
+* Introduced new data collection system Sentinel
+* reForis (future default web interface)
+    * Now installed by default
+    * Added NetMetr, OpenVPN client, and remote devices plugins
+* Package lists
+    * Expanded with labels and additional options
+    * Added option to select alternative WiFi drivers
+* Nextcloud updated to version 18
+
+### Detailed changelog
+
+<span id="tos51">Loading changelog...</span>
+<script type="text/javascript">
+//<!--
+changelog("v5.1.", "tos51");
+//-->
+</script>
+
+
 ## Turris OS 5.0
 
 Turris OS 5 is based on top of [OpenWrt 19.07](https://openwrt.org/releases/19.07/start)
