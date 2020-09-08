@@ -197,3 +197,5 @@ If you accidentally enter this mode you may reset the router by briefly
 pressing the reset button. You can do this only in this particular mode. Do not
 reset the router in mode 2-4!
 
+!!! tip
+    You can follow the [video guide](https://www.youtube.com/watch?v=IzvUKJjsiCE) on YouTube.
