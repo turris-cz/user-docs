@@ -70,6 +70,8 @@ nav:
         - DNS: 'basics/foris/dns/foris-dns.md'
         - 'Guest network': 'basics/foris/guest-network/guest-network.md'
         - 'Storage': 'basics/foris/storage-plugin/storage-plugin.md'
+    - reForis:
+        - Screenshots: 'basics/reforis/screenshots/reforis.md'
     - LuCI:
         - Introduction: basics/luci/luci.md
         - Static IP: basics/luci/static_dhcp/static_dhcp.md
