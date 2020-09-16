@@ -71,6 +71,7 @@ nav:
         - 'Guest network': 'basics/foris/guest-network/guest-network.md'
         - 'Storage': 'basics/foris/storage-plugin/storage-plugin.md'
     - reForis:
+        - About: 'basics/reforis/intro.md'
         - Screenshots: 'basics/reforis/screenshots/reforis.md'
     - LuCI:
         - Introduction: basics/luci/luci.md
