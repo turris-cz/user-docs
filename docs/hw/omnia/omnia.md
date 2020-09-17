@@ -44,6 +44,7 @@ adding the header.
 
 ## Various documentation files
 
+* [Declaration of Conformity](Omnia_DoC.pdf)
 * [Official datasheet for Turris Omnia 2020](omnia2020_datasheet.pdf)
 * [Official datasheet for Turris Omnia 2019](omnia2019eu_datasheet.pdf)
 * [Original printed manual](omnia_manual_en.pdf)
