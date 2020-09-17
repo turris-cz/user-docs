@@ -146,3 +146,7 @@ For all MOX modules we also provide schematics
  * [MOX E](Turris_Mox_E.pdf)
  * [MOX F](Turris_Mox_F.pdf)
  * [MOX G](Turris_Mox_G.pdf)
+
+## Declaration of Conformity
+
+Turris MOX adheres to EU legislation. You can get download [Declaration of Conformity](MOX_DoC.pdf).

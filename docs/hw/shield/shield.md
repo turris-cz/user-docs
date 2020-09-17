@@ -30,6 +30,8 @@ devices.
 
 ## Available documents
 
+ * [Declaration of Conformity](Shield_DoC.pdf)
+
 Schematics for modules that Turris Shield consists of are available:
 
  * [MOX A](../mox/Turris_Mox_A.pdf)
