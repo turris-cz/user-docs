@@ -32,6 +32,7 @@ devices.
 
  * [Declaration of Conformity](Shield_DoC.pdf)
  * [Official datasheet](shield_datasheet.pdf)
+ * [Official printed manual](shield_manual.pdf)
 
 Schematics for modules that Turris Shield consists of are available:
 
