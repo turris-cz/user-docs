@@ -6,6 +6,7 @@ variables:
 stages:
     - test
     - build
+    - pages
 
 test-compilation:
     stage: test
@@ -30,4 +31,12 @@ build:
     artifacts:
         paths:
             - site
-        expire_in: 1 week
+
+pages:
+    stage: pages
+    script:
+      - rm -rf public
+      - mv site public
+    artifacts:
+        paths:
+            - public
