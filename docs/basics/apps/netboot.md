@@ -1,7 +1,9 @@
 # Network boot of Turris MOX
 
 This article will guide you through setting up your Turris MOX as an AP
-attached to another Turris router.
+attached to another Turris router. In this setup, MOX doesn't have local
+filesystem and doesn't have any local settings. Everything is controlled and
+setup from scratch on every boot from the controlling device.
 
 ## Necessary software
 
@@ -69,6 +71,10 @@ information about the connected routers and change their configuration.
 
 There is also configuration file `/etc/config/netboot` on the controlling router that can
 be used to customize mainly the WiFi settings.
+
+!!! note
+	Configuration file has to be readable by `turris-netboot` user. That is the
+    user managing the netboot process.
 
 ```
 # Defaults to be overridden later
@@ -188,6 +194,10 @@ bellow.
 
 ### Other customization
 
+!!! note
+	All files mentioned bellow has to be accessible and readable by
+    `turris-netboot` user. That is the user managing the netboot process.
+
 #### Overlay
 
 You can add files to your MOX by putting them in
@@ -204,16 +214,16 @@ used and all of them resides in `/srv/turris-netboot/rootfs` directory.
 
 ##### `setup.sh`
 
-You can use this script to replace our setup script that configures SSID and
+You can use `setup.sh` script to replace our setup script that configures SSID and
 password and sets up the network. Only when you really know what you are
 doing.
 
 ##### `postsetup.sh`
 
-This one gets run on every MOX after network setup is done and can be used to
-deploy some custom services.
+Script `postsetup.sh` gets run on every MOX after network setup is done and can
+be used to deploy some custom services.
 
 ##### `postsetup-$SERIAL.sh`
 
-The script that gets run after network setup but only on MOX with specific serial
-number.
+If you need to be more specific, `postsetup-$SERIAL.sh` gets run after network
+setup but only on MOX with specific serial number.
