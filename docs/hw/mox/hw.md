@@ -146,6 +146,8 @@ For all MOX modules we also provide schematics
  * [MOX E](Turris_Mox_E.pdf)
  * [MOX F](Turris_Mox_F.pdf)
  * [MOX G](Turris_Mox_G.pdf)
+ * [MOX SDIO WiFi](Turris_Mox_SDIO_WIFI.pdf)
+ * [MOX PoE](Turris_Mox_PoE.pdf)
 
 ## Declaration of Conformity
 
