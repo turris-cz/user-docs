@@ -1,5 +1,16 @@
+/* Set turris colors */
+:root {
+  --md-primary-fg-color: rgb(38, 38, 38);
+  --md-accent-fg-color: rgb(00, 123, 255);
+}
 
-img {
+/* Make links in articles always visible */
+.md-typeset a {
+	color: rgb(00, 00, 255);
+}
+
+/* Add border to images to make them stand out */
+.md-typeset img {
 	border: solid;
 	border-width: 1px;
 	border-color: lightgrey;

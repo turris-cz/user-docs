@@ -5,19 +5,19 @@ copyright: CC-BY-SA-4.0
 
 
 theme:
-    name: null
-    custom_dir: 'material-turris/material/'
+    name: 'material'
     logo: '/theme/turris-logo.svg'
     favicon: '/theme/favicon.ico'
     font: false
     language: 'en'
-    palette:
-        primary: "turris"
-        accent: "turris"
-    feature:
-        tabs: false
+    scheme: preference
+    features:
+      - navigation.instant
     static_templates:
       - 404.html
+
+extra_css:
+  - theme/turris.css
 
 
 markdown_extensions:
@@ -32,7 +32,8 @@ markdown_extensions:
     - markdown_jinja:
         fs_loader_dir: 'docs'
     - smarty
-    - toc
+    - toc:
+        permalink: '⚓︎'
     - wikilinks
     - admonition
     - pyembed.markdown
@@ -47,13 +48,13 @@ plugins:
 
 extra:
   social:
-    - type: 'globe'
+    - icon: 'fontawesome/solid/globe'
       link: 'https://turris.cz'
-    - type: 'gitlab'
+    - icon: 'fontawesome/brands/gitlab'
       link: 'https://gitlab.nic.cz/turris'
-    - type: 'github'
+    - icon: 'fontawesome/brands/github'
       link: 'https://github.com/CZ-NIC'
-    - type: 'twitter'
+    - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/turris_cz'
 
 nav:
