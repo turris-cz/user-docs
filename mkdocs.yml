@@ -66,6 +66,7 @@ nav:
 - Software:
     - Data Collection:
         - Introduction: 'basics/collect/collect.md'
+        - Dynamic Firewall: 'basics/collect/dynfw/collect-dynfw.md'
     - Foris:
         - 'Secure access': 'basics/foris/https/https.md'
         - LAN: 'basics/foris/lan/foris-lan.md'

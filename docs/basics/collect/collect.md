@@ -7,9 +7,10 @@ to set up a secure home router that is capable of responding to current threats
 in almost real time. However a large amount of data is needed to identify an
 attacker and distinguish it from the usual traffic.
 
-The data collection system [Sentinel](../apps/sentinel.md) is a key source of such a data. We use this
-data to build
-and distribute a dynamic firewall which afterwards helps to keep your router secure.
+The data collection system [Sentinel](../apps/sentinel.md) is a key source of
+such a data. We use this data to build
+and distribute a [dynamic firewall](dynfw/collect-dynfw.md) which afterwards
+helps to keep your router secure.
 Enabling data collection thus helps to protect your own router (and home) as well
 as to protect the rest of the world.
 
@@ -61,6 +62,21 @@ on subjects that really matter. Turris survey collects information about
 installed packages, used languages and system version. Based on this we are
 able to identify widely used packages and features and give them special care.
 
+## What do we use the data for?
+
+The data collected from	routers are used for various security analyses
+carried out by Turris team or by
+[The National CSIRT of the Czech Republic](https://csirt.cz/en/).
+
+One of the most important analyses is the
+[dynamic firewall](dynfw/collect-dynfw.md). The dynamic firewall
+collects information about entities trying to scan or break into your router and
+is able to detect the real attackers among them. IP addresses of identified
+attackers are then immediately published and announced back to the routers.
+Once a day the list of all attackers (A.K.A. greylist) is snapshoted and
+published as a CSV file. You can download the latest greylist snapshot
+[here](https://view.sentinel.turris.cz/greylist-data/).
+
 ## Can I see the data?
 
 You can browse the aggregated data we have collected through the Sentinel
@@ -83,7 +99,8 @@ Firewall monitoring and Minipots - a feature we are working hard on now.
 The whole functionality is nowadays provided by [Sentinel](../apps/sentinel.md).
 You just need to enable _Data Collection_ package list in _Package Management_
 tab and agree with our [EULA](https://gitlab.nic.cz/turris/sentinel/eula/-/blob/master/eulas/1.txt) via _Data Collection_ tab in reForis. This will install and enable
-dynamic firewall and other selected data collection components.
+[dynamic firewall](dynfw/collect-dynfw.md) and other selected data collection
+components.
 
 ![Package Sentinel](reforis-pkg-sentinel.png)
 ![EULA](reforis-collect-eula.png)
