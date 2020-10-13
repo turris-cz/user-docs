@@ -21,7 +21,7 @@ and can connect to the Internet.
 
 Turris Shield is also the first device to feature reForis user interface by
 default. It does not contain LuCI nor Foris. Automatic updates are enabled by
-default as is [Turris Sentinel](../../basics/collect.md) - key feature of
+default as is [Turris Sentinel](../../basics/collect/collect.md) - key feature of
 Turris Shield.
 
 Other features readily available include support for DNSSEC, OpenVPN (both

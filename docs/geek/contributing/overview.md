@@ -14,7 +14,7 @@ discover new threats on Internet and that can't be done without data provided by
 Turris users. This data feeds not only additional protections for your routers but
 also helps discover and put out threats on whole Internet.
 
-Please see [appropriate article for more info](../../basics/collect.md).
+Please see [appropriate article for more info](../../basics/collect/collect.md).
 
 ## Report and debug problems
 One of most helpful ways to contribute is to report and debug problems you

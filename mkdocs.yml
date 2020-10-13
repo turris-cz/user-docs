@@ -64,7 +64,8 @@ nav:
     - 'Shield': 'basics/first-setup/shield_first_setup.md'
     - 'Turris 1.X and Omnia': 'basics/first-setup/simple_setup.md'
 - Software:
-    - Data Collection: 'basics/collect.md'
+    - Data Collection:
+        - Introduction: 'basics/collect/collect.md'
     - Foris:
         - 'Secure access': 'basics/foris/https/https.md'
         - LAN: 'basics/foris/lan/foris-lan.md'

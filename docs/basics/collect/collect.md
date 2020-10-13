@@ -7,7 +7,7 @@ to set up a secure home router that is capable of responding to current threats
 in almost real time. However a large amount of data is needed to identify an
 attacker and distinguish it from the usual traffic.
 
-The data collection system [Sentinel](apps/sentinel.md) is a key source of such a data. We use this
+The data collection system [Sentinel](../apps/sentinel.md) is a key source of such a data. We use this
 data to build
 and distribute a dynamic firewall which afterwards helps to keep your router secure.
 Enabling data collection thus helps to protect your own router (and home) as well
@@ -21,7 +21,7 @@ deploy *Minipots* or use *HaaS*.
 
 ### Firewall monitoring
 
-Firewall data is one of the key data sources for [Sentinel](apps/sentinel.md).
+Firewall data is one of the key data sources for [Sentinel](../apps/sentinel.md).
 Using firewall data we can determine which attackers tries to exploit potential
 vulnerabilities on a particular port. We collect attacker's IP address and local
 port number.
@@ -80,7 +80,7 @@ Firewall monitoring and Minipots - a feature we are working hard on now.
 
 ## How to set up data collection?
 
-The whole functionality is nowadays provided by [Sentinel](apps/sentinel.md).
+The whole functionality is nowadays provided by [Sentinel](../apps/sentinel.md).
 You just need to enable _Data Collection_ package list in _Package Management_
 tab and agree with our [EULA](https://gitlab.nic.cz/turris/sentinel/eula/-/blob/master/eulas/1.txt) via _Data Collection_ tab in reForis. This will install and enable
 dynamic firewall and other selected data collection components.
