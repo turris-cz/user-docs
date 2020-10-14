@@ -65,7 +65,7 @@ script so U-Boot can find it easily.
 
 ```
 btrfs subvol snapshot /mnt/turris/@ /mnt/turris/@factory
-ln -s @/boot/boot-btrfs.scr /mnt/turris/boot.scr
+ln -s @/boot/boot.scr /mnt/turris/boot.scr
 umount /mnt/turris
 ```
 
