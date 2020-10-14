@@ -87,8 +87,56 @@ Turris declaration that _We believe in open-source_ is not just empty statement,
 we really believe in open-source. You can modify code and submit it back. This is
 power of open-source. Together we can make Turris the best device there is.
 
-Please read [guide on how to submit pull request](pull_request.md).
+Please read [guide on how to submit pull request](pull_request.md) and
+[Turris project coding style](style.md).
 
 !!! tip
     Don't forget that Turris OS is based on OpenWrt. You can as well contribute to
-    OpenWrt to help Turris.
+    OpenWrt to help Turris, see below.
+
+## Contributing to OpenWrt
+
+Turris OS is based on OpenWrt. Many packages available in Turris OS are
+directly acquired from the upstream. If you want to help to fix bugs in
+OpenWrt packages or add new features please create issues or submit
+code to the upstream repository.
+
+### How to recognize OpenWrt packages
+
+#### From source code
+
+All packages built for Turris OS are maintained in the [Turris OS packages](https://gitlab.nic.cz/turris/turris-os-packages)
+project on our GitLab. Please use this directions to determine whether
+a package is developed by the Turris Team or by the upstream.
+
+1. Locate the package you want inside the repository tree.
+2. Look into the `Makefile`.
+3. Find `PKG_MAINTAINER` there and read its value.
+
+If this value is `CZ.NIC <packaging@turris.cz>` then this package is
+maitained by the Turris Team. Otherwise it is usually managed by
+the upstream.
+
+!!! notice
+    There are some packages which are maintained by the same organization
+    as Turris OS (CZ.NIC) but not by the Turris Team, e.g. `knot-resolver`.
+    These packages may have slightly different processes than those in
+    Turris OS but the most approaches are identical or very similar.
+
+#### From installed packages
+
+If you are not familiar with source code you can acquire the maintainer
+from installed packages.
+
+1. Log into your device via SSH.
+2. Run `cat /usr/lib/opkg/info/[package name here].control | grep Maintainer`
+
+If you can see any e-mail address ending with `@nic.cz`, the given package
+is maintained by the Turris Team or possibly by some other team in our
+organization (see above). Otherwise it is managed by the upstream.
+
+### How to contribute to OpenWrt
+
+OpenWrt uses [GitHub](https://github.com/openwrt/) for its code repository,
+issues and other things. First you can read [how to help/contribute](https://openwrt.org/faq/how_can_i_help_or_contribute),
+[report bugs](https://openwrt.org/bugs) a [submit patches](https://openwrt.org/submitting-patches).
