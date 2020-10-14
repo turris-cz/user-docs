@@ -3,8 +3,7 @@
 Turris routers are universal, powered by Linux kernel and running open
 source Linux distribution. Having USB port and in some cases mPCIe port brings
 multitude of possible hardware to connect to your Turris router. Sometimes it
-works out of the box, sometime some quirks are needed to get it working,
-sometimes you need special software and configuration to make everything work.
+Often it works out of the box, sometimes you need to install additional drivers or software and configure it to make sure that it works.
 It is impossible for Turris team to ensure compatibility with every piece of
 hardware available on the market. But what we can do is provide a place where
 our users can exchange their experience. That is the goal of hardware
