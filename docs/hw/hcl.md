@@ -16,7 +16,7 @@ in our wiki. For easier navigation it is divided into several subcategories:
 * [LTE modems](https://wiki.turris.cz/doc/en/hcl/lte)
 * [WiFi cards](https://wiki.turris.cz/doc/en/hcl/wifi)
 * [USB devices](https://wiki.turris.cz/doc/en/hcl/usb)
-* [mPCIe devices](https://wiki.turris.cz/doc/en/hcl/usb)
+* [mini PCIe devices](https://wiki.turris.cz/doc/en/hcl/usb)
 * [Other devices](https://wiki.turris.cz/doc/en/hcl/other)
 
 When contributing, always use the most specific category. For example for USB
