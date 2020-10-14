@@ -1,5 +1,3 @@
-#
-
 !!! warning
     This documentation applies primarily to Turris OS version 4.0 and newer. You
     might still be running Turris OS 3 and in that case you can find old official
