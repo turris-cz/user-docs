@@ -103,7 +103,7 @@ operation is completed the router automatically restarts.
 
 All data, settings and software in the internal storage of the router are
 erased and replaced by the factory defaults. Internally the file system rolls
-back to the first snapshot (the first snapshot has been created in the
+back to a special snapshot (the one that has been created in the
 factory). Please use this mode when you lose your password and all means of
 access to the router or when the return to the latest snapshot (mode 2) is not
 sufficient to repair broken system.
