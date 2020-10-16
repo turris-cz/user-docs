@@ -23,6 +23,12 @@ test-remote-links:
     script:
         - ./test-links.sh --remote
 
+test-lint:
+    stage: test
+    allow_failure: true
+    script:
+        - markdownlint '**/*.md'
+
 build:
     stage: build
     script:

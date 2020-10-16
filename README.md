@@ -7,20 +7,19 @@ in Turris OS.
 We are using Markdown to document everything and `mkdocs` to handle the
 presentation.
 
-
-## Requirements:
+## Requirements
 
 To render this documentation, you need [mkdocs](https://www.mkdocs.org/).
 
 It can be installed easily using `pip` running the following command
 
-```
+```bash
 pip install --user -r requirements.txt
 ```
 
 If you are all set, you can clone this repository via `git`.
 
-```
+```bash
 git clone --recurse-submodules https://gitlab.nic.cz/turris/user-docs.git
 ```
 
@@ -30,7 +29,7 @@ Once you have a cloned out directory with documentation, you can either render
 it locally or run a local server that will serve it. To do the later, you just
 need to run in the root directory of the documentation the following command
 
-```
+```bash
 mkdocs serve
 ```
 
@@ -66,6 +65,16 @@ contamination by system themes.
 For highlighting the important part of the screenshot (if you need to, most of
 the time not necessary) use rectangular shape and 3-pixel red line `rgb(255, 0, 0)`
 
+### Linter
+
+Some recommendation can be obtained by using linter. You can install Markdown
+linter and check your documentation file via following commands:
+
+```bash
+npm install -g markdownlint-cli
+markdownlint 'doc/my_super_howto.md'
+```
+
 ### Formating
 
 #### Italic
@@ -91,4 +100,3 @@ We have admonition extension, so you can use `note`, `tip`, `warning` and other
 keywords for block-styled content. It needs to start with `!!!` or `???`.  More
 details can be found in [Admonition
 documentation](https://squidfunk.github.io/mkdocs-material/extensions/admonition/).
-

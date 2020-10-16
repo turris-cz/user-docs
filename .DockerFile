@@ -11,7 +11,7 @@ RUN \
   apt-get update && \
   apt-get -y install --no-install-recommends \
     python3-pip python3-setuptools python3-wheel \
-    git wget \
+    git wget npm \
     && \
   apt-get clean
 
@@ -20,5 +20,8 @@ ADD requirements.txt /requirements.txt
 RUN \
   pip3 install --requirement /requirements.txt && \
   rm /requirements.txt
+
+RUN \
+  npm install -g markdownlint-cli
 
 CMD [ "bash" ]
