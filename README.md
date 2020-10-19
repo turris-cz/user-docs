@@ -12,10 +12,10 @@ presentation.
 
 To render this documentation, you need [mkdocs](https://www.mkdocs.org/).
 
-It can be installed easily using `pip` running the following command
+It can be installed easily using `pip3` running the following command
 
 ```
-pip install --user -r requirements.txt
+pip3 install --user -r requirements.txt
 ```
 
 If you are all set, you can clone this repository via `git`.
