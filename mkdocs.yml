@@ -110,6 +110,7 @@ nav:
         - 'LXC': 'geek/lxc/lxc.md'
         - 'Netboot': 'basics/apps/netboot.md'
         - 'Schnapps': 'geek/schnapps/schnapps.md'
+        - 'Btrfs migration': 'geek/btrfs_turris1x.md'
     - 'OS versions':
         - Versions: 'basics/tos-versions.md'
         - Changelog: 'basics/changelog.md'
