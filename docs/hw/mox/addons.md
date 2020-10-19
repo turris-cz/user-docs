@@ -6,6 +6,10 @@ size of the boxed device.
 
 ## Wi-Fi (SDIO)
 
+!!! warning
+    Due to limitations of firmware, it is possible to create only 4 SSIDs and
+    have a maximum of 8 concurrent clients connected to them.
+
 If you add the MOX Wi-Fi add-on (SDIO) to your [MOX Start](sets/start.md) set,
 you will get a Wi-Fi router with Bluetooth support.
 
