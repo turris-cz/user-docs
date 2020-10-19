@@ -88,6 +88,7 @@ nav:
         - 'LXC': 'geek/lxc/lxc.md'
         - 'Netboot': 'basics/apps/netboot.md'
         - 'Schnapps': 'geek/schnapps/schnapps.md'
+        - 'Differences between Turris OS and OpenWrt': 'geek/differences.md'
     - 'OS versions':
         - Versions: 'basics/tos_versions.md'
         - Changelog: 'basics/changelog.md'
