@@ -72,6 +72,11 @@ Here is the example of MOX communication.
 |on (about 3 seconds)|I'm waiting for your opinion. _Everything is fine. Do nothing._ |Do nothing|
 |Slow blinking |Time's up. I'm going to mode 4. |Do nothing|
 
+!!! tip
+    You can follow the video guide to see how it works.
+    <video width="640" height="480" controls><source src="/hw/mox/MOX-reflash.mp4" type="video/mp4"></video>
+    
+
 ## Rescue Modes
 
 ### Standard reboot
@@ -197,5 +202,3 @@ If you accidentally enter this mode you may reset the router by briefly
 pressing the reset button. You can do this only in this particular mode. Do not
 reset the router in mode 2-4!
 
-!!! tip
-    You can follow the [video guide](https://www.youtube.com/watch?v=IzvUKJjsiCE) on YouTube.
