@@ -51,26 +51,25 @@ Following rescue modes are available:
 Let's pretend we would like to set mode 4 – re-flash router from flash drive.
 Here is the example of MOX communication.
 
-
-| MOX LED     | Meaning                                                 | Button |
-|------|----------------------------------------------------------------|--------|
-| off         | MOX is off. Hold the button and plug in the power adapter. | Hold   |
-| blink       |I know you are holding a button. You can release it now. | Hold   |
-|off |I'm starting kernel. |Released |
-|on |Kernel started, I'm starting rescue image. Prepare for announcements. |Released|
-|blink |I'm going to do mode one (reset). Do you like it?|Released|
-|on (about 3 seconds)|I'm waiting for your opinion. _We said that we want the mode 4. We don't like the mode 1 so we will press the button._|Pressed|
-|Blink blink|Ok, if you don't like the mode one, what about the mode two (btrfs rollback)?|Released|
-|on|_We don't like the mode two so we will press the button. We want the mode four._|Pressed|
-|Blink blink blink|If you don't like the mode two, what about the mode three. I'm going to do it if you like it.|Released|
-|on|_Let say we miss the announcement and we are not sure in which mode we are now. We can wait a little bit, there will be the second announcement._|Released|
-|Blink blink blink|I'm saying that if you do nothing I'm going to mode three (factory reset).|Released|
-|on|MOX is going to run mode three. It's something we don't like. We need to press the button.|Pressed|
-|Blink blink blink blink| I'm going to mode 4 (USB flashing). Do you like it?|Released|
-|on (about 3 seconds)|I'm waiting for your opinion.We said that we want mode four. We like that MOX is going to do mode four. We do nothing to interrupt it.|Do nothing|
-|Blink blink blink blink|I'm saying that I'm going to mode 4 (second announcement).|Do nothing|
-|on (about 3 seconds)|I'm waiting for your opinion. _Everything is fine. Do nothing._ |Do nothing|
-|Slow blinking |Time's up. I'm going to mode 4. |Do nothing|
+| MOX LED | Meaning                                                        | Button   |
+|---------|----------------------------------------------------------------|----------|
+| off     | MOX is off. Hold the button and plug in the power adapter.     | Hold     |
+| blink   | I know you are holding a button. You can release it now.       | Hold     |
+| off     | I'm starting kernel.                                           | Released |
+| on      | Kernel started, I'm starting rescue image. Prepare for announcements. | Released |
+| blink   | I'm going to do mode one (reset). Do you like it?              | Released |
+| on (about 3 seconds) | I'm waiting for your opinion. _We said that we want the mode 4. We don't like the mode 1 so we will press the button._| Pressed |
+| Blink blink | Ok, if you don't like the mode one, what about the mode two (btrfs rollback)? | Released |
+| on      | _We don't like the mode two so we will press the button. We want the mode four._ | Pressed |
+| Blink blink blink | If you don't like the mode two, what about the mode three. I'm going to do it if you like it. | Released |
+| on      | _Let say we miss the announcement and we are not sure in which mode we are now. We can wait a little bit, there will be the second announcement._ | Released |
+| Blink blink blink | This is the last warning, if you do nothing I'm going to mode three (factory reset). | Released |
+| on      | MOX is going to run mode three. It's something we don't like. We need to press the button. | Pressed |
+| Blink blink blink blink | I'm going to mode 4 (USB flashing). Do you like it? | Released |
+| on (about 3 seconds)| I'm waiting for your opinion. We said that we want mode four. We like that MOX is going to do mode four. We do nothing to interrupt it. | Released |
+| Blink blink blink blink | I'm saying that I'm going to mode 4 (second announcement). | Released |
+| on (about 3 seconds)| I'm waiting for your opinion. _Everything is fine. Do nothing._ | Released |
+| Slow blinking | Time's up. I'm going to execute mode 4.                  | Released |
 
 !!! tip
     You can follow the video guide to see how it works.
