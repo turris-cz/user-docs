@@ -95,6 +95,10 @@ latest snapshot (mode 2).
     Your current state is saved in a snapshot. You can later cheery-pick changes
     you still want by using [Schnapps](../../geek/schnapps/schnapps.md).
 
+!!! tip
+    You can achieve the same results by calling `schnapps rollback factory` from
+    CLI.
+
 ## Re-flash router
 
 !!! warning
