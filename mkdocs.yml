@@ -93,6 +93,12 @@ nav:
         - Changelog: 'basics/changelog.md'
         - 'Early access': 'geek/testing.md'
         - '3.x migration': 'geek/tos3_migration.md'
+    - Contributing:
+        - Overview: 'geek/contributing/overview.md'
+        - Translation: 'geek/contributing/translation.md'
+        - Issues: 'geek/contributing/issues.md'
+        - "Pull requests": 'geek/contributing/pull_request.md'
+        - "Coding style": 'geek/contributing/style.md'
 - Hardware:
     - Models: 'basics/models.md'
     - MOX:
