@@ -80,6 +80,8 @@ __Foris__ (old) and __reForis__ (new) web interfaces can be translated in Weblat
 __LuCI__ web interface can be translated in Weblate project
 [OpenWrt](https://hosted.weblate.org/projects/openwrt/).
 
+Please read [how to participate in translation](translation.md) before you start translating.
+
 ## Submit code
 Turris declaration that _We believe in open-source_ is not just empty statement,
 we really believe in open-source. You can modify code and submit it back. This is
