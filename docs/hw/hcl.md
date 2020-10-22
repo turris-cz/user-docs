@@ -17,7 +17,7 @@ compatibility list.
 You can find our [hardware compatibility list](https://wiki.turris.cz/doc/en/hcl)
 in our wiki. For easier navigation it is divided into several subcategories:
 
-* [LTE modems](https://wiki.turris.cz/doc/en/hcl/lte)
+* [LTE modems (both internal and external)](https://wiki.turris.cz/doc/en/hcl/lte)
 * [WiFi cards](https://wiki.turris.cz/doc/en/hcl/wifi)
 * [DVB tunners](https://wiki.turris.cz/doc/en/hcl/dvb)
 * [USB devices](https://wiki.turris.cz/doc/en/hcl/usb)
