@@ -1,22 +1,20 @@
 # Data Collection
 
-## Why enable Data Collection?
-
 One of the initial motives that led to the development of the Turris router was
 to set up a secure home router that is capable of responding to current threats
 in almost real time. However a large amount of data is needed to identify an
 attacker and distinguish it from the usual traffic.
 
 The data collection system [Sentinel](../apps/sentinel.md) is a key source of
-such a data. We use this data to build
+such data. We use this data to build
 and distribute a [dynamic firewall](dynfw/collect-dynfw.md) which afterwards
-helps to keep your router secure.
-Enabling data collection thus helps to protect your own router (and home) as well
-as to protect the rest of the world.
+helps keep your router secure.
+As a result, enabling data collection helps to protect your own router (and home)
+as well as to protect the rest of the world.
 
 ## What data do we collect?
 
-There are multiple source of data we collect. Depending on the source used, the
+There are multiple sources of data we collect. Depending on the source used, the
 type of data varies. On you router you can notably enable *Firewall monitoring*,
 deploy *Minipots* or use *HaaS*.
 
@@ -29,13 +27,13 @@ port number.
 
 ### Minipot
 
-The word "Minipot" is a combination of the words "mini" and "Honeypot", where
-Honeypot, also called a fake server, is a way to mimic some kind of service,
+The word "Minipot" is a combination of the words "mini" and "Honeypot".
+Honeypot, also called a fake server, is a way to imitate some kind of service,
 usually attractive to a potential attacker.
 
 Turris Minipot is a lightweight Honeypot which emulates only minimal subset of
-each protocol, answering "bad password" to each attempt to log in. We currently
-operate [Telnet](https://en.wikipedia.org/wiki/Telnet),
+each protocol, answering an "incorrect password" to each log in attempt. We
+currently operate [Telnet](https://en.wikipedia.org/wiki/Telnet),
 [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol),
 [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) and
 [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)
@@ -44,23 +42,24 @@ address is collected by the software.
 
 ### HaaS - Honeypot as a Service
 
-By using HaaS and installing the HaaS proxy application you router becomes able
+By using HaaS and installing the HaaS proxy application your router becomes able
 to forward traffic incoming from WAN port 22 (commonly used for SSH) to the HaaS
 server located in our headquarters. The HaaS server, powered by Cowrie, is a
-full-fledged honeypot able not only to record the user/password combination
-(like Minipots do) but to simulate a real device and record the executed
-commands.
+full-fledged honeypot. As well, it is able to record the user/password combination
+(like Minipots do) and in addition it is able to simulate a real device and
+record the executed commands.
 
-Big advantage is that your router stays safe all the time because all the
-communication is redirected to our server and nothing is done on the router
+A big advantage is that your router stays safe all the time because all
+communications are redirected to our server and nothing is done on the router
 itself.
 
 ### Turris survey
 
-Since even our team has only a limited manpower we try to primary focus
-on subjects that really matter. Turris survey collects information about
-installed packages, used languages and system version. Based on this we are
-able to identify widely used packages and features and give them special care.
+Since our team has only limited manpower we try to primarily focus
+on subjects that really matter. The Turris survey collects information about
+installed packages, used languages and operating system version. Based on this
+we are able to identify widely used packages, features and provide special
+support.
 
 ## What do we use the data for?
 
@@ -72,7 +71,7 @@ One of the most important analyses is the
 [dynamic firewall](dynfw/collect-dynfw.md). The dynamic firewall
 collects information about entities trying to scan or break into your router and
 is able to detect the real attackers among them. IP addresses of identified
-attackers are then immediately published and announced back to the routers.
+attackers are then immediately published and reported back to the routers.
 Once a day the list of all attackers (A.K.A. greylist) is snapshoted and
 published as a CSV file. You can download the latest greylist snapshot
 [here](https://view.sentinel.turris.cz/greylist-data/).
@@ -80,9 +79,9 @@ published as a CSV file. You can download the latest greylist snapshot
 ## Can I see the data?
 
 You can browse the aggregated data we have collected through the Sentinel
-network on our web called [Sentinel View](https://view.sentinel.turris.cz/).
-You can browse there detected attackers, their favorite passwords, country of
-origin and such.
+network on our web page called [Sentinel View](https://view.sentinel.turris.cz/).
+You can browse there detected attackers, the most commonly used passwords,
+country of origin and such.
 
 ![Sentinel View](sview.png)
 
@@ -97,8 +96,10 @@ Firewall monitoring and Minipots - a feature we are working hard on now.
 ## How to set up data collection?
 
 The whole functionality is nowadays provided by [Sentinel](../apps/sentinel.md).
-You just need to enable _Data Collection_ package list in _Package Management_
-tab and agree with our [EULA](https://gitlab.nic.cz/turris/sentinel/eula/-/blob/master/eulas/1.txt) via _Data Collection_ tab in reForis. This will install and enable
+You just need to enable the _Data Collection_ package list in the
+_Package Management_ tab and agree with our
+[EULA](https://gitlab.nic.cz/turris/sentinel/eula/-/blob/master/eulas/1.txt)
+via _Data Collection_ tab in reForis. This will install and enable
 [dynamic firewall](dynfw/collect-dynfw.md) and other selected data collection
 components.
 
