@@ -6,6 +6,7 @@ copyright: CC-BY-SA-4.0
 
 theme:
     name: 'material'
+    custom_dir: docs/theme
     logo: '/theme/turris-logo.svg'
     favicon: '/theme/favicon.ico'
     font: false
@@ -21,6 +22,7 @@ extra_css:
 
 
 markdown_extensions:
+    - meta
     - markdown_include.include:
         base_path: docs
     - admonition

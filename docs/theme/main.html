@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+<!-- Content -->
+{% block content %}
+
+<!-- Edit button -->
+{% if page.edit_url %}
+<a href="{{ page.edit_url }}" title="{{ lang.t('edit.link.title') }}" class="md-content__button md-icon">
+    {% include ".icons/material/pencil.svg" %}
+</a>
+{% endif %}
+
+<!-- Metadata -->
+{% if page and page.meta %}
+<div class="metadata md-content__button md-icon">
+    {% if page.meta.board %}
+    {% include "partials/board.html" %}
+    {% endif %}
+    {% if page.meta.competency %}
+    {% include "partials/competency.html" %}
+    {% endif %}
+</div>
+{% endif %}
+<!-- 
+    Hack: check whether the content contains a h1 headline. If it
+    doesn't, the page title (or respectively site name) is used
+    as the main headline.
+-->
+{% if not "\x3ch1" in page.content %}
+<h1>{{ page.title | default(config.site_name, true)}}</h1>
+{% endif %}
+
+<!-- Content -->
+{{ page.content }}
+
+<!-- Last update of source file -->
+{% if page and page.meta %}
+{% if page.meta.git_revision_date_localized or page.meta.revision_date %}
+{% include "partials/source-date.html" %}
+{% endif %}
+{% endif %}
+{% endblock %}
+
+<!-- Disqus integration -->
+{% block disqus %}
+{% include "partials/integrations/disqus.html" %}
+{% endblock %}
+</article>
+</div>

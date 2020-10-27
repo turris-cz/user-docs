@@ -1,18 +1,114 @@
 /* Set turris colors */
 :root {
-  --md-primary-fg-color: rgb(38, 38, 38);
-  --md-accent-fg-color: rgb(00, 123, 255);
+    --md-primary-fg-color: rgb(38, 38, 38);
+    --md-accent-fg-color: rgb(00, 123, 255);
 }
 
 /* Make links in articles always visible */
 .md-typeset a {
-	color: rgb(00, 00, 255);
+    color: rgb(00, 00, 255);
 }
 
 /* Add border to images to make them stand out */
 .md-typeset img {
-	border: solid;
-	border-width: 1px;
-	border-color: lightgrey;
+    border: solid;
+    border-width: 1px;
+    border-color: lightgrey;
 }
 
+.metadata a.badge {
+    color: #fff;
+}
+
+.metadata span.badge {
+    cursor: help;
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 70%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+/* Labels: Devices */
+.badge-shield {
+    color: #fff;
+    background-color: #438bca;
+}
+
+.badge-shield:hover {
+    background-color: #2D6A9F;
+}
+
+.badge-mox {
+    color: #fff;
+    background-color: #343a40;
+}
+
+.badge-mox:hover {
+    background-color: #1d2124;
+}
+
+.badge-omnia {
+    color: #fff;
+    background-color: #00a2e2;
+}
+
+.badge-omnia:hover {
+    background-color: #0075A3;
+}
+
+.badge-turris {
+    color: #fff;
+    background-color: #ce1126;
+}
+
+.badge-turris:hover {
+    color: #fff;
+    background-color: #970C1C;
+}
+
+/* Labels: Competency levels */
+.badge-novice {
+    color: #fff;
+    background-color: #54b445;
+}
+
+.badge-novice:hover {
+    background-color: #449438;
+}
+
+.badge-intermediate {
+    color: #fff;
+    background-color: #efd000;
+}
+
+.badge-intermediate:hover {
+    background-color: #B89F00;
+}
+
+.badge-advanced {
+    color: #fff;
+    background-color: #f89217;
+}
+
+.badge-advanced:hover {
+    background-color: #DA7B07;
+}
+
+.badge-expert {
+    color: #fff;
+    background-color: #e64f3b;
+}
+
+.badge-expert:hover {
+    color: #fff;
+    background-color: #D9321C;
+}
