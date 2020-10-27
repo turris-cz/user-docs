@@ -1,15 +1,35 @@
-/* Set turris colors */
+/* Turris color theme */
 :root {
-    --md-primary-fg-color: rgb(38, 38, 38);
-    --md-accent-fg-color: rgb(00, 123, 255);
+    /* Primary color shades */
+    --md-primary-fg-color: #262626;
+    --md-primary-fg-color--light: #3d3d3d;
+    --md-primary-fg-color--dark: #141414;
+    --md-primary-bg-color: hsla(0, 0%, 100%, 1);
+    --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+    /* Accent color shades */
+    --md-accent-fg-color: hsla(197, 100%, 40%, 1);
+    --md-accent-fg-color--dark: hsla(197, 100%, 32%, 1);
+    --md-accent-fg-color--transparent: hsla(197, 100%, 40%, 0.1);
+    --md-accent-bg-color: hsla(0, 0%, 100%, 1);
+    --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
 }
 
-/* Make links in articles always visible */
+/* Link styles  */
 .md-typeset a {
-    color: rgb(00, 00, 255);
+    color: var(--md-accent-fg-color);
 }
 
-/* Add border to images to make them stand out */
+.md-typeset a:hover,
+.md-nav__item a.md-nav__link--active:hover {
+    color: var(--md-accent-fg-color--dark);
+}
+
+.md-nav__item .md-nav__link--active {
+    color: var(--md-accent-fg-color);
+}
+
+/* Image border */
 .md-typeset img {
     border: solid;
     border-width: 1px;
@@ -26,14 +46,14 @@
 
 .badge {
     display: inline-block;
-    padding: .25em .4em;
+    padding: 0.25em 0.4em;
     font-size: 70%;
     font-weight: 700;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     cursor: pointer;
 }
 
@@ -44,7 +64,7 @@
 }
 
 .badge-shield:hover {
-    background-color: #2D6A9F;
+    background-color: #2d6a9f;
 }
 
 .badge-mox {
@@ -62,7 +82,7 @@
 }
 
 .badge-omnia:hover {
-    background-color: #0075A3;
+    background-color: #0075a3;
 }
 
 .badge-turris {
@@ -72,7 +92,7 @@
 
 .badge-turris:hover {
     color: #fff;
-    background-color: #970C1C;
+    background-color: #970c1c;
 }
 
 /* Labels: Competency levels */
@@ -91,7 +111,7 @@
 }
 
 .badge-intermediate:hover {
-    background-color: #B89F00;
+    background-color: #b89f00;
 }
 
 .badge-advanced {
@@ -100,7 +120,7 @@
 }
 
 .badge-advanced:hover {
-    background-color: #DA7B07;
+    background-color: #da7b07;
 }
 
 .badge-expert {
@@ -110,5 +130,5 @@
 
 .badge-expert:hover {
     color: #fff;
-    background-color: #D9321C;
+    background-color: #d9321c;
 }

@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{ base_url }}/css/turris.css">
+{% endblock styles %}
+
 <!-- Content -->
 {% block content %}
 
