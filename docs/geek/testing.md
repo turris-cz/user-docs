@@ -32,7 +32,7 @@ testing.
 Suitable to help test the releases, might require some manual intervention from
 time to time, but not too often.
 
-### HBK - _Here Be Kittens_
+### HBK - _Here Be Kittens (Kute)_
 
 Automatic builds the next fixup (e.g. 5.1.8) release will be based on. Combines the
 latest stable OpenWrt and stable Turris features.
@@ -41,7 +41,7 @@ Suitable for people interested in testing future fixes and not minding occasiona
 bugs. As this is an integration branch, it breaks from time to time. But nothing
 that experienced user can't recover from.
 
-### HBL - _Here Be Lions_
+### HBL - _Here Be Lions (Large)_
 
 Automatic builds the next minor (e.g. 5.2.0) release will be based on. Combines the
 latest stable OpenWrt and the latest of our features.
@@ -50,7 +50,7 @@ Suitable for people interested in testing latest features and not minding
 occasional bugs. As this is an integration branch, it breaks from time to time.
 But nothing that experienced user can't recover from.
 
-### HBD - _Here Be Dragons_
+### HBD - _Here Be Dragons (Dangerous)_
 
 Automatic builds of next major (e.g. 6.0.0) release based on next OpenWrt release.
 Mainly considered as a preview to test for integration problems.
