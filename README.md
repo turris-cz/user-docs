@@ -65,6 +65,48 @@ contamination by system themes. Switch your browser to English.
 
 For highlighting the important part of the screenshot (if you need to, most of
 the time not necessary) use rectangular shape and 3-pixel red line `rgb(255, 0, 0)`
+### Metadata
+
+The metadata must be the first thing in the file and must take the form of a
+valid YAML set between triple-dashed lines. Here is a basic example:
+```
+---
+board: mox
+competency: expert
+---
+```
+Between these triple-dashed lines, use predefined variables (see below for a
+reference).
+
+### Turris boards
+
+In case you want to specify Turris device(s) in the article, use one or multiple
+options provided below.
+
+-   shield
+-   mox
+-   omnia
+-   1.x
+
+```
+---
+board: shield, mox, omnia, 1.x
+---
+```
+### Competency level
+
+In case you want to specify competency level choose one of the levels below.
+
+-   novice
+-   intermediate
+-   advanced
+-   expert
+
+```
+---
+competency: expert
+---
+```
 
 ### Formating
 
