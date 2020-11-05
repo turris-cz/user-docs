@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: novice
+---
 # Accessing Foris via HTTPS
 
 If you see warning box bellow in your Foris web interface, you should add a

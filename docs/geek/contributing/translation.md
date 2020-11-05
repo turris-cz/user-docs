@@ -1,3 +1,6 @@
+---
+competency: novice
+---
 # How to Participate in the Interface Translation
 
 We developed the Turris router interface in English and we use Czech as the

@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX Hardware details
 
 MOX is an unique network device. It contains usual set of

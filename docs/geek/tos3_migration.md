@@ -1,3 +1,7 @@
+---
+board: omnia, 1.x
+competency: intermediate
+---
 # Migration from Turris OS 3.x
 Update from Turris OS 3.x to 5.0 or newer is big leap. There is more than three
 years of significant development in OpenWrt. At the same time with this Turris

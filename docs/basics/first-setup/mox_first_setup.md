@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # First setup of Turris MOX
 
 ## Before you start

@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: novice
+---
 # DNS settings in Foris
 
 ## What is DNS?

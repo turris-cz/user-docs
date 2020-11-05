@@ -1,3 +1,6 @@
+---
+board: 1.x
+---
 # Turris 1.0/1.1
 
 Turris 1.X is a powerful router that was part of Turris security research

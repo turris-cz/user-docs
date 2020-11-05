@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # Add-ons
 
 Add-ons are specific accessory that can extend functionality of Turris MOX but

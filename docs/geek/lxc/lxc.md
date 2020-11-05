@@ -1,3 +1,7 @@
+---
+board: mox, omnia
+competency: advanced
+---
 # LXC on Turris
 
 

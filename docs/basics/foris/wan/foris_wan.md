@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: novice
+---
 # WAN settings in Foris
 
 Here you specify your WAN port settings. Usually, you can leave this options untouched unless instructed otherwise by

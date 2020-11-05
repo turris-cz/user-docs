@@ -1,3 +1,6 @@
+---
+board: shield
+---
 # First setup of Turris Shield
 
 ## Connecting cables

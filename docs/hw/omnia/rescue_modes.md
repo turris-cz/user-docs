@@ -1,3 +1,6 @@
+---
+board: omnia
+---
 # Factory reset on Turris Omnia
 
 The Turris Omnia router has a reset button on its back panel. When you press

@@ -1,3 +1,6 @@
+---
+board: shield
+---
 # Turris Shield screenshots
 
 ## Router overview

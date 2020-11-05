@@ -1,3 +1,6 @@
+---
+board: shield, mox, omnia, 1.x
+---
 # reForis
 
 ## What is reForis

@@ -1,3 +1,6 @@
+---
+competency: expert
+---
 # Turris project coding style
 
 All code accepted to the Turris project must have convenient quality.

@@ -1,3 +1,6 @@
+---
+board: omnia
+---
 # Turris Omnia
 
 Turris Omnia is powerful SOHO router. It is based on **Marvel Armada 385 CPU** -

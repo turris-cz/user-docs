@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: advanced
+---
 # How to try future releases of Turris OS?
  
 Do you want to contribute to better stability of Turris OS? Or would you just

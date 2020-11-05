@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # Factory reset on Turris MOX
 
 The Turris MOX router has a multifunction button on its back panel. When you

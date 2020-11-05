@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX Pocket Wi-Fi
 
 A basic configuration of the Turris MOX router with Wi-Fi. Marvell Armada 3720

@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX D (SFP)
 
 ## Key features

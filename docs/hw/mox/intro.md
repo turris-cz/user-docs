@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # About
 
 ![Turris MOX](mox.jpg)

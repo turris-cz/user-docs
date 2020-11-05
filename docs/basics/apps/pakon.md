@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: intermediate
+---
 # PaKon - Network monitoring (Parental Control)
 
 ## What is Pakon?

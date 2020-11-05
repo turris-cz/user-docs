@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: intermediate
+---
 # Network boot of Turris MOX
 
 This article will guide you through setting up your Turris MOX as an AP

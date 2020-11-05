@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX Power Wi-Fi
 
 A configuration of the Turris MOX router with two Wi-Fi cards. Marvell Armada

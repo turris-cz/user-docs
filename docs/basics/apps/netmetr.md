@@ -1,3 +1,7 @@
+---
+board: shield, mox, omnia, 1.x
+competency: novice
+---
 # Netmetr
 
 ## What is Netmetr?

@@ -1,3 +1,6 @@
+---
+competency: expert
+---
 # Submitting pull requests
 
 If you have created a bug fix or an improvement for our software you can

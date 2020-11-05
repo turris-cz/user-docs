@@ -1,3 +1,6 @@
+---
+board: omnia, 1.x
+---
 # First setup on Turris 1.X and Omnia
 
 Both Turris 1.X and Omnia were produced in several batches and the actual

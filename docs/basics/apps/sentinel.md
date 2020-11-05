@@ -1,3 +1,6 @@
+---
+board: shield, mox, omnia, 1.x
+---
 # Sentinel
 
 ## What is Sentinel?
@@ -8,9 +11,12 @@ exchange.
 
 ## Installation & first run
 
-To use Sentinel on Turris device just have to follow the instructions in [_How
-to set up data collection?_](../collect/collect.md#how-to-set-up-data-collection) chapter
-in the [data collection](../collect/collect.md) documentation.
+!!! tip
+	Data collection system is installed out of the box on [Turris
+	Shield](../../models/#turris-shield). There is no need to configure it.
+
+To use Sentinel on Turris device just have to follow the instructions in the [date
+collection setup](../collect/setup.md) article.
 
 During the installation, the system tries to obtain Sentinel client
 certificate and starts to collect the data. New firewall rules

@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX F (USB)
 
 ## Key features

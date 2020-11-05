@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX Start
 
 A basic configuration of the Turris MOX router. Marvell Armada 3720 1 GHz dual

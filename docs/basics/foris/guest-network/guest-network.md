@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: novice
+---
 # Guest network
 
 There are some situations when you want to allow Internet access to some other people (your guests, visitors,

@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX Classic
 
 The most demanded configuration of Turris MOX router. Marvell Armada 3720 1 GHz

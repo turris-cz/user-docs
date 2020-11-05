@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX C (Ethernet)
 
 ## Key features

@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX A (Basic)
 
 ## Key features

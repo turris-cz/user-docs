@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: intermediate
+---
 # LuCI
 
 ## What is LuCI?

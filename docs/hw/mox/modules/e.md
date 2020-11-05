@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX E (Super Ethernet)
 
 ## Key features

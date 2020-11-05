@@ -1,3 +1,6 @@
+---
+board: shield, mox, omnia, 1.x
+---
 # Dynamic Firewall
 
 The dynamic firewall (A.K.A. DynFW) is Turris IDS and IPS system - the tool for

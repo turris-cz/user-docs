@@ -1,3 +1,7 @@
+---
+board: mox
+competency: expert
+---
 # Booting Turris MOX over serial
 
 !!! warning

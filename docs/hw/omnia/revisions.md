@@ -1,3 +1,6 @@
+---
+board: omnia
+---
 # Turris Omnia revisions
 
 Turris Omnia router received during its manufacturing and public sale various

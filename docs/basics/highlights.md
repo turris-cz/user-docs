@@ -1,3 +1,6 @@
+---
+board: mox, omnia, 1.x
+---
 # Interesting features to try
 
 If you are new to Turris project, there is plenty of stuff that can be done with

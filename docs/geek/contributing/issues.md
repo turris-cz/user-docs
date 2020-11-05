@@ -1,3 +1,6 @@
+---
+competency: advanced
+---
 # Creating issues
 
 If you think that our software contains a bug or if you would like to request

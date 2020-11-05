@@ -1,3 +1,7 @@
+---
+board: mox
+competency: advanced
+---
 # Preparation of microSD card for Turris MOX
 
 ## Using rescue modes

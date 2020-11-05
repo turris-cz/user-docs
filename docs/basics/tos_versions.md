@@ -3,13 +3,13 @@ Turris OS software is being released as a fixed set of packages for given versio
 
 ## History of major Turris OS versions
 
-| Major Turris OS version | OpenWrt version             | Released  | Support terminated | Compatible routers                                                        |
-|-------------------------|-----------------------------|-----------|--------------------|---------------------------------------------------------------------------|
-| 1.x.x                   | 12.09 (Attitude Adjustment) | ~1.2.2014 | 17.2.2015          | [Turris 1.x](models.md#turris-1x)                                         |
-| 2.x.x                   | 14.07 (Barrier Breaker)     | 17.2.2015 | 24.5.2016          | [Turris 1.x](models.md#turris-1x)                                         |
-| 3.x.x                   | 15.05 (Chaos Calmer)        | 24.5.2016 | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia)        |
-| 4.x.x                   | 18.06                       | 5.10.2019 | 4.6.2020           | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox) |
-| 5.x.x                   | 19.07                       | 4.6.2020  | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox) |
+| Major Turris OS version | OpenWrt version             | Released  | Support terminated | Compatible routers                                                                                                                 |
+|-------------------------|-----------------------------|-----------|--------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| 1.x.x                   | 12.09 (Attitude Adjustment) | ~1.2.2014 | 17.2.2015          | [Turris 1.x](models.md#turris-1x)                                                                                                  |
+| 2.x.x                   | 14.07 (Barrier Breaker)     | 17.2.2015 | 24.5.2016          | [Turris 1.x](models.md#turris-1x)                                                                                                  |
+| 3.x.x                   | 15.05 (Chaos Calmer)        | 24.5.2016 | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia)                                                                 |
+| 4.x.x                   | 18.06                       | 5.10.2019 | 4.6.2020           | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox)                                    |
+| 5.x.x                   | 19.07                       | 4.6.2020  | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield) |
 
 For more detailed list of changes and versions history please see
 [changelog](changelog.md).
@@ -82,6 +82,7 @@ These are Turris OS versions flashed in factory and routers they were flashed to
 | 4.0-beta1         | Turris Mox (early campaign SD cards)                             |
 | 4.0.0             | Turris Mox (late campaign SD cards and early distribution)       |
 | 4.0.1             | Turris Mox (late 2019 distribution) and Turris Omnia (CZ11NIC23) |
+| 5.1.0             | Turris Shield                                                    |
 
 [^1]: Turris 1.x were originally sent out with Turris OS versions before 3.0 but
   because of DNS root key rollover there was a need to force update factory

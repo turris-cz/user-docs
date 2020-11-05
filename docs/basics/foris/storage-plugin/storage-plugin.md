@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: intermediate
+---
 # Storage plugin
 
 Turris contains an eMMC flash memory card which is used as the system storage. It holds both the Turris OS itself

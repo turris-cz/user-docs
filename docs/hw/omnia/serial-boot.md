@@ -1,3 +1,7 @@
+---
+board: omnia
+competency: expert
+---
 # Booting Turris Omnia over serial
 
 !!! warning

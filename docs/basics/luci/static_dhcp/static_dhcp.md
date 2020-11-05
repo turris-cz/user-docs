@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: intermediate
+---
 # Static IP addresses assignment
 
 Static DHCP server addresses assignment is useful when it's required that devices, connected to your network, will get 

@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # First setup of Turris MOX (CPU Only)
 
 This page is written for users who would like to configure their MOX device with

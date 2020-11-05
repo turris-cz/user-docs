@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX B (Extension)
 
 ## Key features

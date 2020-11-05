@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x
+competency: novice
+---
 # LAN settings in Foris
 
 This section contains settings for the local network (LAN). The provided defaults are suitable for most networks.

@@ -1,3 +1,6 @@
+---
+board: mox
+---
 # MOX G (Super Extension)
 
 ## Key features
