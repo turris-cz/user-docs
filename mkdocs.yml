@@ -87,7 +87,7 @@ nav:
     - Applications:
         - 'Netmetr': 'basics/apps/netmetr.md'
         - 'Nextcloud': 'geek/nextcloud/nextcloud.md'
-        - 'OpenVPN': 'basics/apps/openvpn/openvpn.md'
+        - 'OpenVPN server': 'basics/apps/openvpn-server/openvpn.md'
         - 'PaKon': 'basics/apps/pakon.md'
         - 'Sentinel': 'basics/apps/sentinel.md'
     - Advanced:

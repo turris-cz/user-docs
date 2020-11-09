@@ -18,7 +18,7 @@ devices uploading data and whether they are calling home.
 
 Really easy way how to connect to your home from anywhere in the world, given
 that you have public IP address. If you do, you can [setup OpenVPN
-server](apps/openvpn/openvpn.md) in no time and easily generate configuration
+server](apps/openvpn-server/openvpn.md) in no time and easily generate configuration
 for all your clients. You are just few clicks away from being able to access
 your whole home network from anywhere.
 
