@@ -4,7 +4,7 @@ competency: novice
 ---
 # OpenVPN server on Turris
 
-Starting with Turris OS 3.6, you can configure OpenVPN easily through the Foris web interface.
+Starting with Turris OS 3.6, you can configure OpenVPN server easily through the Foris web interface.
 
 ## What is OpenVPN?
 
@@ -22,7 +22,7 @@ the OpenVPN connection (this is useful e.g. if your company's servers may be acc
     You can use your Turris as an OpenVPN server only if it is accessible from the Internet (it has a public IP address
     or at least the OpenVPN port is forwarded to it).
 
-## How to set up OpenVPN in Foris
+## How to set up OpenVPN server in Foris
 
 This manual describes how to set up OpenVPN in **a few easy steps** using Foris:
 
@@ -117,3 +117,6 @@ How to set the client side on various platforms:
 * [Linux (command line)](https://openvpn.net/vpn-server-resources/how-to-connect-to-access-server-from-a-linux-computer/)
 * [Ubuntu Linux (NetworkManager)](https://torguard.net/knowledgebase.php?action=displayarticle&id=53)
 * [Pritunl Client (multiplatform)](https://client.pritunl.com/)
+
+!!! tip
+    If you want to setup your Turris as an OpenVPN client, please read [OpenVPN client](../openvpn-client/openvpn.md).
