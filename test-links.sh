@@ -38,5 +38,5 @@ running || {
 wget --no-verbose --rejected-log=rejected --spider --recursive --page-requisites --level=inf --no-directories --delete-after "http://localhost:$PORT/"
 if [ -n "$REMOTE" ]; then
 	tail -n +2 rejected | cut -f 2 | grep -v -E '(turris.local|192.168.1.1|127.0.0.1|localhost)' | sort -u | sed -e 's|%3A|:|g' > todo
-	wget --no-verbose --spider --input-file=todo --no-directories --delete-after
+	wget --no-verbose --spider --input-file=todo --no-directories --delete-after --user-agent="Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0"
 fi
