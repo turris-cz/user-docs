@@ -32,6 +32,10 @@ to setup the MOX) to one of the available LAN ports.
 
 {! basics/first-setup/cables.md !}
 
+!!! tip
+    There is also a way to configure Turris Mox over Wi-Fi by using [a configuration
+    file and a USB drive](./ethernetless.md).
+
 ### One Ethernet port device
 
 The trickiest case is if you have **only one Ethernet port**. Therefore we
@@ -58,4 +62,3 @@ will configure itself as DHCP server.
 When booted, you can access the first-run wizard by using a web browser and
 entering as URL address of your router. In case of MOX running as DHCP server, web
 interface will be at <http://192.168.1.1>.
-
