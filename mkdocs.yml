@@ -83,6 +83,7 @@ nav:
     - LuCI:
         - Introduction: basics/luci/luci.md
         - Static IP: basics/luci/static_dhcp/static_dhcp.md
+        - VLAN: basics/luci/vlan/luci_vlan.md
     - Applications:
         - 'Netmetr': 'basics/apps/netmetr.md'
         - 'Nextcloud': 'geek/nextcloud/nextcloud.md'
