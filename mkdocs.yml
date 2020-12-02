@@ -137,6 +137,7 @@ nav:
     - Rescue modes:
         - 'MOX': 'hw/mox/rescue_modes.md'
         - 'Omnia': 'hw/omnia/rescue_modes.md'
+        - 'Turris 1.X': 'hw/turris-1x/factory-reset.md'
     - MOX MicroSD: 'hw/mox/microsd.md'
     - 'Serial connection': 'hw/serial.md'
     - 'Serial boot':
