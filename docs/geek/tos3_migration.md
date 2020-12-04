@@ -158,6 +158,16 @@ migration. This can affect also other tools but `wget` is the most profound one.
 
 Solution is to run `update_alternatives.sh` command after migration completes.
 
+##### Transmission and other services are disabled
+Some services, such as transmission, can be disabled during migration and not
+re-enabled. There are multiple reasons why this happens, in short it can be due to
+package or init script rename.
+
+It is not possible to catch every single service affected by this so only most
+important services are covered by migration. Please review enabled services after
+migration to ensure that all services you want are going to be started on next
+boot.
+
 
 ## Plans for automatic migration
 Automatic migration for all routers running Turris OS 3.x is planned.
