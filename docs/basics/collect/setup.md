@@ -32,5 +32,6 @@ naming it, you will get a **token**
 ```
 uci set haas.settings.token="YOUR_TOKEN"
 uci commit
+/etc/init.d/haas-proxy enable
 /etc/init.d/haas-proxy start
 ```
