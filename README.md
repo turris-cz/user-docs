@@ -38,6 +38,24 @@ If everything works well, you should see the documentation on <http://127.0.0.1:
 
 ## Tips for writing
 
+### File names
+
+File names should clearly describe what given files contain. Use only
+lowercase letter, digits, hyphens and dots. Don't use underscores.
+Each name should start with a letter and be trailed by an extension
+separated with a dot.
+
+Some examples:
+
+- `openvpn-server.md`
+- `setup.md`
+- `haas-device.png`
+- `turris-10.jpg`
+
+There are special cases where uppercase letters may be used. This applies
+to files like `README.md`, `LICENSE` or `.DockerFile` etc. which have
+conventional names.
+
 ### Headers
 
 For header, please try to stick to markdown notation using the following syntax:
