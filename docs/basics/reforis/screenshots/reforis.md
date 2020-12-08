@@ -3,6 +3,11 @@ board: shield, mox, omnia, 1.x
 ---
 # reForis Screenshots
 
+!!! important
+    Screenshots were taken from the development version of Turris OS 5.2.0.
+    It includes slightly redesigned reForis, a new Overview tab, and more features.
+    Users of Turris Shield can enjoy these features already.
+
 ## Router overview
 
 ![Router overview](101_reforis_overview.png)
