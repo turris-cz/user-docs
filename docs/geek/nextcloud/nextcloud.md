@@ -47,24 +47,24 @@ it up. You will be asked to reboot your router, so do so.
 The next step is to enable Nextcloud in _Updater_ tab. After doing so, your
 router will install all necessary packages.
 
-![Nextcloud option in updater tab](nextcloud_updater.png)
+![Nextcloud option in updater tab](nextcloud-updater.png)
 
 The last step is to go back to the _Storage_ tab and after installation
 finishes, you will be presented with a dialog to set your admin username and
 password. If you install Nextcloud first - without setting up your external
 drive - Foris wouldn't allow you to setup Nextcloud till you do so.
 
-![Setting up a disk with Nextcloud installed](storage_plugin_nextcloud.png)
+![Setting up a disk with Nextcloud installed](storage-plugin-nextcloud.png)
 
 If you get the setup dialog, you can enter your desired credentials and you
 are done. Foris will finish your Nextcloud setup. This can take a while
 depending on speed of your drive.
 
-![Nextcloud configuration](nextcloud_setup.png)
+![Nextcloud configuration](nextcloud-setup.png)
 
 Once done, you get a link directly to your ready to use Nextcloud instance.
 
-![Nextcloud installed](nextcloud_installed.png)
+![Nextcloud installed](nextcloud-installed.png)
 
 ### Manual installation from CLI
 

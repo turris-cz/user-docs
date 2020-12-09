@@ -11,7 +11,7 @@ A basic configuration of the Turris MOX router with Wi-Fi. Marvell Armada 3720
 
 ## About
 
-{! hw/mox/sets/generic_mox.md !}
+{! hw/mox/sets/generic-mox.md !}
 
 This set consists of the [MOX A (Basic) module](../modules/a.md), a power
 source, a microSD card and the [MOX Wi-Fi add-on
@@ -26,5 +26,5 @@ accessories. But there are many reasons to fall in love:
 
 {% set conf = 'AS' %}
 
-{% include 'hw/mox/sets/feature_list.md' %}
+{% include 'hw/mox/sets/feature-list.md' %}
 

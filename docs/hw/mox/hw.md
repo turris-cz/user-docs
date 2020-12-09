@@ -142,16 +142,16 @@ The Moxtet system uses a standard PCIe connector, but with different signals.
 
 For all MOX modules we also provide schematics
 
- * [MOX A](Turris_Mox_A.pdf)
- * [MOX B](Turris_Mox_B.pdf)
- * [MOX C](Turris_Mox_C.pdf)
- * [MOX D](Turris_Mox_D.pdf)
- * [MOX E](Turris_Mox_E.pdf)
- * [MOX F](Turris_Mox_F.pdf)
- * [MOX G](Turris_Mox_G.pdf)
- * [MOX SDIO WiFi](Turris_Mox_SDIO_WIFI.pdf)
- * [MOX PoE](Turris_Mox_PoE.pdf)
+ * [MOX A](Turris-Mox-A.pdf)
+ * [MOX B](Turris-Mox-B.pdf)
+ * [MOX C](Turris-Mox-C.pdf)
+ * [MOX D](Turris-Mox-D.pdf)
+ * [MOX E](Turris-Mox-E.pdf)
+ * [MOX F](Turris-Mox-F.pdf)
+ * [MOX G](Turris-Mox-G.pdf)
+ * [MOX SDIO WiFi](Turris-Mox-SDIO-WIFI.pdf)
+ * [MOX PoE](Turris-Mox-PoE.pdf)
 
 ## Declaration of Conformity
 
-Turris MOX adheres to EU legislation. You can get download [Declaration of Conformity](MOX_DoC.pdf).
+Turris MOX adheres to EU legislation. You can get download [Declaration of Conformity](MOX-DoC.pdf).

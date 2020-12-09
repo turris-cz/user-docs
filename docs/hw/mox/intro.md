@@ -44,7 +44,7 @@ modules, typically available on conferences and through our distributors. If
 you prefer one simple document explaining MOX over complex and detailed
 documentation, you can download it here.
 
-[MOX Brochure](MOX_Brochure.pdf)
+[MOX Brochure](MOX-Brochure.pdf)
 
 ## Related documentation
 
@@ -52,8 +52,8 @@ Once you have Turris MOX, there are few additional things that you might want
 to read. Here is just a short list, more information can be found in this whole
 site.
 
-* [MOX First setup](../../basics/first-setup/mox_first_setup.md)
+* [MOX First setup](../../basics/first-setup/mox-first-setup.md)
 * [Turris OS Highlights](../../basics/highlights.md)
 * [MOX hardware details](hw.md)
 * [Early access to development versions](../../geek/testing.md)
-* [MOX rescue modes](rescue_modes.md)
+* [MOX rescue modes](rescue-modes.md)

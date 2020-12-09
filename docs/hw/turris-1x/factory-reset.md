@@ -39,7 +39,7 @@ and then green. If you can see this green light your router is ready.
 Then it is necessary to set the password and reconfigure your router.
 Connect your computer to one of the LAN ports and open
 [https://192.168.1.1](https://192.168.1.1) in a web browser.
-See [the first setup guide](../../basics/first-setup/simple_setup.md)
+See [the first setup guide](../../basics/first-setup/simple-setup.md)
 for more information. If you have a configuration backup you can import
 it instead of the manual reconfiguration.
 

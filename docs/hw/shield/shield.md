@@ -33,11 +33,11 @@ devices.
 
 ## Available documents
 
- * [Declaration of Conformity](Shield_DoC.pdf)
- * [Official datasheet](shield_datasheet.pdf)
- * [Official printed manual](shield_manual.pdf)
+ * [Declaration of Conformity](Shield-DoC.pdf)
+ * [Official datasheet](shield-datasheet.pdf)
+ * [Official printed manual](shield-manual.pdf)
 
 Schematics for modules that Turris Shield consists of are available:
 
- * [MOX A](../mox/Turris_Mox_A.pdf)
- * [MOX C](../mox/Turris_Mox_C.pdf)
+ * [MOX A](../mox/Turris-Mox-A.pdf)
+ * [MOX C](../mox/Turris-Mox-C.pdf)

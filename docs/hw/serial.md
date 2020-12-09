@@ -30,7 +30,7 @@ access UART:
 | 13 | RX   |white wire                    |
 | 14 | TX   |green wire                    |
 
-![Serial cable connected to Turris MOX](serial_link_mox.jpg)
+![Serial cable connected to Turris MOX](serial-link-mox.jpg)
 
 Take extra care when connecting the red wire. On some cables, this is directly
 connected to +5V USB power. If that is the case, connecting it will fry the MOX.
@@ -46,7 +46,7 @@ If you have PoE addon, you can find pins on addon itself. In this case it is:
 |  7 | RX   |white wire                    |
 |  8 | TX   |green wire                    |
 
-![Serial cable connected to Turris MOX with PoE](serial_link_mox_poe.jpg)
+![Serial cable connected to Turris MOX with PoE](serial-link-mox-poe.jpg)
 
 ### Turris Omnia
 
@@ -59,7 +59,7 @@ photo - from the left the colors of the pins should be black (GND), yellow
 (RX), orange (TX). The specific cable used in this manual is the Raspberry Pi
 Cable, TTL-232R-RPI.
 
-![Serial cable connected to Turris Omnia](serial_link_omnia.jpg)
+![Serial cable connected to Turris Omnia](serial-link-omnia.jpg)
 
 ### Turris 1.X
 
@@ -68,7 +68,7 @@ have micro USB connector on board on the left front side. You still need to
 remove the cover to get access to it, but afterward, all you need is to connect
 a micro USB cable and you are ready.
 
-![Serial cable connected to Turris 1.1](serial_link_turris.jpg)
+![Serial cable connected to Turris 1.1](serial-link-turris.jpg)
 
 ## Software
 

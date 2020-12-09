@@ -28,5 +28,5 @@ and network configuration tool.
 
 Although, there is a set of advanced administration requirements which are only possible to get done with LuCI. Such as
 
-- [static IP addresses assignment](static_dhcp/static_dhcp.md)
-- [VLAN configuration](vlan/luci_vlan.md)
+- [static IP addresses assignment](static-dhcp/static-dhcp.md)
+- [VLAN configuration](vlan/luci-vlan.md)

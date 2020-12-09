@@ -27,7 +27,7 @@ To use Netmetr on Turris device proceed in these steps:
 Netmetr could be also started automatically to periodically benchmark you Internet
 connection. You can use a timetable to choose hours to run it.
 
-![timetable](netmetr_autostart.png)
+![timetable](netmetr-autostart.png)
 
 When autostarted, Netmetr is not started in the exact times stated above, instead
 it uses a few minute random wait to load balance the server.

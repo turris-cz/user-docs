@@ -165,7 +165,7 @@ You don't have to set a proper static lease to see names in PaKon - just fill
 in the name and select MAC address. If you fill in also the IP address, you
 create a static lease - meaning that the device will always get the same IP
 address. For more details about static leases click
-[here](../luci/static_dhcp/static_dhcp.md).
+[here](../luci/static-dhcp/static-dhcp.md).
 
 ![Screenshot - LuCI Static lease](static-lease.png)
 

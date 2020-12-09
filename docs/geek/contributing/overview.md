@@ -87,7 +87,7 @@ Turris declaration that _We believe in open-source_ is not just empty statement,
 we really believe in open-source. You can modify code and submit it back. This is
 power of open-source. Together we can make Turris the best device there is.
 
-Please read [guide on how to submit pull request](pull_request.md) and
+Please read [guide on how to submit pull request](pull-request.md) and
 [Turris project coding style](style.md).
 
 !!! tip

@@ -11,7 +11,7 @@ dual core, 512 MB DDR3, GWAN/GLAN, USB 3.0, microSD slot, 2×2 MIMO a 3×3 MIM
 
 ## About
 
-{! hw/mox/sets/generic_mox.md !}
+{! hw/mox/sets/generic-mox.md !}
 
 Choose the MOX Classic if you want both wireless connectivity and the option to
 connect several devices by Ethernet cable.
@@ -27,4 +27,4 @@ many reasons to fall in love:
 
 {% set conf = 'ASBWC' %}
 
-{% include 'hw/mox/sets/feature_list.md' %}
+{% include 'hw/mox/sets/feature-list.md' %}

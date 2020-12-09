@@ -1,6 +1,6 @@
 # OpenVPN client on Turris
 
-Starting with [Turris OS 5.1](../../tos_versions.md),
+Starting with [Turris OS 5.1](../../tos-versions.md),
 you can configure the OpenVPN client through the reForis web interface.
 
 ## What is OpenVPN?

@@ -8,7 +8,7 @@ competency: advanced
 
 If your Turris MOX A is connected to the Internet, you can insert the microSD
 card into it and choose [rescue mode number
-6](rescue_modes.md#flash-from-the-internet) when starting the
+6](rescue-modes.md#flash-from-the-internet) when starting the
 router. Turris MOX will download the latest image from the Internet, create a
 partition if there is none, format your microSD card to the Btrfs filesystem to
 be able to use snapshots. Those can be useful when you plan to make major
@@ -19,7 +19,7 @@ If you don't like the previous option - flashing from the cloud, you can
 download the [image](https://repo.turris.cz/hbs/medkit/) and save it to your
 microSD card or any USB drive. **Don't extract it**. We recommend to use Ext4
 or Btrfs formatted drive although Fat32 should work as well. Then use [rescue
-mode number 4](rescue_modes.md#re-flash-router) to reformat
+mode number 4](rescue-modes.md#re-flash-router) to reformat
 your MicroSD card.
 
 ## Manual setup

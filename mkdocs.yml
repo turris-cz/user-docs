@@ -59,9 +59,9 @@ extra:
 nav:
 - Introduction: 'index.md'
 - First setup:
-    - 'MOX': 'basics/first-setup/mox_first_setup.md'
-    - 'Shield': 'basics/first-setup/shield_first_setup.md'
-    - 'Turris 1.X and Omnia': 'basics/first-setup/simple_setup.md'
+    - 'MOX': 'basics/first-setup/mox-first-setup.md'
+    - 'Shield': 'basics/first-setup/shield-first-setup.md'
+    - 'Turris 1.X and Omnia': 'basics/first-setup/simple-setup.md'
 - Software:
     - Data Collection:
         - Introduction: 'basics/collect/collect.md'
@@ -70,7 +70,7 @@ nav:
     - Foris:
         - 'Secure access': 'basics/foris/https/https.md'
         - LAN: 'basics/foris/lan/foris-lan.md'
-        - WAN: 'basics/foris/wan/foris_wan.md'
+        - WAN: 'basics/foris/wan/foris-wan.md'
         - DNS: 'basics/foris/dns/foris-dns.md'
         - 'Guest network': 'basics/foris/guest-network/guest-network.md'
         - 'Storage': 'basics/foris/storage-plugin/storage-plugin.md'
@@ -79,8 +79,8 @@ nav:
         - Screenshots: 'basics/reforis/screenshots/reforis.md'
     - LuCI:
         - Introduction: basics/luci/luci.md
-        - Static IP: basics/luci/static_dhcp/static_dhcp.md
-        - VLAN: basics/luci/vlan/luci_vlan.md
+        - Static IP: basics/luci/static-dhcp/static-dhcp.md
+        - VLAN: basics/luci/vlan/luci-vlan.md
     - Applications:
         - 'Netmetr': 'basics/apps/netmetr.md'
         - 'Nextcloud': 'geek/nextcloud/nextcloud.md'
@@ -93,15 +93,15 @@ nav:
         - 'Netboot': 'basics/apps/netboot.md'
         - 'Schnapps': 'geek/schnapps/schnapps.md'
     - 'OS versions':
-        - Versions: 'basics/tos_versions.md'
+        - Versions: 'basics/tos-versions.md'
         - Changelog: 'basics/changelog.md'
         - 'Early access': 'geek/testing.md'
-        - '3.x migration': 'geek/tos3_migration.md'
+        - '3.x migration': 'geek/tos3-migration.md'
     - Contributing:
         - Overview: 'geek/contributing/overview.md'
         - Translation: 'geek/contributing/translation.md'
         - Issues: 'geek/contributing/issues.md'
-        - "Pull requests": 'geek/contributing/pull_request.md'
+        - "Pull requests": 'geek/contributing/pull-request.md'
         - "Coding style": 'geek/contributing/style.md'
 - Hardware:
     - Models: 'basics/models.md'
@@ -130,10 +130,10 @@ nav:
         - Screenshots: 'hw/shield/screenshots.md'
     - Turris 1.X: 'hw/turris-1x/turris-1x.md'
 - Troubleshooting:
-    - 'Common errors': 'basics/common_errors.md'
+    - 'Common errors': 'basics/common-errors.md'
     - Rescue modes:
-        - 'MOX': 'hw/mox/rescue_modes.md'
-        - 'Omnia': 'hw/omnia/rescue_modes.md'
+        - 'MOX': 'hw/mox/rescue-modes.md'
+        - 'Omnia': 'hw/omnia/rescue-modes.md'
         - 'Turris 1.X': 'hw/turris-1x/factory-reset.md'
     - MOX MicroSD: 'hw/mox/microsd.md'
     - 'Serial connection': 'hw/serial.md'
@@ -141,3 +141,23 @@ nav:
         - 'MOX': 'hw/mox/serial-boot.md'
         - 'Omnia': 'hw/omnia/serial-boot.md'
     - Support: 'basics/support.md'
+
+plugins:
+    - redirects:
+        redirect_maps:
+            'basics/common_errors.md': 'basics/common-errors.md'
+            'basics/first-setup/mox_cpu_only.md': 'basics/first-setup/mox-cpu-only.md'
+            'basics/first-setup/mox_first_setup_warning.md': 'basics/first-setup/mox-first-setup-warning.md'
+            'basics/first-setup/mox_first_setup.md': 'basics/first-setup/mox-first-setup.md'
+            'basics/first-setup/shield_first_setup.md': 'basics/first-setup/shield-first-setup.md'
+            'basics/first-setup/simple_setup.md': 'basics/first-setup/simple-setup.md'
+            'basics/foris/wan/foris_wan.md': 'basics/foris/wan/foris-wan.md'
+            'basics/luci/static_dhcp/static_dhcp.md': 'basics/luci/static-dhcp/static-dhcp.md'
+            'basics/luci/vlan/luci_vlan.md': 'basics/luci/vlan/luci-vlan.md'
+            'basics/tos_versions.md': 'basics/tos-versions.md'
+            'geek/contributing/pull_request.md': 'geek/contributing/pull-request.md'
+            'geek/tos3_migration.md': 'geek/tos3-migration.md'
+            'hw/mox/rescue_modes.md': 'hw/mox/rescue-modes.md'
+            'hw/mox/sets/feature_list.md': 'hw/mox/sets/feature-list.md'
+            'hw/mox/sets/generic_mox.md': 'hw/mox/sets/generic-mox.md'
+            'hw/omnia/rescue_modes.md': 'hw/omnia/rescue-modes.md'
