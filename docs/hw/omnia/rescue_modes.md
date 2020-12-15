@@ -48,7 +48,16 @@ LEDs turn green.
 
 How reset modes work is also explained in one of our video tutorials.
 
-[!embed](http://www.youtube.com/watch?v=ZrWzpsxqaRU)
+<iframe  
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/ZrWzpsxqaRU" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+    >
+</iframe>
+
 
 ## Standard (re)boot
 
