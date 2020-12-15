@@ -89,6 +89,12 @@ public DNS servers (but currently not with DoT).
 
 *DNS over TLS keeps DNS traffic in secret but is a bit slower than the standard DNS communication.*
 
+!!! notice
+    Information about privacy and data processing on CZ.NIC ODVR servers
+    [is here](https://www.nic.cz/odvr/). The other servers are listed in
+    a [summary table](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Public+Resolvers)
+    with links to particular privacy policies.
+
 ### Disabling DNSSEC
 
 Disabling DNSSEC is highly discouraged. It should be done only temporarily in these cases:
