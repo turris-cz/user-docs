@@ -147,6 +147,7 @@ nav:
         - About: 'hw/shield/shield.md'
         - Screenshots: 'hw/shield/screenshots.md'
     - Turris 1.X: 'hw/turris-1x/turris-1x.md'
+    - 'Wi-Fi coverage': 'hw/wifi.md'
 - Troubleshooting:
     - 'Common errors': 'basics/common-errors.md'
     - Rescue modes:
