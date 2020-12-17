@@ -120,9 +120,10 @@ Message in question starts with with sentence: _Migraton from Turris OS 3.x was
 completed._.
 
 !!! danger
-    Before first reboot, after migration is completed, you have to run following
-    command over SSH: `ROOT_DIR=/ /etc/updater/hook_postupdate/10_kernel-install`.
-    Failing to not do so can result in to not-booting router.
+    On Turris 1.x before first reboot, after migration is completed, you have to
+    run following command over SSH: `ROOT_DIR=/
+    /etc/updater/hook_postupdate/10_kernel-install`.  Failing to not do so can
+    result in to not-booting router.
 
 ## Known problems and solutions
 You can encounter some problems that are caused by automatic migration.  Not all
