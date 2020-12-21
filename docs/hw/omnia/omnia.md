@@ -52,5 +52,5 @@ adding the header.
 * [Official datasheet for Turris Omnia 2019](omnia2019eu-datasheet.pdf)
 * [Original printed manual](omnia-manual-en.pdf)
 * [Schematics for Turris Omnia CZ11NIC23](CZ11NIC23-schematics.pdf)
-* [Schematics for Turris Omnia CZ11NIC20](CZ11NIC23-schematics.pdf)
+* [Schematics for Turris Omnia CZ11NIC20](CZ11NIC20-schematics.pdf)
 * [Schematics for Turris Omnia CZ11NIC13](CZ11NIC13-schematics.pdf)
