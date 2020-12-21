@@ -44,6 +44,24 @@ plugins:
         prebuild_index: False
     - git-revision-date:
         modify_md: False
+    - redirects:
+        redirect_maps:
+            'basics/common_errors.md': 'basics/common-errors.md'
+            'basics/first-setup/mox_cpu_only.md': 'basics/first-setup/mox-cpu-only.md'
+            'basics/first-setup/mox_first_setup_warning.md': 'basics/first-setup/mox-first-setup-warning.md'
+            'basics/first-setup/mox_first_setup.md': 'basics/first-setup/mox-first-setup.md'
+            'basics/first-setup/shield_first_setup.md': 'basics/first-setup/shield-first-setup.md'
+            'basics/first-setup/simple_setup.md': 'basics/first-setup/simple-setup.md'
+            'basics/foris/wan/foris_wan.md': 'basics/foris/wan/foris-wan.md'
+            'basics/luci/static_dhcp/static_dhcp.md': 'basics/luci/static-dhcp/static-dhcp.md'
+            'basics/luci/vlan/luci_vlan.md': 'basics/luci/vlan/luci-vlan.md'
+            'basics/tos_versions.md': 'basics/tos-versions.md'
+            'geek/contributing/pull_request.md': 'geek/contributing/pull-request.md'
+            'geek/tos3_migration.md': 'geek/tos3-migration.md'
+            'hw/mox/rescue_modes.md': 'hw/mox/rescue-modes.md'
+            'hw/mox/sets/feature_list.md': 'hw/mox/sets/feature-list.md'
+            'hw/mox/sets/generic_mox.md': 'hw/mox/sets/generic-mox.md'
+            'hw/omnia/rescue_modes.md': 'hw/omnia/rescue-modes.md'
 
 extra:
   social:
@@ -141,23 +159,3 @@ nav:
         - 'MOX': 'hw/mox/serial-boot.md'
         - 'Omnia': 'hw/omnia/serial-boot.md'
     - Support: 'basics/support.md'
-
-plugins:
-    - redirects:
-        redirect_maps:
-            'basics/common_errors.md': 'basics/common-errors.md'
-            'basics/first-setup/mox_cpu_only.md': 'basics/first-setup/mox-cpu-only.md'
-            'basics/first-setup/mox_first_setup_warning.md': 'basics/first-setup/mox-first-setup-warning.md'
-            'basics/first-setup/mox_first_setup.md': 'basics/first-setup/mox-first-setup.md'
-            'basics/first-setup/shield_first_setup.md': 'basics/first-setup/shield-first-setup.md'
-            'basics/first-setup/simple_setup.md': 'basics/first-setup/simple-setup.md'
-            'basics/foris/wan/foris_wan.md': 'basics/foris/wan/foris-wan.md'
-            'basics/luci/static_dhcp/static_dhcp.md': 'basics/luci/static-dhcp/static-dhcp.md'
-            'basics/luci/vlan/luci_vlan.md': 'basics/luci/vlan/luci-vlan.md'
-            'basics/tos_versions.md': 'basics/tos-versions.md'
-            'geek/contributing/pull_request.md': 'geek/contributing/pull-request.md'
-            'geek/tos3_migration.md': 'geek/tos3-migration.md'
-            'hw/mox/rescue_modes.md': 'hw/mox/rescue-modes.md'
-            'hw/mox/sets/feature_list.md': 'hw/mox/sets/feature-list.md'
-            'hw/mox/sets/generic_mox.md': 'hw/mox/sets/generic-mox.md'
-            'hw/omnia/rescue_modes.md': 'hw/omnia/rescue-modes.md'
