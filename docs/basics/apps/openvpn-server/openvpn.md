@@ -28,7 +28,7 @@ This manual describes how to set up OpenVPN in **a few easy steps** using Foris:
 
 ### 1. Download the OpenVPN package
 
-Log into the Foris user interface and go to the _Updater_ tab. Check the box next to _OpenVPN_.
+Log into the reForis user interface and go to the _Updater_ tab. Check the box next to _OpenVPN_.
 Then press _Save changes_.
 
 ![OpenVPN section in Updated](updater.png)
