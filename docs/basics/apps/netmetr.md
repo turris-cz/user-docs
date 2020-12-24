@@ -45,5 +45,6 @@ All the data are - after proper anonymization - also shared on Netmetr
 
 ## Other Netmetr apps
 
-The Netmetr is also available as a [web](https://www.netmetr.cz/en/test.html) and
-[mobile](https://play.google.com/store/apps/details?id=cz.nic.netmetr) application.
+The Netmetr is also available as a [web](https://www.netmetr.cz/en/test.html) application
+and as a mobile application on [Google Play](https://play.google.com/store/apps/details?id=cz.nic.netmetr)
+and [App Store](https://apps.apple.com/cz/app/netmetr/id946478662)
