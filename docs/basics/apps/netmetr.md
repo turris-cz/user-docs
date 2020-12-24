@@ -18,13 +18,13 @@ the Open Source principle.
 
 To use Netmetr on Turris device proceed in these steps:
 
-1. Install Netmetr package using Updater tab in Foris web interface
+1. Install Netmetr package using Updater tab in reForis web interface
 2. After successful installation new Netmetr tab will appear
 3. Click _Start test_ button to start a new test
 
 ## Automated run
 
-Netmetr could be also started automatically to periodically benchmark you Internet
+Netmetr could be also started automatically to periodically benchmark your Internet
 connection. You can use a timetable to choose hours to run it.
 
 ![timetable](netmetr-autostart.png)
