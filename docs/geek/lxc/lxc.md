@@ -183,21 +183,6 @@ the containers have to gracefully shut down before being killed. The default val
 
 ## FAQ
 
-###Alpine Linux
-
-
-**[Alpine Linux](https://en.wikipedia.org/wiki/Alpine_Linux) used to have a configured network and was working
-immediately after the installation. Why isn't it working now?**
-
-In the beginning of February 2018, the people at [LinuxContainers.org](https://linuxcontainers.org/) decided to remove
-architecture armhf for Alpine. Community asked us if we can bring it back. Right now we use an image from their
-official website [AlpineLinux.org](https://alpinelinux.org/downloads/), but it is mini root file system, which is
-primaly made for Docker or chroots, which is why you need to setup the network and also a few other things. To find
-out how to set it up, have a look in our community documentation.
-
-In the meantime we created [issue in LinuxContainers.org's Github](https://github.com/lxc/lxc/issues/2161)
-and they should bring back Alpine, but only for LXC 2.0. This version will be included in Turris OS 4.0.
-
 ###Docker
 
 **Is it possible to have Docker on Turris Omnia?**
