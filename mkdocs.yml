@@ -211,6 +211,7 @@ nav:
     - Omnia:
         - About: 'hw/omnia/omnia.md'
         - Revisions: 'hw/omnia/revisions.md'
+        - 'Boot from SSD': 'hw/omnia/ssd-boot.md'
     - Shield:
         - About: 'hw/shield/shield.md'
         - Screenshots: 'hw/shield/screenshots.md'
