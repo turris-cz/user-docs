@@ -62,12 +62,12 @@ Various materials used in walls, floors, ceilings etc., for example:
 ### Some materials with light absorption
 
 * glass; e.g. in windows
-* plasterboard/drywall; e.g. in crossbars
+* plasterboard/drywall; e.g. in thin walls
 * thin layer of wood; e.g. in doors or furniture
 * asphalt sheet covering; e.g. on roofs
 * plastics; e.g. in furniture
 * fabrics (both natural and artificial); e.g. in curtains
-* papier-mâché or paper composites; e.g. in crossbars, doors or furniture
+* papier-mâché or paper composites; e.g. in thin walls, doors or furniture
 
 The above list is only illustrative. There are many and many materials and their
 absorption rate may differ according to their composition. Porous materials
