@@ -107,6 +107,7 @@ nav:
     - 'Shield': 'basics/first-setup/shield-first-setup.md'
     - 'Turris 1.X and Omnia': 'basics/first-setup/simple-setup.md'
 - Software:
+    - 'Landing page': 'basics/landing-page.md'
     - Data Collection:
         - Introduction: 'basics/collect/collect.md'
         - Dynamic Firewall: 'basics/collect/dynfw/collect-dynfw.md'
