@@ -32,6 +32,10 @@ Turris OS 3.x.
   to install them manually.
 * Squid proxy package list was dropped. Install `luci-app-squid` as a replacement.
 * Webcam package list was dropped.
+* Network switch configuration now uses
+  [DSA](https://www.kernel.org/doc/html/latest/networking/dsa/configuration.html).
+  See the up to date documentation on how to [configure
+  VLANs](../basics/luci/vlan/luci-vlan.md).
 
 ##### Turris Omnia specifics
 * Turris OS 5.0+ no longer supports switching between SFP and metallic in runtime.
