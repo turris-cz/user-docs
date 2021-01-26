@@ -44,6 +44,7 @@ plugins:
         prebuild_index: False
     - git-revision-date:
         modify_md: False
+    - include-markdown:
     - redirects:
         redirect_maps:
             'basics/common_errors.md': 'basics/common-errors.md'
