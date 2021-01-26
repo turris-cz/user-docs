@@ -95,6 +95,7 @@ nav:
         - 'Storage': 'basics/foris/storage-plugin/storage-plugin.md'
     - reForis:
         - About: 'basics/reforis/intro.md'
+        - DNS: 'basics/reforis/dns/reforis-dns.md'
         - Screenshots: 'basics/reforis/screenshots/reforis.md'
     - LuCI:
         - Introduction: basics/luci/luci.md

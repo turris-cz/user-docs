@@ -4,48 +4,12 @@ competency: novice
 ---
 # DNS settings in Foris
 
-## What is DNS?
+{%
+  include-markdown "../../reforis/dns/reforis-dns.md"
+  start="<!--what-is-dns-start-->"
+  end="<!--what-is-dns-end-->"
+%}
 
-The [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System) (DNS) is a system which translates name
-addresses (such as `www.turris.cz`) to [IP addresses](https://en.wikipedia.org/wiki/IP_address) (e.g. `217.31.192.69`
-for [IPv4](https://en.wikipedia.org/wiki/IPv4) or `2001:1488:ac15:ff80::69` for
-[IPv6](https://en.wikipedia.org/wiki/IPv6)) and vice versa. It is one of the key parts of the Internet.
-
-For example, if you want to visit a webpage in your browser your computer sends a DNS request to the "nearest" DNS
-server. This server responds directly (if it has already acquired the address) or it recursively queries other
-DNS servers (the ISP's ones or the autoritative ones which maintain the DNS records) and then sends the address to
-your computer.
-
-In most cases, your computer sends DNS queries to your router (ie. Turris) which must have be configured properly.
-This documentation page explains how to set it.
-
-## What is DNSSEC?
-
-Plain DNS responds have a big problem. Their data is transmitted without any measure for their integrity. It means
-if it is changed during the transfer you can't detect it any way. Some "bad guy" sitting on the wire can send you
-his own DNS record instead the true one and you have no chance to disclose it. This attack is denoted as
-[DNS spoofing](https://en.wikipedia.org/wiki/DNS_spoofing).
-
-For example, you requests the IP address(es) for `www.turris.cz` and you should currently get that it is an alias for
-turris.cz and it has the addresses `217.31.192.69` and `2001:1488:ac15:ff80::69`. But somebody (e.g. a dissatisfied
-employee at your ISP) can change it to something else and your browser displays another page than you want.
-
-The solution of this problem is [DNSSEC](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions).
-It is based on [electronic signatures](https://en.wikipedia.org/wiki/Electronic_signature) and allows to verify
-whether a DNS response:
-
-* is based on authoritative data, and
-* is unchanged (has its original form).
-
-DNSSEC works properly only if the whole DNS record chain (from the
-[root zone](https://en.wikipedia.org/wiki/DNS_root_zone) to the records you are requesting)
-is consistently signed and all DNS servers are correctly configured. The root zone keys are signed by complicated and
-secure procedures called [Root KSK Ceremonies](https://www.iana.org/dnssec/ceremonies). The root zone signs
-the lower level zones (for [TLDs](https://en.wikipedia.org/wiki/Top-level_domain)) and so on.
-
-To make DNSSEC work properly is also necessary to support it by all DNS servers/resolvers in the chain between
-you and the authoritative DNS servers. This usually include your router and your ISP's DNS servers (if used). Read
-bellow how to set your Turris to work with DNSSEC.
 
 ## DNS in Foris
 
