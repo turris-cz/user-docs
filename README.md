@@ -1,8 +1,8 @@
 # Documentation for Turris routers
 
-This documentation is written in English. It will walk you through the
-first setup of your router and give you insights into main features available
-in Turris OS.
+This documentation is written in English. It will walk you through the first
+setup of your router and give you insights into main features available in
+Turris OS.
 
 We are using Markdown to document everything and `mkdocs` to handle the
 presentation.
@@ -10,18 +10,18 @@ presentation.
 
 ## Requirements:
 
+First of all clone this repository via `git`.
+
+```bash
+git clone https://gitlab.nic.cz/turris/user-docs.git
+```
+
 To render this documentation, you need [mkdocs](https://www.mkdocs.org/).
 
-It can be installed easily using `pip3` running the following command
+Run the following `pip3` command in the cloned repository to install it easily.
 
-```
+```bash
 pip3 install --user -r requirements.txt
-```
-
-If you are all set, you can clone this repository via `git`.
-
-```
-git clone --recurse-submodules https://gitlab.nic.cz/turris/user-docs.git
 ```
 
 ### Run mkdocs
@@ -30,7 +30,7 @@ Once you have a cloned out directory with documentation, you can either render
 it locally or run a local server that will serve it. To do the later, you just
 need to run in the root directory of the documentation the following command
 
-```
+```bash
 mkdocs serve
 ```
 
@@ -113,7 +113,7 @@ adding a lightbox name using `@{name}` then the `!` goes before the `@`.
 
 The metadata must be the first thing in the file and must take the form of a
 valid YAML set between triple-dashed lines. Here is a basic example:
-```
+```yaml
 ---
 board: mox
 competency: expert
@@ -132,7 +132,7 @@ options provided below.
 -   omnia
 -   1.x
 
-```
+```yaml
 ---
 board: shield, mox, omnia, 1.x
 ---
@@ -146,7 +146,7 @@ In case you want to specify competency level choose one of the levels below.
 -   advanced
 -   expert
 
-```
+```yaml
 ---
 competency: expert
 ---
