@@ -1,7 +1,7 @@
 # Documentation for Turris routers
 
 This documentation is written in English. It will walk you through the first
-setup of your router and give you insights into main features available in
+setup of your router and give you insights into the main features available in
 Turris OS.
 
 We are using Markdown to document everything and `mkdocs` to handle the
@@ -16,7 +16,7 @@ First of all clone this repository via `git`.
 git clone https://gitlab.nic.cz/turris/user-docs.git
 ```
 
-To render this documentation, you need [mkdocs](https://www.mkdocs.org/).
+To render this documentation, you need [MkDocs](https://www.mkdocs.org/).
 
 Run the following `pip3` command in the cloned repository to install it easily.
 
