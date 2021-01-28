@@ -15,6 +15,14 @@ For more detailed list of changes and versions history please see
 [changelog](changelog.md).
 
 
+### Versioning scheme
+
+_Major_ version (5.x.y) denotes the OpenWrt version our Turris OS is based on.
+_minor_ version (x.1.y) is released when some new features comes to the Turris OS,
+and finally *fixup* version (x.y.4) correspond with a fixes, security patches
+and correcting releases.
+
+
 ## How to find out version of Turris OS on your router?
 There are multiple ways how you can find out version of Turris OS running in your
 router. Few well advised ways are described here.
