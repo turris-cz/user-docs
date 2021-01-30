@@ -12,10 +12,8 @@ function render_changelog(changelog, element) {
 <h5>Sources</h5>
 <p>Available on <a href="https://gitlab.nic.cz/turris/turris-build/tree/${release.name}">Gitlab</a>.</p>
 <h5>Release notes</h5>`;
-        message.pop();
         let notes='<ul>';
         for (let line in message) {
-            console.log(message[line]);
             const li = message[line].match(/^\s?\* (.*)/)
             if (li) {
                 notes += '<li>' + li[1] + '</li>';
