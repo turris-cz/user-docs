@@ -89,10 +89,12 @@ Your router should be as far as possible from such devices and/or to a place
 where such signal sources are somewhat shielded e.g. by a wall. Another
 approach is to try different frequency channels.
 
+<!--wheather-radars-start-->
 !!! notice
     All authorized Wi-Fi devices must detect weather radars and change their
     channels to not interfere with them. Don't be suprised if your
     router would do so. It applies only for the 5GHz range.
+<!--wheather-radars-end-->
 
 ## Where to place your router
 
