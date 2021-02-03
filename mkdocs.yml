@@ -97,6 +97,7 @@ nav:
         - About: 'basics/reforis/intro.md'
         - DNS: 'basics/reforis/dns/reforis-dns.md'
         - 'Wi-Fi': 'basics/reforis/wifi/reforis-wifi.md'
+        - Notifications: 'basics/reforis/notifications/reforis-notifications.md'
         - Screenshots: 'basics/reforis/screenshots/reforis.md'
     - LuCI:
         - Introduction: basics/luci/luci.md
