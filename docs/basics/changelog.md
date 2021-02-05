@@ -1,6 +1,7 @@
 <script type="text/javascript">
 //<!--
 function render_changelog(changelog, element) {
+    element.innerHTML = '';
     for (let i in changelog) {
         const release = changelog[i];
         const message = release.message.split('\n');
@@ -26,7 +27,6 @@ function render_changelog(changelog, element) {
 
 function changelog(version, span_id) {
     const element = document.getElementById(span_id);
-	element.innerHTML = '';
 	fetch('https://gitlab.nic.cz/api/v4/projects/turris%2fturris-build/repository/tags/?search=' + version).
 		then(res => res.json()).
 		then((json) => {
