@@ -20,6 +20,7 @@ theme:
       - 404.html
 
 markdown_extensions:
+    - mdlightbox
     - meta
     - markdown_include.include:
         base_path: docs

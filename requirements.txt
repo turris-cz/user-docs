@@ -10,3 +10,4 @@ mkdocs-include-markdown-plugin
 pymdown-extensions
 git+https://github.com/Neepawa/cell_row_span.git
 git+https://github.com/miska/markdown-jinja.git
+git+https://github.com/aleksan4eg/markdown-lightbox.git
