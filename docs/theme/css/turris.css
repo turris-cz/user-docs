@@ -31,9 +31,14 @@
 
 /* Image border */
 .md-typeset img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
     border: solid;
     border-width: 1px;
     border-color: lightgrey;
+    border-radius: 5px;
 }
 
 .metadata a.badge {
