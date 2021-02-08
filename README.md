@@ -153,3 +153,35 @@ keywords for block-styled content. It needs to start with `!!!` or `???`.  More
 details can be found in [Admonition
 documentation](https://squidfunk.github.io/mkdocs-material/extensions/admonition/).
 
+### Content inclusion
+
+Multiple documentation pages can share content. One or more parts of the text
+in one page can be included to one or more other pages.
+
+In the source page, a part that can be included is enveloped by a pair of
+special marks (replace `NAME` by the real name of this part):
+
+```markdown
+<!--NAME-start-->
+
+... content to be included ...
+
+<!--NAME-end-->
+```
+
+It the destination page, insert an inclusion mark like this:
+
+```
+{%
+  include-markdown "SOURCE.md"
+  start="<!-NAME-start-->"
+  end="<!--NAME-end-->"
+%}
+```
+
+Replace `NAME` by the name meant above and `SOURCE.md` by the path to
+the source Markdown file.
+
+It has more features than described here. See the `include-markdown`
+[documentation](https://pypi.org/project/mkdocs-include-markdown-plugin/)
+for more information.
