@@ -83,6 +83,7 @@ contamination by system themes. Switch your browser to English.
 
 For highlighting the important part of the screenshot (if you need to, most of
 the time not necessary) use rectangular shape and 3-pixel red line `rgb(255, 0, 0)`
+
 ### Metadata
 
 The metadata must be the first thing in the file and must take the form of a
