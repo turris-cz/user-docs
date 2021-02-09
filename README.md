@@ -84,6 +84,31 @@ contamination by system themes. Switch your browser to English.
 For highlighting the important part of the screenshot (if you need to, most of
 the time not necessary) use rectangular shape and 3-pixel red line `rgb(255, 0, 0)`
 
+#### Lightboxes
+
+All images on the page are grouped into the same lightbox by default. Grouping of images
+into lightboxes can also be done manually by specifying `@{lightbox-name}` right
+after the opening `[` bracket of the image, e.g., `![@{my-lightbox-name}Here is my
+description](image.jpg)` (or after `[!` if hiding the image... see below)
+
+Hidden images (that appear in the lightbox gallery but not on the main page) can
+be added by adding a `!` right after the opening `[` bracket of the image. If
+adding a lightbox name using `@{name}` then the `!` goes before the `@`.
+
+```
+# image with default lightbox name
+![my description](image.jpg)
+
+# hidden image
+![!my description](image.jpg)
+
+# specified lightbox name
+![@{mylightbox}my description](image.jpg)
+
+# hidden image with specified lightbox name
+![!@{mylightbox}my description](image.jpg)
+```
+
 ### Metadata
 
 The metadata must be the first thing in the file and must take the form of a
