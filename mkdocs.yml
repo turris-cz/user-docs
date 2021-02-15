@@ -111,6 +111,7 @@ nav:
     - Data Collection:
         - Introduction: 'basics/collect/collect.md'
         - Dynamic Firewall: 'basics/collect/dynfw/collect-dynfw.md'
+        - HaaS: 'basics/collect/haas.md'
         - Setup: 'basics/collect/setup.md'
     - Foris:
         - 'Secure access': 'basics/foris/https/https.md'

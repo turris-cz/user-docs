@@ -12,8 +12,8 @@ via _Data Collection_ tab in reForis. This will install and enable
 [dynamic firewall](dynfw/collect-dynfw.md) and other selected data collection
 components.
 
-![Package Sentinel](reforis-pkg-sentinel.png)
-![EULA](reforis-collect-eula.png)
+![Package Sentinel](setup-packages.png)
+![EULA](eula.png)
 
 You can also install the data collection manually using command line (SSH):
 ```
