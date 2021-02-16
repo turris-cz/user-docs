@@ -51,7 +51,7 @@ your branch is located.
 If you can't use any of the previous ways there is still an older,
 patch-based way how to contribute. You can utilize locally installed `git`
 for patch preparation but it's not necessary to use it. Whichever
-method you use please send the resulting patch(es) to us by e-mail.
+method you use please send the resulting patch(es) by e-mail to [packaging@turris.cz](mailto:packaging@turris.cz)
 
 ### With git
 
