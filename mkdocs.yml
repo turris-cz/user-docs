@@ -1,44 +1,41 @@
+#
+# Copyright (c) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+#
+# This is free software, licensed under the GNU General Public License v3.
+# See /LICENSE for more information.
+#
+
+# Project information
 site_name: Turris Documentation
-site_description: Official Turris documentation for both hardware and software
+site_url: https://docs.turris.cz/
 site_author: CZ.NIC z.s.p.o.
-copyright: CC-BY-SA-4.0
+site_description: Official Turris documentation for both hardware and software
+
+# Repository
 repo_url: 'https://gitlab.nic.cz/turris/user-docs'
 repo_name: 'turris/user-docs'
 edit_uri: 'https://gitlab.nic.cz/turris/user-docs/-/tree/master/docs'
 
+# Copyright
+copyright: CC-BY-SA-4.0
+
+# Configuration
 theme:
     name: 'material'
     custom_dir: 'docs/theme'
-    logo: 'theme/img/turris-logo.svg'
-    favicon: 'theme/img/favicon.ico'
-    font: false
-    language: 'en'
     scheme: 'preference'
+    language: 'en'
     features:
-      - navigation.instant
+        - navigation.instant
+    font: false
+    favicon: 'theme/img/favicon.ico'
+    logo: 'theme/img/turris-logo.svg'
+
+    # Static files
     static_templates:
-      - 404.html
+        - 404.html
 
-markdown_extensions:
-    - mdlightbox
-    - meta
-    - markdown_include.include:
-        base_path: docs
-    - admonition
-    - cell_row_span
-    - extra
-    - pymdownx.details
-    - pymdownx.superfences
-    - codehilite
-    - markdown_jinja:
-        fs_loader_dir: 'docs'
-    - smarty
-    - toc:
-        permalink: '⚓︎'
-    - wikilinks
-    - admonition
-    - pyembed.markdown
-
+# Plugins
 plugins:
     - search:
         lang: ['en']
@@ -65,17 +62,40 @@ plugins:
             'hw/mox/sets/generic_mox.md': 'hw/mox/sets/generic-mox.md'
             'hw/omnia/rescue_modes.md': 'hw/omnia/rescue-modes.md'
 
+# Customization
 extra:
-  social:
-    - icon: 'fontawesome/solid/globe'
-      link: 'https://turris.cz'
-    - icon: 'fontawesome/brands/gitlab'
-      link: 'https://gitlab.nic.cz/turris'
-    - icon: 'fontawesome/brands/github'
-      link: 'https://github.com/CZ-NIC'
-    - icon: 'fontawesome/brands/twitter'
-      link: 'https://twitter.com/turris_cz'
+    social:
+        - icon: 'fontawesome/solid/globe'
+          link: 'https://turris.cz'
+        - icon: 'fontawesome/brands/gitlab'
+          link: 'https://gitlab.nic.cz/turris'
+        - icon: 'fontawesome/brands/github'
+          link: 'https://github.com/CZ-NIC'
+        - icon: 'fontawesome/brands/twitter'
+          link: 'https://twitter.com/turris_cz'
 
+# Extensions
+markdown_extensions:
+    - mdlightbox
+    - meta
+    - markdown_include.include:
+        base_path: docs
+    - admonition
+    - cell_row_span
+    - extra
+    - pymdownx.details
+    - pymdownx.superfences
+    - codehilite
+    - markdown_jinja:
+        fs_loader_dir: 'docs'
+    - smarty
+    - toc:
+        permalink: '⚓︎'
+    - wikilinks
+    - admonition
+    - pyembed.markdown
+
+# Page tree
 nav:
 - Introduction: 'index.md'
 - First setup:
