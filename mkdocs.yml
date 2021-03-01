@@ -61,6 +61,10 @@ plugins:
             'hw/mox/sets/feature_list.md': 'hw/mox/sets/feature-list.md'
             'hw/mox/sets/generic_mox.md': 'hw/mox/sets/generic-mox.md'
             'hw/omnia/rescue_modes.md': 'hw/omnia/rescue-modes.md'
+    - minify:
+        minify_html: true
+        htmlmin_opts:
+            remove_comments: true
 
 # Customization
 extra:
