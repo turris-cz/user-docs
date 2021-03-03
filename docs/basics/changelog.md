@@ -46,6 +46,39 @@ various repositories with additional packages like
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
 
+## Turris OS 5.2
+
+Turris OS 5.2 is based on top of [OpenWrt
+19.07](https://openwrt.org/releases/19.07/start) with our feed and a few patches. It
+supports [Turris MOX](../hw/mox/intro.md), [Turris Omnia](../hw/omnia/omnia.md)
+and [Turris Shield](../hw/shield/shield.md). There is also an experimental
+support for [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* reForis (configuration web interface) additions
+  * Overview tab
+  * Storage plugin with option for persistent system logs
+  * Factory reset from web interface
+  * Support for Honeypot as a Service (haas.nic.cz)
+  * Add option to change hostname in reForis
+  * Fix DHCP range configuration check
+  * A few design improvements
+* WebApps: New graphical design with optional dark mode
+* Sentinel: Introduce replacement for firewall logs collector
+* Turris MOX: Update firmware for SDIO card
+* Add RIPE Atlas SW probe and common passwords as package lists
+* Automatic installation of drivers for limited amount of LTE and DVB devices
+
+### Detailed changelog
+
+<span id="tos52">Loading changelog...</span>
+<script type="text/javascript">
+//<!--
+changelog("v5.2.", "tos52");
+//-->
+</script>
+
 ## Turris OS 5.1
 
 Turris OS 5.1 is based on top of [OpenWrt 19.07](https://openwrt.org/releases/19.07/start)
