@@ -19,10 +19,16 @@ be a little bit tricky. Decision adheres to the following rules.
   port next to the power source on MOX A is WAN
 
 When setting up your MOX, connect the cable from your Internet service provider
-to WAN port and connect just your trusted device to LAN. **There is no password
-during initial setup**. To eliminate potential security risks, setup your MOX
-first, go through the update procedure and connect other untrusted devices only
-afterwards.
+to WAN port and connect just your trusted device (the computer which you use
+to setup the MOX) to one of the available LAN ports.
+
+!!! caution
+    You may also use your LAN to interconnect the computer and the MOX. But
+    ensure that there is no (other) DHCP server in the LAN as it would
+    interfere with the one in your MOX. **There is no password during initial
+    setup**. To eliminate potential security risks, setup your MOX first, go
+    through the update procedure and connect other untrusted devices only
+    afterwards.
 
 ### One Ethernet port device
 
