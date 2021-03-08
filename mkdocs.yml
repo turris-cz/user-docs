@@ -147,6 +147,7 @@ nav:
         - '3.x migration': 'geek/tos3-migration.md'
     - 'Security':
         - 'Passwords': 'security/passwords.md'
+        - 'Password filter': 'security/common-passwords.md'
     - Contributing:
         - Overview: 'geek/contributing/overview.md'
         - Translation: 'geek/contributing/translation.md'
