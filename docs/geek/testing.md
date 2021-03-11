@@ -78,11 +78,12 @@ of your choice.
 
 ### Switching back
 
-If you are done with your testing and want to make sure that you are back at
-the stable branch, all you need to do is to switch to it the same way you
-switched to the more experimental branch.
 
-```
-switch-branch hbs
-```
+Switching from less stable branches to more stable branches (from HBD to HBL, HBL to HBK, etc.)
+is possible but it is not a supported scenario. Because of that, we don't recommend it.
+You can brick your router.
+
+It is recommended to use a snapshot and rollback to the last stable version.
+(see [schnapps](./schnapps/schnapps.md))
+
 
