@@ -22,6 +22,8 @@ using either switches or using Wi-Fi APs. But be aware, there is no password
 during initial setup, so we highly recommend to set up Shield before connecting
 other computers.
 
+{! basics/first-setup/cables.md !}
+
 ## Entering guide
 
 Once you have all cables connected, you can power up your Shield by connecting the

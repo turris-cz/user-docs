@@ -30,6 +30,8 @@ to setup the MOX) to one of the available LAN ports.
     through the update procedure and connect other untrusted devices only
     afterwards.
 
+{! basics/first-setup/cables.md !}
+
 ### One Ethernet port device
 
 The trickiest case is if you have **only one Ethernet port**. Therefore we

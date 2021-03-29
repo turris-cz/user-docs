@@ -38,6 +38,12 @@ to your computer as well as connect to the internet.
 
 ![Ideal connection of MOX](mox-cpu-only.png)
 
+!!! important
+    Make sure you use a proper Gigabit Ethernet cable, i.e., a
+    [Cat 5e](https://en.wikipedia.org/wiki/Category_5_cable) or
+    [Cat 6](https://en.wikipedia.org/wiki/Category_6_cable) straight unshielded
+    twisted pair cable with 8 wires (8P8C).
+
 ## Installation steps
 
 ### Before you start
