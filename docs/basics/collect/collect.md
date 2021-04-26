@@ -43,6 +43,11 @@ currently operate [Telnet](https://en.wikipedia.org/wiki/Telnet),
 Minipots. The entered user/password combination along with the attacker's IP
 address is collected by the software.
 
+!!! important
+    Turris Minipot may be falsely detected as a vulnerable/insecure service.
+    See the [setup page](setup.md#important-note-about-internet-service-providers)
+    for details.
+
 ### HaaS - Honeypot as a Service
 
 By using HaaS and installing the HaaS proxy application your router becomes able
@@ -55,6 +60,11 @@ record the executed commands.
 A big advantage is that your router stays safe all the time because all
 communications are redirected to our server and nothing is done on the router
 itself.
+
+!!! important
+    HaaS may be falsely detected as a vulnerable/insecure service. See the
+    [setup page](setup.md#important-note-about-internet-service-providers)
+    for details.
 
 ### Turris survey
 

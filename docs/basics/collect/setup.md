@@ -35,3 +35,33 @@ uci commit
 /etc/init.d/haas-proxy enable
 /etc/init.d/haas-proxy start
 ```
+## Important note about Internet Service Providers
+
+Some [Internet Service Providers](https://en.wikipedia.org/wiki/Internet_service_provider)
+(ISPs) actively detect potentially vulnerable services running by their
+customers. If they find such services they send notification or even block
+external access to such ports.
+
+!!! info
+    The same applies for some community, municipal or other networks as well.
+
+Some parts of Sentinel ([Minipots and HaaS](collect.md)) may be detected as
+such vulnerable services because they emulate them to catch potential
+attackers without any risk (the attackers do not enter any real environment).
+
+What to say to your ISP if you receive such warning:
+
+1. Those services are operated intentionally as a part of the Sentinel security
+   research project.
+2. They are provided by honeypots and not vulnerable software.
+3. The results of the project are instantly deployed to routers and improve
+   security of the routers and the networks beyond them.
+4. You want to keep those ports/service accessible from the Internet.
+
+Please let us to know ([tech.support@turris.cz](mailto:tech.support@turris.cz))
+if your ISP sends you such warning or event applies some "protective" measures
+on your Internet connection.
+
+!!! warning
+    Some ISPs silently block access to some ports (they do not declare that
+    they do so). It is useful to ask explicitly which ports are blocked.
