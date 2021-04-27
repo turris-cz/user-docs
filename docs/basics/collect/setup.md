@@ -4,6 +4,11 @@ competency: novice
 ---
 ## How to set up data collection?
 
+!!! important
+    This guide does not cover Turris Shield. Sentinel Data collect
+    is *enabled* by default on Turris Shield. If you want to configure your
+    Shield please use the [appropriate guide](setup-shield.md).
+
 The whole functionality is nowadays provided by [Sentinel](../apps/sentinel.md).
 You just need to enable the _Data Collection_ package list in the
 _Package Management_ tab and agree with our
@@ -35,6 +40,8 @@ uci commit
 /etc/init.d/haas-proxy enable
 /etc/init.d/haas-proxy start
 ```
+
+<!--isp-start-->
 ## Important note about Internet Service Providers
 
 Some [Internet Service Providers](https://en.wikipedia.org/wiki/Internet_service_provider)
@@ -65,3 +72,4 @@ on your Internet connection.
 !!! warning
     Some ISPs silently block access to some ports (they do not declare that
     they do so). It is useful to ask explicitly which ports are blocked.
+<!--isp-end-->
