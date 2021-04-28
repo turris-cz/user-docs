@@ -101,7 +101,7 @@ operation is completed the router automatically restarts.
     Your current state is saved in a snapshot. You can later cheery-pick changes
     you still want by using [Schnapps](../../geek/schnapps/schnapps.md).
 
-## Rollback to factory reset
+### Rollback to factory reset
 
 All data, settings and software in the internal storage of the router are
 erased and replaced by the factory defaults. Internally the file system rolls
@@ -121,7 +121,7 @@ latest snapshot (mode 2).
     You can achieve the same results by calling `schnapps rollback factory` from
     CLI.
 
-## Re-flash router
+### Re-flash router
 
 !!! warning
     This operation erases all settings and all data stored in the router.
@@ -151,7 +151,7 @@ Process of rewriting the micro SD card takes considerably longer time than
 snapshot rollback in the previous cases. However, indication of the process
 progress is the same as in case of rollback to the latest snapshot (mode 2).
 
-## Unsecure SSH on 192.168.1.1
+### Unsecure SSH on 192.168.1.1
 
 !!! warning
     When used incorrectly, this operation exposes your MOX unprotected on the
@@ -174,7 +174,7 @@ mount rootfs from your micro SD card and do any changes you need.
 After finishing your fixes, don't forget to unmount any mounted filesystems and
 reboot the router.
 
-## Flash from the internet
+### Flash from the internet
 
 !!! warning
     This operation erases all settings and all data stored in the router.
@@ -196,7 +196,7 @@ Process of rewriting the micro SD card takes considerably longer time than
 snapshot rollback in the previous cases. However, indication of the process
 progress is the same as in case of rollback to the latest snapshot (mode 2).
 
-## Rescue shell
+### Rescue shell
 
 !!! warning
     This option is for true geeks.
