@@ -126,6 +126,7 @@ nav:
         - Setup: 'basics/collect/setup.md'
         - Setup on Shield: 'basics/collect/setup-shield.md'
     - Foris:
+        - About: 'basics/foris/intro.md'
         - 'Secure access': 'basics/foris/https/https.md'
         - LAN: 'basics/foris/lan/foris-lan.md'
         - WAN: 'basics/foris/wan/foris-wan.md'
