@@ -13,6 +13,9 @@ possibilities which can be enabled using config files.
 
 LuCI uses UCI which is meant to centralize the configuration of OpenWrt.
 
+!!! warning
+    LuCI is not available on Turris Shield.
+
 ## What is UCI?
 
 From [UCI docs](https://openwrt.org/docs/guide-user/base-system/uci):

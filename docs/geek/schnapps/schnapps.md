@@ -10,6 +10,9 @@ Schnapps is a command-line tool for manipulation with Btrfs
 [snapshots](https://en.wikipedia.org/wiki/Snapshot_(computer_storage)). It is useful especially when you want to
 make some experiments with your Turris.
 
+!!! warning
+    Schnapps is not available on Turris Shield.
+
 ## What is Btrfs?
 
 [Btrfs](https://en.wikipedia.org/wiki/Btrfs) is a modern file system based on the

@@ -9,6 +9,10 @@ attached to another Turris router. In this setup, MOX doesn't have local
 filesystem and doesn't have any local settings. Everything is controlled and
 setup from scratch on every boot from the controlling device.
 
+!!! warning
+    Turris Shield cannot boot from another Turris device and cannot control
+    other devices.
+
 ## Necessary software
 
 On the controlling router, you need to install _Turris MOX network boot_

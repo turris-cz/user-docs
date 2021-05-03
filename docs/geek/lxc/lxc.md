@@ -16,6 +16,9 @@ Because it is only a containerized environment and not a true virtualization it 
 other hand, only one kernel can run for all containers and this limits the scale of usable operating systems
 (only Linux distributions can be used and they must support the given kernel).
 
+!!! warning
+    LXC is not available on Turris Shield.
+
 ## Before you start using LXC
 
 Remember that standard Linux distributions are write-intensive and it is strongly discouraged to operate them on

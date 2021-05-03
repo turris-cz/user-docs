@@ -23,6 +23,9 @@ cloud provider with your personal data.
     * Safe private voice and video calls, shared screens.
     * Many additional third-party extensions
 
+!!! warning
+    Nextcloud is not available on Turris Shield.
+
 ## Requirements
 
 It doesn't make much sense to use Nextcloud with just the small flash memory

@@ -10,6 +10,9 @@ PaKon is a tool for monitoring the activity of devices inside a local network.
 It collects and stores information about network activity and allows you to
 view and filter records.
 
+!!! warning
+    PaKon is not available on Turris Shield.
+
 ## Details
 
 PaKon utilizes **[Suricata](https://suricata-ids.org/) - network threat
