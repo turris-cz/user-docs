@@ -122,6 +122,24 @@ installed correct kernel module and firmware and that your device is supported
 by the kernel available in our releases. If all of that is true, you can try to
 ask for help with debugging it on our [forum](https://forum.turris.cz).
 
+## Turris MOX or Shield not booting
+
+If your MOX or Shield cannot boot it may be caused by an improperly inserted
+microSD card. The card is accessible after removing the plastic cover
+part located at the side with the USB port on the A module. The cover part
+can be carefully removed using fingertips (see
+the [video](https://www.youtube.com/watch?v=yL8Rpo0Wshc)) or eventually
+a thin plastic sheet.
+
+The card should be locked up tightly and cannot be possible to remove it by
+gentle pull. If the card is released try to push it gently into the slot. It
+should click and the card should be locked up then. When done, return
+the cover part back to its place.
+
+!!! important
+    Disconnect the device from power supply before manipulation with
+    the microSD card!
+
 ## Turris MOX not booting over the network
 
 Make sure that your Turris MOX does not contain any media to boot from. Also
