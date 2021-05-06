@@ -13,34 +13,34 @@ faster.
     * Not so good: Turris Omnia problem | Problem | Omnia died
  * Use one thread per problem. Don't mix many problems into one e-mail/issue/forum post
  * Clearly state what router you have and whether you have made any HW alterations.
- * Don't forget to mention the version of your _Turris OS_! (_Foris -> About_)
+ * Don't forget to mention the version of your _Turris OS_! (_reForis → About_)
  * If you have logs, include them. But be aware that those **might contain
    sensitive data**.
 
 If you are contacting official Turris support, always include the S/N of your
 router - you can see this either on the bottom of your router, _About_ tab in
-_Foris_ or as the output of command `crypto-wrapper serial-number`.
+_reForis_ or as the output of command `crypto-wrapper serial-number`.
 
 ## Getting logs
 
 !!! warning
-    If you come across an error and it is possible not to reboot the router,
-    **please don't reboot it** before collecting the logs. All logs are saved in
-    the router memory and they will be erased, if you reboot.
+  If you come across an error and it is possible not to reboot the router,
+  **please don't reboot it** before collecting the logs. All logs are saved in
+  the router memory and they will be erased, if you reboot.
 
 If you just rebooted the router, let it gather some data first. Logs from a
 freshly rebooted router, which have been downloaded before the occurrence of
 the error, usually don't help us to identify the cause of the error.
 
-### Using Foris
+### Using reForis
 
-If you use the Foris interface to maintain your router, you can use it to
+If you use the _reForis_ interface to maintain your router, you can use it to
 generate logs using _Diagnostics_ page. The modules, which are usually the most
-interesting are `disk_full`, `messages`, `dns`, `installed` and `network`.
-If the nature of the problem suggests that other modules could also be useful, you can check them.
-The required logs will be downloaded if you click _Generate_ button.
-
-![Foris: Diagnostics](foris-diagnostics.png)
+important are `disk_full`, `messages`, `dns`, `installed` and `network`.
+If the nature of the problem suggests that other modules could also be useful,
+you can check them. The required logs will generated if you click _Generate_
+button. At the bottom of the page is list of reports, where new one will be
+available in approximately a minute. Then you can download it.
 
 #### If you can't find the diagnostics
 
@@ -50,13 +50,49 @@ enabled and your internet connection is working.
 
 ### Using the console
 
-If you are a more experienced user and you have SSH access, interesting logs
-might be the following:
+If you cannot access the web interface, you can connect via SSH and run the
+diagnostics script.
 
-  * The contents of `/var/log/messages`
-  * The output of the `dmesg` command
-  * A list of the installed packages, that is the output of `opkg list-installed`
-  * If your problem concerns the network, content of `/etc/config/network` is also of some interest.
+!!! info
+  If you do not have installed SSH support on your PC, you will need to install
+  SSH client. On Linux it is usually `openssh-client`  and on Windows it is
+  `Posh-SSH` or `WinSCP`. But many of Linux distros have OpenSSH client
+  preinstalled and also the Windows PowerShell 2.0 has it already integrated.
+
+1. You connect to the router via SSH (using terminal, PowerShell or different
+command line tool).
+
+    ```shell
+    user@pc:~$ ssh root@192.168.1.1
+    ```
+
+2. Run the diagnostic script.
+
+    ```shell
+    root@192.168.1.1:~$ turris-diagnostics | gzip > /tmp/diag.gz
+    ```
+
+3. Disconnect (using `Ctrl+D`).
+
+4. Copy the diagnostic file to your computer.
+    -  using SCP
+        ```shell
+        $ scp root@192.168.1.1:/tmp/diag.gz <your destination>
+        ```
+
+    - using SFTP client (like Filezilla)
+
+        In a SFTP client, create new connection with credentials similar to SSH connection:
+
+        - **Host**: _your router IP address/hostname. By default_ `192.168.1.1`
+        - **username**: `root`
+        - **port**: `22`
+
+!!! info
+  We preffer to have these complete diagnostics, but if you are experienced user
+  you can always send us only specific output of standalone diagnostics of
+  components you have problem with. But we still may insist on sending further
+  diagnostic data.
 
 ## Support channels
 
