@@ -30,6 +30,7 @@ Turris OS 3.x.
   p910nd protocol.
 * Sound card package list was dropped. Packages are still available and you have
   to install them manually.
+* Thermometer package was dropped. Use `collectd` or sensors as a replacement
 * Squid proxy package list was dropped. Install `luci-app-squid` as a replacement.
 * Webcam package list was dropped.
 * Network switch configuration now uses
