@@ -76,7 +76,7 @@ a micro USB cable and you are ready.
 
 In case of UNIX-like systems you can use `screen` to connect to your device. In
 general, you need to figure out the name of your USB serial port - in case of
-Linux it is usually `/dev/tyyUSB0`, but if you already had some serial device
+Linux it is usually `/dev/ttyUSB0`, but if you already had some serial device
 (modem, some development board, ...) it might be even higher number. It should
 show up in `dmesg` after connecting the cable.
 
@@ -89,7 +89,7 @@ To connect to the serial port, simply type in your terminal following commands:
 
 `screen /dev/ttyUSB0 115200`
 
-If your serial port is not `/dev/tyyUSB0`, replace it with the correct path.
+If your serial port is not `/dev/ttyUSB0`, replace it with the correct path.
 
 ### MS Windows
 
