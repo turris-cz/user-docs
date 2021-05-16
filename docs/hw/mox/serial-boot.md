@@ -83,9 +83,9 @@ After a successful build the directory should contain `mox-imager` binary.
 
 Since the current bootloader in your device is broken, you will have to get the
 original bootloader images. Download
-[`secure-firmware.bin`](https://gitlab.nic.cz/turris/turris-os-packages/-/raw/master/hardware/mox/mox-support/files/secure-firmware.bin)
+[`secure-firmware.bin`](https://gitlab.nic.cz/turris/os/packages/-/raw/master/hardware/mox/mox-firmware/files/secure-firmware.bin)
 and
-[`uboot`](https://gitlab.nic.cz/turris/turris-os-packages/-/raw/master/hardware/mox/mox-support/files/uboot)
+[`uboot`](https://gitlab.nic.cz/turris/os/packages/-/raw/master/hardware/mox/mox-firmware/files/uboot)
 and either place them into `/tmp`, put then on your MicroSD card or on a USB
 flash disk.
 
