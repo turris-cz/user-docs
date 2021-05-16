@@ -105,7 +105,7 @@ code to the upstream repository.
 
 #### From source code
 
-All packages built for Turris OS are maintained in the [Turris OS packages](https://gitlab.nic.cz/turris/turris-os-packages)
+All packages built for Turris OS are maintained in the [Turris OS packages](https://gitlab.nic.cz/turris/os/packages)
 project on our GitLab. Please use this directions to determine whether
 a package is developed by the Turris Team or by the upstream.
 

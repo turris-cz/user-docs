@@ -11,7 +11,7 @@ function render_changelog(changelog, element) {
 <h5>Date of release</h5>
 <p>${release_date.toString()}</p>
 <h5>Sources</h5>
-<p>Available on <a href="https://gitlab.nic.cz/turris/turris-build/tree/${release.name}">Gitlab</a>.</p>
+<p>Available on <a href="https://gitlab.nic.cz/turris/os/build/tree/${release.name}">Gitlab</a>.</p>
 <h5>Release notes</h5>`;
         let notes='<ul>';
         for (let line in message) {
@@ -27,7 +27,7 @@ function render_changelog(changelog, element) {
 
 function changelog(version, span_id) {
     const element = document.getElementById(span_id);
-	fetch('https://gitlab.nic.cz/api/v4/projects/turris%2fturris-build/repository/tags/?search=' + version).
+	fetch('https://gitlab.nic.cz/api/v4/projects/turris%2fos%2fbuild/repository/tags/?search=' + version).
 		then(res => res.json()).
 		then((json) => {
 			render_changelog(json, element);
@@ -40,9 +40,9 @@ function changelog(version, span_id) {
 
 Here you can find a list of all releases and release notes starting from Turris
 OS 4.0. Those releases are made from combination of
-[turris-build](https://gitlab.nic.cz/turris/turris-build) repository and
+[turris-build](https://gitlab.nic.cz/turris/os/build) repository and
 various repositories with additional packages like
-[turris-os-packages](https://gitlab.nic.cz/turris/turris-os-packages).
+[turris-os-packages](https://gitlab.nic.cz/turris/os/packages).
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
 
