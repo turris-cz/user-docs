@@ -19,7 +19,7 @@ is not possible on Turris 1.x routers, yet.
 You will need:
 
 * a [Turris 1.0 or Turris 1.1](../hw/turris-1x/turris-1x.md) router,
-* a microSD card with at least 4 GB free storage,
+* a microSD card with at least 8 GB free storage,
 * a screwdriver.
 
 ### Preparation of Turris 1.0 routers
