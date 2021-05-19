@@ -141,9 +141,9 @@ nav:
         - 'Factory reset': 'basics/reforis/factory-reset/factory-reset.md'
         - Storage: 'basics/reforis/storage-plugin/storage-plugin.md'
     - LuCI:
-        - Introduction: basics/luci/luci.md
-        - Static IP: basics/luci/static-dhcp/static-dhcp.md
-        - VLAN: basics/luci/vlan/luci-vlan.md
+        - Introduction: 'basics/luci/luci.md'
+        - Static IP: 'basics/luci/static-dhcp/static-dhcp.md'
+        - VLAN: 'basics/luci/vlan/luci-vlan.md'
     - Applications:
         - 'Netmetr': 'basics/apps/netmetr.md'
         - 'Nextcloud': 'geek/nextcloud/nextcloud.md'
