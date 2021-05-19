@@ -116,6 +116,7 @@ nav:
     - 'MOX': 'basics/first-setup/mox-first-setup.md'
     - 'Shield': 'basics/first-setup/shield-first-setup.md'
     - 'Turris 1.X and Omnia': 'basics/first-setup/simple-setup.md'
+    - 'Ethernetless configuration': 'basics/first-setup/ethernetless.md'
 - Software:
     - 'Landing page': 'basics/landing-page.md'
     - Data Collection:
