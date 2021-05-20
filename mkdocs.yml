@@ -31,9 +31,9 @@ theme:
     favicon: 'theme/img/favicon.ico'
     logo: 'theme/img/turris-logo.svg'
 
-    # Static files
-    static_templates:
-        - 404.html
+# Extra stylesheets
+extra_css:
+    - 'theme/css/turris.css'
 
 # Plugins
 plugins:
