@@ -1,10 +1,34 @@
+/*
+ * Copyright (C) 2020-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 /* Turris color theme */
-:root {
+[data-md-color-scheme="turris"] {
     /* Primary color shades */
     --md-primary-fg-color: #262626;
     --md-primary-fg-color--light: #3d3d3d;
     --md-primary-fg-color--dark: #141414;
-    --md-primary-bg-color: hsla(0, 0%, 100%, 1);
+    --md-primary-bg-color: rgb(255, 255, 255);
+    --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+    /* Accent color shades */
+    --md-accent-fg-color: hsla(197, 100%, 40%, 1);
+    --md-accent-fg-color--dark: hsla(197, 100%, 32%, 1);
+    --md-accent-fg-color--transparent: hsla(197, 100%, 40%, 0.1);
+    --md-accent-bg-color: hsla(0, 0%, 100%, 1);
+    --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+}
+
+[data-md-color-scheme="slate"] {
+    --md-hue: 220; /* [0, 360] */
+    /* Primary color shades */
+    --md-primary-fg-color: #262626;
+    --md-primary-fg-color--light: #3d3d3d;
+    --md-primary-fg-color--dark: #141414;
+    --md-primary-bg-color: rgb(255, 255, 255);
     --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
 
     /* Accent color shades */
@@ -29,20 +53,30 @@
     color: var(--md-accent-fg-color);
 }
 
-/* Image border */
+/* Center images & add shadows */
 .md-typeset img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
-    border: solid;
-    border-width: 1px;
-    border-color: lightgrey;
-    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.md-typeset img:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* Dim image brightness in Slate theme (Dark mode) */
+[data-md-color-scheme="slate"] .md-typeset img {
+    filter: brightness(0.9);
 }
 
 .metadata a.badge {
     color: #fff;
+}
+
+[data-md-color-scheme="slate"] .metadata a.badge {
+    color: hsla(var(--md-hue),75%,95%,1)
 }
 
 .metadata span.badge {
@@ -79,6 +113,14 @@
 
 .badge-mox:hover {
     background-color: #1d2124;
+}
+
+[data-md-color-scheme="slate"] .badge-mox {
+    background-color: #1d2124;
+}
+
+[data-md-color-scheme="slate"] .badge-mox:hover {
+    background-color: #343a40;
 }
 
 .badge-omnia {
