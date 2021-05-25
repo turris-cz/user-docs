@@ -20,6 +20,7 @@
     --md-accent-fg-color--transparent: hsla(197, 100%, 40%, 0.1);
     --md-accent-bg-color: hsla(0, 0%, 100%, 1);
     --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+    --md-typeset-a-color: var(--md-accent-fg-color);
 }
 
 [data-md-color-scheme="slate"] {
@@ -37,20 +38,13 @@
     --md-accent-fg-color--transparent: hsla(197, 100%, 40%, 0.1);
     --md-accent-bg-color: hsla(0, 0%, 100%, 1);
     --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+    --md-typeset-a-color: var(--md-accent-fg-color);
 }
 
-/* Link styles  */
-.md-typeset a {
-    color: var(--md-accent-fg-color);
-}
-
+/* Link styles on hover */
 .md-typeset a:hover,
 .md-nav__item a.md-nav__link--active:hover {
     color: var(--md-accent-fg-color--dark);
-}
-
-.md-nav__item .md-nav__link--active {
-    color: var(--md-accent-fg-color);
 }
 
 /* Center images & add shadows */
@@ -58,12 +52,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .md-typeset img:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* Dim image brightness in Slate theme (Dark mode) */
@@ -76,7 +70,7 @@
 }
 
 [data-md-color-scheme="slate"] .metadata a.badge {
-    color: hsla(var(--md-hue),75%,95%,1)
+    color: hsla(var(--md-hue), 75%, 95%, 1);
 }
 
 .metadata span.badge {
