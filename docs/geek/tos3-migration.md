@@ -70,6 +70,9 @@ General considerations:
 * **Create backup** of your settings before you start not only to potentially
   recover it but also to provide it to support so Turris team can troubleshoot
   possible problems.
+* Configure sending notifications via e-mail as the router is going to be rebooted
+  after migration is finished (to restore switch configuration) and reboot wipes
+  all notifications from the router.
 
 !!! warning
     Do not attempt to upload backups created on Turris OS 3.x and before to Turris
@@ -109,7 +112,9 @@ save that by clicking on _Save and update_ button.
 ![Migration to Turris OS 5.x trigger](tos3-migration-trigger.png)
 
 Next you have to approve installation of `tos3to4` package if you have approvals
-enabled. Migration starts immediately if you don't.
+enabled. With approvals you also have to trigger the update again once `tos3to4` is
+installed. Just navigate to the updater configuration page and save the configuration
+again. Migration starts immediately if you do not have update approvals enabled.
 
 !!! warning
     Migration takes some time. It can take up to hour or more. During that time
@@ -119,16 +124,12 @@ enabled. Migration starts immediately if you don't.
 !!! note
     Updates approvals are disabled once `tos3to4` package is installed to not halt
     migration in situation when user is unable to approve subsequent continuation.
+    Do not enable it manually. The original settings is going to be automatically
+    restored during the migration process.
 
 Update is finished once **you receive notification** that migration was finished.
 Message in question starts with with sentence: _Migraton from Turris OS 3.x was
 completed._.
-
-!!! danger
-    On Turris 1.x before first reboot, after migration is completed, you have to
-    run following command over SSH: `ROOT_DIR=/
-    /etc/updater/hook_postupdate/10_kernel-install`.  Failing to not do so can
-    result in to not-booting router.
 
 ## Known problems and solutions
 You can encounter some problems that are caused by automatic migration.  Not all
@@ -156,13 +157,6 @@ removal sends this message and it is removed because it is replaced by new one.
 This is just false warning but just to be sure check that you have
 `turris1x-btrfs` package installed in our system before reboot if you are running
 from Btrfs microSD card.
-
-##### Opkg can't update repositories index after migration
-OpenWrt introduced a new concept for packages called "Alternatives".  The reason
-for Opkg failure is that an appropriate alternative is not selected after
-migration. This can affect also other tools but `wget` is the most profound one.
-
-Solution is to run `update_alternatives.sh` command after migration completes.
 
 ##### Transmission and other services are disabled
 Some services, such as transmission, can be disabled during migration and not
