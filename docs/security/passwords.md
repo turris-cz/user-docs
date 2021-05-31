@@ -57,13 +57,13 @@ password and the new password. The new password should be
 ### System passwords
 
 You can use the same password as for Foris/reForis. See the dialog above; check
-_Use same password..._ to ensure this. If you want to set a different password
-you can fill the second dialog at the same page.
+_Use the same password..._ to ensure this. If you want to set a different
+password you can fill the second dialog at the same page.
 
 ![Advanced Administration Password](root-password.png)
 
 !!! notice
-    Fill _Current Foris password_ in the previous dialog too. Without this
+    Fill _Current password_ in the previous dialog too. Without this
     password, your request to change the system password will be denied.
 
 It can be also set via LuCI or via `passwd` in the command line. It is also
