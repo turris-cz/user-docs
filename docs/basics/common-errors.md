@@ -149,3 +149,11 @@ only via the Ethernet connector on MOX A and after the first boot, only with
 the router it is paired with. Pairing is lost on factory reset of controlling
 router. To make sure your MOX is not paired with already, use [Factory
 reset](../hw/mox/rescue-modes.md#rollback-to-factory-reset).
+
+## Problems with reForis in Safari browser
+
+If you use the Safari web browser (on Apple devices with iOS) you may encounter
+problems with an eternal loop in reForis (it loads again and again). There
+is a workaround which can resolve it. Go to _Settings → Safari → Advanced
+→ Experimental Features_ and enable _NSURLSession WebSocket_. Then refresh
+the reForis page.
