@@ -26,7 +26,7 @@ Turris OS 3.x.
   statistics or Pakon instead.
 * Netutils package list was dropped and most of the advanced protocols have to be
   now installed manually.
-* Print server Cups was dropped. Print server package list now provides only
+* Print server CUPS was dropped. Print server package list now provides only
   p910nd protocol.
 * Sound card package list was dropped. Packages are still available and you have
   to install them manually.
@@ -173,6 +173,12 @@ It is not possible to catch every single service affected by this so only most
 important services are covered by migration. Please review enabled services after
 migration to ensure that all services you want are going to be started on next
 boot.
+
+##### Connected printers don't work
+This is a consequence of CUPS removal. You can use
+[p910nd](https://man.cx/p910nd) instead. Please follow the
+[installation guide](https://openwrt.org/docs/guide-user/services/print_server/p910ndprinterserver)
+published on the OpenWrt website.
 
 
 ## Plans for automatic migration
