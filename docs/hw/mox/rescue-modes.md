@@ -20,7 +20,8 @@ power source while still keeping the button pressed.
 Once powered up, MOX will light up it's LED and when detecting pressed button,
 it will switch to the rescue mode and turn LED back off. During normal boot,
 LED is on till the MOX boots up. When the LED is off, you can stop pressing
-the button.
+the button. (Newer bootloader also starts blinking the ethernet port's LEDs
+to signal that it is entering rescue mode.)
 
 Once rescue mode started, it will turn LED back on and it will use the LED to show you
 the selected rescue mode by blinking. It will blink once to show you that mode one is selected.
