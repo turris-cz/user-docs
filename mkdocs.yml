@@ -215,3 +215,4 @@ nav:
         - 'MOX': 'hw/mox/serial-boot.md'
         - 'Omnia': 'hw/omnia/serial-boot.md'
     - Support: 'basics/support.md'
+- FAQ: 'faq.md'
