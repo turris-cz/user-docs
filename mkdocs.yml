@@ -140,6 +140,7 @@ nav:
         - Screenshots: 'basics/reforis/screenshots/reforis.md'
         - 'Factory reset': 'basics/reforis/factory-reset/factory-reset.md'
         - Storage: 'basics/reforis/storage-plugin/storage-plugin.md'
+        - Hostname: 'basics/reforis/hostname/hostname.md'
     - LuCI:
         - Introduction: 'basics/luci/luci.md'
         - Static IP: 'basics/luci/static-dhcp/static-dhcp.md'
