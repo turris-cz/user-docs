@@ -1,5 +1,4 @@
 <script type="text/javascript">
-//<!--
 function render_changelog(changelog, element) {
     element.innerHTML = '';
     for (let i in changelog) {
@@ -12,16 +11,28 @@ function render_changelog(changelog, element) {
 <p>${release_date.toString()}</p>
 <h5>Sources</h5>
 <p>Available on <a href="https://gitlab.nic.cz/turris/os/build/tree/${release.name}">Gitlab</a>.</p>
-<h5>Release notes</h5>`;
-        let notes='<ul>';
-        for (let line in message) {
-            const li = message[line].match(/^\s?\* (.*)/)
-            if (li) {
-                notes += '<li>' + li[1] + '</li>';
+<h5>Release notes</h5>
+<ul id="release-notes-${release.name}"></ul>`;
+        message.map(line => {
+            const firstListItem = line.match(/^\s?\* (.*)/); // Matches first bullet list item
+            const secondListItem = line.match(/^\s+\* (.+)$/); // Matches nested bullet list item
+
+            const releaseNotesList = document.getElementById(`release-notes-${release.name}`);
+            const newListItem = document.createElement("li");
+            const newSubListItem = document.createElement("ul");
+            const firstChild = releaseNotesList.firstChild;
+
+            if (firstListItem) {
+                newListItem.innerHTML = firstListItem[1];
+                releaseNotesList.appendChild(newListItem);
             }
-        }
-        notes += '</ul>';
-        element.innerHTML += notes;
+            if (secondListItem) {
+                newListItem.innerHTML = secondListItem[1];
+                newSubListItem.appendChild(newListItem);
+                // Insert nested list item inside the first one
+                firstChild.insertAdjacentElement('beforeend', newSubListItem);
+            }
+        })
     };
 }
 
@@ -33,7 +44,6 @@ function changelog(version, span_id) {
 			render_changelog(json, element);
 	});
 }
-//-->
 </script>
 
 # Changelog
@@ -57,13 +67,13 @@ support for [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
 New features:
 
 * reForis (configuration web interface) additions
-  * Overview tab
-  * Storage plugin with option for persistent system logs
-  * Factory reset from web interface
-  * Support for Honeypot as a Service (haas.nic.cz)
-  * Add option to change hostname in reForis
-  * Fix DHCP range configuration check
-  * A few design improvements
+    * Overview tab
+    * Storage plugin with option for persistent system logs
+    * Factory reset from web interface
+    * Support for Honeypot as a Service (haas.nic.cz)
+    * Add option to change hostname in reForis
+    * Fix DHCP range configuration check
+    * A few design improvements
 * WebApps: New graphical design with optional dark mode
 * Sentinel: Introduce replacement for firewall logs collector
 * Turris MOX: Update firmware for SDIO card
@@ -73,11 +83,7 @@ New features:
 ### Detailed changelog
 
 <span id="tos52">Loading changelog...</span>
-<script type="text/javascript">
-//<!--
-changelog("v5.2.", "tos52");
-//-->
-</script>
+<script type="text/javascript">changelog("v5.2.", "tos52");</script>
 
 ## Turris OS 5.1
 
@@ -104,11 +110,7 @@ New features:
 ### Detailed changelog
 
 <span id="tos51">Loading changelog...</span>
-<script type="text/javascript">
-//<!--
-changelog("v5.1.", "tos51");
-//-->
-</script>
+<script type="text/javascript">changelog("v5.1.", "tos51");</script>
 
 
 ## Turris OS 5.0
@@ -132,11 +134,7 @@ New features:
 ### Detailed changelog
 
 <span id="tos50">Loading changelog...</span>
-<script type="text/javascript">
-//<!--
-changelog("v5.0.", "tos50");
-//-->
-</script>
+<script type="text/javascript">changelog("v5.0.", "tos50");</script>
 
 ## Turris OS 4
 
@@ -167,8 +165,4 @@ New features:
 ### Detailed changelog
 
 <span id="tos4">Loading changelog...</span>
-<script type="text/javascript">
-//<!--
-changelog("v4.", "tos4");
-//-->
-</script>
+<script type="text/javascript">changelog("v4.", "tos4");</script>
