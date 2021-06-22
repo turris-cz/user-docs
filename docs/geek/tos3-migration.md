@@ -96,9 +96,9 @@ Considerations for advanced users:
 Migration is not yet executed automatically but it can be triggered manually.
 
 !!! warning
-    Do not attept to migrate Turris 1.x unless you are running on BTRFS with SD
-    card. You are going to run out of storage space and factory reset would be the
-    only option then.
+    Do not attept to migrate Turris 1.x unless you are running on [Btrfs with SD
+    card](../geek/btrfs_turris1x.md). You are going to run out of storage space and
+    factory reset would be the only option then.
 
 To start migration you have to have at least Turris OS 3.11.19 installed on your
 device. Please be sure about that before you attempt migration. To double check
