@@ -89,7 +89,7 @@ command line tool).
         - **port**: `22`
 
 !!! info
-  We preffer to have these complete diagnostics, but if you are experienced user
+  We prefer to have these complete diagnostics, but if you are experienced user
   you can always send us only specific output of standalone diagnostics of
   components you have problem with. But we still may insist on sending further
   diagnostic data.
@@ -133,3 +133,7 @@ There is official Turris support available via e-mail
 deals with hardware issues and with serious software issues in supported
 software. It will not help you design your network nor it will fix any package
 available in OpenWrt.
+
+!!! warning
+  Whenever you are contacting us via e-mail, be sure that the total size of all
+  attachments won't exceed size of 14MB.
