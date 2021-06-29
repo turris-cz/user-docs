@@ -23,6 +23,8 @@ It contains AzureWave AW-CM276NF, internal FLEX antenna, gain 2 dBi for 2.4 GHz
 transfer speeds 5 GHz up to 866 Mbps / 2.4 GHz up to 300 Mbps. Currently does
 not support 802.1x.
 
+Most suitable to easily cover last few remaining clients that can't do 5 GHz yet.
+
 ## Wi-Fi (mPCIe)
 
 The MOX Wi-Fi add-on (mPCIe) is significantly faster than SDIO and is the
