@@ -1,3 +1,7 @@
+---
+board: 1.x
+competency: advanced
+---
 # Btrfs migration on Turris 1.x routers
 
 !!! warning
