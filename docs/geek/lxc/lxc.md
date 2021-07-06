@@ -39,7 +39,7 @@ be able to see the information about it at the _Notifications_ page.
 
 ## LXC management in LuCI
 
-LXC containers can be created, deleted, started, stopped etc. through the LuCI - advanced administration web interface. Choose _LuCI OpenWRT
+LXC containers can be created, deleted, started, stopped etc. through the LuCI - advanced administration web interface. Choose _LuCI OpenWrt
 advanced web configuration_ at the homepage of your Turris and log into it. Then go to _Services -> LXC Containers_.
 
 *You will be warned that you will need a custom OpenWrt image. This warning may be ignored because Turris OS is

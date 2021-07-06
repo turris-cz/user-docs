@@ -15,7 +15,7 @@ An interface tagging and recieving (i.e. accepting) tagged communication is reff
 here as a VLAN tagging interface. Each of these interfaces has to be configured
 to a specific VLAN ID and ports.
 
-Further informations can be found at OpenWRT[^2]
+Further informations can be found at OpenWrt[^2]
 
 !!! Warning
     VLAN does not add much security, the communication is not encrypted.
@@ -69,7 +69,7 @@ the **Physical Settings** tab. In the opened tab add the VLAN tagged interfaces.
 ## References
 
 [^1]: [802.1Q on wikipedia](https://en.wikipedia.org/wiki/IEEE_802.1Q)
-[^2]: [OpenWRT VLANs](https://openwrt.org/docs/guide-user/network/vlan/switch_configuration)
+[^2]: [OpenWrt VLANs](https://openwrt.org/docs/guide-user/network/vlan/switch_configuration)
 [^3]: [ISO/OSI model on wikipedia](https://en.wikipedia.org/wiki/OSI_model)
 [^4]: [DSA configuration](https://www.kernel.org/doc/html/latest/networking/dsa/configuration.html)
 [^5]: [Turris 1.0/1.1 Network interfaces](../../../hw/turris-1x/turris-1x.md#network-interfaces)
