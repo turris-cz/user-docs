@@ -24,9 +24,9 @@ _reForis_ or as the output of command `crypto-wrapper serial-number`.
 ## Getting logs
 
 !!! warning
-  If you come across an error and it is possible not to reboot the router,
-  **please don't reboot it** before collecting the logs. All logs are saved in
-  the router memory and they will be erased, if you reboot.
+    If you come across an error and it is possible not to reboot the router,
+    **please don't reboot it** before collecting the logs. All logs are saved in
+    the router memory and they will be erased, if you reboot.
 
 If you just rebooted the router, let it gather some data first. Logs from a
 freshly rebooted router, which have been downloaded before the occurrence of
@@ -54,10 +54,10 @@ If you cannot access the web interface, you can connect via SSH and run the
 diagnostics script.
 
 !!! info
-  If you do not have installed SSH support on your PC, you will need to install
-  SSH client. On Linux it is usually `openssh-client`  and on Windows it is
-  `Posh-SSH` or `WinSCP`. But many of Linux distros have OpenSSH client
-  preinstalled and also the Windows PowerShell 2.0 has it already integrated.
+    If you do not have installed SSH support on your PC, you will need to install
+    SSH client. On Linux it is usually `openssh-client`  and on Windows it is
+    Posh-SSH` or `WinSCP`. But many of Linux distros have OpenSSH client
+    preinstalled and also the Windows PowerShell 2.0 has it already integrated.
 
 1. You connect to the router via SSH (using terminal, PowerShell or different
 command line tool).
@@ -89,10 +89,10 @@ command line tool).
         - **port**: `22`
 
 !!! info
-  We prefer to have these complete diagnostics, but if you are experienced user
-  you can always send us only specific output of standalone diagnostics of
-  components you have problem with. But we still may insist on sending further
-  diagnostic data.
+    We prefer to have these complete diagnostics, but if you are experienced user
+    you can always send us only specific output of standalone diagnostics of
+    components you have problem with. But we still may insist on sending further
+    diagnostic data.
 
 ## Support channels
 
@@ -135,5 +135,5 @@ software. It will not help you design your network nor it will fix any package
 available in OpenWrt.
 
 !!! warning
-  Whenever you are contacting us via e-mail, be sure that the total size of all
-  attachments won't exceed size of 14MB.
+    Whenever you are contacting us via e-mail, be sure that the total size of all
+    attachments won't exceed size of 14MB.
