@@ -29,7 +29,7 @@ There are currently three applications always present:
 
 In dependence on installed packages, other applications can be available too
 (such as [Nextcloud](../geek/nextcloud/nextcloud.md) or
-[Netdata](https://wiki.turris.cz/doc/en/public/netdata)).
+[Netdata](../geek/netdata/netdata.md)).
 
 !!! tip
     If you prefer dark theme of the web interface over the default light one
