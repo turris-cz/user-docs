@@ -1,5 +1,5 @@
 ---
-board: mox, omnia, 1.x
+board: mox, omnia, 1.x, shield
 competency: novice
 ---
 # DNS settings in reForis

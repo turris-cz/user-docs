@@ -1,3 +1,7 @@
+---
+board: mox, omnia, 1.x, shield
+competency: intermediate
+---
 # OpenVPN client on Turris
 
 Starting with [Turris OS 5.1](../../tos-versions.md),
