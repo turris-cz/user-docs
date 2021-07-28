@@ -129,9 +129,14 @@ nav:
         - HaaS: 'basics/sentinel/haas.md'
     - reForis:
         - About: 'basics/reforis/intro.md'
+        - 'Secure access': 'basics/reforis/https/https.md'
         - Network:
             - 'Wi-Fi': 'basics/reforis/wifi/reforis-wifi.md'
+            - WAN: 'basics/reforis/wan/reforis-wan.md'
+            - LAN: 'basics/reforis/lan/reforis-lan.md'
             - DNS: 'basics/reforis/dns/reforis-dns.md'
+            - Interfaces: 'basics/reforis/interfaces/interfaces.md'
+            - 'Guest Network': 'basics/reforis/guest-network/guest-network.md'
         - Administration:
             - Notifications: 'basics/reforis/notifications/reforis-notifications.md'
             - Hostname: 'basics/reforis/hostname/hostname.md'
