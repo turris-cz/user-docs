@@ -40,7 +40,7 @@ to _Show more_.
 Almost nobody checks often whether there is something important in
 Turris OS. It isn't necessary to do such checks because e-mail
 notifications can be configured. They are disabled by default.
-These notifications can be set on _Administration -> Notification Settings_.
+These notifications can be set on _Administration → Notification Settings_.
 
 ![E-mail notifications](email.png)
 

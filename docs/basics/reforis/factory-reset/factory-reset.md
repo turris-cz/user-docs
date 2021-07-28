@@ -21,7 +21,7 @@ its factory state. It can be done via hardware operations
 ## Performing a factory reset
 
 1. Navigate to the reForis web interface.
-2. Open the _Administration -> Maintenance_ page.
+2. Open the _Administration → Maintenance_ page.
 3. Press the _Reset_ button and confirm the action in the dialog which
    appears then.
 

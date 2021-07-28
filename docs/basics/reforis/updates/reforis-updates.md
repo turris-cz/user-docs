@@ -24,7 +24,11 @@ The device can be rebooted manually too of course.
 
 ## Configuration in reForis
 
-Updates are configured at _Package Management -> Update Settings_. If you
+!!! important
+    Configuration of updates is not available on Turris Shield. Updates
+    are always enabled and are installed as soon as possible.
+
+Updates are configured at _Package Management → Update Settings_. If you
 want to disable automatic updates you can uncheck the given checkbox.
 But doing this is strongly discouraged because you can miss security
 patches for vulnerabilities – some of them may be exploited remotely.
@@ -60,7 +64,7 @@ When done, press the _Save_ button to save and apply your changes.
 
 If you have disabled automatic updates or if you want to install updates
 before they will be installed automatically you can utilize manual
-installation. Visit _Package Management -> Updates_ and then simply
+installation. Visit _Package Management → Updates_ and then simply
 press _Check and install updates_.
 
 ![Manual installation of updates](manual.png)
