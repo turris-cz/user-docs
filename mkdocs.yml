@@ -127,24 +127,18 @@ nav:
         - Setup: 'basics/sentinel/setup.md'
         - Setup on Shield: 'basics/sentinel/setup-shield.md'
         - HaaS: 'basics/sentinel/haas.md'
-    - Foris:
-        - About: 'basics/foris/intro.md'
-        - 'Secure access': 'basics/foris/https/https.md'
-        - LAN: 'basics/foris/lan/foris-lan.md'
-        - WAN: 'basics/foris/wan/foris-wan.md'
-        - DNS: 'basics/foris/dns/foris-dns.md'
-        - 'Guest network': 'basics/foris/guest-network/guest-network.md'
-        - 'Storage': 'basics/foris/storage-plugin/storage-plugin.md'
     - reForis:
         - About: 'basics/reforis/intro.md'
-        - DNS: 'basics/reforis/dns/reforis-dns.md'
-        - 'Wi-Fi': 'basics/reforis/wifi/reforis-wifi.md'
-        - Notifications: 'basics/reforis/notifications/reforis-notifications.md'
-        - Updates: 'basics/reforis/updates/reforis-updates.md'
-        - Screenshots: 'basics/reforis/screenshots/reforis.md'
+        - Network:
+            - 'Wi-Fi': 'basics/reforis/wifi/reforis-wifi.md'
+            - DNS: 'basics/reforis/dns/reforis-dns.md'
+        - Administration:
+            - Notifications: 'basics/reforis/notifications/reforis-notifications.md'
+            - Hostname: 'basics/reforis/hostname/hostname.md'
+            - Updates: 'basics/reforis/updates/reforis-updates.md'
         - 'Factory reset': 'basics/reforis/factory-reset/factory-reset.md'
+        - Screenshots: 'basics/reforis/screenshots/reforis.md'
         - Storage: 'basics/reforis/storage-plugin/storage-plugin.md'
-        - Hostname: 'basics/reforis/hostname/hostname.md'
     - LuCI:
         - Introduction: 'basics/luci/luci.md'
         - Static IP: 'basics/luci/static-dhcp/static-dhcp.md'
@@ -163,6 +157,15 @@ nav:
         - 'Schnapps': 'geek/schnapps/schnapps.md'
         - 'Btrfs migration': 'geek/btrfs_turris1x.md'
         - 'Netdata': 'geek/netdata/netdata.md'
+    - Legacy:
+        - Foris:
+            - About: 'basics/foris/intro.md'
+            - 'Secure access': 'basics/foris/https/https.md'
+            - WAN: 'basics/foris/wan/foris-wan.md'
+            - LAN: 'basics/foris/lan/foris-lan.md'
+            - DNS: 'basics/foris/dns/foris-dns.md'
+            - 'Guest network': 'basics/foris/guest-network/guest-network.md'
+            - 'Storage': 'basics/foris/storage-plugin/storage-plugin.md'
     - 'OS versions':
         - Versions: 'basics/tos-versions.md'
         - Changelog: 'basics/changelog.md'
