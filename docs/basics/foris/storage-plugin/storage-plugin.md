@@ -4,31 +4,19 @@ competency: intermediate
 ---
 # Storage plugin
 
-Turris contains an eMMC flash memory card which is used as the system storage. It holds both the Turris OS itself
-and the created data. But if you want to use applications which need to save larger amounts of data you can use
-an external storage device.
-
-!!! tip
-    If you want to use [Nextcloud](../../../geek/nextcloud/nextcloud.md),
-    [LXC](../../../geek/lxc/lxc.md) or other I/O intensive applications, don't put them on the internal flash,
-    always use external storage! Also please make sure that your data will fit on the new drive before switching.
-
-The storage plugin allows you to easily move your `/srv` to an external drive. It both allows getting more space
-and lengthen the lifespan of the internal eMMC flash storage. The `/srv` directory is used for storing
-site-specific data as defined in the [FHS specification](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
-The storage plugin can't move other parts of the file system. But it doesn't matter because all data-intensive
-applications save their data into `/srv`.
+{%
+  include-markdown "../../reforis/storage-plugin/storage-plugin.md"
+  start="<!--storage-general-start-->"
+  end="<!--storage-general-end-->"
+%}
 
 ## First setup
 
-Pick an external storage device, which you want to move your persistent data to. This can be for example a simple USB
-flash drive but it is strongly encouraged to use a regular HDD or SSD to get both higher speed and better durability.
-
-!!! warning
-    Setting up external storage will destroy all data on newly selected storage. Make sure that the storage device has no important data on it.
-
-In case of an USB drive, insert it into the USB slot on your router. If you are using a different type of storage,
-make sure that it is properly inserted or connected to the router.
+{%
+  include-markdown "../../reforis/storage-plugin/storage-plugin.md"
+  start="<!--storage-first-start-->"
+  end="<!--storage-first-end-->"
+%}
 
 Once the external storage is inserted, inside the tab Storage in Foris, select where your persistent
 data should be stored and press the _Format & Set_ button.
