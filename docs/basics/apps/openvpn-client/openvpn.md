@@ -50,6 +50,8 @@ paid.
 1. Go to the _OpenVPN -> Client Settings_ page.
 2. Choose a client settings file and press _Upload settings_.
 
+![Upload client settings](upload.png)
+
 !!!info
     If you want to connect to your another Turris you can use the _Client
     registration_ page on that device to create and dowload the appropriate
