@@ -11,7 +11,7 @@ ReForis is the new router administration interface used on [Turris devices](../m
 
 ReForis offers an easy device administration which is meant to be simple even for inexperienced users. Doing a configuration from reForis is fully supported and undergoes heavy internal testing. With focus on simplicity, there might be a corner cases where you might need to use [LuCI](../luci/luci.md), but in general, those two should not clash.
 
-Using reForis is simple, intuitive and fully responsive. After initial setup a router is ready and no further settings are required. Current state of a device with all important information is represented on the single [overview page](screenshots/reforis.md#router-overview).
+Using reForis is simple, intuitive and fully responsive. After initial setup a router is ready and no further settings are required.
 
 ReForis also contains the notifications which ensure that users don’t miss any important event about their routers.
 
@@ -31,6 +31,3 @@ The interface is modular, supporting various plugins that can be installed over
 the time by user to broaden the possibilities of what they ca do with their
 router. You can find sources of the reForis base as well as it's modules in our
 [Gitlab](https://gitlab.nic.cz/turris/reforis).
-
-If you want to see more of reForis and what can you set up, take a look at
-various [screenshots](screenshots/reforis.md).

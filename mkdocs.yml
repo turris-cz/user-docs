@@ -142,7 +142,6 @@ nav:
             - Hostname: 'basics/reforis/hostname/hostname.md'
             - Updates: 'basics/reforis/updates/reforis-updates.md'
         - 'Factory reset': 'basics/reforis/factory-reset/factory-reset.md'
-        - Screenshots: 'basics/reforis/screenshots/reforis.md'
         - Storage: 'basics/reforis/storage-plugin/storage-plugin.md'
     - LuCI:
         - Introduction: 'basics/luci/luci.md'
