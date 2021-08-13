@@ -26,7 +26,7 @@ rolled back to, backed up and so on. Thanks to the nature of Btrfs all of these 
 
 ## What you can do with schnapps?
 
-Although you can use standard Bfrfs tools to deal with snapshots schnapps is a high-level tool and provides more
+Although you can use standard Btrfs tools to deal with snapshots schnapps is a high-level tool and provides more
 features. Filesystem snapshots can be not only manipulated locally but easily exported/imported and even uploaded
 to a server as well.
 
