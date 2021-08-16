@@ -23,9 +23,14 @@ programming techniques, algorithms and so on.
 ## By our GitLab instance
 
 All of our projects are maintained in our [GitLab instance](https://gitlab.nic.cz/turris/).
-You can register into it and fork the project you want to improve. When done
-with your modifications, please create a merge request to the original project
-(it should be prepared automatically if you create a MR).
+You can fork the project you want to improve. When done with your
+modifications, please create a merge request to the original project (it should
+be prepared automatically if you create a MR).
+
+!!! notice
+    You will need special access rights to create project forks in our GitLab.
+    We set these rights on request to users who have already repeatedly
+    contributed to our projects. 
 
 !!! tip
     If you have an account on GitHub you can use it to sign into our GitLab.
