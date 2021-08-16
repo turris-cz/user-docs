@@ -1,4 +1,4 @@
-image: "registry.labs.nic.cz/turris/user-docs"
+image: "$CI_REGISTRY_IMAGE"
 
 variables:
     GIT_SUBMODULE_STRATEGY: recursive
