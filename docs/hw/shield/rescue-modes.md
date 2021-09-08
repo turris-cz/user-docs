@@ -31,3 +31,6 @@ Shield has several differences:
 3. There is no tool how to create and view snapshots. Only automatic
    snapshots are available and there is no way how to display which
    snapshot will be used for rollback.
+4. A specific filesystem image for re-flash is used instead of the MOX one.
+   Download it from
+   <https://repo.turris.cz/hbs/medkit/mox-medkit-contract-shield-latest.tar.gz>.
