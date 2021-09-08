@@ -136,7 +136,7 @@ method for restoring the operating system image.
     But even so, you can use that card to provide system image and use this mode
     to reflash the card itself.
 
-Download the latest version of Turris MOX image form
+Download the latest version of Turris MOX image from
 <https://repo.turris.cz/hbs/medkit/mox-medkit-latest.tar.gz>. Save the
 file `mox-medkit-latest.tar.gz` to USB flash drive or micro SD card to the root
 directory. The Turris MOX router supports following filesystems: **ext4, Btrfs
