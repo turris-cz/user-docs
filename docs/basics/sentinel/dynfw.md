@@ -3,9 +3,10 @@ board: shield, mox, omnia, 1.x
 ---
 # Dynamic Firewall
 
-The dynamic firewall (A.K.A. DynFW) is Turris IDS and IPS system – the tool for
-detecting network attackers and preventing them from attacking your device. It is
-a part of Turris [data collection](../collect.md).
+The dynamic firewall (DynFW) is Turris attack prevention system.
+Based on the data provided by the threat detection subsystem it is able to
+identify potential attackers and update the firewall rules so that they are
+unable to harm you device. DynFW is a part of [Turris Sentinel](intro.md).
 
 The system consists of two counterparts: the server side and the client
 application.
@@ -33,7 +34,7 @@ The dynamic list of all attackers is snapshoted and published daily as a CSV fil
 which we refer as the *greylist*. The greylist is also enhanced with *tags*
 describing the reason why particular address appears on the list (e.g. "haas",
 "port_scan" or so). You can download the latest greylist snapshot on the
-[Sentinel:View](https://view.sentinel.turris.cz/) web.
+[Sentinel View](https://view.sentinel.turris.cz/) web.
 
 
 ## DynFW client
@@ -41,8 +42,8 @@ describing the reason why particular address appears on the list (e.g. "haas",
 The official dynamic firewall client is intended to run on Turris routers.
 It automatically subscribes to DynFW server public interface to obtain the most
 recent list of attackers and its updates. It could be installed together with
-all other data collection components using
-[reForis package management tab](../collect.md#how-to-set-up-data-collection).
+all other Sentinel components using
+[reForis package management tab](intro.md#how-to-set-up-data-collection).
 The more detailed info about the application itself could be found in its code
 [repository](https://gitlab.nic.cz/turris/sentinel/dynfw-client).
 

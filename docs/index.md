@@ -42,10 +42,10 @@ existing bugs and vulnerabilities, you need your router up to date all the time.
 We provide updates for all our devices to fix discovered issues but also to
 provide new features. Those updates can be even installed automatically.
 
-### Data collection
+### Turris Sentinel
 
-To take things further, we provide an easy way to participate in our security
-research by collecting firewall logs and also information about other attack
-attempts. This data is analyzed, outputs are shared with security community and
-firewall on your router is updated with blacklist based on our findings to keep
-even your open services more secure.
+To get even further, we provide an easy way to participate in our security
+project [Sentinel](basics/sentinel/intro.md) by using firewall monitoring or
+detecting attack attempts. The information gathered about possible attackers is
+analyzed and outputs are shared with the security community. The firewall on
+your router is updated with a greylist based on our findings.

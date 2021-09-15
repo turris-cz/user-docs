@@ -1,38 +1,33 @@
 ---
 board: shield, mox, omnia, 1.x
 ---
-# Data Collection
+# Threat detection
 
-One of the initial motives that led to the development of the Turris router was
-to set up a secure home router that is capable of responding to current threats
-in almost real time. However a large amount of data is needed to identify an
-attacker and distinguish it from the usual traffic.
+The Sentinel threat detection subsystem is a key source of data which are used
+to build the [dynamic firewall](dynfw.md) (and other analyses)
+which then help to keep your router secure. As a result, taking part in
+Sentinel threat detection project helps to protect your own router (and home) as
+well as to protect the rest of the world.
 
-The data collection system [Sentinel](../apps/sentinel.md) is a key source of
-such data. We use this data to build
-and distribute a [dynamic firewall](dynfw/collect-dynfw.md) which afterwards
-helps keep your router secure.
-As a result, enabling data collection helps to protect your own router (and home)
-as well as to protect the rest of the world.
+## What kind of data does Sentinel threat detection need?
 
-## What data do we collect?
-
-There are multiple sources of data we collect. Depending on the source used, the
-type of data varies. On you router you can notably enable *Firewall monitoring*,
-deploy *Minipots* or use *HaaS*.
+There are multiple components in the threat detection subsystem. Depending on
+the component used, the type of data which is sent to our servers varies.
+On you router you can notably enable *Firewall monitoring*, deploy *Minipots*
+or use *HaaS*.
 
 ### Firewall monitoring
 
-Firewall data is one of the key data sources for [Sentinel](../apps/sentinel.md).
-Using firewall data we can determine which attackers tries to exploit potential
-vulnerabilities on a particular port. We collect attacker's IP address and local
-port number.
+Firewall logs are one of the key data sources for [Sentinel](../apps/sentinel.md).
+Using firewall logs we can determine which attackers tries to exploit potential
+vulnerabilities on a particular port. We collect attacker's IP address and number
+of port he is trying to attack.
 
 ### Minipot
 
 The word "Minipot" is a combination of the words "mini" and "Honeypot".
-Honeypot, also called a fake server, is a way to imitate some kind of service,
-usually attractive to a potential attacker.
+Honeypot, also called a fake server, is a way to mimick some kind of service or
+protocol, usually attractive to a potential attacker.
 
 Turris Minipot is a lightweight Honeypot which emulates only minimal subset of
 each protocol, answering an "incorrect password" to each log in attempt. We
@@ -67,16 +62,17 @@ Since our team has only limited manpower we try to primarily focus
 on subjects that really matter. The Turris survey collects information about
 installed packages, used languages and operating system version. Based on this
 we are able to identify widely used packages, features and provide special
-support.
+support. Turris Survey is not a part of threat detection subsystem but it shares
+the same infrastructure and secure communication channel.
 
 ## What do we use the data for?
 
-The data collected from	routers are used for various security analyses
+The data collected from routers are used for various security analyses
 carried out by Turris team or by
 [The National CSIRT of the Czech Republic](https://csirt.cz/en/).
 
 One of the most important analyses is the
-[dynamic firewall](dynfw/collect-dynfw.md). The dynamic firewall
+[dynamic firewall](dynfw.md). The dynamic firewall
 collects information about entities trying to scan or break into your router and
 is able to detect the real attackers among them. IP addresses of identified
 attackers are then immediately published and reported back to the routers.

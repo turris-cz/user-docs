@@ -119,12 +119,13 @@ nav:
     - 'Ethernetless configuration': 'basics/first-setup/ethernetless.md'
 - Software:
     - 'Landing page': 'basics/landing-page.md'
-    - Data Collection:
-        - Introduction: 'basics/collect/collect.md'
-        - Dynamic Firewall: 'basics/collect/dynfw/collect-dynfw.md'
-        - HaaS: 'basics/collect/haas.md'
-        - Setup: 'basics/collect/setup.md'
-        - Setup on Shield: 'basics/collect/setup-shield.md'
+    - Sentinel:
+        - Introduction: 'basics/sentinel/intro.md'
+        - Dynamic Firewall: 'basics/sentinel/dynfw.md'
+        - Threat Detection: 'basics/sentinel/threat-detection.md'
+        - Setup: 'basics/sentinel/setup.md'
+        - Setup on Shield: 'basics/sentinel/setup-shield.md'
+        - HaaS: 'basics/sentinel/haas.md'
     - Foris:
         - About: 'basics/foris/intro.md'
         - 'Secure access': 'basics/foris/https/https.md'

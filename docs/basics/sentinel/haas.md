@@ -22,7 +22,7 @@ server (owned by CZ.NIC association) located in one of our datacenters.
 
 The HaaS server, powered by Cowrie, is a full-fledged honeypot. As well, it is
 able to record the user/password combination (like
-[Minipots](collect.md#minipot) do) and in addition it is able to simulate a real
+[Minipots](intro.md#minipot) do) and in addition it is able to simulate a real
 device and record the executed commands.
 
 A big advantage is that your router stays safe all the time because all
@@ -38,20 +38,25 @@ Available facts gained by using HaaS are:
 
 ## How to set up HaaS
 
-To activate HaaS, you need a PC or server with Linux and public IPv4 address.
-You may have to redirect port 22 from your router to your PC if you use the
-router and NAT.
+To activate HaaS, you need a PC or server with Linux (or another supported device
+- like Turris) and public IPv4 address. You may have to redirect port 22 from
+your router to your PC if you use the router and NAT. In case of Turris all
+firewall changes are done automatically.
 
-Then, you can proceed with the following steps.
+## Registration
 
-If you already have a token, you can skip to the step 3.
+In order to use HaaS, you have to register at its website and obtain **HaaS
+tokens** for your devices. If you already have a token, you can skip this
+section.
 
-1. Register on [HaaS website](https://haas.nic.cz/).
+### 1. Register on [HaaS website](https://haas.nic.cz/).
 
    ![Registration](registration.png)
 
-2. There, in the section _My Honeypot_ click on _Add new device_. After naming
-   it, you will get a token.
+### 2. Get the token
+
+Proceed to the section *My Honeypot* and click on *Add new device*. After naming
+it, you will get a token.
 
    ![Add new device](add-new-device.png)
 
@@ -59,21 +64,10 @@ If you already have a token, you can skip to the step 3.
 
    ![Device token](device-token.png)
 
-3. Go to reForis web interface and enable the [Data Collection](collect.md)
-   package list in the _Package Management_ → _Packages_ tab and also enable
-   "SSH Honeypot" option. This will install Data Collection and HaaS which will
-   occur under the Sentinel menu item.
+### 3. Use the token
 
-   ![Enable Data Collection](packages.png)
-
-   ![Sentinel menu item](sentinel.png)
-
-4. Go to the HaaS tab and check _Enable HaaS Proxy_ option. Then copy your
-   token into _HaaS token_ input and click on _Save_ button.
-
-   ![Proxy settings](proxy-settings.png)
-
-   After this, HaaS is activated.
+After obtaining the tokens, you can use them in you device configuration.
+In case of Turris, follow [Sentinel HaaS setup](setup.md#haas).
 
 ## Move the SSH server to a port for remote administration
 

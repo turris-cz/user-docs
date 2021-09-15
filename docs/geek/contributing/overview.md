@@ -7,14 +7,14 @@ free to go trough them and see if you can do something more.
 The contributing possibilities here are sorted by requirements on user's time and
 knowledge. Feel free to go trough them from start.
 
-## Enable data collection
+## Enable Sentinel threat detection
 The easiest but very helpful way how you can help Turris project grow is to enable
-data-collection services on your router. The core busyness of Turris is to
+Sentinel threat detection services on your router. The core busyness of Turris is to
 discover new threats on Internet and that can't be done without data provided by
 Turris users. This data feeds not only additional protections for your routers but
 also helps discover and put out threats on whole Internet.
 
-Please see [appropriate article for more info](../../basics/collect/collect.md).
+Please see [appropriate article for more info](../../basics/sentinel/threat-detection.md).
 
 ## Report and debug problems
 One of most helpful ways to contribute is to report and debug problems you
