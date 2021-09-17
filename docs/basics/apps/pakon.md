@@ -161,8 +161,10 @@ traffic underneath. There is nothing that can be done about that.
 
 ### Is it possible to have client names instead of their MAC addresses?
 Yes, you need to do it in the advanced administration interface LuCI. From the
-menu in _Network_ and choose _DHCP and DNS_, scroll a little bit down and you
-should see _DHCP Static Leases_ section.
+menu in _Network_ and choose _DHCP and DNS_. In the tab menu, you should see
+_Static Leases_.
+
+![Screenshot - LuCI DHCP & DNS tab menu](dhcp-dns-tab-menu.png)
 
 You don't have to set a proper static lease to see names in PaKon - just fill
 in the name and select MAC address. If you fill in also the IP address, you
