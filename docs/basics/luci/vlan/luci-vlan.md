@@ -30,7 +30,7 @@ interfaces. For creating VLAN interface over a specific port use `lanX` interfac
 but you can use also `wanX` or `ethX` for managing traffic that is not passing
 throught the switch.
 
-You can check network interfaces in the hardware documentation of Omnia[^5] and 
+You can check network interfaces in the hardware documentation of Omnia[^5] and
 Turris 1.0/1.1[^6].
 
 ### Creating a VLAN interface in LuCI

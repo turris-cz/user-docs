@@ -48,7 +48,7 @@ After switching to this mode, several text fields are displayed. Write in the va
   second one.
 
 ![IPv4 static configuration](ipv4-static.png)
-	  
+
 ### PPPoE configuration
 
 In this mode, your IPv4 settings are obtained automatically. Your ISP should provide you your authentication
@@ -84,7 +84,7 @@ into the _Custom DUID_ field.
 
 ### Static IP address
 
-This mode of native IPv6 is similar to its equivalent in the IPv4 world.  Write in the values you have acquired from
+This mode of native IPv6 is similar to its equivalent in the IPv4 world. Write in the values you have acquired from
 your ISP.
 
 * _IPv6 address_ (mandatory) – it's something like 2001:db8:be13:37da::1/64 (this address includes the prefix
@@ -95,7 +95,7 @@ your ISP.
 * _DNS server 2 (IPv6)_ (optional) – see above.
 
 ![IPv6 static configuration](ipv6-static.png)
-	
+
 ### 6to4 configuration
 
 6to4 is a transition mechanism for migrating from IPv4 to IPv6. It allows IPv6 packets to be transmitted over an IPv4
@@ -159,4 +159,4 @@ What particular results mean:
 * _IPv6 gateway connectivity_	- your router has a working gateway IPv6 address and can access IPv6 machines on the
   Internet.
 
-This test does **NOT** include DNS checking. It can be tested on the DNS page. 
+This test does **NOT** include DNS checking. It can be tested on the DNS page.

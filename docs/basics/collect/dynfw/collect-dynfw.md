@@ -54,7 +54,7 @@ types: `dynfw/list` and `dynfw/delta`. As a protocol,
 [ZeroMQ](https://zeromq.org/) is used with
 [PUB/SUB](http://zguide2.zeromq.org/page:all#Getting-the-Message-Out) pattern
 and messages are standard ZeroMQ multipart message. The first frame is the
-topic – aka message type – as simple string so PUB/SUB will work.  Second frame
+topic – aka message type – as simple string so PUB/SUB will work. Second frame
 is message itself encoded using [message pack](https://msgpack.org/).
 
 

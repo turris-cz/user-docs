@@ -78,7 +78,7 @@ Here is the example of MOX communication.
 !!! tip
     You can follow the video guide to see how it works.
     <video width="640" height="480" controls><source src="/hw/mox/MOX-reflash.mp4" type="video/mp4"></video>
-    
+
 
 ## Rescue Modes
 

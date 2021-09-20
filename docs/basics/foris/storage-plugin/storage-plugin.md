@@ -18,7 +18,7 @@ and lengthen the lifespan of the internal eMMC flash storage. The `/srv` directo
 site-specific data as defined in the [FHS specification](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard).
 The storage plugin can't move other parts of the file system. But it doesn't matter because all data-intensive
 applications save their data into `/srv`.
-    
+
 ## First setup
 
 Pick an external storage device, which you want to move your persistent data to. This can be for example a simple USB
@@ -35,7 +35,7 @@ data should be stored and press the _Format & Set_ button.
 
 ![Storage devices](devices.png)
 
-You will be asked if you are ready to continue. If you are ready, press _OK_. Now, for applying the changes, you need to reboot your system.  
+You will be asked if you are ready to continue. If you are ready, press _OK_. Now, for applying the changes, you need to reboot your system.
 
 You can do this by going to the _Notifications_ tab and pressing _Reboot_.
 
@@ -63,7 +63,7 @@ be spread across all enabled drives.
 
 If you have more drives and want to remove/replace some of them, do so by
 unchecking them in in the Web UI and hitting _Format & Set_ button. Removing
-drive takes a long time as data need to be moved out of it first and 
+drive takes a long time as data need to be moved out of it first and
 
 !!! tip
     No additional reboot is needed to extend/shrink your storage. Actually

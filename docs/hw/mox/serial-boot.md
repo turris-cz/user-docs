@@ -154,7 +154,7 @@ device 0 offset 0x20000, size 0x160000
 ### Flashing bootloader images from a USB flash disk
 
 If you put the original bootloader images on a USB flash disk, connect it to MOX
-and execute  the following commands in U-Boot (the output is shown as well):
+and execute the following commands in U-Boot (the output is shown as well):
 
 ```
 => usb start

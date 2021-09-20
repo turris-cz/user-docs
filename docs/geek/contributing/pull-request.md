@@ -30,7 +30,7 @@ be prepared automatically if you create a MR).
 !!! notice
     You will need special access rights to create project forks in our GitLab.
     We set these rights on request to users who have already repeatedly
-    contributed to our projects. 
+    contributed to our projects.
 
 !!! tip
     If you have an account on GitHub you can use it to sign into our GitLab.

@@ -35,7 +35,7 @@ Netdata will be installed in the same way as other packages.
 
 In CLI via SSH you can run the following commands. The first of them will update
 the list of available packages and the second one will install netdata onto
-your router. 
+your router.
 
 ```
 opkg update

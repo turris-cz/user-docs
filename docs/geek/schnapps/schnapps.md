@@ -88,7 +88,7 @@ the snapshot to distinguish between more types especially for later automatic pr
 * `time` – snapshots created on time base (by cron)
 * `pre` – snapshots created before updates
 * `post` – snapshots created after updates
-* `rollback` – snapshots created when rolling back (can't be created manually) 
+* `rollback` – snapshots created when rolling back (can't be created manually)
 
 The full form of the command will be like:
 ```
@@ -185,7 +185,7 @@ rmdir /mnt/usb
 ```
 This set of commands does the following:
 
-	1. Creates a directory to be the mount point for the USB drive. 
+	1. Creates a directory to be the mount point for the USB drive.
 	2. Mounts the /dev/sda1 device (the first partition on the USB drive) to the mount point.
 	3. Exports the given snapshot to the mounted file system.
 	4. Unmounts the target file system.
@@ -328,6 +328,6 @@ to your Turris and use schnapps to work with snapshots on it the same way you ma
 
 If your file system is mounted on `/mnt/disk` you can create a snapshot by this command:
 ```
-schnapps -d /mnt/disk create 
+schnapps -d /mnt/disk create
 ```
 Other commands can be used similarly.

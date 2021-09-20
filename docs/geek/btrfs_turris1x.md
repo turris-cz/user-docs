@@ -32,7 +32,7 @@ You will need:
     You should be using UBIFS before you can proceed.
 
 All Turris 1.0 routers comes by default with JFFS2 and this can be checked with
-the `mount` command or in the advanced administration LuCI.  In Turris OS 3.10.9,
+the `mount` command or in the advanced administration LuCI. In Turris OS 3.10.9,
 which we released at end the of the year 2018, we automatically updated the
 operating system located in the NOR. It means that if you did a Factory Reset
 afterwards, you should be running at least Turris OS 3.8.5 and if you were using JFFS2
@@ -90,7 +90,7 @@ As for now, there is disabled opt-in migration for Turris 1.x routers, however
 there is a way how to switch to the latest major version.
 
 !!! warning
-    By following this 5.x migration howto, you will loose your current settings 
+    By following this 5.x migration howto, you will loose your current settings
     and will have to configure everything from scratch.
 
 If you will run one by the following commands, it will download the medkit from the

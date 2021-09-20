@@ -42,7 +42,7 @@ As Turris Shield is trying to be as simple as possible without compromising the
 security, it will not allow you to access the Internet without setting up the
 password. That is the only mandatory step in the initial Guide.
 
-### Step one — password settings 
+### Step one — password settings
 
 ![Setting password](shield-pass.png)
 
@@ -50,7 +50,7 @@ As mentioned previously, you are asked to enter password that will protect your
 administration interface. Pick something that is not easy to guess and long
 enough.
 
-#### Step one A — Insecure password used 
+#### Step one A — Insecure password used
 
 ![Invalid password](shield-pass-invalid.png)
 

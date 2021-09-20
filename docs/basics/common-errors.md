@@ -54,7 +54,7 @@ cable is the safest test.
 
 Our routers comes with [Knot Resolver](https://www.knot-resolver.cz) which is
 validating and caching DNS resolver. Some ISPs break DNSSEC and therefor some
-DNS queries will fail.  If you experience troubles resolving domain names, try
+DNS queries will fail. If you experience troubles resolving domain names, try
 various settings in [DNS tab in Foris](foris/dns/foris-dns.md). Most notably
 you can disable forwarding and rely on your router resolving everything itself,
 or you can forward to some DNS resolver with **DNS over TLS** like CZ.NIC,

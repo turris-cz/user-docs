@@ -44,7 +44,7 @@ default option. The DHCP server has three parameters:
 
 * _DHCP start_ – the first address inside the address space which may be leased (assigned) via DHCP. For example,
   if it is 100 and your network is 192.168.2.0 your DHCP leases addresses beginning 192.168.2.100. The default
-  value 100 usually need not to be changed. 
+  value 100 usually need not to be changed.
 * _DHCP max leases_ – the maximum addresses to be leased to computers. It effectively means if you have this
   value set to 150 (the default) and the first leased address is 192.168.2.100 the last one is 192.168.2.249.
 * _Lease time (hours)_ – this is how long an address is leased to a computer (the default is 12 hours and
@@ -54,7 +54,7 @@ default option. The DHCP server has three parameters:
 
 ![DHCP server settings](dhcp-server.png)
 
-### List of DHCP clients 
+### List of DHCP clients
 
 The LAN section in Foris contains also the list of the current DHCP clients. It can be very useful for LAN
 administration and for tuning the DHCP server settings. You can see here which computers have leased which IP addresses,

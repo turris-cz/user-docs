@@ -51,7 +51,7 @@ If you have PoE addon, you can find pins on addon itself. In this case it is:
 ### Turris Omnia
 
 To access the serial link you need to remove the top cover.
-To do it, first you have to unscrew 6 screws (3 on each side of the router). 
+To do it, first you have to unscrew 6 screws (3 on each side of the router).
 The serial pins are in the right
 bottom corner of the board, between the right most LED and the LED control
 button. Connect it to you PC using a USB TTL serial adapter as shown on the

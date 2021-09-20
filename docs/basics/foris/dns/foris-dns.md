@@ -49,7 +49,7 @@ DNS communicaton in secret you can use DoT/TLS instead.
 [Cloudflare](https://en.wikipedia.org/wiki/Cloudflare) is a world-wide cloud service provider which has its servers
 in many countries. Quad9 is a non-profit organization dedicated to secure DNS services and it also has servers in
 many countries. You can also use [Google](https://en.wikipedia.org/wiki/Google_Public_DNS)'s notoriosly known
-public DNS servers (but currently not with DoT). 
+public DNS servers (but currently not with DoT).
 
 *DNS over TLS keeps DNS traffic in secret but is a bit slower than the standard DNS communication.*
 
@@ -64,12 +64,12 @@ public DNS servers (but currently not with DoT).
 Disabling DNSSEC is highly discouraged. It should be done only temporarily in these cases:
 
 1. Your ISP's DNS servers are broken and you can't use any other forwarding options nor to disable forwarding
-	   at all (typically your ISP blocks the ports used for DNS and DoT communication with "foreign" servers).
-	   In such case request your ISP to fix its DNS servers or consider to migrate to another ISP. 
+  at all (typically your ISP blocks the ports used for DNS and DoT communication with "foreign" servers).
+  In such case request your ISP to fix its DNS servers or consider to migrate to another ISP.
 
 2. You experience strange behavior where you browse the web or use other Internet services and you suspect it may
-	   be caused by broken DNSSEC. If disabling DNSSEC fix these problems it converts to (1). Otherwise you should
-	   reenable DNSSEC and investigate elsewhere.
+  be caused by broken DNSSEC. If disabling DNSSEC fix these problems it converts to (1). Otherwise you should
+  reenable DNSSEC and investigate elsewhere.
 
 ![Disable DNSSEC](disable-dnssec.png)
 
@@ -85,7 +85,7 @@ resolve IP addresses for local host names. It can be useful if computers provide
 
 When a computer requests its IP address via DHCP it sends its host name (this is the name you can see at the _LAN_
 page in the _DHCP clients_ list). Remember each computer in your LAN must have an unique name to work properly.
-Ambiguous names will lead to unpredictable results. 
+Ambiguous names will lead to unpredictable results.
 
 ## Connection test
 
@@ -97,5 +97,5 @@ What particular results mean:
 
 * _DNS_ – your router can successfully execute DNS queries and get responses
 * _DNSSEC_ – your router can successfully execute DNSSEC queries and get correct (trustfully signed and intact)
-	  responses
+  responses
 

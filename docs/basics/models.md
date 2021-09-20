@@ -46,7 +46,7 @@ Following the success of Turris Omnia, Turris MOX was also offered on
 [Indiegogo](https://www.indiegogo.com/projects/turris-mox-modular-open-source-router#/)
 featuring unprecedented modularity.
 
-It uses dual-core ARMv8 CPU Marvell Armada 3720 with 512 MB/1 GB RAM.  You can
+It uses dual-core ARMv8 CPU Marvell Armada 3720 with 512 MB/1 GB RAM. You can
 read more about Turris MOX on the [separate page](../hw/mox/intro.md).
 
 ![Turris MOX](../hw/mox/mox.jpg)
@@ -57,7 +57,7 @@ Single-purpose device based on hardware platform of Turris MOX targeting people
 who wants to easily secure their entire home or office without having to change
 their modem or router.
 
-It uses dual-core ARMv8 CPU Marvell Armada 3720 with 512 MB RAM.  You can
+It uses dual-core ARMv8 CPU Marvell Armada 3720 with 512 MB RAM. You can
 read more about Turris Shield on the [separate page](../hw/shield/shield.md).
 
 ![Turris Shield](../hw/shield/shield.png)

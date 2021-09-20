@@ -48,12 +48,12 @@ LEDs turn green.
 
 How reset modes work is also explained in one of our video tutorials.
 
-<iframe  
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/ZrWzpsxqaRU" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/ZrWzpsxqaRU"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
     >
 </iframe>
@@ -127,7 +127,7 @@ Download the latest version of Turris Omnia's system image from
 file `omnia-medkit-latest.tar.gz` to USB flash drive to the root directory. The
 Turris Omnia router supports following filesystems: _ext4, Btrfs, XFS and
 FAT32_. You can also download and put alongside `md5` or `sha256` file from the
-same URL.  Connect the USB flash to the Turris Omnia router and use reset
+same URL. Connect the USB flash to the Turris Omnia router and use reset
 button to select mode 4 (4 LEDs).
 
 The Turris Omnia router will rewrite internal eMMC storage with the system

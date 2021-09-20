@@ -28,7 +28,7 @@ Most suitable to easily cover last few remaining clients that can't do 5 GHz yet
 ## Wi-Fi (mPCIe)
 
 The MOX Wi-Fi add-on (mPCIe) is significantly faster than SDIO and is the
-recommended Wi-Fi card for modules [B (Extension)](modules/b.md)  and [G (Super
+recommended Wi-Fi card for modules [B (Extension)](modules/b.md) and [G (Super
 Extension)](modules/g.md). It was tested with the device and is guaranteed to
 work correctly.
 

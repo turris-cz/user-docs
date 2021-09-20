@@ -132,7 +132,7 @@ Message in question starts with with sentence: _Migraton from Turris OS 3.x was
 completed._.
 
 ## Known problems and solutions
-You can encounter some problems that are caused by automatic migration.  Not all
+You can encounter some problems that are caused by automatic migration. Not all
 problems can be automatically removed. These are known problems and solutions for
 them.
 

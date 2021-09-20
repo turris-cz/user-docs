@@ -17,7 +17,7 @@ functions and varying stability – you can pick, which branch you want to test.
 Following list describes various branches you might want to try and their main
 functions. They are ordered from the most stable to the most experimental.
 
-### HBS –  _Here Be Snails (Stable)_
+### HBS – _Here Be Snails (Stable)_
 
 Default and most stable branch. Suggested for all users. This contains
 official releases and is what everybody is running by default.

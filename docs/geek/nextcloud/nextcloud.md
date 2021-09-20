@@ -17,7 +17,7 @@ cloud provider with your personal data.
 !!! tip "Benefits of using Nextcloud"
     * An open source solution, fully under your own control.
     * Synchronization and sharing of data made easy.
-    * Mobile, desktop and web client. 
+    * Mobile, desktop and web client.
     * Monitors changes and allows document workflow management.
     * A space for your calendar and contacts.
     * Safe private voice and video calls, shared screens.
@@ -72,7 +72,7 @@ Once done, you get a link directly to your ready to use Nextcloud instance.
 ### Manual installation from CLI
 
 Nextcloud is already included in our repositories, so you can get it simply by
-installing the package `nextcloud-install`  by issuing the following
+installing the package `nextcloud-install` by issuing the following
 commands:
 
 ```
@@ -107,7 +107,7 @@ Foris](../../basics/apps/openvpn-server/openvpn.md) or you need to open up some 
 your firewall. Second option would allow anybody (including attackers) to try to
 log in to your Nextcloud instance and – if you don't change the Lighttpd
 configuration – to LuCI and Foris. Please don’t do that unless you are sure what
-you are doing. 
+you are doing.
 
 Also bear in mind that if you are using Nextcloud from our repositories, **you
 shouldn't update the Nextcloud core manually** as that would get overwritten by

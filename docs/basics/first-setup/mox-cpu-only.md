@@ -12,7 +12,7 @@ to decide if you would like to configure it like WAN or LAN and how to manage a
 connection to the internet.
 
 Because we want to make the first setup smooth, Ethernet port will be set
-to LAN at the beginning of the first setup. **You shouldn't connect your MOX 
+to LAN at the beginning of the first setup. **You shouldn't connect your MOX
 directly to the internet**. Configure it somewhere in safe environment – like
 your local network or directly connected to your computer. Later on, you can
 change the purpose of your only Ethernet port.

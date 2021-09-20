@@ -10,7 +10,7 @@ secure their entire home or office without having to change their modem or
 router.
 
 Hardware-wise it is based on [Turris MOX](../mox/intro.md). The main
-difference is software and target audience.  While MOX is trying to be as
+difference is software and target audience. While MOX is trying to be as
 customizable as possible, Shield on the other hand tries to be as simple as
 possible while still being secure.
 

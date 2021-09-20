@@ -27,7 +27,7 @@ external storage such as an USB HDD or SSD. Read the [Storage plugin](../../basi
 
 !!! danger
         Operating LXC on the internal flash storage may lead to rapid degradation and eventually to failure of the storage.
-        This may void your warranty. 
+        This may void your warranty.
 
 ## LXC packages
 
@@ -55,7 +55,7 @@ You can set `image.linuxcontainers.org` as well (which provides a larger set of 
 LXC image repository.
 * _Enable SSL_ – Check this to enable SSL support. If you use `repo.turris.cz` as your repository this must be checked.
 * _Free Space Threshold_ – The minimum free disk space (in KB) for LXC container creation. If the free space falls
-under this value no new container may be created. The default value (100 MB) is usually suitable. 
+under this value no new container may be created. The default value (100 MB) is usually suitable.
 * _Free Temp Threshold_ – The minimum free temporary disk space (in KB) for LXC container creation. If the temporary
 free space falls under this value no new container may be created. The default value (100 MB) is usually suitable.
 
@@ -68,7 +68,7 @@ be applied immediately (and a new set of Linux distros will be downloaded).
 
 There are only two things to do before creating a LXC container. Write its name into the _Name_ field and choose
 the Linux distribution to install (from the _Template_ drop-down list). Then press the _Create_ button and
-the process of the creation  of a new LXC container will start. This can take a while. In LuCI you cannot see the progress and if it
+the process of the creation of a new LXC container will start. This can take a while. In LuCI you cannot see the progress and if it
 fails, you might not find why.
 
 ![Create New Container](create.png)
@@ -157,7 +157,7 @@ lxc-attach -n test
 ```
 
 Now you are inside the container and you can work as usually (according to the distro you have installed). To allow
-direct access to the container, consider to install the SSH client package(s) and set the root password. Even better is 
+direct access to the container, consider to install the SSH client package(s) and set the root password. Even better is
 a usage of SSH public key(s) for the authentification. After this procedure, you will be able to connect directly. The IP addresses
 of the container can be obtained from the `lxc-ls` listing (see above) or by running `ip addr` inside the container
 (if your distro supports it).
@@ -174,7 +174,7 @@ Here is an example configuration file:
     config container
             option name my_first_container
             option timeout 60
-     
+
     config container
             option name my_second_container
             option timeout 120

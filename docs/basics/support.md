@@ -55,7 +55,7 @@ diagnostics script.
 
 !!! info
     If you do not have installed SSH support on your PC, you will need to install
-    SSH client. On Linux it is usually `openssh-client`  and on Windows it is
+    SSH client. On Linux it is usually `openssh-client` and on Windows it is
     Posh-SSH` or `WinSCP`. But many of Linux distros have OpenSSH client
     preinstalled and also the Windows PowerShell 2.0 has it already integrated.
 
@@ -75,7 +75,7 @@ command line tool).
 3. Disconnect (using `Ctrl+D`).
 
 4. Copy the diagnostic file to your computer.
-    -  using SCP
+    - using SCP
         ```shell
         $ scp root@192.168.1.1:/tmp/diag.gz <your destination>
         ```

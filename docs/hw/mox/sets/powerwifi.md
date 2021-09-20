@@ -17,7 +17,7 @@ The Power Wi-Fi set is used to provide WiFi signal or increase its range. It is
 suitable for purely wireless networks. Unlike with Pocket Wi-Fi, with the Power
 Wi-Fi configuration you can use the 5GHz and 2.4GHz Wi-Fi (for legacy
 devices) at the same time. And the 5GHz Wi-Fi is even faster than in the case
-of Pocket Wi-Fi. 
+of Pocket Wi-Fi.
 
 This set consists of the [MOX A (Basic)](../modules/a.md) module, a power
 source, a microSD card, the [MOX B (Extension) module](../modules/b.md), [MOX

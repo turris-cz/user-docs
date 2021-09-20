@@ -13,7 +13,7 @@ this warning.
 
 ## What does this warning mean?
 
-In order to safely configure your router, you need a secure channel.  If you
+In order to safely configure your router, you need a secure channel. If you
 don't want to use just your ethernet cable to connect to your router, **a safe
 way is to use HTTPS**. Why is HTTPS safe? For one, HTTPS requires a **trusted
 certificate** and if the certificate is not trusted, then warnings are
