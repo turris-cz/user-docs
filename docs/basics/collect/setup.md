@@ -29,7 +29,7 @@ uci set sentinel.main.agreed_with_eula_version=1 && uci commit
 
 In both cases, few extra steps are needed to activate HaaS:
 
-1. Register on our website - [HaaS.nic.cz](https://haas.nic.cz).
+1. Register on our website – [HaaS.nic.cz](https://haas.nic.cz).
 2. There, in section _My Honeypot_ click on _Add new device_. After
 naming it, you will get a **token**
 ![HaaS Device](haas-device.png)

@@ -2,7 +2,7 @@
 board: mox, omnia, 1.x
 competency: intermediate
 ---
-# PaKon - Network monitoring (Parental Control)
+# PaKon – Network monitoring (Parental Control)
 
 ## What is Pakon?
 
@@ -15,7 +15,7 @@ view and filter records.
 
 ## Details
 
-PaKon utilizes **[Suricata](https://suricata-ids.org/) - network threat
+PaKon utilizes **[Suricata](https://suricata-ids.org/) – network threat
 detection engine**. As part of Suricata, there is **Intrusion Detection System
 (IDS)**, which is being used. Suricata does the hard work of analyzing raw
 network traffic and **provides processed information** (about flows, DNS
@@ -115,11 +115,11 @@ $ pakon-show -h
 You can filter the data by _time_, by _MAC address_ and by _hostname_. You can
 also display results aggregated by domain instead of displaying timeline data.
 
-Some domains are hidden in output by default - for example, advertisements,
+Some domains are hidden in output by default – for example, advertisements,
 tracking, CDNs, OCSPs, browser service domains, which makes the output hard to read. You can show all records using the option `–no-filter`. The lists of filtered domains is in `/usr/share/pakon-light/domains_ignore/`. If there is a new CDN or you want to group multiple hostnames from the same domain to one, and you would like to share it with others and include it in a new Turris OS release, you can contribute it in [pakon-light-lists](https://gitlab.nic.cz/turris/pakon-light-lists) repository.
 
 ## A few sidenotes
-- In some cases, application level protocol is unknown - `?`.
+- In some cases, application level protocol is unknown – `?`.
 It can happen in case of failed connection or unrecognized protocol. In those
 cases, you can still get some idea about it from the destination port.
 - Web pages commonly include content from multiple domains, which means that
@@ -148,7 +148,7 @@ paired with.
 
 Even if the DNS query was not performed (eg. when name/IP mapping is hardcoded
 in the hosts file), Suricata is often able to determine the name from
-application protocol - in case of HTTP and TLS. HTTP sends hostname as its
+application protocol – in case of HTTP and TLS. HTTP sends hostname as its
 header. TLS is encrypted, but when the connection is opened (during TLS
 handshake), client sends the name of server (TLS SNI) and server sends it's
 certificate. These are both sent unencrypted, so Suricata can read it even
@@ -156,7 +156,7 @@ though the data flow is later encrypted.
 
 In case of other protocols, the detection relies just on DNS names. Also
 **note that tunneling protocols (VPNs, SSH, proxies, Tor) can hide the activity
-entirely** - you will only see the flow to the proxy/gateway and not the actual
+entirely** – you will only see the flow to the proxy/gateway and not the actual
 traffic underneath. There is nothing that can be done about that.
 
 ### Is it possible to have client names instead of their MAC addresses?
@@ -164,15 +164,15 @@ Yes, you need to do it in the advanced administration interface LuCI. From the
 menu in _Network_ and choose _DHCP and DNS_. In the tab menu, you should see
 _Static Leases_.
 
-![Screenshot - LuCI DHCP & DNS tab menu](dhcp-dns-tab-menu.png)
+![Screenshot – LuCI DHCP & DNS tab menu](dhcp-dns-tab-menu.png)
 
-You don't have to set a proper static lease to see names in PaKon - just fill
+You don't have to set a proper static lease to see names in PaKon – just fill
 in the name and select MAC address. If you fill in also the IP address, you
-create a static lease - meaning that the device will always get the same IP
+create a static lease – meaning that the device will always get the same IP
 address. For more details about static leases click
 [here](../luci/static-dhcp/static-dhcp.md).
 
-![Screenshot - LuCI Static lease](static-lease.png)
+![Screenshot – LuCI Static lease](static-lease.png)
 
 ### Can I configure the list of monitor networks for PaKon?
 Yes, you can change the list of monitor networks in configuration file
@@ -187,7 +187,7 @@ monitor and then restart these two services by using the following commands:
 ### Can I clear collected data?
 There is a way how to do it in the command-line interface.
 You need to connect to your via SSH and run these following commands, which will
-stop process pakon-monitor, remove two databases - temporary one and persistent
+stop process pakon-monitor, remove two databases – temporary one and persistent
 and then it will create a temporary database from scratch.
 ```
 /etc/init.d/pakon-monitor stop

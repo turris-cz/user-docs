@@ -18,10 +18,10 @@ of the page. Then click the _Add_ button under that list.
 
 Fill the new row with:
 
- * _Hostname_ - any name you want to identify the device.
- * _MAC-Address_ - Hardware identification number. It can be select from the list of list MAC addresses of connected
+ * _Hostname_ – any name you want to identify the device.
+ * _MAC-Address_ – Hardware identification number. It can be select from the list of list MAC addresses of connected
 devices or filled manually by selecting the *\-\-custom\-\-* option.
- * _IPv4-Address_ - An IP address to be permanently assigned to a device identified by MAC address. It can be select
+ * _IPv4-Address_ – An IP address to be permanently assigned to a device identified by MAC address. It can be select
 from the list of last used IP addresses or filled manually by selecting the *\-\-custom\-\-* option.
 
 ![Screenshot 1](screenshot-3.png)

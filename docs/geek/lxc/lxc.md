@@ -39,7 +39,7 @@ be able to see the information about it at the _Notifications_ page.
 
 ## LXC management in LuCI
 
-LXC containers can be created, deleted, started, stopped etc. through the LuCI - advanced administration web interface. Choose _LuCI OpenWrt
+LXC containers can be created, deleted, started, stopped etc. through the LuCI – advanced administration web interface. Choose _LuCI OpenWrt
 advanced web configuration_ at the homepage of your Turris and log into it. Then go to _Services -> LXC Containers_.
 
 *You will be warned that you will need a custom OpenWrt image. This warning may be ignored because Turris OS is
@@ -49,17 +49,17 @@ such custom image and supports LXC.*
 
 There are four parameters you can change to fit the LXC environment to your requirements:
 
-* _Containers URL_ - The default is `repo.turris.cz/lxc` which is provided by the Turris team. This server provides
+* _Containers URL_ – The default is `repo.turris.cz/lxc` which is provided by the Turris team. This server provides
 a set of selected Linux distributions including Turris OS. These distributions are tested and should work properly.
 You can set `image.linuxcontainers.org` as well (which provides a larger set of distros) or write in your specific
 LXC image repository.
-* _Enable SSL_ - Check this to enable SSL support. If you use `repo.turris.cz` as your repository this must be checked.
-* _Free Space Threshold_ - The minimum free disk space (in KB) for LXC container creation. If the free space falls
+* _Enable SSL_ – Check this to enable SSL support. If you use `repo.turris.cz` as your repository this must be checked.
+* _Free Space Threshold_ – The minimum free disk space (in KB) for LXC container creation. If the free space falls
 under this value no new container may be created. The default value (100 MB) is usually suitable. 
-* _Free Temp Threshold_ - The minimum free temporary disk space (in KB) for LXC container creation. If the temporary
+* _Free Temp Threshold_ – The minimum free temporary disk space (in KB) for LXC container creation. If the temporary
 free space falls under this value no new container may be created. The default value (100 MB) is usually suitable.
 
-![LXC containers - Options](options.png)
+![LXC containers – Options](options.png)
 
 After done, press _Save & Apply_ or _Save_ to save your values. If you choose the first of the buttons it will
 be applied immediately (and a new set of Linux distros will be downloaded).
@@ -82,17 +82,17 @@ a static IP address to the container or set a DHCP server to it. Setting up a po
 All the containers you have created are displayed in this section. You can do these operations (three of them
 have buttons and the others are available in the drop-down list):
 
-* _Start_ - It starts the container (it it similar to turning-on a physical machine) if it is stopped. It will boot
+* _Start_ – It starts the container (it it similar to turning-on a physical machine) if it is stopped. It will boot
 and be ready to use in a moment.
-* _Stop_ - It executes a clean shutdown of the container. If the container fails to cleanly exit in 60 seconds, it will
+* _Stop_ – It executes a clean shutdown of the container. If the container fails to cleanly exit in 60 seconds, it will
 be forced to stop.
-* _Delete_ - It deletes the container. All the data stored inside will be lost. Running containers can't be deleted
+* _Delete_ – It deletes the container. All the data stored inside will be lost. Running containers can't be deleted
 (stop the container first if you want to delete it).
-* _Reboot_ - It executes a clean reboot of the container (it is similar to the well-known Ctrl+Alt+Del keyboard
+* _Reboot_ – It executes a clean reboot of the container (it is similar to the well-known Ctrl+Alt+Del keyboard
 combination).
-* _Freeze_ - It freezes (suspends) all processes in the container until they will be unfreezed (thawed).
-* _Unfreeze_ - It unfreezes (thaws) previously freezed processes in the container.
-* _Configure_ - It opens a text area where you can edit the container parameters. *Don't change anything unless you
+* _Freeze_ – It freezes (suspends) all processes in the container until they will be unfreezed (thawed).
+* _Unfreeze_ – It unfreezes (thaws) previously freezed processes in the container.
+* _Configure_ – It opens a text area where you can edit the container parameters. *Don't change anything unless you
 know what you want to do! Wrong values may lead to container malfunction.*
 
 ![Available Containers](available.png)

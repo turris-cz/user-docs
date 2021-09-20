@@ -84,11 +84,11 @@ schnapps create "Before breaking it down"
 Enclose the description into the quotation marks to prevent potential unwanted effects. You can also specify the type of
 the snapshot to distinguish between more types especially for later automatic processing. There are five types:
 
-* `single` - standard manually created snapshots
-* `time` - snapshots created on time base (by cron)
-* `pre` - snapshots created before updates
-* `post` - snapshots created after updates
-* `rollback` - snapshots created when rolling back (can't be created manually) 
+* `single` – standard manually created snapshots
+* `time` – snapshots created on time base (by cron)
+* `pre` – snapshots created before updates
+* `post` – snapshots created after updates
+* `rollback` – snapshots created when rolling back (can't be created manually) 
 
 The full form of the command will be like:
 ```
@@ -232,10 +232,10 @@ snapshots but also upload them to a server and even keep in sync.
 
 The simplest operation is the upload of one snapshot. Currently, these remote resources are supported:
 
-* **[WebDAV](https://en.wikipedia.org/wiki/WebDAV)** - use if you have a WebDAV server
-* **[Nextcloud](https://en.wikipedia.org/wiki/Nextcloud)** - basically the same as WebDAV but with simpler
+* **[WebDAV](https://en.wikipedia.org/wiki/WebDAV)** – use if you have a WebDAV server
+* **[Nextcloud](https://en.wikipedia.org/wiki/Nextcloud)** – basically the same as WebDAV but with simpler
 specification for Nextcloud servers; use if you have a Nextcloud server
-* **[SSHFS](https://en.wikipedia.org/wiki/SSHFS)** - use for any SSH-capable server (e.g. almost any Linux machine)
+* **[SSHFS](https://en.wikipedia.org/wiki/SSHFS)** – use for any SSH-capable server (e.g. almost any Linux machine)
 
 Look at some examples:
 ```
@@ -285,15 +285,15 @@ The second command outputs the list as JSON for use in automation tools.
 As meant in the above paragraphs, schnapps is configurable and some commands require the configuration to be
 prepared before using them. There are those parameters:
 
-* `keep.max_single` - maximum number of snapshots of the "single" type to be kept after cleaning
-* `keep.max_time` - maximum number of snapshots of the "single" type to be kept after cleaning
-* `keep.max_updater` - maximum number of snapshots of the "single" type to be kept after cleaning
-* `keep.max_rollback` - maximum number of snapshots of the "single" type to be kept after cleaning
-* `remote.url` - URL for accessing the remote server
-* `remote.path` - the directory path to be used for uploading and synchronizing snapshots
-* `remote.user` - the user name to log in to the remote server
-* `remote.password` - the password to log in to the remote server
-* `encrypt.pass` - the GPG key password to be used for encryption
+* `keep.max_single` – maximum number of snapshots of the "single" type to be kept after cleaning
+* `keep.max_time` – maximum number of snapshots of the "single" type to be kept after cleaning
+* `keep.max_updater` – maximum number of snapshots of the "single" type to be kept after cleaning
+* `keep.max_rollback` – maximum number of snapshots of the "single" type to be kept after cleaning
+* `remote.url` – URL for accessing the remote server
+* `remote.path` – the directory path to be used for uploading and synchronizing snapshots
+* `remote.user` – the user name to log in to the remote server
+* `remote.password` – the password to log in to the remote server
+* `encrypt.pass` – the GPG key password to be used for encryption
 
 A real configuration file would look like this:
 

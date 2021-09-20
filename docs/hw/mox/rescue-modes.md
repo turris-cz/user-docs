@@ -189,7 +189,7 @@ image downloaded from the internet.
 
 To use this mode, you need to plug your Turris MOX to a network where it can
 get internet connection using DHCP. It will try to use only the port on module
-A - next to the power source. SFP cannot be used for this purpose! Once it
+A – next to the power source. SFP cannot be used for this purpose! Once it
 gets online, it will download latest medkit from our website alongside with
 it's signature. Verifies it and if everything works well, it will reflash
 itself.

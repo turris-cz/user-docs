@@ -26,7 +26,7 @@ access UART:
 |Pin |Signal|UART cable                    |
 |---:|:----:|:-----------------------------|
 |  5 | GND  |black wire                    |
-|  6 | +1V8 |red wire - **only if needed** |
+|  6 | +1V8 |red wire – **only if needed** |
 | 13 | RX   |white wire                    |
 | 14 | TX   |green wire                    |
 
@@ -42,7 +42,7 @@ If you have PoE addon, you can find pins on addon itself. In this case it is:
 |Pin |Signal|UART cable                    |
 |---:|:----:|:-----------------------------|
 |  1 | GND  |black wire                    |
-|  2 | +1V8 |red wire - **only if needed** |
+|  2 | +1V8 |red wire – **only if needed** |
 |  7 | RX   |white wire                    |
 |  8 | TX   |green wire                    |
 
@@ -55,7 +55,7 @@ To do it, first you have to unscrew 6 screws (3 on each side of the router).
 The serial pins are in the right
 bottom corner of the board, between the right most LED and the LED control
 button. Connect it to you PC using a USB TTL serial adapter as shown on the
-photo - from the left the colors of the pins should be black (GND), yellow
+photo – from the left the colors of the pins should be black (GND), yellow
 (RX), orange (TX). The specific cable used in this manual is the Raspberry Pi
 Cable, TTL-232R-RPI.
 
@@ -75,7 +75,7 @@ a micro USB cable and you are ready.
 ### UNIX
 
 In case of UNIX-like systems you can use `screen` to connect to your device. In
-general, you need to figure out the name of your USB serial port - in case of
+general, you need to figure out the name of your USB serial port – in case of
 Linux it is usually `/dev/ttyUSB0`, but if you already had some serial device
 (modem, some development board, ...) it might be even higher number. It should
 show up in `dmesg` after connecting the cable.

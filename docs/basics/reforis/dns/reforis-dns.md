@@ -199,6 +199,6 @@ useful to wait for a while before running this test.
 
 What particular results mean:
 
-* _DNS_ - your router can successfully execute DNS queries and get responses,
-* _DNSSEC_ - your router can successfully execute DNSSEC queries and get
+* _DNS_ – your router can successfully execute DNS queries and get responses,
+* _DNSSEC_ – your router can successfully execute DNSSEC queries and get
   correct (trustfully signed and intact) responses.

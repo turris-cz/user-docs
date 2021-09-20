@@ -10,7 +10,7 @@ them carefully.
 ## General rules
 
 - Write readable and well-structured code.
-- Simple is better than complex, explicit is better than implicit etc. - see
+- Simple is better than complex, explicit is better than implicit etc. – see
 [The Zen of Python](https://www.python.org/dev/peps/pep-0020/).
 - Use accurate names for classes, variables, constants,
 functions/methods, modules etc. For example, `read_file` is better than

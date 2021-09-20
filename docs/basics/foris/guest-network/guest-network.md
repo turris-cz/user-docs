@@ -29,12 +29,12 @@ networks configured on your router.
 Unless you want to use static addresses in the whole guest network (it's probably very rare) you need to have
 the DHCP server enabled. This is the default option. The DHCP server has three parametres:
 
-* _DHCP start_ - the first address inside the address space which may be leased (assigned) via DHCP. For example,
+* _DHCP start_ – the first address inside the address space which may be leased (assigned) via DHCP. For example,
      if it is 100 and your network is 10.111.222.0 your DHCP leases addresses beginning 10.111.222.100. The default
       value 100 usually need not to be changed.
-* _DHCP max leases_ - the maximum addresses to be leased to computers. It effectively means if you have this
+* _DHCP max leases_ – the maximum addresses to be leased to computers. It effectively means if you have this
       value set to 150 (the default) and the first leased address is 10.111.222.100, the last one is 10.111.222.249.
-* _Lease time (hours)_ - this is how long an address is leased to a computer (the default is 1 hour and
+* _Lease time (hours)_ – this is how long an address is leased to a computer (the default is 1 hour and
       is suitable for most cases). If this value is too high and the computers in the LAN "rotate" very often
       (e.g. in an Internet café) the address space may be exhausted and new device will not get their addresses.
       Too low values may lead to frequent address changes and some networking problems.

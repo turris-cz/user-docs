@@ -18,7 +18,7 @@ faster.
    sensitive data**.
 
 If you are contacting official Turris support, always include the S/N of your
-router - you can see this either on the bottom of your router, _About_ tab in
+router – you can see this either on the bottom of your router, _About_ tab in
 _reForis_ or as the output of command `crypto-wrapper serial-number`.
 
 ## Getting logs
@@ -80,13 +80,13 @@ command line tool).
         $ scp root@192.168.1.1:/tmp/diag.gz <your destination>
         ```
 
-    - using SFTP client (like Filezilla)
+    – using SFTP client (like Filezilla)
 
         In a SFTP client, create new connection with credentials similar to SSH connection:
 
-        - **Host**: _your router IP address/hostname. By default_ `192.168.1.1`
-        - **username**: `root`
-        - **port**: `22`
+        – **Host**: _your router IP address/hostname. By default_ `192.168.1.1`
+        – **username**: `root`
+        – **port**: `22`
 
 !!! info
     We prefer to have these complete diagnostics, but if you are experienced user

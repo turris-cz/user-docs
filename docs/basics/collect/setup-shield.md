@@ -28,7 +28,7 @@ When done, you can see at the _Overview_ page that data collection is disabled.
 [HaaS](collect.md#haas-honeypot-as-a-service) is not operational by default
 because it requires a few steps:
 
-1. Register on our website - [HaaS.nic.cz](https://haas.nic.cz).
+1. Register on our website – [HaaS.nic.cz](https://haas.nic.cz).
 2. There, in section _My Honeypot_ click on _Add new device_. After naming it,
 you will get a **token**.
 ![HaaS Device](haas-device.png)

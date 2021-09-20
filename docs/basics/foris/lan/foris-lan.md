@@ -42,12 +42,12 @@ field. The field _Network netmask_ should contain 255.255.255.0 as written above
 Unless you want to use static addresses in the whole LAN you need to have the DHCP server enabled. This is the
 default option. The DHCP server has three parameters:
 
-* _DHCP start_ - the first address inside the address space which may be leased (assigned) via DHCP. For example,
+* _DHCP start_ – the first address inside the address space which may be leased (assigned) via DHCP. For example,
   if it is 100 and your network is 192.168.2.0 your DHCP leases addresses beginning 192.168.2.100. The default
   value 100 usually need not to be changed. 
-* _DHCP max leases_ - the maximum addresses to be leased to computers. It effectively means if you have this
+* _DHCP max leases_ – the maximum addresses to be leased to computers. It effectively means if you have this
   value set to 150 (the default) and the first leased address is 192.168.2.100 the last one is 192.168.2.249.
-* _Lease time (hours)_ - this is how long an address is leased to a computer (the default is 12 hours and
+* _Lease time (hours)_ – this is how long an address is leased to a computer (the default is 12 hours and
   is suitable for most cases). If this value is too high and the computers in the LAN "rotate" very often
   (e.g. in an Internet café) the address space may be exhausted and new device will not get their addresses.
   Too low values may lead to frequent address changes and some networking problems.
@@ -87,12 +87,12 @@ In some cases, useage of a specific hostname may be required. Write it into the 
 This mode is the default because your Turris should have a fixed address to be easily accessed (this can be
 accomplished by some DHCP servers too but it is more complex).
 
-* _IP address_ (mandatory) - it's something like 192.168.5.122.
-* _Network mask_ (mandatory) - something like 255.255.255.0.
-* _Gateway_ (mandatory) - something like 192.168.5.1.
-* _DNS server 1 (IPv4)_ (optional) - may be left empty because there is a built-in DNS resolver capable to
+* _IP address_ (mandatory) – it's something like 192.168.5.122.
+* _Network mask_ (mandatory) – something like 255.255.255.0.
+* _Gateway_ (mandatory) – something like 192.168.5.1.
+* _DNS server 1 (IPv4)_ (optional) – may be left empty because there is a built-in DNS resolver capable to
   work without it. But some ISPs require customers to use specific DNS servers. In such case fill in the first
   of the addresses (or the only one) of your DNS servers/resolvers.
-* _DNS server 2 (IPv4)_ (optional) - if you have more than one server/resolver use the second one here.
+* _DNS server 2 (IPv4)_ (optional) – if you have more than one server/resolver use the second one here.
 
 ![Static IP address](computer-static.png)

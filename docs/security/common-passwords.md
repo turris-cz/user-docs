@@ -11,7 +11,7 @@ The database is placed on the router and the passwords are compared locally.
 ## Filter activation
 _Common passwords filter_ can be activated in _Package Management -> Packages_.
 To activate it check the _Common passwords filter_ checkbox and confirm it by pressing _Save_.
-![Packages - Hardening](common-pass-hard.png)
+![Packages – Hardening](common-pass-hard.png)
 
 
 ## Filter usage

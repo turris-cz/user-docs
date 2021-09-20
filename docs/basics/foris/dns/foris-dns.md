@@ -21,7 +21,7 @@ without forwarding.
 ### DNS forwarding
 
 DNS forwarding is enabled by default. It means all DNS queries are sent to your ISP's DNS forwarding servers (or other
-DNS forwarders if set so - see bellow). This is the very recommended setting and should be left unchanged unless
+DNS forwarders if set so – see bellow). This is the very recommended setting and should be left unchanged unless
 there is a very good reason to change it.
 
 *What may be such reason? For example, DNSSEC on your ISP's DNS servers is broken and DoT (see bellow) port is blocked.*
@@ -95,7 +95,7 @@ useful to wait for a while before running this test.
 
 What particular results mean:
 
-* _DNS_ - your router can successfully execute DNS queries and get responses
-* _DNSSEC_ - your router can successfully execute DNSSEC queries and get correct (trustfully signed and intact)
+* _DNS_ – your router can successfully execute DNS queries and get responses
+* _DNSSEC_ – your router can successfully execute DNSSEC queries and get correct (trustfully signed and intact)
 	  responses
 

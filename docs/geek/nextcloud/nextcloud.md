@@ -54,8 +54,8 @@ router will install all necessary packages.
 
 The last step is to go back to the _Storage_ tab and after installation
 finishes, you will be presented with a dialog to set your admin username and
-password. If you install Nextcloud first - without setting up your external
-drive - Foris wouldn't allow you to setup Nextcloud till you do so.
+password. If you install Nextcloud first – without setting up your external
+drive – Foris wouldn't allow you to setup Nextcloud till you do so.
 
 ![Setting up a disk with Nextcloud installed](storage-plugin-nextcloud.png)
 
@@ -105,8 +105,8 @@ You can also enable access to your Nextcloud from anywhere on the Internet. You
 can either use VPN, which can be set up [really easily from
 Foris](../../basics/apps/openvpn-server/openvpn.md) or you need to open up some ports in
 your firewall. Second option would allow anybody (including attackers) to try to
-log in to your Nextcloud instance and - if you don't change the Lighttpd
-configuration - to LuCI and Foris. Please don’t do that unless you are sure what
+log in to your Nextcloud instance and – if you don't change the Lighttpd
+configuration – to LuCI and Foris. Please don’t do that unless you are sure what
 you are doing. 
 
 Also bear in mind that if you are using Nextcloud from our repositories, **you

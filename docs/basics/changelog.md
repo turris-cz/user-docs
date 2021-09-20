@@ -119,7 +119,7 @@ Turris OS 5 is based on top of [OpenWrt 19.07](https://openwrt.org/releases/19.0
 with our feed and few patches. It supports [Turris MOX](../hw/mox/intro.md) and [Turris Omnia](../hw/omnia/omnia.md) and
 there is an experimental support for [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
 
-One important feature from Turris OS 3.x is still missing - possibility to
+One important feature from Turris OS 3.x is still missing – possibility to
 configure honeypots and various aspects of security data collection from web ui.
 This is going to be added to the minor versions of Turris OS 5.x.
 
@@ -127,7 +127,7 @@ New features:
 
 * Added support for secondary IP addresses for DNS servers
 * Added possibility to add custom DNS forwarder
-* Added support for DVB tuners - Astrometa DVB-T2 and Xbox One
+* Added support for DVB tuners – Astrometa DVB-T2 and Xbox One
 * Redesigned Foris, which is being in development (opt-in)
 * Optional WPA3 support
 

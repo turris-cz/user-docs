@@ -83,7 +83,7 @@ drive takes a long time as data need to be moved out of it first and
 
 !!! tip
     No additional reboot is needed to extend/shrink your storage. Actually
-    quite opposite - everything happens at runtime, so avoid reboot till you get a
+    quite opposite – everything happens at runtime, so avoid reboot till you get a
     notification that everything is successfully finished.
 
 
@@ -96,10 +96,10 @@ CLI.
 
 Valid options are the following:
 
-* `raid1` - every piece of data is kept on two different drives (no matter how
+* `raid1` – every piece of data is kept on two different drives (no matter how
   many drives you have), so if one drive fails, you can still get to your data
-* `single` - there is only one copy of data - more space, but not redundancy
-* `custom` - the RAID level is unchanged and only rebalance is done after
+* `single` – there is only one copy of data – more space, but not redundancy
+* `custom` – the RAID level is unchanged and only rebalance is done after
   adding/removing the drive
 
 ### Web interface

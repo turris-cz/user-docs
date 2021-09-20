@@ -27,8 +27,8 @@ of this documentation.
 You will also need some tools. You can get their binaries from our repository.
 They can be found in <https://repo.turris.cz/omnia/nor_fw/>.
 
-* **x86-64/kwboot** - utility that will send the image
-* **x86-64/sendbeacon** - utility that will switch Omnia into _boot over serial_ mode
+* **x86-64/kwboot** – utility that will send the image
+* **x86-64/sendbeacon** – utility that will switch Omnia into _boot over serial_ mode
 
 You also need to make both `kwboot` and `sendbeacon` executable, for example
 using
@@ -50,7 +50,7 @@ NOR memory.
 
 #### Rescue image
 
-You might also need a rescue image - minimal system image that allows you to
+You might also need a rescue image – minimal system image that allows you to
 repair whatever is broken. You can get it again from
 <https://repo.turris.cz/hbs/omnia/packages/turrispackages/> in package called
 `rescue-image_$VERSION.ipk`. To get the real image out, you need to unpack

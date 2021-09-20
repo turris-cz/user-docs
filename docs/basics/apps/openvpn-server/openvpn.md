@@ -10,7 +10,7 @@ Starting with Turris OS 3.6, you can configure OpenVPN server easily through the
 
 [OpenVPN](https://en.wikipedia.org/wiki/OpenVPN) is an open technology for
 [virtual private networks](https://en.wikipedia.org/wiki/Virtual_private_network). It works on the client-server
-principle - multiple clients connect to an OpenVPN server to get access to a regularly inaccessible network.
+principle – multiple clients connect to an OpenVPN server to get access to a regularly inaccessible network.
 For example, you can access computers in your home or office LAN from your laptop connected to any Internet connection.
 
 The access is [authenticated](https://en.wikipedia.org/wiki/Authentication) (only permitted clients can connect to
@@ -71,15 +71,15 @@ you can temporarily lose connection to your router, you just need to refresh the
 
 In most cases you don’t need to change any of the settings. There are these configuration parameters:
 
-* _Listen on IPv6_ - Uncheck only if your IPv6 connection is broken.
-* _Protocol_ - Change only if your ISP limits UDP transmission (this practice is defective by nature but some
+* _Listen on IPv6_ – Uncheck only if your IPv6 connection is broken.
+* _Protocol_ – Change only if your ISP limits UDP transmission (this practice is defective by nature but some
 ISPs even do so).
-* _OpenVPN network_ - The default address range is almost always suitable. In very rare cases, your LAN or your
+* _OpenVPN network_ – The default address range is almost always suitable. In very rare cases, your LAN or your
 ISP can use these addresses. Then the network address and the netmask has to be changed to the address not used
 in the network.
-* _All traffic through vpn_ - Check only if you want all your traffic to the Internet to be routed over your VPN.
+* _All traffic through vpn_ – Check only if you want all your traffic to the Internet to be routed over your VPN.
 For example, you need to connect to your servers which can be accessed only from the address of your router.
-* _Use DNS from vpn_ - Check only if you need to use the DNS on your router. For example, your router is connected to
+* _Use DNS from vpn_ – Check only if you need to use the DNS on your router. For example, your router is connected to
 a community network which has private servers and their domain names are not propagated to the public Internet.
 
 !!! note

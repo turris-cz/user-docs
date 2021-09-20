@@ -20,7 +20,7 @@ package list from the _Updater_ tab. This will provide everything necessary
 to boot up your MOX and a new tab in Foris user interface _Managed Devices →
 Netboot_ to control them easily.
 
-It will also set up everything needed to boot MOXes over the network - enables
+It will also set up everything needed to boot MOXes over the network – enables
 _TFTP_ in _Dnsmasq_, downloads the latest image, generate keys and prepare
 everything.
 
@@ -92,7 +92,7 @@ config wifi default
 
 # WiFi specific settings
 # 02df_9141 is MOX SDIO WiFi
-# 168c_003c is WLE900VX - 5GHz AC PCIe WiFi card in Turris MOX and Turris Omnia
+# 168c_003c is WLE900VX – 5GHz AC PCIe WiFi card in Turris MOX and Turris Omnia
 
 config device 168c_003c
         option channel 'auto5'
@@ -104,7 +104,7 @@ config device 02df_9141
 config device 0000000000000007
         option network 'default'
 
-# AP-WiFi specific overrides - format serial_WiFi
+# AP-WiFi specific overrides – format serial_WiFi
 config device 0000000000000007_168c_003c
         option channel '40'
         option ssid '@@SSID@@-5'
@@ -149,7 +149,7 @@ channel on the PCIe card. That is done via the following part:
 config device 168c_003c
         option channel 'auto5'
 
-# 168c_003c is WLE900VX - 5GHz AC PCIe WiFi card in Turris MOX and Turris Omnia
+# 168c_003c is WLE900VX – 5GHz AC PCIe WiFi card in Turris MOX and Turris Omnia
 config device 02df_9141
         option channel 'auto24'
 ```
@@ -158,7 +158,7 @@ But if you have just one WiFi card in Turris MOX and you want to run 5 GHz on it
 you can override the defaults for that specific serial number in the following way
 
 ```
-# AP-WiFi specific overrides - format serial_WiFi
+# AP-WiFi specific overrides – format serial_WiFi
 config device 0000000000000007_168c_003c
         option channel 'auto5'
 ```
@@ -175,13 +175,13 @@ provides it with kernel and ramdisk.
 
 That ramdisk boots up, generates ssh keys and uses the key provided via
 kernel boot parameters to send that key over ssh to controlling router. It uses
-highly restricted account that can do just that - send a little bit of
+highly restricted account that can do just that – send a little bit of
 information about itself and try to get something back. Nothing more. Then it
 waits for pairing to be completed by trying to use it's key to get access to
 more advanced API.
 
 On the controlling router, when accepting key you will authorize provided
-ssh key to access more advanced functions - like download rootfs and
+ssh key to access more advanced functions – like download rootfs and
 configuration. Pairing process will also generate more keys, one aes and one
 certification authority to be used by Foris.
 

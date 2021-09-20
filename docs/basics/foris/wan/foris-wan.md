@@ -38,13 +38,13 @@ acquired via DHCP.
 
 After switching to this mode, several text fields are displayed. Write in the values you have acquired from your ISP.
 
-* _IP address_ (mandatory) - it's something like 192.168.5.122.
-* _Network mask_ (mandatory) - something like 255.255.255.0.
-* _Gateway_ (mandatory) - something like 192.168.5.1.
-* _DNS server 1 (IPv4)_ (optional) - may be left empty because there is a built-in DNS resolver capable to
+* _IP address_ (mandatory) – it's something like 192.168.5.122.
+* _Network mask_ (mandatory) – something like 255.255.255.0.
+* _Gateway_ (mandatory) – something like 192.168.5.1.
+* _DNS server 1 (IPv4)_ (optional) – may be left empty because there is a built-in DNS resolver capable to
   work without it. But some ISPs require customers to use specific DNS servers. If your ISP provided you
   such DNS server adress(es) write it in here (for more addresses, use the first one).
-* _DNS server 2 (IPv4)_ (optional) - if your ISP provided you more than one DNS server address write in the
+* _DNS server 2 (IPv4)_ (optional) – if your ISP provided you more than one DNS server address write in the
   second one.
 
 ![IPv4 static configuration](ipv4-static.png)
@@ -87,12 +87,12 @@ into the _Custom DUID_ field.
 This mode of native IPv6 is similar to its equivalent in the IPv4 world.  Write in the values you have acquired from
 your ISP.
 
-* _IPv6 address_ (mandatory) - it's something like 2001:db8:be13:37da::1/64 (this address includes the prefix
+* _IPv6 address_ (mandatory) – it's something like 2001:db8:be13:37da::1/64 (this address includes the prefix
   length).
-* _IPv6 gateway_ (mandatory) - something like 2001:db8:be13:37da:ffff::1.
-* _IPv6 prefix_ (mandatory) - something like 2001:db8:be13:37da::/64.
-* _DNS server 1 (IPv6)_ (optional) - see above (but an IPv6 address is used here).
-* _DNS server 2 (IPv6)_ (optional) - see above.
+* _IPv6 gateway_ (mandatory) – something like 2001:db8:be13:37da:ffff::1.
+* _IPv6 prefix_ (mandatory) – something like 2001:db8:be13:37da::/64.
+* _DNS server 1 (IPv6)_ (optional) – see above (but an IPv6 address is used here).
+* _DNS server 2 (IPv6)_ (optional) – see above.
 
 ![IPv6 static configuration](ipv6-static.png)
 	
@@ -118,15 +118,15 @@ may have to set it manually into the _Public IPv4_ field.
 on specially configured IPv4 links. 6in4 doesn't require a static public IPv4 address on your side but you need to have
 a tunnel broker which provides you the values to write into the text fields.
 
-* _Provider IPv4_ - the tunnel broker's IPv4 address to be used as the endpoint.
-* _Routed IPv6 prefix_ - the IPv6 prefix to be routed to your network.
-* _MTU_ - the maximum transmission unit; often may be left the default value (1480)
-* _Dynamic IPv4 handling_ - check in if you have a dynamic public IPv4 address (this information should be
+* _Provider IPv4_ – the tunnel broker's IPv4 address to be used as the endpoint.
+* _Routed IPv6 prefix_ – the IPv6 prefix to be routed to your network.
+* _MTU_ – the maximum transmission unit; often may be left the default value (1480)
+* _Dynamic IPv4 handling_ – check in if you have a dynamic public IPv4 address (this information should be
   obtained from your ISP) or if your tunnel broker requires to use your credentials (see bellow) instead of
   your static IPv4 address.
-* _Tunnel ID_ - obtain it from your tunnel broker
-* _Username_ - obtain it from your tunnel broker
-* _Key_ - obtain it from your tunnel broker
+* _Tunnel ID_ – obtain it from your tunnel broker
+* _Username_ – obtain it from your tunnel broker
+* _Key_ – obtain it from your tunnel broker
 
 ![IPv6 6in4 configuration](ipv6-6in4.png)
 
@@ -152,10 +152,10 @@ useful to wait for a while before running this test.
 
 What particular results mean:
 
-* _IPv4 connectivity_ - your router has a working IPv4 address and can access machines inside the current network.
+* _IPv4 connectivity_ – your router has a working IPv4 address and can access machines inside the current network.
 * _IPv4 gateway connectivity_	- your router has a working gateway IPv4 address and can access IPv4 machines on the
   Internet.
-* _IPv6 connectivity_ - your router has a working IPv6 address and can access machines inside the current network.
+* _IPv6 connectivity_ – your router has a working IPv6 address and can access machines inside the current network.
 * _IPv6 gateway connectivity_	- your router has a working gateway IPv6 address and can access IPv6 machines on the
   Internet.
 

@@ -27,15 +27,15 @@ from the list of modules and add-ons how to extend it.
 
 ### List of modules and add-ons
 
-* [MOX B](modules/b.md) - mPCIe port
-* [MOX C](modules/c.md) - 4 port Ethernet switch
-* [MOX D](modules/d.md) - SFP
-* [MOX E](modules/e.md) - 8 port Ethernet switch
-* [MOX F](modules/f.md) - 4 USB 3.0 ports
-* [MOX G](modules/g.md) - pass-through mPCIe port
-* [MOX Wi-Fi add-on (SDIO)](addons.md#wi-fi-sdio) - dual-band SDIO Wi-Fi and Bluetooth card
-* [MOX Wi-Fi add-on (mPCIe)](addons.md#wi-fi-mpcie) - dual band mPCIe Wi-Fi card (faster)
-* [MOX PoE add-on](addons.md#poe) - 802.3at and 802.3af compliant module to power up the MOX
+* [MOX B](modules/b.md) – mPCIe port
+* [MOX C](modules/c.md) – 4 port Ethernet switch
+* [MOX D](modules/d.md) – SFP
+* [MOX E](modules/e.md) – 8 port Ethernet switch
+* [MOX F](modules/f.md) – 4 USB 3.0 ports
+* [MOX G](modules/g.md) – pass-through mPCIe port
+* [MOX Wi-Fi add-on (SDIO)](addons.md#wi-fi-sdio) – dual-band SDIO Wi-Fi and Bluetooth card
+* [MOX Wi-Fi add-on (mPCIe)](addons.md#wi-fi-mpcie) – dual band mPCIe Wi-Fi card (faster)
+* [MOX PoE add-on](addons.md#poe) – 802.3at and 802.3af compliant module to power up the MOX
 
 ### Official brochure
 

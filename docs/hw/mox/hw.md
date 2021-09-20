@@ -14,8 +14,8 @@ slot and 8MB SPI NOR flash that contains U-Boot and rescue system.
 
 ## Network interfaces
 
-CPU in Turris MOX has two network interfaces. First one - `eth0` - is connected
-directly to the gigabit Ethernet port on CPU module. Second one - `eth1` - is
+CPU in Turris MOX has two network interfaces. First one – `eth0` – is connected
+directly to the gigabit Ethernet port on CPU module. Second one – `eth1` – is
 2,5 GBit and passed thought the MOXTET. If you have [MOX D](modules/d.md), then
 your SFP is `eth1` directly and is able to do up to 2,5 Gbit.
 

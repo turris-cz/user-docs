@@ -48,7 +48,7 @@ address is collected by the software.
     See the [setup page](setup.md#important-note-about-internet-service-providers)
     for details.
 
-### HaaS - Honeypot as a Service
+### HaaS – Honeypot as a Service
 
 HaaS is a publicly available service which uses SSH Honeypot in order to catch
 the pieces of information about the attacker's credentials, behavior and so on.
@@ -99,4 +99,4 @@ could be seen on [HaaS project website](https://haas.nic.cz).
 ![HaaS Session](haas-session.png)
 
 Sadly, there is currently no way to visualize what your own router collects from
-Firewall monitoring and Minipots - a feature we are working hard on now.
+Firewall monitoring and Minipots – a feature we are working hard on now.

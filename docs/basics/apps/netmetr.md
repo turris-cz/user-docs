@@ -39,7 +39,7 @@ all the past measurements on its [website](https://www.netmetr.cz/en/my.html). T
 view your results you have to enter *Sync code* which is displayed in NetMetr
 Foris tab.
 
-All the data are - after proper anonymization - also shared on NetMetr
+All the data are – after proper anonymization – also shared on NetMetr
 [map](https://www.netmetr.cz/en/map.html) and as an
 [open data](https://www.netmetr.cz/en/open-data.html).
 

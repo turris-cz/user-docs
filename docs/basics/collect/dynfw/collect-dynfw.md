@@ -3,7 +3,7 @@ board: shield, mox, omnia, 1.x
 ---
 # Dynamic Firewall
 
-The dynamic firewall (A.K.A. DynFW) is Turris IDS and IPS system - the tool for
+The dynamic firewall (A.K.A. DynFW) is Turris IDS and IPS system – the tool for
 detecting network attackers and preventing them from attacking your device. It is
 a part of Turris [data collection](../collect.md).
 
@@ -54,7 +54,7 @@ types: `dynfw/list` and `dynfw/delta`. As a protocol,
 [ZeroMQ](https://zeromq.org/) is used with
 [PUB/SUB](http://zguide2.zeromq.org/page:all#Getting-the-Message-Out) pattern
 and messages are standard ZeroMQ multipart message. The first frame is the
-topic - aka message type - as simple string so PUB/SUB will work.  Second frame
+topic – aka message type – as simple string so PUB/SUB will work.  Second frame
 is message itself encoded using [message pack](https://msgpack.org/).
 
 

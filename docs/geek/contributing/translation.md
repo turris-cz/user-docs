@@ -20,7 +20,7 @@ published in Foris the same moment that more than 85% of all texts are
 translated and reviewed by us. Untranslated texts are shown in English.
 
 Translation and publishing is automatic, but we need to add the new language
-to the interface as a switch. This can take some time - depending on the
+to the interface as a switch. This can take some time – depending on the
 frequency of updates.
 
 ## Let's get started
@@ -100,17 +100,17 @@ We would love your help with these sections:
 
   * **reForis** – main language interface for web administration of Turris (it
     supersedes the older Foris)
-  * **reForis: Data Collection Plugin** - plugin for Sentinel dynamic firewall
-  * **reForis: Diagnostics Plugin** - plugin for Turris diagnostics
-  * **reForis: Netboot Plugin** - plugin for booting over networks
+  * **reForis: Data Collection Plugin** – plugin for Sentinel dynamic firewall
+  * **reForis: Diagnostics Plugin** – plugin for Turris diagnostics
+  * **reForis: Netboot Plugin** – plugin for booting over networks
   * **reForis: OpenVPN Plugin** – plugin for simpler setting of the OpenVPN
     server
   * **reForis: Remote Access Plugin** – plugin for generating QR codes for mobile
     access etc.
-  * **reForis: Remote Devices Plugin** - plugin for managing remote devices
-  * **reForis: Remote Wi-Fi Settings Plugin** - plugin for remote Wi-Fi settings
+  * **reForis: Remote Devices Plugin** – plugin for managing remote devices
+  * **reForis: Remote Wi-Fi Settings Plugin** – plugin for remote Wi-Fi settings
     management
-  * **reForis: Snapshots Plugin** - plugin for managing filesystem snapshots
+  * **reForis: Snapshots Plugin** – plugin for managing filesystem snapshots
 
 ## Community of translators
 
