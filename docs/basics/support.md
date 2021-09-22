@@ -17,9 +17,26 @@ faster.
  * If you have logs, include them. But be aware that those **might contain
    sensitive data**.
 
-If you are contacting official Turris support, always include the S/N of your
-router – you can see this either on the bottom of your router, _About_ tab in
-_reForis_ or as the output of command `crypto-wrapper serial-number`.
+### Obtaining the serial number
+
+If you are contacting the official Turris support, always include the serial
+number (S/N, SN) of your router. You can obtain it using one of these ways:
+
+1. The _About_ tab in _reForis_.
+2. The invoice or receipt issued by your vendor.
+3. The label on the paper box used for packaging of your router.
+4. Output of the command `crypto-wrapper serial-number` **included in one
+   of the diagnostic modules** (not applicable for Shield).
+5. The label on the bottom of your router (applicable for Omnia and Turris 1.x).
+6. The label on one of the plastic parts of your device (applicable for
+   MOX and Shield – see the photo below). It's usually one of the parts on
+   the top side of your device.
+7. The label on the MOX bus slot of your module A (applicable for MOX and
+   Shield – see the photo below).
+
+![Label on one of plastic parts](shield-serial-label.jpg)
+
+![Label on MOX bus slot](shield-serial-board.jpg)
 
 ## Getting logs
 
