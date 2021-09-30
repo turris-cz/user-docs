@@ -3,7 +3,7 @@
 #   docker build -t registry.labs.nic.cz/turris/user-docs -f .DockerFile .
 # With built container you can push it to Gitlab with:
 #   docker push registry.labs.nic.cz/turris/user-docs
-FROM debian:stable
+FROM debian:bullseye
 
 ENV HOME=/root
 
