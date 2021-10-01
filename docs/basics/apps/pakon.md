@@ -2,7 +2,7 @@
 board: mox, omnia, 1.x
 competency: intermediate
 ---
-# PaKon – Network monitoring (Parental Control)
+# PaKon – Network monitoring
 
 ## What is Pakon?
 
@@ -10,24 +10,22 @@ PaKon is a tool for monitoring the activity of devices inside a local network.
 It collects and stores information about network activity and allows you to
 view and filter records.
 
-!!! warning
-    PaKon is not available on Turris Shield.
-
 ## Details
 
-PaKon utilizes **[Suricata](https://suricata-ids.org/) – network threat
-detection engine**. As part of Suricata, there is **Intrusion Detection System
-(IDS)**, which is being used. Suricata does the hard work of analyzing raw
-network traffic and **provides processed information** (about flows, DNS
-requests and responses, HTTP, TLS details, etc.).
+PaKon utilizes [Suricata](https://suricata-ids.org/) – IDS/IPS solution. Part
+of Suricata is **Deep Packet Inspection (DPI)**, which is being used. Suricata
+does the heavy lifting of analyzing raw network traffic and provides
+processed information (about flows, DNS requests and responses, HTTP, TLS
+details, etc.) to our system.
 
 !!! warning
-    Suricata could be CPU intensive for analyzing data from traffic.
-    If you have a lot of traffic, it may slow down your internet connection.
-    Usually it affects connection speed above 500 Mbps.
+    Pakon is not available on Turris Shield. Depending on your traffic Suricata
+    could be CPU and memory-intensive. This might in some rare cases (a lot of
+    short connections and speeds above 500 Mbps) affect the throughput of your
+    device.
 
 PaKon collects this data from Suricata, puts different pieces of information
-together and stores them in an SQLite database (located at folder `/srv/pakon`).
+together, and stores them in an SQLite database (located at folder `/srv/pakon`).
 The primary data contains information about each individual network flow
 including human-readable names of destination addresses. This hostname should
 correspond to the actual perceived name of that host. The name is obtained by
@@ -35,12 +33,12 @@ monitoring DNS queries/responses before starting that flow, or some other
 application-level name (TLS SNI, TLS certificate CN or HTTP hostname).
 
 Big service providers (e.g. Google, Youtube, Facebook, and Twitter) use a
-number of different hosts and hostnames to serve their content, so **PaKon has
-a list of domains to merge these**: `/usr/share/pakon-light/domains_replace/`.
+number of different hosts and hostnames to serve their content, so PaKon has
+a **list of domains to merge** these: `/usr/share/pakon-light/domains_replace/`.
 For example, instead of storing the hostname `scontent.fprg2-1.fna.fbcdn.net`
 PaKon simply stores `facebook.com`. This means that some detail is lost. On the
-other hand this dramatically **improves readability of output and reduces the
-amount of stored data**, which is essential for a clear representation of
+other hand, this dramatically **improves readability** of output and reduces the
+amount of stored data, which is essential for a clear representation of
 network traffic.
 
 The data is further reduced in order to store it longer. Most importantly,
@@ -116,7 +114,13 @@ You can filter the data by _time_, by _MAC address_ and by _hostname_. You can
 also display results aggregated by domain instead of displaying timeline data.
 
 Some domains are hidden in output by default – for example, advertisements,
-tracking, CDNs, OCSPs, browser service domains, which makes the output hard to read. You can show all records using the option `–no-filter`. The lists of filtered domains is in `/usr/share/pakon-light/domains_ignore/`. If there is a new CDN or you want to group multiple hostnames from the same domain to one, and you would like to share it with others and include it in a new Turris OS release, you can contribute it in [pakon-light-lists](https://gitlab.nic.cz/turris/pakon-light-lists) repository.
+tracking, CDNs, OCSPs, browser service domains, which makes the output hard to
+read. You can show all records using the option `–no-filter`. The lists of
+filtered domains is in `/usr/share/pakon-light/domains_ignore/`. If there is a
+new CDN or you want to group multiple hostnames from the same domain to one,
+and you would like to share it with others and include it in a new Turris OS
+release, you can contribute it in the
+[pakon-light-lists](https://gitlab.nic.cz/turris/pakon-light-lists) repository.
 
 ## A few sidenotes
 - In some cases, application level protocol is unknown – `?`.
