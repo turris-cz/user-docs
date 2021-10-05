@@ -65,6 +65,26 @@
     filter: brightness(0.9);
 }
 
+:root {
+  --md-admonition-icon--cli-alt: url('../img/cli.svg');
+}
+
+.md-typeset .admonition.cli-alt,
+.md-typeset details.cli-alt {
+  border-color: rgb(158, 0, 255);
+}
+.md-typeset .cli-alt > .admonition-title,
+.md-typeset .cli-alt > summary {
+  background-color: rgba(158, 0, 255, 0.1);
+  border-color: rgb(158, 0, 255);
+}
+.md-typeset .cli-alt > .admonition-title::before,
+.md-typeset .cli-alt > summary::before {
+  background-color: rgb(158, 0, 255);
+  -webkit-mask-image: var(--md-admonition-icon--cli-alt);
+  mask-image: var(--md-admonition-icon--cli-alt);
+}
+
 .metadata a.badge {
     color: #fff;
 }

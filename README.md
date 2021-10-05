@@ -178,6 +178,18 @@ keywords for block-styled content. It needs to start with `!!!` or `???`.  More
 details can be found in [Admonition
 documentation](https://squidfunk.github.io/mkdocs-material/extensions/admonition/).
 
+```markdown
+!!! tip
+    Use admonitions to make your text more readable.
+```
+
+Specific cases are custom admonitions which need titles after keywords:
+
+```markdown
+!!! cli-alt "Command line alternative"
+    You can also use `opkg` for this purpose.
+```
+
 ### Content inclusion
 
 Multiple documentation pages can share content. One or more parts of the text
