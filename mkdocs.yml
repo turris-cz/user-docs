@@ -117,6 +117,7 @@ nav:
     - 'Shield': 'basics/first-setup/shield-first-setup.md'
     - 'Turris 1.X and Omnia': 'basics/first-setup/simple-setup.md'
     - 'Ethernetless configuration': 'basics/first-setup/ethernetless.md'
+    - 'First steps after setup': 'basics/first-setup/after-setup.md'
 - Software:
     - 'Landing page': 'basics/landing-page.md'
     - Sentinel:
