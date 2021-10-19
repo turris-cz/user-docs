@@ -21,6 +21,8 @@ Turris OS 3.x.
 * API tokens are no longer available and mobile application no longer works.
 * Server side backups were dropped. Replacement is not yet provided.
 * uCollect was removed and replaced with Sentinel.
+* Attack statistics are presented on the [Sentinel:view](https://view.sentinel.turris.cz/)
+  portal instead of `project.turris.cz`.
 * Automation package list with Domoticz and Home-Assistant is no longer provided.
 * Majordomo is no longer available as well as its package list. Use LuCI
   statistics or Pakon instead.

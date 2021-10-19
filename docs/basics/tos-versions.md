@@ -99,3 +99,15 @@ These are Turris OS versions flashed in factory and routers they were flashed to
   Originally there was one more significant version of Turris OS for Turris 1.x
   and that was 3.7.3. This version was used to migrate from previous updater to
   updater-ng. With factory update to 3.8.5 it is no longer relevant.
+
+### Compatibility of `project.turris.cz`
+
+Old versions of Turris OS (up to 3.x) support the `project.turris.cz` portal.
+It provides information about threats detected by users' routers using the
+old data collection system [Ucollect](https://doc.turris.cz/doc/en/howto/collect).
+
+Because of migration to the new security solution called
+[Turris Sentinel](sentinel/intro.md),
+new versions of Turris OS (4.0 and newer) are **no longer compatible** with
+the mentioned portal. You can find various threat statistics on our new web
+[Sentinel:view](https://view.sentinel.turris.cz/).
