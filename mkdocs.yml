@@ -163,6 +163,7 @@ nav:
         - 'Schnapps': 'geek/schnapps/schnapps.md'
         - 'Btrfs migration': 'geek/btrfs_turris1x.md'
         - 'Netdata': 'geek/netdata/netdata.md'
+        - 'DNS resolver': 'geek/dns-resolver/dns-resolver.md'
     - 'OS versions':
         - Versions: 'basics/tos-versions.md'
         - Changelog: 'basics/changelog.md'
