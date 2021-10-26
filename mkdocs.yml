@@ -237,6 +237,7 @@ nav:
           - Netdata: geek/netdata/netdata.md
           - Firmware update: geek/nor-update/nor-update.md
           - SSH access: geek/ssh-access/ssh-access.md
+          - DNS resolver: geek/dns-resolver/dns-resolver.md
       - Deprecated:
           - Foris:
               - About: basics/foris/intro.md
