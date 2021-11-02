@@ -176,7 +176,7 @@ more, it might make sesne to use admonition.
 We have admonition extension, so you can use `note`, `tip`, `warning` and other
 keywords for block-styled content. It needs to start with `!!!` or `???`.  More
 details can be found in [Admonition
-documentation](https://squidfunk.github.io/mkdocs-material/extensions/admonition/).
+documentation](https://squidfunk.github.io/mkdocs-material/reference/admonitions/).
 
 ```markdown
 !!! tip
