@@ -55,6 +55,11 @@ plugins:
     - include-markdown:
     - redirects:
         redirect_maps:
+            'basics/collect/collect.md' : 'basics/sentinel/threat-detection.md'
+            'basics/collect/haas.md' : 'basics/sentinel/haas.md'
+            'basics/collect/setup.md' : 'basics/sentinel/setup.md'
+            'basics/collect/setup-shield.md' : 'basics/sentinel/setup-shield.md'
+            'basics/collect/dynfw/collect-dynfw.md' : 'basics/sentinel/dynfw.md'
             'basics/common_errors.md': 'basics/common-errors.md'
             'basics/first-setup/mox_cpu_only.md': 'basics/first-setup/mox-cpu-only.md'
             'basics/first-setup/mox_first_setup_warning.md': 'basics/first-setup/mox-first-setup-warning.md'
