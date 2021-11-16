@@ -72,5 +72,5 @@ the **Physical Settings** tab. In the opened tab add the VLAN tagged interfaces.
 [^2]: [OpenWrt VLANs](https://openwrt.org/docs/guide-user/network/vlan/switch_configuration)
 [^3]: [ISO/OSI model on wikipedia](https://en.wikipedia.org/wiki/OSI_model)
 [^4]: [DSA configuration](https://www.kernel.org/doc/html/latest/networking/dsa/configuration.html)
-[^5]: [Turris 1.0/1.1 Network interfaces](../../../hw/turris-1x/turris-1x.md#network-interfaces)
-[^6]: [Turris Omnia Network interfaces](../../../hw/omnia/omnia.md#network-interfaces)
+[^5]: [Turris Omnia Network interfaces](../../../hw/omnia/omnia.md#network-interfaces)
+[^6]: [Turris 1.0/1.1 Network interfaces](../../../hw/turris-1x/turris-1x.md#network-interfaces)
