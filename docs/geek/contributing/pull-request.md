@@ -3,46 +3,33 @@ competency: expert
 ---
 # Submitting pull requests
 
-If you have created a bug fix or an improvement for our software you can
-create a *pull request* (or a *merge request* in GitLab's terminology).
-We will review your code and possibly incorporate it to our code (if
-it will comply our [code guidelines](style.md) and we will find it useful).
+If you have created a bug fix or an improvement for our software, you can create
+a *pull request* (or a *merge request* in GitLab’s terminology). We will review your
+code and possibly incorporate it into our code (if it will comply with our [code
+guidelines](style.md) and if we find it useful).
 
 !!! important
     Please follow [our rules](style.md) for creating `git` commits.
 
-Before merging, we may ask you to do some modifications or do such
-changes ourself. We may also request explanation of used method,
-programming techniques, algorithms and so on.
+Before merging, we may ask you to do some modifications or do such changes
+ourselves. We may also request an explanation of the used methods, programming
+techniques, algorithms, etc.
 
 !!! notice
-    Whatever way you choose we welcome your contributions. If you don't
-    feel to be prepared to work on our code please [create an issue](issues.md)
-    about your topic.
+    Whatever way you choose, we welcome your contributions. If you don’t feel
+    prepared to work on our code, please [create an issue](issues.md) about your
+    topic.
 
-## By our GitLab instance
-
-All of our projects are maintained in our [GitLab instance](https://gitlab.nic.cz/turris/).
-You can fork the project you want to improve. When done with your
-modifications, please create a merge request to the original project (it should
-be prepared automatically if you create a MR).
-
-!!! notice
-    You will need special access rights to create project forks in our GitLab.
-    We set these rights on request to users who have already repeatedly
-    contributed to our projects.
-
-!!! tip
-    If you have an account on GitHub you can use it to sign into our GitLab.
-
+All of our projects are maintained in our [GitLab
+instance](https://gitlab.nic.cz/turris/). For external users, it is not
+possible to create repositories there and thus forks. The pull requests have to
+be submitted through other means.
 ## By GitHub
 
-Some of our repositories are mirrored to [GitHub](https://github.com/).
-It is not feasible to mirror every single repository we have as setup is done
-manually at the moment. But if you have an account on GitHub you can use
-it to fork one of our project hosted on this server and create a pull
+All our public repositories are mirrored to
+[GitHub](https://github.com/turris-cz). If you have an account on GitHub, you
+can use it to fork one of our projects hosted on this server and create a pull
 request there.
-
 ## Using any public git repository hosting
 
 If you don't have and don't want to create an account on the above described
@@ -53,16 +40,16 @@ your branch is located.
 
 ## Through patches
 
-If you can't use any of the previous ways there is still an older,
-patch-based way how to contribute. You can utilize locally installed `git`
-for patch preparation but it's not necessary to use it. Whichever
-method you use please send the resulting patch(es) by e-mail to [packaging@turris.cz](mailto:packaging@turris.cz)
-
+If you can’t use any of the previous ways, there is still an older, patch-based
+way how to contribute. You can utilize locally installed `git` for patch
+preparation, but it’s not necessary to use it. Whichever method you use, please
+send the resulting patch(es) by e-mail to
+[packaging@turris.cz](mailto:packaging@turris.cz).
 ### With git
 
-`git` can significantly simplify creating patches. You can work with it
-as usually, ie. create branches, commit changes etc. When done, prepare
-your patch using `git`.
+`git` can significantly simplify creating patches. You can work with it as
+usual, i.e., create branches, commit changes, etc. When done, prepare your patch
+using `git`.
 
 To create a patch containing changes between a specific commit and the
 current revision (`HEAD`) you can use a command like the following one:
@@ -81,7 +68,7 @@ git diff COMMIT1 COMMIT2 > bugfix.patch
 !!! tip
     See `man git-diff` for more information about creating patches.
 
-`git` can also send your patch without manual work in your e-mail client.
+`git` can also send your patch without manual work to your e-mail client.
 See the [documentation](https://git-scm.com/docs/git-send-email) for more information.
 
 ### Without git (legacy way)
