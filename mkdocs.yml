@@ -189,6 +189,7 @@ nav:
         - Issues: 'geek/contributing/issues.md'
         - "Pull requests": 'geek/contributing/pull-request.md'
         - "Coding style": 'geek/contributing/style.md'
+        - "Repositories": 'geek/contributing/repositories.md'
 - Hardware:
     - Models: 'basics/models.md'
     - MOX:
