@@ -41,6 +41,7 @@ Turris OS 3.x.
   VLANs](../basics/luci/vlan/luci-vlan.md).
 
 ##### Turris Omnia specifics
+* WAN interface that was originally labeled in the system as `eth1` is now `eth2`.
 * Turris OS 5.0+ no longer supports switching between SFP and metallic in runtime.
   Switch is performed on boot for that boot-loader update is required. This is not
   yet available and so you have to switch between SFP and metallic manually. To do
@@ -185,3 +186,9 @@ This is a consequence of CUPS removal. You can use
 [p910nd](https://man.cx/p910nd) instead. Please follow the
 [installation guide](https://openwrt.org/docs/guide-user/services/print_server/p910ndprinterserver)
 published on the OpenWrt website.
+
+##### SQM and other WAN bound services do not work on Omnia
+The WAN port identifier changed on Turris Omnia and not every service is covered
+by automatic migration. Go through the configuration of services you have bound
+to the WAN interface and check that they are set to use `eth2` now instead of
+`eth1`.
