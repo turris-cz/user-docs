@@ -22,6 +22,15 @@ if less radical methods fail.
 
 ## Performing a factory reset
 
+!!! warning
+    This only applies to the internal storage and is here rather for backward
+    reference. The latest version of Turris OS (since Turris OS 4.0) does not run
+    from the internal storage but rather from an SD card. The factory reset on the SD card
+    has to be performed with [the following
+    steps](/geek/btrfs_turris1x/#how-to-perform-factory-reset-medkit).  
+    Use the approach described here only if you can't access the router and be aware
+    that this resets you back to the internal storage.
+
 Your Turris has a red button at the back. Press and hold it for at least
 six seconds (until the power LED shines continuously). The progress of
 the reset is indicated by the LEDs. If they shine green the reset can
