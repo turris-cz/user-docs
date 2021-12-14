@@ -14,7 +14,7 @@ allow to access computers in your LAN. The administration interface is
 inaccessible from the guest network too. This network is typically used for
 the guest Wi-Fi but you can also dedicate one or more Ethernet ports to it.
 
-## Guest network in Foris
+## Guest network in reForis
 
 The guest network is enabled by default. You can disable it by switching off
 the _Enable guest network_ switch.

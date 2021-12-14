@@ -81,12 +81,12 @@ suggestions and finally saved words.
 ### Zen regime
 You can switch to this mode by clicking the button in the upper right corner of
 the screen. The bulk translation is useful for shorter expressions which are
-very useful when translating Foris/reForis interface. Every translation is used
+very useful when translating the reForis interface. Every translation is used
 in real-time and replaced in other parts of texts. Edit icon will let you
 translate in a usual way.
 
 Other options of Weblate (with the exception of History) are not vital to know
-when translating the Foris interface.
+when translating the reForis interface.
 
 ## Please pay attention when translating
 

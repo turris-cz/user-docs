@@ -40,7 +40,7 @@ and bug fixes wouldn't be installed.
     Web UI might become temporarly unavailable. That is part of normal process.
     Do not reboot your router, do not disconnect it from power supply.
 
-Once update finishes, you will be redirected to the new Foris Guide and guided
+Once update finishes, you will be redirected to the new reForis Guide and guided
 through the rest of the setup.
 
 !!! tip

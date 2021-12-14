@@ -31,7 +31,7 @@ external storage such as an USB HDD or SSD. Read the [Storage plugin](../../basi
 
 ## LXC packages
 
-Although LXC can't be currently managed using Foris its packages can be installed in it. Go to the _Updater_ page,
+Although LXC can't be currently managed using reForis its packages can be installed in it. Go to the _Updater_ page,
 check the _LXC utilities_ and press the _Save and update_ button. It will install the packages and you will
 be able to see the information about it at the _Notifications_ page.
 
