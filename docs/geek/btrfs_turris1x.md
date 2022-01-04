@@ -90,10 +90,10 @@ The factory reset as is implemented on Turris 1.x works only on the internal
 storage thus it can't be used on an SD card. You have to instead manually perform
 factory reset that is native for other Turris routers.
 
-If you will run one by the following commands, it will download the medkit from
-the [HBS branch](../geek/testing.md), import the medkit as the factory snapshot
-and reset to the factory defaults using the latest version of Turris OS. Reboot
-will do its thing that you will boot from the factory image.
+If you will run one by one the following commands, it will download the medkit
+from the [HBS branch](../geek/testing.md), import the medkit as the factory
+snapshot and reset to the factory defaults using the latest version of Turris
+OS. Reboot will do its thing that you will boot from the factory image.
 
 ```
 opkg update
