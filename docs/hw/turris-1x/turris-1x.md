@@ -18,7 +18,7 @@ modem inside.
 
 ### Turris 1.0
 
-![Turris 1.O board](turris-10.jpg)
+![Turris 1.0 board](turris-10.jpg)
 
 ### Turris 1.1
 
