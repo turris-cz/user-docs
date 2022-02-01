@@ -7,48 +7,81 @@
 Turris OS is a Linux distribution based on top of
 [OpenWrt](https://openwrt.org/). It means that we provide patches with some
 modifications together with our own feed Turris OS packages. It includes
-reForis, Updater-ng and more packages to be user-friendly, ensure
+reForis, Updater-ng, and more packages to be user-friendly, ensure
 full-featured packages. Turris OS provides continuous updates for OpenWrt, easy
-to use web interface reForis and integration with
-[Turris Sentinel](apps/sentinel.md). Feel free to checkout our
+to use web interface reForis, and integration with
+[Turris Sentinel](apps/sentinel.md). Feel free to check out our
 [website](https://www.turris.com/turris-os/).
 
-### Is Turris OS 3.11 stable and recommended software version?
+### What versions of Turris OS are supported?
 
-Turris OS 3.11 is a stable version that is still supported. It means, that we
-keep providing security updates if needed. It does not contain the newest
-software though. Therefore we would rather recommend switching to the newest
-version (Turris OS 5.3 at the time of actualization of this text).
+The history of the supported list can be found on [our website](../basics/tos-versions.md), 
+where you can see when each major version was released and when it is end-of-life. 
+It means that we will not provide any support for it anymore.
 
-#### Possibilities:
+You should have your router up-to-date as soon as possible. We are testing and suggesting updates
+from the previous version to the recent version. We can not ensure that updates over two or more versions will be smooth and user-friendly.
 
-- re-flash to the actual version
-    - [Turris Omnia](../hw/omnia/rescue-modes.md#re-flash-router)
-    - [Turris 1.x](../geek/btrfs_turris1x.md#how-to-use-turris-os-5x)
-- [migration](../geek/tos3-migration.md)
+### How can I join testing of upcoming versions?
 
-There is a [list of different Turris OS versions](tos-versions.md) in our
-documentation.
+Each configuration of the router could be unique. If you would like to help us 
+to improve the Turris OS releases or even use the Turris OS development versions, 
+which are using development versions of OpenWrt, you can. Still, there can be some
+issues with which you need to deal with from time to time. For example, 
+a missing package or router does not work as it should. That depends on 
+the selected branch.
 
-### Is Turris OS 5.3 stable and recommended software version?
+Take a look at our dedicated article for [Early testing](../geek/testing.md).
 
-Yes, it is a current stable version. It is recommended to keep automatic
-updates on though.
+### User interface (reForis, LuCI)
 
-### How to migrate settings from Turris OS 3.x to actual Turris OS version?
+In Turris routers except one device [Turris Shield](../hw/shield/shield.md),
+you can find two interfaces.
 
-A how to on the migration is available at our
-[documentation page](../geek/tos3-migration.md).
+#### reForis
+
+The user interface [reForis](../basics/reforis/intro.md) is developed in-house
+and it is simplified to provide safe defaults and the most common features.
+Among other things, it contains notifications about updates. Configurations
+done in reForis are heavily tested and fully supported.
+
+#### LuCI
+
+OpenWrt's administration interface LuCI is developed and available on every OpenWrt 
+router. Users are able to configure what they desire and even complicated 
+configurations, but keep in mind that we do not support most changes done here. 
+It is advised to be used only by experienced users because LuCI does not
+verify any values if they are correct. It is possible that some services
+do not start because of misconfigurations.
+
+This one is not available on [Turris Shield](../hw/shield/shield.md).
 
 ### How do the automatic updates work?
 
 Turris routers check our servers for possible availability of a new update
-every four hours. If a new Turris OS version - newer than the currently used
-one - is available, the router would download and install it.
+every four hours (with some variability to spread the load of the update
+servers and speed-up the update process). If a new Turris OS version
+- newer than the currently used one - is available, the router will download
+and install it.
 
 After that, an automatic restart of the router will be planned according to
 the settings (usually at night after three days). You can restart the router
-earlier at a moment, when you do not mind a current Internet connection loss.
+earlier at a moment when you do not mind a current Internet connection loss.
+
+If you use delayed updates or approvals, we suggest configuring sending 
+notifications to your e-mail to be in the loop about updates.
+
+### What I want to re-flash my router with the latest version?
+
+If you somehow end up that the router is not working after some configuration, you
+can use snapshots and rollback to the previous state by using schnapps tool.
+
+If you want to start over or simply use re-flash your router by using USB flash 
+drive, take a look at specific articles for
+
+- [Turris 1.x](../geek/btrfs_turris1x.md#how-to-perform-factory-reset-medkit)
+- [Turris Omnia](../hw/omnia/rescue-modes.md#re-flash-router)
+- [Turris MOX](../hw/mox/rescue-modes.md#re-flash-router)
 
 ### Can I use plain OpenWrt without Turris additions?
 
@@ -56,19 +89,84 @@ In principle, yes, because we send the modifications to the Linux kernel and
 other OpenWrt components needed for Turris back to the OpenWrt project. However,
 we cannot guarantee the right function or provide any support.
 
-### Where to find and download the latest Turris OS version or a recovery image?
+### Open-source
 
-The installation images of Turris OS are available on
-[repo.turris.cz](https://repo.turris.cz/). You can find stable versions in
-the directory [/hbs/medkit/](https://repo.turris.cz/hbs/medkit/). For Omnia it
-is the file `omnia-medkit-latest.tar.gz`, for MOX `mox-medkit-latest.tar.gz`
-and for Shield `mox-medkit-contract-shield-latest.tar.gz`.
+All software available within Turris OS and the OpenWrt itself are open-source.
+This means that all [the source code](https://gitlab.nic.cz/turris/os/build) is available.
+We are based on [OpenWrt](https://openwrt.org/), but for using Wi-Fi cards and 
+specially ath10k, there are a few blobs required.
 
-For each file, you can also find the hash files `*.md5` and `*.sha256` and
-the electronic signature files `*.sig`. We strongly recommend checking at
-least the hash (better SHA-256) and, if possible, the signature for
-the downloaded image.
+About hardware, we release schematics and pinouts. Once, we would not manufacture any new PCBs, 
+we will release the complete HW documentation like we do it for [Turris 1.x routers](../hw/turris-1x/turris-1x.md#various-documentation-files).
 
+## Software available within Turris OS
+
+### Updater-ng
+
+One of the objectives of the Turris router is to increase the security of
+routers by using regular firmware. That is managed by [Updater-ng](https://gitlab.nic.cz/turris/updater/updater).
+
+### Schnapps
+
+Turris routers use the Btrfs file system to utilize the advantages of snapshots.
+This lets you take all files to the state they were at when the snapshot was created.
+It enables the user to simply return to a functional configuration or to
+temporarily return to an earlier version of the system.
+
+[Schnapps](../geek/schnapps/schnapps.md) is available in reForis or in CLI.
+
+### Knot Resolver
+
+[Knot Resolver](https://www.knot-resolver.cz/) is the default DNS resolver for 
+Turris Omnia, Turris MOX and Turris Shield. It is developed by CZ.NIC, the `.cz` domain registry
+and many provides are using it.
+
+### Syslog-ng
+
+[Syslog-ng](https://www.syslog-ng.com/products/open-source-log-management/) is
+a system log management tool.
+
+### Honeypot as a Service
+
+[Honeypot as a Service](https://haas.nic.cz/) is a public service, which can be 
+used on any device with a public IPv4 address. It uses the SSH protocol to catch
+attackers  and provide you details, what credentials they used and what they
+were trying to do. To be able to use it, you need to register on their website
+and then fill a token in reForis. For more details, take a look at 
+[dedicated article](../basics/sentinel/haas.md) for this feature.
+
+This is created and maintained by CZ.NIC.
+
+### NetMetr
+
+[NetMetr](https://www.netmetr.cz/cs/) is a tool to measure connection speed. 
+It is available to install in [reForis](../basics/apps/netmetr.md), where you can see speed results.
+
+### OpenVPN
+
+In reForis and also in LuCI, you can configure [VPN server](../basics/apps/openvpn-server/openvpn.md)
+and [VPN client](../basics/apps/openvpn-client/openvpn.md) by using OpenVPN.
+
+### LXC Containers
+
+Many of our users are using some virtualization via LXC or Docker.
+This feature is completely untested and not supported by us. We can not
+troubleshoot all GNU/Linux distributions for their issues and help to fix them.
+It requires knowledge to configure it on an external device to avoid unnecessary
+writes to the internal storage to prevent it to be worn out. Also, you need to be
+familiar with using SSH.
+
+## Turris Sentinel
+
+### How the dynamic firewall works
+
+### What are the minipots
+
+### How can I verify that minipots works?
+
+### Where I can see any statistics?
+
+### How am I able to join the attack detection system?
 
 ## Documentation and community
 
@@ -84,21 +182,113 @@ they announce new versions of Turris OS and other news in the project). But
 the forum is not designed for user support. Please contact us by e-mail:
 [tech.support@turris.cz](mailto:tech.support@turris.cz).
 
-
 ## Hardware
 
-### What SFP modules can be used in Turris devices?
+### Supported devices
+
+#### SFP
 
 All of those, which fulfill
 the [SFP standard](https://www.snia.org/technology-communities/sff/specifications),
-work on 100Mbps / 1Gbps / 2.5Gbps / SGMII. There are some others, which work too,
-despite not fulfilling the standard, if they are supported by the Linux kernel.
+work on 100Mbps / 1Gbps / 2.5Gbps / SGMII. Some others work, too,
+despite not fulfilling the standard, if supported and worked by the Linux kernel.
+
+We manufacture our own [Turris SFP+ Copper module (RJ45)](https://www.discomp.cz/turris-sfp-2-5gbps-rj45-modul_d113354.html)
+supported under Turris OS.
 
 It is needed to ask the producer for information about the standard fulfilling
-or the Linux kernel support. Although they often respond, that it works only
+or the Linux kernel support. Although they often respond that it works only
 on their own devices. On our
-[community forum](https://gitlab.nic.cz/turris/biz/online/org/-/wikis/forum.turris.cz),
-there are messages from our users, who test different SFP modules on Turris
-Omnia or MOX. There is a list of compatible SFP modules, which can be found in our
-[community documentation](https://wiki.turris.cz/doc/en/public/sfp) too. Anyone can
+[community forum](https://forum.turris.cz),
+there are messages from our users who test different SFP modules on Turris
+Omnia or MOX. There is a community-maintained list of compatible SFP modules, which can be found in our
+[community documentation](https://wiki.turris.cz/doc/en/public/sfp). Anyone can
 register there and log in and then add their own SFP module, which they tried.
+
+#### miniPCIe Wi-Fi cards
+
+You can find many mini PCIe Wi-FI cards, which you can use in Turris routers, but they need to be
+supported in OpenWrt and Linux kernel. We tested the following mini PCIe Wi-Fi cards, which we support.
+
+- WNC DNXA-H1 (802.11n)
+- Compex WLE200N2 (2.4 GHz only)
+- Compex WLE900VX (802.11ac Wave 1)
+- Asiarf AW7915-NP1 (802.11ax) since Turris OS 6.0
+
+#### Cellular network (LTE/5G)
+
+We support LTE components, which we were selling as an LTE pack. We have a good experience with
+LTE model Quectel EP06. The whole pack including antennas, heatsink and so on can be found 
+on [Discomp.cz](https://www.discomp.cz/turris-omnia-lte-kit-lte-modem-cables-antenas-heatsink_d113352.html)
+
+The configuration for the LTE connection needs to be done in the advanced administration LuCI.
+
+We are investigating and testing 5G modems, and if there is anything new, we will let 
+you know through our social media.
+
+#### Replacement parts
+
+There is a possibility that you lost the power supply or somehow there was managed
+that the power supply was damaged. We sell replacement parts like antennas, diplexers, 
+Wi-Fi cards through our distributors.
+
+The full list of available replacement parts can be found on [our community forum](https://forum.turris.cz/t/where-to-buy-replacements-power-supply-antennas-etc/15428/).
+If you did not find anything, don't forget to reach our [Technical support department](../basics/support.md)
+
+## Troubleshooting
+
+### Weak wireless signal
+
+If you moved the position of wireless cards in Turris Omnia, we suggest double
+checking if you connected pigtails correctly to diplexers (those small green boards). 
+There are two connectors. One is for 2.4 GHz and the second one is for 5.6 GHz.
+
+It is also possible that you experience connection drops by using 2.4 GHz frequency, 
+this one shares the frequency with Bluetooth, and that is simply overcrowded 
+these days in urban areas. You can try to use different bands or even Wi-Fi analyzer. 
+We suggest looking at a dedicated article to improve [Wi-Fi coverage](../hw/wifi.md)
+and if it is possible to use 5 GHz frequency on devices that support it.
+
+### Something does not work
+
+We tried to describe on a dedicated page [Common scenarios](../basics/common-errors.md),
+which users might experience and what was reported to us. For example, you can
+check it if you are not able to connect to the router or if it is not able
+to reach the Internet, but there are also more detailed issues like reForis
+incompatibility with Safari, or why the Turris MOX does not boot over the network.
+
+We should not forget about issues while updating the router to a new version.
+Before we release new versions, we invite users to join public testing
+when releasing RC versions into the testing branch as each router configuration
+can be unique. That is why there is possible that something does not work as expected.
+
+In that case, please follow [Creating issues article](../geek/contributing/issues.md),
+but keep in mind that we support only changes done in reForis.
+
+## Known bugs
+
+### Turris MOX / Turris Shield is not capable to route more than 450 Mbps
+
+Between LAN and WAN ports, it is possible that the speed is lower than it should be. 
+There were many improvements in the Linux kernel available since version 5.8. 
+We are using the same LTS kernel versions as OpenWrt.
+
+| OpenWrt version  | Turris OS version  | LTS kernel |
+| :--------------- |:------------------:| ----------:|
+| OpenWrt 19.07    | Turris OS 5.x      |  4.14.x    |
+| OpenWrt 21.02    | Turris OS 6.x      |  5.4.x     |
+| Daily snapshots (upcoming, not announced yet) | Turris OS 7.x  |  5.10.x |
+
+## Erratum
+
+### Turris MOX / Turris Shield: reboot issue
+
+In rare cases, Turris MOX and Turris Shield are not correctly rebooted. 
+We are investigating this issue. We are in touch with Marvell, the processor manufacturer, 
+to solve it. We prepared [some workarounds](https://gitlab.nic.cz/turris/mox-boot-builder/-/releases/v2021.09.07), 
+which could improve the reboot behavior.
+
+### Limitation of the SDIO card on Turris MOX
+
+The provided firmware from NXP for chipset 88W8997 has limitation that it is
+possible to create only 4 SSIDs and have a maximum of 8 concurrent clients connected to them.
