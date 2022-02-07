@@ -51,6 +51,8 @@ adding the header.
 * [Official datasheet for Turris Omnia 2020](omnia2020-datasheet.pdf)
 * [Official datasheet for Turris Omnia 2019](omnia2019eu-datasheet.pdf)
 * [Original printed manual](omnia-manual-en.pdf)
+* [3D model of Turris Omnia PCB](omnia-step3d.zip)
 * [Schematics for Turris Omnia CZ11NIC23](CZ11NIC23-schematics.pdf)
 * [Schematics for Turris Omnia CZ11NIC20](CZ11NIC20-schematics.pdf)
 * [Schematics for Turris Omnia CZ11NIC13](CZ11NIC13-schematics.pdf)
+* [Diplexers (Wi-Fi signal mixers) – source files](diplexers-source-v1.zip)
