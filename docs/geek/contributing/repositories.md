@@ -90,24 +90,24 @@ the Turris threat detection program.
 
 * **Client for Dynamic Firewall**: software that subscribes on updates from the
   threat detection system and adds IP addresses to a firewall block list. 
-  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/dynfw-client ) |
-  [GitHub.com](https://github.com/turris-cz/sentinel-dynfw-client )
+  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/dynfw-client) |
+  [GitHub.com](https://github.com/turris-cz/sentinel-dynfw-client)
 * **Minipots**: minimal honeypots for a limited number of protocols used to trap
   and identify attackers.  
-  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/minipot ) |
-  [GitHub.com](https://github.com/turris-cz/sentinel-minipot )
+  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/minipot) |
+  [GitHub.com](https://github.com/turris-cz/sentinel-minipot)
 * **Firewall logs**: the collector of blocked/dropped connections on the firewall.  
-  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/fwlogs ) |
-  [GitHub.com](https://github.com/turris-cz/sentinel-fwlogs )
+  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/fwlogs) |
+  [GitHub.com](https://github.com/turris-cz/sentinel-fwlogs)
 * **Sentinel Proxy**: the proxy server that forwards locally detected threats by one
   of the detection tools to a common threat detection server.  
-  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/proxy ) |
-  [GitHub.com](https://github.com/turris-cz/sentinel-proxy )
+  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/proxy) |
+  [GitHub.com](https://github.com/turris-cz/sentinel-proxy)
 * **Certificate generator**: Sentinel Proxy has to be authenticated to the threat
   detection server using temporally certificate. This software implements a way
   to obtain such certificate.  
-  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/certgen ) |
-  [GitHub.com](https://github.com/turris-cz/sentinel-certgen )
+  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/certgen) |
+  [GitHub.com](https://github.com/turris-cz/sentinel-certgen)
 
 The server components are, in general, not of much use to an end-user, but they are
 open source and thus available for review and contributions. They are split into
@@ -115,13 +115,13 @@ pipelines, and the full interconnection is assigned by a system administrator.
 There is also a web interface for data visualization you might be interested in.
 
 * **SView**: the data visualization web application.  
-  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/sview ) |
-  [GitHub.com](https://github.com/turris-cz/sentinel-sview )
+  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/sview) |
+  [GitHub.com](https://github.com/turris-cz/sentinel-sview)
 * **Base for pipeline boxes**: this is a library with a general code for the
   boxes in the server pipeline.  
-  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/sn ) |
+  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/sn) |
   [GitHub.com](https://github.com/turris-cz/sentinel-sn )
 * **Server component for certificate generator**: the server-side for
   certificate generator.  
-  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/ca ) |
-  [GitHub.com](https://github.com/turris-cz/sentinel-ca )
+  [Primary hosting](https://gitlab.nic.cz/turris/sentinel/ca) |
+  [GitHub.com](https://github.com/turris-cz/sentinel-ca)
