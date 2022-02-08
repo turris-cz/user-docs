@@ -64,14 +64,14 @@ locate all modules and plugins.
 * **Storage**: secondary storage, NAS, and similar functionality.  
   Frontend:
   [primary hosting](https://gitlab.nic.cz/turris/reforis/reforis-storage-plugin) |
-  [Github.com](https://github.com/turris-cz/reforis-storage-plugin)  
+  [Github.com](https://github.com/turris-cz/reforis-storage)
   Backend:
   [primary hosting](https://gitlab.nic.cz/turris/foris-controller/foris-controller-storage-module) |
   [Github.com](https://github.com/turris-cz/foris-controller-storage-module)
 * **OpenVPN**: virtual private network functionality.  
   Frontend:
   [primary hosting](https://gitlab.nic.cz/turris/reforis/reforis-openvpn-plugin) |
-  [Github.com](https://github.com/turris-cz/reforis-openvpn-plugin)  
+  [Github.com](https://github.com/turris-cz/reforis-openvpn)
   Backend for VPN server:
   [Primary hosting](https://gitlab.nic.cz/turris/foris-controller/foris-controller-openvpn-module) |
   [Github.com](https://github.com/turris-cz/foris-controller-openvpn-module)  
