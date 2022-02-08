@@ -19,18 +19,18 @@ package recipes and scripts to facilitate automatic updates.
   issue about system functionality or to contribute a Turris-specific fix that
   would otherwise be applied on OpenWrt repositories.
   [Primary hosting](https://gitlab.nic.cz/turris/os/build) |
-  [Github.com](https://github.com/turris-cz/os-build/)
+  [GitHub.com](https://github.com/turris-cz/os-build/)
 * **Turris Packages**: recipes for Turris-specific packages.  
   [Primary hosting](https://gitlab.nic.cz/turris/os/packages) |
-  [Github.com](https://github.com/turris-cz/os-packages)
+  [GitHub.com](https://github.com/turris-cz/os-packages)
 * **Automatic update rules**: these are rules that updating software follows. It
   is where packages installed in the system in various situations are specified.
   [Primary hosting](https://gitlab.nic.cz/turris/os/updater-lists) |
-  [Github.com](https://github.com/turris-cz/os-updater-lists)
+  [GitHub.com](https://github.com/turris-cz/os-updater-lists)
 * **Usage survey**: the distribution maintenance requires additional information
   about packages usage, and for that reason, there is a usage survey.  
   [Primary hosting](https://gitlab.nic.cz/turris/sentinel/turris-survey) |
-  [Github.com](https://github.com/turris-cz/sentinel-turris-survey)
+  [GitHub.com](https://github.com/turris-cz/sentinel-turris-survey)
 
 Automatic software updates of Turris OS distribution are provided by a project
 called Updater (also known as Updater-ng).
@@ -38,10 +38,10 @@ called Updater (also known as Updater-ng).
 * **Updater**: the tool that maintains packages on the router and performs
   automatic updates.  
   [Primary hosting](https://gitlab.nic.cz/turris/updater/updater) |
-  [Github.com](https://github.com/turris-cz/updater)
+  [GitHub.com](https://github.com/turris-cz/updater)
 * **Updater Supervisor**: supervisor for unattended runs of Updater.  
   [Primary hosting](https://gitlab.nic.cz/turris/updater/supervisor) |
-  [Github.com](https://github.com/turris-cz/updater-supervisor)
+  [GitHub.com](https://github.com/turris-cz/updater-supervisor)
 
 
 ## reForis
@@ -57,27 +57,27 @@ locate all modules and plugins.
   network configuration.
   Frontend:
   [primary hosting](https://gitlab.nic.cz/turris/reforis/reforis) |
-  [Github.com](https://github.com/turris-cz/reforis)
+  [GitHub.com](https://github.com/turris-cz/reforis)
   Backend:
   [primary hosting](https://gitlab.nic.cz/turris/foris-controller/foris-controller) |
-  [Github.com](https://github.com/turris-cz/foris-controller)
+  [GitHub.com](https://github.com/turris-cz/foris-controller)
 * **Storage**: secondary storage, NAS, and similar functionality.
   Frontend:
   [primary hosting](https://gitlab.nic.cz/turris/reforis/reforis-storage-plugin) |
-  [Github.com](https://github.com/turris-cz/reforis-storage)
+  [GitHub.com](https://github.com/turris-cz/reforis-storage)
   Backend:
   [primary hosting](https://gitlab.nic.cz/turris/foris-controller/foris-controller-storage-module) |
-  [Github.com](https://github.com/turris-cz/foris-controller-storage-module)
+  [GitHub.com](https://github.com/turris-cz/foris-controller-storage-module)
 * **OpenVPN**: virtual private network functionality.
   Frontend:
   [primary hosting](https://gitlab.nic.cz/turris/reforis/reforis-openvpn-plugin) |
-  [Github.com](https://github.com/turris-cz/reforis-openvpn)
+  [GitHub.com](https://github.com/turris-cz/reforis-openvpn)
   Backend for VPN server:
   [Primary hosting](https://gitlab.nic.cz/turris/foris-controller/foris-controller-openvpn-module) |
-  [Github.com](https://github.com/turris-cz/foris-controller-openvpn-module)
+  [GitHub.com](https://github.com/turris-cz/foris-controller-openvpn-module)
   Backend for VPN client:
   [Primary hosting](https://gitlab.nic.cz/turris/foris-controller/foris-controller-openvpn_client-module) |
-  [Github.com](https://github.com/turris-cz/foris-controller-openvpn_client-module)
+  [GitHub.com](https://github.com/turris-cz/foris-controller-openvpn_client-module)
 
 
 ## Threat detection and attack prevention
@@ -91,23 +91,23 @@ the Turris threat detection program.
 * **Client for Dynamic Firewall**: software that subscribes on updates from the
   threat detection system and adds IP addresses to a firewall block list. 
   [Primary hosting](https://gitlab.nic.cz/turris/sentinel/dynfw-client ) |
-  [Github.com](https://github.com/turris-cz/sentinel-dynfw-client )
+  [GitHub.com](https://github.com/turris-cz/sentinel-dynfw-client )
 * **Minipots**: minimal honeypots for a limited number of protocols used to trap
   and identify attackers.  
   [Primary hosting](https://gitlab.nic.cz/turris/sentinel/minipot ) |
-  [Github.com](https://github.com/turris-cz/sentinel-minipot )
+  [GitHub.com](https://github.com/turris-cz/sentinel-minipot )
 * **Firewall logs**: the collector of blocked/dropped connections on the firewall.  
   [Primary hosting](https://gitlab.nic.cz/turris/sentinel/fwlogs ) |
-  [Github.com](https://github.com/turris-cz/sentinel-fwlogs )
+  [GitHub.com](https://github.com/turris-cz/sentinel-fwlogs )
 * **Sentinel Proxy**: the proxy server that forwards locally detected threats by one
   of the detection tools to a common threat detection server.  
   [Primary hosting](https://gitlab.nic.cz/turris/sentinel/proxy ) |
-  [Github.com](https://github.com/turris-cz/sentinel-proxy )
+  [GitHub.com](https://github.com/turris-cz/sentinel-proxy )
 * **Certificate generator**: Sentinel Proxy has to be authenticated to the threat
   detection server using temporally certificate. This software implements a way
   to obtain such certificate.  
   [Primary hosting](https://gitlab.nic.cz/turris/sentinel/certgen ) |
-  [Github.com](https://github.com/turris-cz/sentinel-certgen )
+  [GitHub.com](https://github.com/turris-cz/sentinel-certgen )
 
 The server components are, in general, not of much use to an end-user, but they are
 open source and thus available for review and contributions. They are split into
@@ -116,12 +116,12 @@ There is also a web interface for data visualization you might be interested in.
 
 * **SView**: the data visualization web application.  
   [Primary hosting](https://gitlab.nic.cz/turris/sentinel/sview ) |
-  [Github.com](https://github.com/turris-cz/sentinel-sview )
+  [GitHub.com](https://github.com/turris-cz/sentinel-sview )
 * **Base for pipeline boxes**: this is a library with a general code for the
   boxes in the server pipeline.  
   [Primary hosting](https://gitlab.nic.cz/turris/sentinel/sn ) |
-  [Github.com](https://github.com/turris-cz/sentinel-sn )
+  [GitHub.com](https://github.com/turris-cz/sentinel-sn )
 * **Server component for certificate generator**: the server-side for
   certificate generator.  
   [Primary hosting](https://gitlab.nic.cz/turris/sentinel/ca ) |
-  [Github.com](https://github.com/turris-cz/sentinel-ca )
+  [GitHub.com](https://github.com/turris-cz/sentinel-ca )
