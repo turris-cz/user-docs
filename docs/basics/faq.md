@@ -158,15 +158,47 @@ familiar with using SSH.
 
 ## Turris Sentinel
 
-### How the dynamic firewall works
+### What it is?
+
+It is a threat detection and cyberattack prevention system.
+
+### How does it work?
+
+First we collect data about suspicious and malicious network traffic on routers.
+The data is sent to our servers and analyzed. Each recorded IP address is ranked
+with a score based on the analyzes. If the score reaches the given threshold it is
+considered as malicious. The list of malicious IP addresses is then supplied back
+to routers which update their firewall rules accordingly to block all network
+traffic from the malicious IP addresses. This process is happening completely
+automatically in real time so we are always up to date with the newest threats.
+Beside of that we also do some interesting statistics on the collected data.
+
+### Which data on router do we collect?
+
+We collect only data incoming from Internet utilizing our minipots and by
+parsing firewall logs about rejected and dropped packets.
+In general no outgoing data originated from a user is disclosed.
+
+### How can I join the malicious traffic detection / data collection?
+
+To send us data about malicious traffic you have to first agree with our EULA.
+It can be then turned on and off any time from our web administration interface
+reForis in the Sentinel Sentinel. However for maximal protection we recommend to leave
+it on all the time.
 
 ### What are the minipots
 
-### How can I verify that minipots works?
+Minipot is an abbreviation for a minimal honeypot. A honeypot is a decoy system
+intended to mimic likely targets of cyberattacks. Its purpose is to collect
+information about malicious activities made by cybercriminals. Usually it is a
+complex system but this is not our case. Our minipots are lightweight emulations
+of well known services running on the application layer (HTTP, FTP, SMTP, Telnet)
+and collecting data about connections and login attempts made to them.
 
 ### Where I can see any statistics?
 
-### How am I able to join the attack detection system?
+You can find all the statistics and also regular daily snapshots of the list of
+detected malicious IP addresses at our web interface [view.sentinel.turris.cz](https://view.sentinel.turris.cz/).
 
 ## Documentation and community
 
