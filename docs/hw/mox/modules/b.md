@@ -18,6 +18,7 @@ speeds than SDIO Wi-Fi.
 
 ![Picture of the board](b.jpg)
 
+* 1× miniPCIe slot
 * 1× SIM card slot
 * 1× 64 pin female connector and 1× 64 pin male connector for connection additional modules
 * 2 years warranty
