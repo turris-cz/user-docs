@@ -23,7 +23,7 @@ is not possible on Turris 1.x routers, yet.
 You will need:
 
 * a [Turris 1.0 or Turris 1.1](../hw/turris-1x/turris-1x.md) router,
-* a microSD card with at least 8 GB free storage,
+* a microSD card with at least 8 GB free storage or similar USB drive
 * a screwdriver.
 
 ### Preparation of Turris 1.0 routers
@@ -38,7 +38,28 @@ operating system located in the NOR. It means that if you did a Factory Reset
 afterwards, you should be running at least Turris OS 3.8.5 and if you were using JFFS2
 before, you will switch to UBIFS just by resetting to the factory settings.
 
-### Inserting microSD card
+### Installing package
+
+Before you are able to install any packages using LuCI/SSH, you need to update
+the package lists and then you can install the `turris-btrfs` package.
+
+```
+opkg update
+opkg install turris-btrfs
+```
+
+It does nothing by itself, so it is safe to install.
+
+### MicroSD or USB drive?
+
+MicroSD card is the recommended option if you are willing to open up the case of
+your router. Alternatively you may use USB flash drive, but that one will occupy
+one of your USB 2.0 slots at the back of the router. It is easier to do, but
+might stop working if you attach more USB devices.
+
+### MicroSD workflow
+
+#### Inserting microSD card
 
 You will need to unplug the router from the power supply. You need to unscrew a
 few screws from the top cover of the router to remove it. The microSD card slot is
@@ -52,18 +73,6 @@ If the card is in it is place, you can now put back the RAM, top cover and plug 
 cord into the router.
 
 ![RAM module without RAM and inserted SD card](turris1x-without-ram.jpg)
-
-### Installing package
-
-Before you are able to install any packages using LuCI/SSH, you need to update
-the package lists and then you can install the `turris-btrfs` package.
-
-```
-opkg update
-opkg install turris-btrfs
-```
-
-It does nothing by itself, so it is safe to install.
 
 #### Formatting microSD card
 
@@ -79,7 +88,17 @@ To check if you are booting from the microSD card, you can run the command `moun
 grep btrfs` to verify that there is something like `/dev/mmcblk0p2 on / **type
 btrfs**`. If it is there, the migration was successful.
 
-### When happens if you remove the microSD card
+### USB drive workflow
+
+You have to start by preparing the USB drive in your computer. You have to make
+sure that it contains one partition with label `turris-destroy`. Once that is
+done, it needs to be plugged into one of the rear USB ports (USB 2.0 only
+ports). Once done, migration script will find it shortly and will start
+migrating the system to it. If your USB drive have a LED indicator, you will
+see it blinking. Do not unplug it nor restart the router. Once migration is
+done, you will receive a notification in Foris user interface.
+
+### When happens if you remove the microSD card or USB drive
 
 Turris boots from the NAND (internal storage) in the same state as before
 the migration.
