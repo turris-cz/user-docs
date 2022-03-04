@@ -59,11 +59,13 @@ Turris OS 3.x.
 
 
 ## Automatic migration
-Automatic migration is in progress, but not all routers get it at the same time.
-Only a subset of routers gets migrated at a time, so our support can react to any
-issues that you might have in time. If your router is not automatically migrated,
-you can still trigger it manually. Please continue reading this article.
+Automatic migration was done in waves. Only a subset of routers were migrated at the time,
+so we could respond and fix issues that could appear during that time.
 
+The last migration wave was pushed on 04/01/2022.
+
+If your router was not automatically migrated,
+you can still trigger it manually. Please continue reading this article.
 
 ## Migration considerations
 Before you perform migration you should make sure to minimize possibility that it
@@ -103,7 +105,6 @@ Considerations for advanced users:
     [rollback](../hw/omnia/rescue-modes.md) should be good enough.
 
 ## Optional migration
-Migration is not yet executed automatically but it can be triggered manually.
 
 !!! warning
     Do not attept to migrate Turris 1.x unless you are running on [Btrfs with SD
