@@ -84,7 +84,36 @@ btrfs**`. If it is there, the migration was successful.
 Turris boots from the NAND (internal storage) in the same state as before
 the migration.
 
+### How to have Turris OS 5.x+ from Turris OS 3.x
+
+!!! warning
+    By following this 5.x migration howto, you will loose your current settings
+    and will have to configure everything from scratch.
+
+If you will run one by the following commands, it will download the medkit from the
+[HBS branch](../geek/testing.md), import the medkit as the factory snapshot and
+reset to the factory defaults using the latest version of Turris OS. Reboot will do
+its thing that you will boot from the factory image.
+
+```
+cd /tmp
+wget https://repo.turris.cz/hbs/medkit/turris1x-medkit-latest.tar.gz
+schnapps import -f turris1x-medkit-latest.tar.gz
+schnapps rollback factory
+reboot
+```
+
+Be sure that you have installed wget, if not, you might want to install it
+by running these two commands:
+```
+opkg update
+opkg install wget
+```
+
 ### How to perform factory reset (medkit)
+
+!!! warning
+    It requires Turris OS 5.x or newer versions.
 
 The factory reset as is implemented on Turris 1.x works only on the internal
 storage thus it can't be used on an SD card. You have to instead manually perform
