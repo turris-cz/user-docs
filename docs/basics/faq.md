@@ -245,7 +245,8 @@ supported in OpenWrt and Linux kernel. We tested the following mini PCIe Wi-Fi c
 - WNC DNXA-H1 (802.11n)
 - Compex WLE200N2 (2.4 GHz only)
 - Compex WLE900VX (802.11ac Wave 1)
-- Asiarf AW7915-NP1 (802.11ax) since Turris OS 6.0
+- AsiaRF AW7615-NP1 (802.11ac Wave 2, MU-MIMO)
+- AsiaRF AW7915-NP1 (802.11ax) since Turris OS 6.0
 
 #### Cellular network (LTE/5G)
 
