@@ -25,3 +25,8 @@ firewall is able to instantly deliver the updated firewall rules directly to you
 Turris router or other compatible system and keep your infrastructure safe from
 the attackers targeting your own router as well as from all the attackers
 reported by others.
+
+You can browse the aggregated data we have collected through the Sentinel
+network on our web page called [Sentinel View](https://view.sentinel.turris.cz/).
+You view detected attackers, the most commonly used passwords, country of
+origin and such.
