@@ -89,6 +89,19 @@ country of origin and such.
 
 ![Sentinel View](sview.png)
 
+You can also view data from your router. It needs a "device token" that
+can be currently obtained only via the command line interface
+(after logging in by SSH):
+
+```
+uci get sentinel.main.device_token
+```
+
+Copy the device token, paste it into the *Device token field* in the
+*My devices* section and then press *Add device*.
+
+![Device token](sentinel-device-token.png)
+
 The HaaS attackers who tried to attack your own router and their commands
 could be seen on [HaaS project website](https://haas.nic.cz).
 
