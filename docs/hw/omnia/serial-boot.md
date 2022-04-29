@@ -38,26 +38,12 @@ chmod u+x ./kwboot ./sendbeacon
 
 ### Images
 
-#### U-Boot
-
-You will also need a latest U-Boot image which you can find in
-<https://repo.turris.cz/hbs/omnia/packages/turrispackages/> in package called
-`omnia-uboot_$VERSION.ipk`. To get the real image out, you need to unpack
-it twice. The outer gziped tarball contains file `data.tar.gz` and inside it in
-directory `./usr/share/omnia` you can find file uboot-devel which you can use
-both for booting over the serial line and as an image to be flashed it into
-NOR memory.
-
-#### Rescue image
-
-You might also need a rescue image – minimal system image that allows you to
-repair whatever is broken. You can get it again from
-<https://repo.turris.cz/hbs/omnia/packages/turrispackages/> in package called
-`rescue-image_$VERSION.ipk`. To get the real image out, you need to unpack
-it twice again. The outer gziped tarball contains file `data.tar.gz` and inside
-it in directory `./usr/share/rescue-image` you can find `image.fit.lzma` which
-you can use for booting over the serial line and as an image to be flashed into
-NOR memory.
+You will also need a latest U-Boot image and latest rescue system image. You
+can find both in our GitLab by visiting
+<https://gitlab.nic.cz/turris/os/packages/-/tree/master/hardware/omnia/omnia-firmware/files>.
+What you are interested in there are two binary files - `rescue` and `uboot`.
+You can use them to boot your Omnia over serial line or to reflash the content
+of your NOR memory.
 
 ## Booting
 
