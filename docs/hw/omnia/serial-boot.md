@@ -11,104 +11,145 @@ competency: expert
     works, **do not attempt to reflash it**.
 
 Turris Omnia is using U-Boot to boot. That U-Boot is typically loaded from the
-beginning of NOR memory and takes care of the rest of booting process. If you
-try to flash it with different U-Boot and your new U-Boot is corrupted, you'll
-end up with unbootable device. To fix that, there is an option to switch Omnia
-into a mode in which it will download U-Boot over serial line and boot it.
+beginning of the NOR memory and takes care of the rest of the booting process.
+If you try to flash it with a different U-Boot and your new U-Boot is corrupted,
+you'll end up with an unbootable device. To fix that, there is an option to
+switch Omnia into a mode in which it will download U-Boot over serial line and
+boot it.
 
 ## Requirements
 
-You'll need a computer running Linux and working serial cable connected to your
-Omnia. How to connect serial cable is documented in [other part](../serial.md#turris-omnia)
-of this documentation.
+You'll need a computer running Linux and a working serial cable connected to
+your Omnia. How to connect the serial cable is documented in
+[another part](../serial.md#turris-omnia) of this documentation.
 
 ### Tools
 
-You will also need some tools. You can get their binaries from our repository.
-They can be found in <https://repo.turris.cz/omnia/nor_fw/>.
-
-* **x86-64/kwboot** – utility that will send the image
-* **x86-64/sendbeacon** – utility that will switch Omnia into _boot over serial_ mode
-
-You also need to make both `kwboot` and `sendbeacon` executable, for example
-using
-```
-chmod u+x ./kwboot ./sendbeacon
-```
+You will need the **kwboot** tool from the U-Boot tools package in
+**v2022.04** or a newer version. You can install it via your Linux package
+manager (e.g. on Debian/Ubuntu via `apt install u-boot-tools`, on Fedora
+`dnf install uboot-tools`, on OpenSUSE `zypper install u-boot-tools`, ...).
+Or you can get the binary for x86-64 CPU from
+[our repository](https://repo.turris.cz/omnia/nor_fw/x86_64/).
 
 ### Images
 
-You will also need a latest U-Boot image and latest rescue system image. You
-can find both in our GitLab by visiting
-<https://gitlab.nic.cz/turris/os/packages/-/tree/master/hardware/omnia/omnia-firmware/files>.
-What you are interested in there are two binary files - `rescue` and `uboot`.
-You can use them to boot your Omnia over serial line or to reflash the content
-of your NOR memory.
+You will also need the latest U-Boot image and the latest rescue system image.
+You can find both
+[in our GitLab](https://gitlab.nic.cz/turris/os/packages/-/tree/master/hardware/omnia/omnia-firmware/files).
+What you are interested in are two binary files there - `rescue` and `uboot`.
+You can use them to boot your Omnia over the serial line or to reflash
+the content of your NOR memory.
 
 ## Booting
 
-For the purpose of this tutorial, it is assumed that you have all the binaries in
-your current working directory and that your serial line is _ttyUSB0_.
+For the purpose of this tutorial, it is assumed that you have all the binaries
+in your current working directory and that your serial line is _ttyUSB0_.
 
-1. Disconnect your Omnia from power supply
-2. Run `./sendbeacon /dev/ttyUSB0` and connect the power supply
-   * This will trigger the _boot over serial_ mode of your Omnia
-3. Run the following command
+1. Disconnect your Omnia from power supply.
+2. Run the following command.
 
 ```
-./kwboot -t -b uboot-devel -B 115200 /dev/ttyUSB0
+kwboot -t -b uboot /dev/ttyUSB0
 ```
 
-If everything works well, you should see U-Boot being transferred to your Omnia
-and once done, you'll see U-Boot prompt and you can use that to recover your
-device.
+3. Connect the power supply.
+   * kwboot will trigger the _boot over serial_ mode of your Omnia automatically
+
+If everything works well, you should see the U-Boot being transferred to your
+Omnia and once done, you'll see U-Boot prompt and you can use that to recover
+your device.
 
 Sometimes the `kwboot` command fails on the first try, but you can just run it
 again and again till it succeeds.
 
+You may append additional argument `-B 1500000` to increase transfer speed.
+The default speed is 115200 bauds/sec. Omnia supports speeds up to the 5200000
+bauds/sec, but not all serial cables can handle such high speed modes.
+
 ## NOR recovery
 
-Once you have U-Boot running, you can get various images for example via tftp
-and write it to nor.
+Once you have U-Boot running, you can get various images, for example via an USB
+flash disk, tftp, serial console and write it to nor.
 
-To download image from TFTP server you need to get your network started,
-decide where to load it and load it. Assuming you have TFTP server running on
-computer with ip 192.168.1.1 on WAN network, following U-Boot commands will get
-you file named `image` into RAM.
+### Transfer via USB flash disk
+
+Copy the image to a FAT-formatted USB flash disk, connect it to the Omnia USB
+port and run the following commands:
+
+```
+usb start
+fatload usb 0 ${loadaddr} image
+usb stop
+```
+
+### Transfer from TFTP server
+
+To download an image from TFTP server you need to get your network started,
+decide where to load it and load it. Assuming you have a TFTP server running on
+a computer with IP 192.168.1.1 on a WAN network, the following U-Boot commands
+will get you a file named `image` into the RAM.
 
 ```
 setenv autoload no
 dhcp
 setenv serverip 192.168.1.1
-tftpboot ${kernel_addr_r} image
+tftpboot ${loadaddr} image
 ```
 
-Now you have a file originally called `image` in RAM on your router. To write
-to NOR you have to know where it belongs.
+### Transfer via serial console
+
+Alternativelly, you can transfer the image over the serial console via
+the x-modem protocol. For this purpose you need the additional **sx** tool
+from the `lrzsz` package.
+
+1. Switch the U-Boot terminal from the command to the x-modem file transfer
+    mode.
+
+```
+loadx
+```
+
+2. Disconnected from theU-Boot terminal.
+   * If using kwboot, press **CTRL+\\** followed by **c**.
+
+3. From the Linux console start x-modem file transfer for the file named
+    `image`.
+
+```
+sh -c 'exec 0<>/dev/ttyUSB0 1>&0; sx image'
+```
+
+4. After transfer finish, connect back to the U-Boot terminal.
+   * You can connect via kwboot by omitting `-b` option: `kwboot -t /dev/ttyUSB0`
+
+### Write image to NOR
+
+Now you have a file originally called `image` in the RAM on your router.
+To write to the NOR you have to know where it belongs.
 
 !!! warning
-    Make sure you don't mix old U-Boot with new rescue system or new U-Boot with
-    old Turris OS, it might not work, try to keep everything on the latest
-    version if you are reflashing.
+    Make sure you don't mix an old U-Boot with the new rescue system or the new
+    U-Boot with an old Turris OS, it might not work. Try to keep everything on
+    the latest version if you are reflashing.
 
-To reflash U-Boot, your image file on TFTP will be `uboot-devel` file from
-_[Images](#u-boot)_ section and you need to write it from the beginning of the
-NOR.
-
-```
-sf probe
-sf update ${kernel_addr_r} 0 ${filesize}
-```
-
-To recover rescue system, your image file will be `image.fit.lzma` from
-_[Images](#rescue-image)_ section and you need to start writing it after the first megabyte
-that is reserved for U-Boot.
+To reflash U-Boot, your image file on TFTP will be the `uboot` file from
+the _[Images](#u-boot)_ section and you need to write it from the beginning of
+the NOR.
 
 ```
 sf probe
-sf update ${kernel_addr_r} 0x00100000 ${filesize}
+sf update ${loadaddr} 0 ${filesize}
 ```
 
-After that, you can call `reset` command or hit a reset button and see your
-router booting again.
+To recover the rescue system, your image file will be `rescue` from
+the _[Images](#rescue-image)_ section and you need to start writing it after
+the first megabyte that is reserved for U-Boot.
 
+```
+sf probe
+sf update ${loadaddr} 0x00100000 ${filesize}
+```
+
+After that, you can call the `reset` command or hit the reset button and see
+your router booting again.
