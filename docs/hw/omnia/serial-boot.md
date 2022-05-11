@@ -79,7 +79,7 @@ port and run the following commands:
 
 ```
 usb start
-fatload usb 0 ${loadaddr} image
+fatload usb 0 ${kernel_addr_r} image
 usb stop
 ```
 
@@ -94,7 +94,7 @@ will get you a file named `image` into the RAM.
 setenv autoload no
 dhcp
 setenv serverip 192.168.1.1
-tftpboot ${loadaddr} image
+tftpboot ${kernel_addr_r} image
 ```
 
 ### Transfer via serial console
@@ -139,7 +139,7 @@ the NOR.
 
 ```
 sf probe
-sf update ${loadaddr} 0 ${filesize}
+sf update ${kernel_addr_r} 0 ${filesize}
 ```
 
 To recover the rescue system, your image file will be `rescue` from
@@ -148,7 +148,7 @@ the first megabyte that is reserved for U-Boot.
 
 ```
 sf probe
-sf update ${loadaddr} 0x00100000 ${filesize}
+sf update ${kernel_addr_r} 0x00100000 ${filesize}
 ```
 
 After that, you can call the `reset` command or hit the reset button and see
