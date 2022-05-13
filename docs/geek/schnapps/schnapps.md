@@ -287,9 +287,9 @@ As meant in the above paragraphs, schnapps is configurable and some commands req
 prepared before using them. There are those parameters:
 
 * `keep.max_single` – maximum number of snapshots of the "single" type to be kept after cleaning
-* `keep.max_time` – maximum number of snapshots of the "single" type to be kept after cleaning
-* `keep.max_updater` – maximum number of snapshots of the "single" type to be kept after cleaning
-* `keep.max_rollback` – maximum number of snapshots of the "single" type to be kept after cleaning
+* `keep.max_time` – maximum number of snapshots of the "time" type to be kept after cleaning
+* `keep.max_updater` – maximum number of snapshots of the "pre" and "post" types to be kept after cleaning
+* `keep.max_rollback` – maximum number of snapshots of the "rollback" type to be kept after cleaning
 * `remote.url` – URL for accessing the remote server
 * `remote.path` – the directory path to be used for uploading and synchronizing snapshots
 * `remote.user` – the user name to log in to the remote server
