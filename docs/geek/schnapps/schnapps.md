@@ -204,11 +204,12 @@ file system state as well (but it is not recommended because it may be inconsist
 ```
 schnapps export /mnt/usb
 ```
-While exporting snapshots you can symmetrically encrypt the resulting tarball. It works only if you have your
-[GPG](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)
-key properly prepared and the password is set in the configuration file (see below).
+While exporting snapshots you can symmetrically encrypt the resulting tarball. It works only if you have the "gnupg" package installed and the encryption password is set in the configuration file (see below).
 
-The resulting tarball will have a name such as `omnia-medkit-9.tar.gz.gpg`.
+The resulting tarball will have a name such as `omnia-medkit-9.tar.gz.gpg`. To be able to import an encrypted tarball, it is necessary to decrypt it first using [GPG](https://en.wikipedia.org/wiki/GNU_Privacy_Guard):
+```
+gpg1 --decrypt omnia-medkit-9.tar.gz.gpg > omnia-medkit-9.tar.gz
+```
 
 If you want to import a previously exported snapshot you can simply run something like:
 ```
@@ -293,7 +294,7 @@ prepared before using them. There are those parameters:
 * `remote.path` – the directory path to be used for uploading and synchronizing snapshots
 * `remote.user` – the user name to log in to the remote server
 * `remote.password` – the password to log in to the remote server
-* `encrypt.pass` – the GPG key password to be used for encryption
+* `encrypt.pass` – the password to be used for encryption
 
 A real configuration file would look like this:
 
@@ -318,7 +319,7 @@ config encrypt 'encrypt'
 This configuration means that "single" type snapshots are retained infinitely, last five "time" type snapshots are
 kept, last five updater snapshots ("pre" and "post") and last three "rollback" snapshots. Remote synchronization
 uses the given Nextcloud URL, path, user name and password; "single" and "time" snapshots are included in the
-synchronization. Encrypted snapshots are encrypted using the given key password.
+synchronization. Encrypted snapshots are encrypted using the given password.
 
 ### Another filesystem root
 
