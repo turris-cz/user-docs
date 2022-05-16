@@ -91,10 +91,16 @@ configuration parameters:
 * _Listen on IPv6_ – Leave unchecked only if your IPv6 connection is broken.
 * _Protocol_ – Change only if your ISP limits UDP transmission (this practice
   is defective by nature but some ISPs even do so).
-* _VPN network address – The default address range is almost always suitable.
-  In very rare cases, your LAN or your ISP can use these addresses. Then the
-  network address and the netmask has to be changed to the address not used
-  in the network.
+* _VPN network address_ – Leave unchanged in all common cases. If your
+  local network uses addresses from the range 10.111.111.0-254 (in other
+  words, 10.111.111.0/24 or 10.111.111.0/255.255.255.0) you will need to use
+  another network address (e.g. 10.99.98.0) for VPN; it must not be used in
+  your network. Use only addresses intended for
+  [private networks](https://en.wikipedia.org/wiki/IPv4#Private_networks).
+  The network mask must correspond to the address range you use. For example,
+  the default mask is for addresses ending with .0 to .254. You can find
+  more information e.g. on
+  [Wikipedia](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#IPv4_CIDR_blocks=).
 * _VPN network mask_ – See the information above.
 * _Route all traffic via VPN_ – Check only if you want all your traffic to
   the Internet to be routed over your VPN. For example, you need to connect
