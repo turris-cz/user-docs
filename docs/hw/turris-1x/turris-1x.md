@@ -18,11 +18,11 @@ modem inside.
 
 ### Turris 1.0
 
-![Turris 1.0 board](turris-10.jpg)
+![Turris 1.0 router](turris-10.jpg)
 
 ### Turris 1.1
 
-![Turris 1.1 board](turris-11.jpg)
+![Turris 1.1 router](turris-11.jpg)
 
 ## Network interfaces
 
