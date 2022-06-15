@@ -152,6 +152,15 @@ For all MOX modules we also provide schematics
  * [MOX SDIO WiFi](Turris-Mox-SDIO-WIFI.pdf)
  * [MOX PoE](Turris-Mox-PoE.pdf)
 
+## NVMe adapter documents
+
+The following manufacturing documents pertain to the adapter intended for
+NVMe disks in B and G modules.
+
+ * [PCB assembly layout](nvme-adapter/CZ28NIC02_Assembly.PDF)
+ * [Part references](nvme-adapter/CZ28NIC0200.xlsx)
+ * [Various manufacturing definitions](nvme-adapter/CZ28NIC0200.xlsx)
+
 ## Declaration of Conformity
 
 Turris MOX adheres to EU legislation. You can get download [Declaration of Conformity](MOX-DoC.pdf).
