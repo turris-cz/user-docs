@@ -49,12 +49,13 @@ in your current working directory and that your serial line is _ttyUSB0_.
 1. Disconnect your Omnia from power supply.
 2. Run the following command.
 
-```
-kwboot -t -b uboot /dev/ttyUSB0
-```
+    ```
+    kwboot -t -b uboot /dev/ttyUSB0
+    ```
 
 3. Connect the power supply.
-   * kwboot will trigger the _boot over serial_ mode of your Omnia automatically
+
+    kwboot will trigger the _boot over serial_ mode of your Omnia automatically
 
 If everything works well, you should see the U-Boot being transferred to your
 Omnia and once done, you'll see U-Boot prompt and you can use that to recover
@@ -106,22 +107,24 @@ from the `lrzsz` package.
 1. Switch the U-Boot terminal from the command to the x-modem file transfer
     mode.
 
-```
-loadx
-```
+    ```
+    loadx
+    ```
 
 2. Disconnected from theU-Boot terminal.
-   * If using kwboot, press **CTRL+\\** followed by **c**.
+
+    If using kwboot, press **CTRL+\\** followed by **c**.
 
 3. From the Linux console start x-modem file transfer for the file named
     `image`.
 
-```
-sh -c 'exec 0<>/dev/ttyUSB0 1>&0; sx image'
-```
+    ```
+    sh -c 'exec 0<>/dev/ttyUSB0 1>&0; sx image'
+    ```
 
 4. After transfer finish, connect back to the U-Boot terminal.
-   * You can connect via kwboot by omitting `-b` option: `kwboot -t /dev/ttyUSB0`
+
+    You can connect via kwboot by omitting `-b` option: `kwboot -t /dev/ttyUSB0`
 
 ### Write image to NOR
 
