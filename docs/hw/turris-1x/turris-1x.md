@@ -40,3 +40,4 @@ are connected to a fully manageable switch as shown on the picture bellow.
 * [Complete HW documentation for Turris 1.1](CZ-NIC-Router-TURRIS-version-1-1.zip)
 * [STM32F0 Power Control firmware](https://gitlab.nic.cz/turris/hw/turris_power_control)
 * [Lattice CPLD firmware](https://gitlab.nic.cz/turris/hw/turris_cpld)
+* [Description of CPLD registers](turris-CPLD-registers.pdf)
