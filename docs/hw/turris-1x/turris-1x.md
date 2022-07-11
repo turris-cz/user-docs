@@ -35,7 +35,7 @@ are connected to a fully manageable switch as shown on the picture bellow.
 ## Various documentation files
 
 * [Printed manual (Czech)](turris-uzivatelska-prirucka.pdf)
-* [Turris 1.X Pinout](turris-pinout.pdf)
+* [Description of connectors and DIP switches for Turris 1.0](turris10-pinout.pdf)
 * [Complete HW documentation for Turris 1.0](CZ-NIC-Router-TURRIS-version-1.zip)
 * [Complete HW documentation for Turris 1.1](CZ-NIC-Router-TURRIS-version-1-1.zip)
 * [STM32F0 Power Control firmware](https://gitlab.nic.cz/turris/hw/turris_power_control)
