@@ -242,11 +242,11 @@ register there and log in and then add their own SFP module, which they tried.
 You can find many mini PCIe Wi-FI cards, which you can use in Turris routers, but they need to be
 supported in OpenWrt and Linux kernel. We tested the following mini PCIe Wi-Fi cards, which we support.
 
-- WNC DNXA-H1 (802.11n)
-- Compex WLE200N2 (2.4 GHz only)
-- Compex WLE900VX (802.11ac Wave 1)
-- AsiaRF AW7615-NP1 (802.11ac Wave 2, MU-MIMO)
-- AsiaRF AW7915-NP1 (802.11ax) since Turris OS 6.0
+- WNC DNXA-H1 (Wi-Fi 4 works at 2.4 GHz or 5 GHz)
+- Compex WLE200N2 (Wi-Fi 4 only 2.4 GHz)
+- Compex WLE900VX (Wi-Fi 5 Wave 1)
+- AsiaRF AW7615-NP1 (Wi-Fi 5 Wave 2, MU-MIMO)
+- AsiaRF AW7915-NP1 (Wi-Fi 6) since Turris OS 6.0
 
 #### Cellular network (LTE/5G)
 
