@@ -22,7 +22,6 @@ function render_changelog(changelog, element) {
             const releaseNotesList = document.getElementById(`release-notes-${release.name}`);
             const newListItem = document.createElement("li");
             const newSubListItem = document.createElement("ul");
-            const firstChild = releaseNotesList.firstChild;
             const lastChild = releaseNotesList.lastChild;
 
             if (firstListItem) {
@@ -33,8 +32,7 @@ function render_changelog(changelog, element) {
             if (secondListItem) {
                 newListItem.innerHTML = secondListItem[1];
                 newSubListItem.appendChild(newListItem);
-                // Insert nested list item inside the first one
-                firstChild.insertAdjacentElement('beforeend', newSubListItem);
+                lastChild.insertAdjacentElement('beforeend', newSubListItem);
             }
 
             if (firstListItemEmoji) {
