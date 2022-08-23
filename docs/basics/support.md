@@ -95,6 +95,13 @@ diagnostics script.
     root@192.168.1.1:~$ turris-diagnostics | gzip > /tmp/diag.gz
     ```
 
+!!! warning
+    If you use some older version of Turris OS, the `turris-diagnostics` command may not be present. In this case, you will need to run the apropriate shell script manually:
+    ```shell
+    root@192.168.1.1:~$ /usr/share/diagnostics/diagnostics.sh | gzip > /tmp/diag.gz
+    ```
+
+
 3. Disconnect (using `Ctrl+D`).
 
 4. Copy the diagnostic file to your computer.
