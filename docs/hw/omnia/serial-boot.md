@@ -32,6 +32,20 @@ manager (e.g. on Debian/Ubuntu via `apt install u-boot-tools`, on Fedora
 Or you can get the binary for x86-64 CPU from
 [our repository](https://repo.turris.cz/omnia/nor_fw/x86_64/).
 
+!!! warning
+    For example, the version of `kwboot` is older than required in the current
+    Ubuntu version. In such case, you will need to download the binery
+    (for x86-64 CPU only) from our repository as mentioned. Save it to your
+    working directory and set it as runable:
+    ```
+    chmod +x kwboot
+    ```
+    Then, you can run it using `./kwboot` as follows:
+    ```
+    ./kwboot -t -b uboot /dev/ttyUSB0
+    ```
+
+
 ### Images
 
 You will also need the latest U-Boot image and the latest rescue system image.
