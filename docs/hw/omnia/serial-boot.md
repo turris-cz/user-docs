@@ -48,7 +48,6 @@ Or you can get the binary for x86-64 CPU from
     ./kwboot -t -b uboot /dev/ttyUSB0
     ```
 
-
 ### Images
 
 You will also need the latest U-Boot image and the latest rescue system image.
@@ -74,6 +73,8 @@ in your current working directory and that your serial line is _ttyUSB0_.
 
     kwboot will trigger the _boot over serial_ mode of your Omnia automatically
 
+4. get ready to interrupt the booting process as described below
+
 If everything works well, you should see the U-Boot being transferred to your
 Omnia and once done, you'll see U-Boot prompt and you can use that to recover
 your device.
@@ -84,6 +85,17 @@ again and again till it succeeds.
 You may append additional argument `-B 1500000` to increase transfer speed.
 The default speed is 115200 bauds/sec. Omnia supports speeds up to the 5200000
 bauds/sec, but not all serial cables can handle such high speed modes.
+
+### Interrupting the booting process
+
+When you see the following message:
+
+```
+Hit any key to stop autoboot:
+```
+
+followed by a countdown from 3 to 0, do it. Now, you will get the U-Boot
+prompt as mentioned, introduced as `=>`.
 
 ## NOR recovery
 
