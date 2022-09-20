@@ -75,12 +75,13 @@ flash disk, tftp, serial console and write it to nor.
 
 ### Transfer via USB flash disk
 
-Copy the image to a FAT-formatted USB flash disk, connect it to the Omnia USB
+Copy the image to a FAT or EXT4 formatted USB flash disk, connect it to the Omnia USB
 port and run the following commands:
 
 ```
 usb start
-fatload usb 0 ${kernel_addr_r} image
+test -z "${loadaddr}" && setenv loadaddr 0x800000
+load usb 0 ${loadaddr} image
 usb stop
 ```
 
@@ -95,7 +96,8 @@ will get you a file named `image` into the RAM.
 setenv autoload no
 dhcp
 setenv serverip 192.168.1.1
-tftpboot ${kernel_addr_r} image
+test -z "${loadaddr}" && setenv loadaddr 0x800000
+tftpboot ${loadaddr} image
 ```
 
 ### Transfer via serial console
@@ -108,15 +110,16 @@ from the `lrzsz` package.
     mode.
 
     ```
-    loadx
+    test -z "${loadaddr}" && setenv loadaddr 0x800000
+    loadx ${loadaddr}
     ```
 
-2. Disconnected from theU-Boot terminal.
+2. Disconnected from the U-Boot terminal.
 
     If using kwboot, press **CTRL+\\** followed by **c**.
 
 3. From the Linux console start x-modem file transfer for the file named
-    `image`.
+    `image` via **sx** tool.
 
     ```
     sh -c 'exec 0<>/dev/ttyUSB0 1>&0; sx image'
@@ -137,21 +140,21 @@ To write to the NOR you have to know where it belongs.
     the latest version if you are reflashing.
 
 To reflash U-Boot, your image file on TFTP will be the `uboot` file from
-the _[Images](#u-boot)_ section and you need to write it from the beginning of
+the _[Images](#images)_ section and you need to write it from the beginning of
 the NOR.
 
 ```
 sf probe
-sf update ${kernel_addr_r} 0 ${filesize}
+sf update ${loadaddr} 0 ${filesize}
 ```
 
 To recover the rescue system, your image file will be `rescue` from
-the _[Images](#rescue-image)_ section and you need to start writing it after
+the _[Images](#images)_ section and you need to start writing it after
 the first megabyte that is reserved for U-Boot.
 
 ```
 sf probe
-sf update ${kernel_addr_r} 0x00100000 ${filesize}
+sf update ${loadaddr} 0x00100000 ${filesize}
 ```
 
 After that, you can call the `reset` command or hit the reset button and see
