@@ -102,15 +102,21 @@ prompt as mentioned, introduced as `=>`.
 Once you have U-Boot running, you can get various images, for example via an USB
 flash disk, tftp, serial console and write it to nor.
 
+!!! note
+    Do not forget to replace the `[image]` with the original file name (`rescue` or `uboot`)
+    in the following commands.
+
+
+
 ### Transfer via USB flash disk
 
-Copy the image to a FAT or EXT4 formatted USB flash disk, connect it to the Omnia USB
-port and run the following commands:
+Copy an image (`rescue` or/and `uboot` file) to a FAT or EXT4 formatted USB flash
+disk, connect it to the Omnia USB port and run the following commands:
 
 ```
 usb start
 test -z "${loadaddr}" && setenv loadaddr 0x800000
-load usb 0 ${loadaddr} image
+load usb 0 ${loadaddr} [image]
 usb stop
 ```
 
@@ -126,7 +132,7 @@ setenv autoload no
 dhcp
 setenv serverip 192.168.1.1
 test -z "${loadaddr}" && setenv loadaddr 0x800000
-tftpboot ${loadaddr} image
+tftpboot ${loadaddr} [image]
 ```
 
 ### Transfer via serial console
@@ -151,7 +157,7 @@ from the `lrzsz` package.
     `image` via **sx** tool.
 
     ```
-    sh -c 'exec 0<>/dev/ttyUSB0 1>&0; sx image'
+    sh -c 'exec 0<>/dev/ttyUSB0 1>&0; sx [image]'
     ```
 
 4. After transfer finish, connect back to the U-Boot terminal.
@@ -168,7 +174,7 @@ To write to the NOR you have to know where it belongs.
     U-Boot with an old Turris OS, it might not work. Try to keep everything on
     the latest version if you are reflashing.
 
-To reflash U-Boot, your image file on TFTP will be the `uboot` file from
+To reflash **U-Boot**, your image file on TFTP will be the `uboot` file from
 the _[Images](#images)_ section and you need to write it from the beginning of
 the NOR.
 
@@ -177,7 +183,7 @@ sf probe
 sf update ${loadaddr} 0 ${filesize}
 ```
 
-To recover the rescue system, your image file will be `rescue` from
+To recover the **rescue system**, your image file will be `rescue` from
 the _[Images](#images)_ section and you need to start writing it after
 the first megabyte that is reserved for U-Boot.
 
