@@ -326,3 +326,18 @@ which could improve the reboot behavior.
 
 The provided firmware from NXP for chipset 88W8997 has limitation that it is
 possible to create only 4 SSIDs and have a maximum of 8 concurrent clients connected to them.
+
+### Limitations of reForis UI interaction in Chromium-based browsers via HTTPS
+
+There is probably a [bug](https://crbug.com/1346579) in Chromium >= v91 or any
+other Chromium-based browsers that can lead to a limited
+[reForis](../basics/reforis/intro.md) UI interaction while using an `HTTPS`
+connection. You can get a `WSS` error in DevTools.
+
+For example, after some action (save/add) you will not immediately see the
+change, but after the page refresh, you do.
+
+We prepared a workaround to use a third-party library instead of a native
+implementation of WebSockets that will resolve this issue which will be added as
+soon as possible. As a temporary solution you can access the reForis UI over
+`HTTP`.
