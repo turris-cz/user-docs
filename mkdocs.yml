@@ -37,6 +37,7 @@ theme:
     language: 'en'
     features:
         - navigation.instant
+        - navigation.top
     font: false
     favicon: 'theme/img/favicon.ico'
     logo: 'theme/img/turris-logo.svg'
