@@ -38,6 +38,7 @@ theme:
     features:
         - navigation.instant
         - navigation.top
+        - toc.follow
     font: false
     favicon: 'theme/img/favicon.ico'
     logo: 'theme/img/turris-logo.svg'
