@@ -49,6 +49,10 @@ extra_css:
 
 # Plugins
 plugins:
+    - social:
+        cards_font: Roboto
+        cards_color:
+            fill: "#00a2e2"
     - search:
         lang: ['en']
         prebuild_index: False
