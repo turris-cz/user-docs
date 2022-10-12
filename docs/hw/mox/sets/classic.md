@@ -27,4 +27,4 @@ many reasons to fall in love:
 
 {% set conf = 'ASBWC' %}
 
-{% include 'hw/mox/sets/feature-list.md' %}
+{% include 'feature-list.md' %}

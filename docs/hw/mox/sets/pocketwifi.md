@@ -26,5 +26,5 @@ accessories. But there are many reasons to fall in love:
 
 {% set conf = 'AS' %}
 
-{% include 'hw/mox/sets/feature-list.md' %}
+{% include 'feature-list.md' %}
 

@@ -23,5 +23,5 @@ love:
 
 {% set conf = 'A' %}
 
-{% include 'hw/mox/sets/feature-list.md' %}
+{% include 'feature-list.md' %}
 
