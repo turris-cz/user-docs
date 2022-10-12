@@ -1,4 +1,29 @@
 <hr>
+<div class="md-source-file">
+    <div>
+        <!-- mkdocs-git-revision-date-localized-plugin -->
+        {% if page.meta.git_revision_date_localized %}
+        <span class="md-source-file__fact">
+            <span class="md-icon" title="Date of last update">
+                {% include ".icons/material/clock-edit-outline.svg" %}
+            </span>
+            {{ page.meta.git_revision_date_localized }}
+        </span>
+        {% if page.meta.git_creation_date_localized %}
+        <span class="md-source-file__fact"> 
+            <span class="md-icon" title="Date of creation">
+                {% include ".icons/material/clock-plus-outline.svg" %}
+            </span>
+            {{ page.meta.git_creation_date_localized }}
+        </span>
+        {% endif %}
+
+        <!-- mkdocs-git-revision-date-plugin -->
+        {% elif page.meta.revision_date %}
+            {{ lang.t("source.file.date.updated") }}:
+            {{ page.meta.revision_date }}
+        {% endif %}
+    </div>
 
 <div class="md-source-date">
   <small>Last update: {{ build_date_utc }}</small>
