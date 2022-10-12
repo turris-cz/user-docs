@@ -4,7 +4,7 @@ pyembed-markdown
 markdown-include
 markdown-toc
 markdown-extra
-mkdocs-git-revision-date-plugin
+mkdocs-git-revision-date-localized-plugin
 mkdocs-redirects
 mkdocs-include-markdown-plugin
 pymdown-extensions

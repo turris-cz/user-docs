@@ -56,8 +56,10 @@ plugins:
     - search:
         lang: ['en']
         prebuild_index: False
-    - git-revision-date:
-        modify_md: False
+    - git-revision-date-localized:
+        type: timeago
+        enable_creation_date: true
+        fallback_to_build_date: true
     - include-markdown:
     - redirects:
         redirect_maps:
