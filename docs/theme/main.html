@@ -45,17 +45,6 @@
     </a>
 {% endif %}
 
-<!-- Metadata -->
-{% if page and page.meta %}
-<div class="metadata md-content__button md-icon">
-    {% if page.meta.board %}
-    {% include "partials/board.html" %}
-    {% endif %}
-    {% if page.meta.competency %}
-    {% include "partials/competency.html" %}
-    {% endif %}
-</div>
-{% endif %}
 <!-- 
     Hack: check whether the content contains a h1 headline. If it
     doesn't, the page title (or respectively site name) is used
