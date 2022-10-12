@@ -14,7 +14,7 @@ site_description: Official Turris Documentation for Hardware & Software
 # Repository
 repo_url: 'https://gitlab.nic.cz/turris/user-docs'
 repo_name: 'turris/user-docs'
-edit_uri: 'https://gitlab.nic.cz/turris/user-docs/-/tree/master/docs'
+edit_uri: 'https://gitlab.nic.cz/-/ide/project/turris/user-docs/edit/master/-/docs'
 
 # Copyright
 copyright: CC-BY-SA-4.0
