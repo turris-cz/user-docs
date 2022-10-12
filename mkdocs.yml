@@ -12,19 +12,19 @@ site_author: CZ.NIC z.s.p.o.
 site_description: Official Turris Documentation for Hardware & Software
 
 # Repository
-repo_url: 'https://gitlab.nic.cz/turris/user-docs'
-repo_name: 'turris/user-docs'
-edit_uri: 'https://gitlab.nic.cz/-/ide/project/turris/user-docs/edit/master/-/docs'
+repo_url: https://gitlab.nic.cz/turris/user-docs
+repo_name: user-docs
+edit_uri: https://gitlab.nic.cz/-/ide/project/turris/user-docs/edit/master/-/docs
 
 # Copyright
 copyright: CC-BY-SA-4.0
 
 # Configuration
 theme:
-    name: 'material'
-    custom_dir: 'docs/theme'
+    name: material
+    custom_dir: docs/theme
     palette:
-        - media: "(prefers-color-scheme: light)" # automatically set the color palette to the user's system preference
+        - media: "(prefers-color-scheme: light)" # automatically set the color palette to the users system preference
           scheme: turris
           toggle:
             icon: material/toggle-switch-off-outline
@@ -34,18 +34,20 @@ theme:
           toggle:
             icon: material/toggle-switch
             name: Switch to light mode
-    language: 'en'
+    language: en
     features:
         - navigation.instant
         - navigation.top
         - toc.follow
     font: false
-    favicon: 'theme/img/favicon.ico'
-    logo: 'theme/img/turris-logo.svg'
+    favicon: theme/img/favicon.ico
+    logo: theme/img/turris-logo.svg
+    icon:
+        repo: fontawesome/brands/git-alt
 
 # Extra stylesheets
 extra_css:
-    - 'theme/css/turris.css'
+    - theme/css/turris.css
 
 # Plugins
 plugins:
@@ -54,7 +56,7 @@ plugins:
         cards_color:
             fill: "#00a2e2"
     - search:
-        lang: ['en']
+        lang: [en]
         prebuild_index: False
     - git-revision-date-localized:
         type: timeago
@@ -63,27 +65,27 @@ plugins:
     - include-markdown:
     - redirects:
         redirect_maps:
-            'basics/collect/collect.md' : 'basics/sentinel/threat-detection.md'
-            'basics/collect/haas.md' : 'basics/sentinel/haas.md'
-            'basics/collect/setup.md' : 'basics/sentinel/setup.md'
-            'basics/collect/setup-shield.md' : 'basics/sentinel/setup-shield.md'
-            'basics/collect/dynfw/collect-dynfw.md' : 'basics/sentinel/dynfw.md'
-            'basics/common_errors.md': 'basics/common-errors.md'
-            'basics/first-setup/mox_cpu_only.md': 'basics/first-setup/mox-cpu-only.md'
-            'basics/first-setup/mox_first_setup_warning.md': 'basics/first-setup/mox-first-setup-warning.md'
-            'basics/first-setup/mox_first_setup.md': 'basics/first-setup/mox-first-setup.md'
-            'basics/first-setup/shield_first_setup.md': 'basics/first-setup/shield-first-setup.md'
-            'basics/first-setup/simple_setup.md': 'basics/first-setup/simple-setup.md'
-            'basics/foris/wan/foris_wan.md': 'basics/foris/wan/foris-wan.md'
-            'basics/luci/static_dhcp/static_dhcp.md': 'basics/luci/static-dhcp/static-dhcp.md'
-            'basics/luci/vlan/luci_vlan.md': 'basics/luci/vlan/luci-vlan.md'
-            'basics/tos_versions.md': 'basics/tos-versions.md'
-            'geek/contributing/pull_request.md': 'geek/contributing/pull-request.md'
-            'geek/tos3_migration.md': 'geek/tos3-migration.md'
-            'hw/mox/rescue_modes.md': 'hw/mox/rescue-modes.md'
-            'hw/mox/sets/feature_list.md': 'hw/mox/sets/feature-list.md'
-            'hw/mox/sets/generic_mox.md': 'hw/mox/sets/generic-mox.md'
-            'hw/omnia/rescue_modes.md': 'hw/omnia/rescue-modes.md'
+            basics/collect/collect.md : basics/sentinel/threat-detection.md
+            basics/collect/haas.md : basics/sentinel/haas.md
+            basics/collect/setup.md : basics/sentinel/setup.md
+            basics/collect/setup-shield.md : basics/sentinel/setup-shield.md
+            basics/collect/dynfw/collect-dynfw.md : basics/sentinel/dynfw.md
+            basics/common_errors.md: basics/common-errors.md
+            basics/first-setup/mox_cpu_only.md: basics/first-setup/mox-cpu-only.md
+            basics/first-setup/mox_first_setup_warning.md: basics/first-setup/mox-first-setup-warning.md
+            basics/first-setup/mox_first_setup.md: basics/first-setup/mox-first-setup.md
+            basics/first-setup/shield_first_setup.md: basics/first-setup/shield-first-setup.md
+            basics/first-setup/simple_setup.md: basics/first-setup/simple-setup.md
+            basics/foris/wan/foris_wan.md: basics/foris/wan/foris-wan.md
+            basics/luci/static_dhcp/static_dhcp.md: basics/luci/static-dhcp/static-dhcp.md
+            basics/luci/vlan/luci_vlan.md: basics/luci/vlan/luci-vlan.md
+            basics/tos_versions.md: basics/tos-versions.md
+            geek/contributing/pull_request.md: geek/contributing/pull-request.md
+            geek/tos3_migration.md: geek/tos3-migration.md
+            hw/mox/rescue_modes.md: hw/mox/rescue-modes.md
+            hw/mox/sets/feature_list.md: hw/mox/sets/feature-list.md
+            hw/mox/sets/generic_mox.md: hw/mox/sets/generic-mox.md
+            hw/omnia/rescue_modes.md: hw/omnia/rescue-modes.md
     - minify:
         minify_html: true
         htmlmin_opts:
@@ -92,14 +94,14 @@ plugins:
 # Customization
 extra:
     social:
-        - icon: 'fontawesome/solid/globe'
-          link: 'https://turris.cz'
-        - icon: 'fontawesome/brands/gitlab'
-          link: 'https://gitlab.nic.cz/turris'
-        - icon: 'fontawesome/brands/github'
-          link: 'https://github.com/CZ-NIC'
-        - icon: 'fontawesome/brands/twitter'
-          link: 'https://twitter.com/turris_cz'
+        - icon: fontawesome/solid/globe
+          link: https://turris.cz
+        - icon: fontawesome/brands/gitlab
+          link: https://gitlab.nic.cz/turris
+        - icon: fontawesome/brands/github
+          link: https://github.com/CZ-NIC
+        - icon: fontawesome/brands/twitter
+          link: https://twitter.com/turris_cz
 
 # Extensions
 markdown_extensions:
@@ -114,129 +116,129 @@ markdown_extensions:
     - pymdownx.superfences
     - codehilite
     - markdown_jinja:
-        fs_loader_dir: 'docs'
+        fs_loader_dir: docs
     - smarty
     - toc:
-        permalink: '⚓︎'
+        permalink: ⚓︎
     - wikilinks
     - admonition
     - pyembed.markdown
 
 # Page tree
 nav:
-- Introduction: 'index.md'
+- Introduction: index.md
 - First setup:
-    - 'MOX': 'basics/first-setup/mox-first-setup.md'
-    - 'Shield': 'basics/first-setup/shield-first-setup.md'
-    - 'Turris 1.X and Omnia': 'basics/first-setup/simple-setup.md'
-    - 'Ethernetless configuration': 'basics/first-setup/ethernetless.md'
-    - 'First steps after setup': 'basics/first-setup/after-setup.md'
+    - MOX: basics/first-setup/mox-first-setup.md
+    - Shield: basics/first-setup/shield-first-setup.md
+    - Turris 1.X and Omnia: basics/first-setup/simple-setup.md
+    - Ethernetless configuration: basics/first-setup/ethernetless.md
+    - First steps after setup: basics/first-setup/after-setup.md
 - Software:
-    - 'Landing page': 'basics/landing-page.md'
+    - Landing page: basics/landing-page.md
     - Sentinel:
-        - Introduction: 'basics/sentinel/intro.md'
-        - Dynamic Firewall: 'basics/sentinel/dynfw.md'
-        - Threat Detection: 'basics/sentinel/threat-detection.md'
-        - Setup: 'basics/sentinel/setup.md'
-        - Setup on Shield: 'basics/sentinel/setup-shield.md'
-        - HaaS: 'basics/sentinel/haas.md'
+        - Introduction: basics/sentinel/intro.md
+        - Dynamic Firewall: basics/sentinel/dynfw.md
+        - Threat Detection: basics/sentinel/threat-detection.md
+        - Setup: basics/sentinel/setup.md
+        - Setup on Shield: basics/sentinel/setup-shield.md
+        - HaaS: basics/sentinel/haas.md
     - reForis:
-        - About: 'basics/reforis/intro.md'
-        - 'Secure access': 'basics/reforis/https/https.md'
+        - About: basics/reforis/intro.md
+        - Secure access: basics/reforis/https/https.md
         - Network:
-            - 'Wi-Fi': 'basics/reforis/wifi/reforis-wifi.md'
-            - WAN: 'basics/reforis/wan/reforis-wan.md'
-            - LAN: 'basics/reforis/lan/reforis-lan.md'
-            - DNS: 'basics/reforis/dns/reforis-dns.md'
-            - Interfaces: 'basics/reforis/interfaces/interfaces.md'
-            - 'Guest Network': 'basics/reforis/guest-network/guest-network.md'
+            - Wi-Fi: basics/reforis/wifi/reforis-wifi.md
+            - WAN: basics/reforis/wan/reforis-wan.md
+            - LAN: basics/reforis/lan/reforis-lan.md
+            - DNS: basics/reforis/dns/reforis-dns.md
+            - Interfaces: basics/reforis/interfaces/interfaces.md
+            - Guest Network: basics/reforis/guest-network/guest-network.md
         - Administration:
-            - Notifications: 'basics/reforis/notifications/reforis-notifications.md'
-            - Hostname: 'basics/reforis/hostname/hostname.md'
-            - Updates: 'basics/reforis/updates/reforis-updates.md'
-        - 'Factory reset': 'basics/reforis/factory-reset/factory-reset.md'
-        - Storage: 'basics/reforis/storage-plugin/storage-plugin.md'
+            - Notifications: basics/reforis/notifications/reforis-notifications.md
+            - Hostname: basics/reforis/hostname/hostname.md
+            - Updates: basics/reforis/updates/reforis-updates.md
+        - Factory reset: basics/reforis/factory-reset/factory-reset.md
+        - Storage: basics/reforis/storage-plugin/storage-plugin.md
     - LuCI:
-        - Introduction: 'basics/luci/luci.md'
-        - Static IP: 'basics/luci/static-dhcp/static-dhcp.md'
-        - VLAN: 'basics/luci/vlan/luci-vlan.md'
+        - Introduction: basics/luci/luci.md
+        - Static IP: basics/luci/static-dhcp/static-dhcp.md
+        - VLAN: basics/luci/vlan/luci-vlan.md
     - Applications:
-        - 'NetMetr': 'basics/apps/netmetr.md'
-        - 'Nextcloud': 'geek/nextcloud/nextcloud.md'
-        - 'OpenVPN server': 'basics/apps/openvpn-server/openvpn.md'
-        - 'OpenVPN client': 'basics/apps/openvpn-client/openvpn.md'
-        - 'PaKon': 'basics/apps/pakon.md'
-        - 'Sentinel': 'basics/apps/sentinel.md'
-        - 'Atlas probe': 'basics/apps/atlas.md'
+        - NetMetr: basics/apps/netmetr.md
+        - Nextcloud: geek/nextcloud/nextcloud.md
+        - OpenVPN server: basics/apps/openvpn-server/openvpn.md
+        - OpenVPN client: basics/apps/openvpn-client/openvpn.md
+        - PaKon: basics/apps/pakon.md
+        - Sentinel: basics/apps/sentinel.md
+        - Atlas probe: basics/apps/atlas.md
     - Advanced:
-        - 'LXC': 'geek/lxc/lxc.md'
-        - 'Netboot': 'basics/apps/netboot.md'
-        - 'Schnapps': 'geek/schnapps/schnapps.md'
-        - 'Btrfs migration': 'geek/btrfs_turris1x.md'
-        - 'Netdata': 'geek/netdata/netdata.md'
+        - LXC: geek/lxc/lxc.md
+        - Netboot: basics/apps/netboot.md
+        - Schnapps: geek/schnapps/schnapps.md
+        - Btrfs migration: geek/btrfs_turris1x.md
+        - Netdata: geek/netdata/netdata.md
     - Legacy:
         - Foris:
-            - About: 'basics/foris/intro.md'
-            - 'Secure access': 'basics/foris/https/https.md'
-            - WAN: 'basics/foris/wan/foris-wan.md'
-            - LAN: 'basics/foris/lan/foris-lan.md'
-            - DNS: 'basics/foris/dns/foris-dns.md'
-            - 'Guest network': 'basics/foris/guest-network/guest-network.md'
-            - 'Storage': 'basics/foris/storage-plugin/storage-plugin.md'
-    - 'OS versions':
-        - Versions: 'basics/tos-versions.md'
-        - Changelog: 'basics/changelog.md'
-        - 'Early access': 'geek/testing.md'
-        - '3.x migration': 'geek/tos3-migration.md'
-    - 'Security':
-        - 'Passwords': 'security/passwords.md'
-        - 'Password filter': 'security/common-passwords.md'
+            - About: basics/foris/intro.md
+            - Secure access: basics/foris/https/https.md
+            - WAN: basics/foris/wan/foris-wan.md
+            - LAN: basics/foris/lan/foris-lan.md
+            - DNS: basics/foris/dns/foris-dns.md
+            - Guest network: basics/foris/guest-network/guest-network.md
+            - Storage: basics/foris/storage-plugin/storage-plugin.md
+    - OS versions:
+        - Versions: basics/tos-versions.md
+        - Changelog: basics/changelog.md
+        - Early access: geek/testing.md
+        - 3.x migration: geek/tos3-migration.md
+    - Security:
+        - Passwords: security/passwords.md
+        - Password filter: security/common-passwords.md
     - Contributing:
-        - Overview: 'geek/contributing/overview.md'
-        - Translation: 'geek/contributing/translation.md'
-        - Issues: 'geek/contributing/issues.md'
-        - "Pull requests": 'geek/contributing/pull-request.md'
-        - "Coding style": 'geek/contributing/style.md'
-        - "Repositories": 'geek/contributing/repositories.md'
+        - Overview: geek/contributing/overview.md
+        - Translation: geek/contributing/translation.md
+        - Issues: geek/contributing/issues.md
+        - Pull requests: geek/contributing/pull-request.md
+        - Coding style: geek/contributing/style.md
+        - Repositories: geek/contributing/repositories.md
 - Hardware:
-    - Models: 'basics/models.md'
+    - Models: basics/models.md
     - MOX:
-        - About: 'hw/mox/intro.md'
+        - About: hw/mox/intro.md
         - Sets:
-            - 'Start': 'hw/mox/sets/start.md'
-            - 'Pocket Wi-Fi': 'hw/mox/sets/pocketwifi.md'
-            - 'Power Wi-Fi': 'hw/mox/sets/powerwifi.md'
-            - 'Classic': 'hw/mox/sets/classic.md'
+            - Start: hw/mox/sets/start.md
+            - Pocket Wi-Fi: hw/mox/sets/pocketwifi.md
+            - Power Wi-Fi: hw/mox/sets/powerwifi.md
+            - Classic: hw/mox/sets/classic.md
         - Modules:
-            - 'MOX A (Basic)': 'hw/mox/modules/a.md'
-            - 'MOX B (Extension)': 'hw/mox/modules/b.md'
-            - 'MOX C (Ethernet)': 'hw/mox/modules/c.md'
-            - 'MOX D (SFP)': 'hw/mox/modules/d.md'
-            - 'MOX E (Super Ethernet)': 'hw/mox/modules/e.md'
-            - 'MOX F (USB)': 'hw/mox/modules/f.md'
-            - 'MOX G (Super Extension)': 'hw/mox/modules/g.md'
-        - Add-ons: 'hw/mox/addons.md'
-        - Hardware details: 'hw/mox/hw.md'
+            - MOX A (Basic): hw/mox/modules/a.md
+            - MOX B (Extension): hw/mox/modules/b.md
+            - MOX C (Ethernet): hw/mox/modules/c.md
+            - MOX D (SFP): hw/mox/modules/d.md
+            - MOX E (Super Ethernet): hw/mox/modules/e.md
+            - MOX F (USB): hw/mox/modules/f.md
+            - MOX G (Super Extension): hw/mox/modules/g.md
+        - Add-ons: hw/mox/addons.md
+        - Hardware details: hw/mox/hw.md
     - Omnia:
-        - About: 'hw/omnia/omnia.md'
-        - Revisions: 'hw/omnia/revisions.md'
-        - 'Boot from SSD': 'hw/omnia/ssd-boot.md'
+        - About: hw/omnia/omnia.md
+        - Revisions: hw/omnia/revisions.md
+        - Boot from SSD: hw/omnia/ssd-boot.md
     - Shield:
-        - About: 'hw/shield/shield.md'
-        - Screenshots: 'hw/shield/screenshots.md'
-    - Turris 1.X: 'hw/turris-1x/turris-1x.md'
-    - 'Wi-Fi coverage': 'hw/wifi.md'
+        - About: hw/shield/shield.md
+        - Screenshots: hw/shield/screenshots.md
+    - Turris 1.X: hw/turris-1x/turris-1x.md
+    - Wi-Fi coverage: hw/wifi.md
 - Troubleshooting:
-    - 'Common errors': 'basics/common-errors.md'
+    - Common errors: basics/common-errors.md
     - Rescue modes:
-        - 'MOX': 'hw/mox/rescue-modes.md'
-        - 'Omnia': 'hw/omnia/rescue-modes.md'
-        - 'Shield': 'hw/shield/rescue-modes.md'
-        - 'Turris 1.X': 'hw/turris-1x/factory-reset.md'
-    - MOX MicroSD: 'hw/mox/microsd.md'
-    - 'Serial connection': 'hw/serial.md'
-    - 'Serial boot':
-        - 'MOX': 'hw/mox/serial-boot.md'
-        - 'Omnia': 'hw/omnia/serial-boot.md'
-    - Support: 'basics/support.md'
-- 'FAQ': 'basics/faq.md'
+        - MOX: hw/mox/rescue-modes.md
+        - Omnia: hw/omnia/rescue-modes.md
+        - Shield: hw/shield/rescue-modes.md
+        - Turris 1.X: hw/turris-1x/factory-reset.md
+    - MOX MicroSD: hw/mox/microsd.md
+    - Serial connection: hw/serial.md
+    - Serial boot:
+        - MOX: hw/mox/serial-boot.md
+        - Omnia: hw/omnia/serial-boot.md
+    - Support: basics/support.md
+- FAQ: basics/faq.md
