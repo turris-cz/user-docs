@@ -107,8 +107,6 @@ extra:
 markdown_extensions:
     - mdlightbox
     - meta
-    - markdown_include.include:
-        base_path: docs
     - admonition
     - cell_row_span
     - extra
