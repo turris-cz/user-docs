@@ -24,7 +24,7 @@ theme:
     name: material
     custom_dir: docs/theme
     palette:
-        - media: "(prefers-color-scheme: light)" # automatically set the color palette to the users system preference
+        - media: "(prefers-color-scheme: light)"
           scheme: turris
           toggle:
             icon: material/toggle-switch-off-outline
@@ -63,6 +63,8 @@ plugins:
         enable_creation_date: true
         fallback_to_build_date: true
     - include-markdown:
+        opening_tag: "{!"
+        closing_tag: "!}"    
     - redirects:
         redirect_maps:
             basics/collect/collect.md : basics/sentinel/threat-detection.md
@@ -119,8 +121,6 @@ markdown_extensions:
     - toc:
         permalink: ⚓︎
     - wikilinks
-    - admonition
-    - pyembed.markdown
 
 # Page tree
 nav:

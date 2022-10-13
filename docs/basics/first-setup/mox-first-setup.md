@@ -5,7 +5,7 @@ board: mox
 
 ## Before you start
 
-{! basics/first-setup/mox-first-setup-warning.md !}
+{! include-markdown 'basics/first-setup/mox-first-setup-warning.md' !}
 
 ## Connecting cables
 
@@ -30,7 +30,7 @@ to setup the MOX) to one of the available LAN ports.
     through the update procedure and connect other untrusted devices only
     afterwards.
 
-{! basics/first-setup/cables.md !}
+{! include-markdown 'basics/first-setup/cables.md' !}
 
 !!! tip
     There is also a way to configure Turris Mox over Wi-Fi by using [a configuration
