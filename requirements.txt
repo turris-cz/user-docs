@@ -1,14 +1,15 @@
 mkdocs
+# theme
 mkdocs-material>=8.0.0
-pyembed-markdown
-markdown-include
-markdown-toc
-markdown-extra
+# extensions
 mkdocs-git-revision-date-localized-plugin
 mkdocs-redirects
 mkdocs-include-markdown-plugin
-pymdown-extensions
 mkdocs-minify-plugin
+markdown-toc
+markdown-extra
+pymdown-extensions
+# mkdocs-material: social cards dependancies
 pillow
 cairosvg
 # other extensions: forks
