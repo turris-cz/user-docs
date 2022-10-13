@@ -21,7 +21,7 @@ labels on the back of your router).
     first, go through the update procedure and connect other untrusted devices
     only afterwards.
 
-{! basics/first-setup/cables.md !}
+{! include-markdown './cables.md' !}
 
 Then start the router and open up a web browser and navigate to configuration
 wizard. It can be found by default on <http://192.168.1.1>. Older firmware do

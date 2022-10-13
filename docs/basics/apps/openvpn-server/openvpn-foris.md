@@ -9,11 +9,11 @@ competency: novice
     [reForis web interface](openvpn.md). This page is intended for information
     only.
 
-{%
+{!
   include-markdown "openvpn.md"
   start="<!--what-is-openvpn-start-->"
   end="<!--what-is-openvpn-end-->"
-%}
+!}
 
 ## How to set up OpenVPN server in Foris
 
@@ -96,11 +96,11 @@ The _Router address_ field must be filled if your router has only a private WAN 
 a public address (a 1:1 NAT is used or the OpenVPN port is forwarded through the NAT). **This must be set before you
 download the client configuration files.**
 
-{%
+{!
   include-markdown "openvpn.md"
   start="<!--openvpn-client-side-start-->"
   end="<!--openvpn-client-side-end-->"
-%}
+!}
 
 !!! tip
     If you want to setup your Turris as an OpenVPN client, please read [OpenVPN client](../openvpn-client/openvpn.md).

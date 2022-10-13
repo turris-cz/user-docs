@@ -11,7 +11,7 @@ slot
 
 ## About
 
-{! hw/mox/sets/generic-mox.md !}
+{! include-markdown './generic-mox.md' !}
 
 This set consists of [MOX A (Basic)](../modules/a.md), a power source and a
 microSD card, representing the basic building block of the modular solution
@@ -23,5 +23,5 @@ love:
 
 {% set conf = 'A' %}
 
-{% include 'feature-list.md' %}
+{! include-markdown './feature-list.md' !}
 
