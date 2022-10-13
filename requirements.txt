@@ -11,6 +11,7 @@ pymdown-extensions
 mkdocs-minify-plugin
 pillow
 cairosvg
-git+https://github.com/Neepawa/cell_row_span.git
-git+https://github.com/miska/markdown-jinja.git
-git+https://github.com/aleksan4eg/markdown-lightbox.git
+# other extensions: forks
+git+https://github.com/turris-cz/cell_row_span.git
+git+https://github.com/turris-cz/markdown-jinja.git
+git+https://github.com/turris-cz/markdown-lightbox.git
