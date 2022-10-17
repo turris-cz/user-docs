@@ -246,7 +246,8 @@ supported in OpenWrt and Linux kernel. We tested the following mini PCIe Wi-Fi c
 - Compex WLE200N2 (Wi-Fi 4 only 2.4 GHz)
 - Compex WLE900VX (Wi-Fi 5 Wave 1)
 - AsiaRF AW7615-NP1 (Wi-Fi 5 Wave 2, MU-MIMO)
-- AsiaRF AW7915-NP1 (Wi-Fi 6) since Turris OS 6.0
+- AsiaRF AW7915-NP1 4x4 (Wi-Fi 6) since Turris OS 6.0
+- AsiaRF AW7915-NPD 2x2 (Wi-Fi 6, DBDC) since Turris OS 6.0
 - MediaTek RZ608 (Wi-Fi 6E) requires LTS kernel 5.15
 
 #### Cellular network (LTE/5G)
