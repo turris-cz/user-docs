@@ -43,14 +43,14 @@ instead of black ones.
 
 ## CZ11NIC23
 
-Marked as Omnia 2019 and Omnia 2020 in retails.
+Marked as Omnia 2019, Omnia 2020, and Omnia Wi-Fi 6 in retail.
 
 This is second revamp of Turris Omnia board.
 
 The users most notable change is color change of chassis. Previous black color was
 switched to metallic silver. It also comes preinstalled with Turris OS 4.X
 while previous versions were starting from 3.X version and had to upgrade to
-4.X first.
+upgrade to 4.X first. Turris Omnia Wi-Fi 6 has preinstalled Turris OS 6.X.
 
 This revision is manufactured only with Wi-Fi and with 2GB of RAM same as
 CZ11NIC20. It also may feature blue buttons instead of black ones in several
