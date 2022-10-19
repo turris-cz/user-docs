@@ -71,6 +71,33 @@ various repositories with additional packages like
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
 
+## Turris OS 6.0
+
+Turris OS 6.0 is based on top of [OpenWrt
+21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
+patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md) and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* Morce (integrated IDS)
+* Wi-Fi 6 cards supported
+* Turris Auth (login gateway)
+* Parental control (PaKon) now has a separate page
+* New LEDs driver for all routers
+* Dashboard in LuCI
+* NetMetr supports measurement with IPv6 address
+* Improved support for Turris 1.x routers
+    * New Device Tree
+    * PowerPC SPE utilized – should improve performance
+    * Knot Resolver by default
+
+### Detailed changelog
+
+<span id="tos60">Loading changelog...</span>
+<script type="text/javascript">changelog("v6.0.", "tos60");</script>
+
 ## Turris OS 5.4
 
 Turris OS 5.4 is based on top of [OpenWrt
