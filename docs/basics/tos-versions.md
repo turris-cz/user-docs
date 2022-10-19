@@ -10,8 +10,7 @@ Turris OS software is being released as a fixed set of packages for given versio
 | 3.x.y                   | 15.05 (Chaos Calmer)        | 24.5.2016 | 7.1.2022           | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia)                                                                 |
 | 4.x.y                   | 18.06                       | 5.10.2019 | 4.6.2020           | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox)                                    |
 | 5.x.y                   | 19.07                       | 4.6.2020  | 19.10.2022         | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield) |
-
-| 6.x.y                   | 21.02                       | 19.10.2022  | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield)
+| 6.x.y                   | 21.02                       | 19.10.2022  | -                | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield)
 
 For more detailed list of changes and versions history please see
 [changelog](changelog.md).
