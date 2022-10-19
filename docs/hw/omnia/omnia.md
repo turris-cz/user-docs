@@ -48,6 +48,7 @@ adding the header.
 ## Various documentation files
 
 * [Declaration of Conformity](Omnia-DoC.pdf)
+* [Official datasheet for Turris Omnia Wi-Fi 6](omnia-wifi6-datasheet.pdf)
 * [Official datasheet for Turris Omnia 2020](omnia2020-datasheet.pdf)
 * [Official datasheet for Turris Omnia 2019](omnia2019eu-datasheet.pdf)
 * [Original printed manual](omnia-manual-en.pdf)
