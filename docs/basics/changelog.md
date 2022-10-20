@@ -1,63 +1,109 @@
 <script type="text/javascript">
-function render_changelog(changelog, element) {
-    element.innerHTML = '';
-    for (let i in changelog) {
-        const release = changelog[i];
-        const message = release.message.split('\n');
-        const release_date = new Date(release.commit.created_at);
-        element.innerHTML += `
-<h4 id="${release.name}">${message[0].replace('release','')}</h4>
-<h5>Date of release</h5>
-<p>${release_date.toString()}</p>
-<h5>Sources</h5>
-<p>Available on <a target="_blank" href="https://gitlab.nic.cz/turris/os/build/tree/${release.name}">Gitlab</a>.</p>
-<h5>Release notes</h5>
-<ul id="release-notes-${release.name}"></ul>`;
-        message.map(line => {
-            const firstListItem = line.match(/^\s?\* (.*)/); // Matches a line with a first level item
-            const secondListItem = line.match(/^\s+\* (.+)$/); // Matches a line with a second level item
-            const secondListItemDot = line.match(/^\s+\• (.+)$/); // Matches a line with a bullet character
-            const firstListItemEmoji = line.match(/(?:[\u2700-\u27bf]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\u0023-\u0039]\ufe0f?\u20e3|\u3299|\u3297|\u303d|\u3030|\u24c2|\ud83c[\udd70-\udd71]|\ud83c[\udd7e-\udd7f]|\ud83c\udd8e|\ud83c[\udd91-\udd9a]|\ud83c[\udde6-\uddff]|\ud83c[\ude01-\ude02]|\ud83c\ude1a|\ud83c\ude2f|\ud83c[\ude32-\ude3a]|\ud83c[\ude50-\ude51]|\u203c|\u2049|[\u25aa-\u25ab]|\u25b6|\u25c0|[\u25fb-\u25fe]|\u00a9|\u00ae|\u2122|\u2139|\ud83c\udc04|[\u2600-\u26FF]|\u2b05|\u2b06|\u2b07|\u2b1b|\u2b1c|\u2b50|\u2b55|\u231a|\u231b|\u2328|\u23cf|[\u23e9-\u23f3]|[\u23f8-\u23fa]|\ud83c\udccf|\u2934|\u2935|[\u2190-\u21ff])/); // Matches a line with emoji symbols
+async function fetchAndRenderChangelog(releaseVersion, changelogSpanId) {
+    const element = document.getElementById(changelogSpanId);
 
-            const releaseNotesList = document.getElementById(`release-notes-${release.name}`);
-            const newListItem = document.createElement("li");
-            const newSubListItem = document.createElement("ul");
-            const lastChild = releaseNotesList.lastChild;
+    const response = await fetch(
+        `https://gitlab.nic.cz/api/v4/projects/turris%2fos%2fbuild/repository/tags/?search=${releaseVersion}`
+    );
 
-            if (firstListItem) {
-                newListItem.innerHTML = firstListItem[1];
-                releaseNotesList.appendChild(newListItem);
-            }
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
-            if (secondListItem) {
-                newListItem.innerHTML = secondListItem[1];
-                newSubListItem.appendChild(newListItem);
-                lastChild.insertAdjacentElement('beforeend', newSubListItem);
-            }
+    const data = await response.json();
 
-            if (firstListItemEmoji) {
-                newListItem.innerHTML = firstListItemEmoji.input;
-                newListItem.style.listStyleType = "none";
-                newListItem.style.marginLeft = 0;
-                releaseNotesList.appendChild(newListItem);
-            }
-
-            if (secondListItemDot) {
-                newListItem.innerHTML = secondListItemDot[1];
-                newSubListItem.appendChild(newListItem);
-                lastChild.insertAdjacentElement('beforeend', newSubListItem);
-            }
-        })
-    };
+    renderChangelog(data, element);
 }
 
-function changelog(version, span_id) {
-    const element = document.getElementById(span_id);
-	fetch('https://gitlab.nic.cz/api/v4/projects/turris%2fos%2fbuild/repository/tags/?search=' + version).
-		then(res => res.json()).
-		then((json) => {
-			render_changelog(json, element);
-	});
+function renderChangelog(changelog, element) {
+    element.innerHTML = "";
+
+    if (changelog.length === 0) {
+        element.innerHTML += `<p>There is no detailed changelog yet.<p>`;
+    }
+
+    for (let i in changelog) {
+        const release = changelog[i];
+        const message = release.message.split("\n");
+        const releaseVersion = release.name;
+        console.log(releaseVersion);
+        const releaseDate = new Date(release.commit.created_at);
+
+        element.innerHTML += `
+        <h4 id="${releaseVersion}">${message[0].replace("release", "")}</h4>
+        <h5>Date of release</h5>
+        <p>${releaseDate.toString()}</p>
+        <h5>Sources</h5>
+        <p>Available on <a target="_blank" href="https://gitlab.nic.cz/turris/os/build/tree/${releaseVersion}">Gitlab</a>.</p>
+        <h5>Release notes</h5>
+        <ul id="release-notes-${releaseVersion}"></ul>`;
+
+        renderDetailedChangelog(message, releaseVersion);
+    }
+}
+
+function renderDetailedChangelog(message, releaseVersion) {
+    const releaseNotesList = document.getElementById(
+        `release-notes-${releaseVersion}`
+    );
+
+    message.map((line) => {
+        const newListItem = document.createElement("li");
+        const newSubListItem = document.createElement("ul");
+
+        // Matches the first level line with an asterisks
+        const firstListItem = line.match(/^\s?\* (.*)/);
+        // Matches the second level line with an asterisks
+        const secondListItem = line.match(/^\s+\* (.+)$/);
+        // Matches the second level line with a bullet character
+        const secondListItemDot = line.match(/^\s{2}\•(.+)$/);
+        // Matches the third level line with a bullet character
+        const thirdListItemDot = line.match(/^\s{4}\•(.+)$/);
+        // Matches the fourth level line with a bullet character
+        const fourthListItemDot = line.match(/^\s{6}\•(.+)$/);
+        // Matches the line with emoji symbols at the beginning of a string
+        const firstListItemEmoji = line.match(
+            /(?:^[\u2700-\u27bf]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\u0023-\u0039]\ufe0f?\u20e3|\u3299|\u3297|\u303d|\u3030|\u24c2|\ud83c[\udd70-\udd71]|\ud83c[\udd7e-\udd7f]|\ud83c\udd8e|\ud83c[\udd91-\udd9a]|\ud83c[\udde6-\uddff]|\ud83c[\ude01-\ude02]|\ud83c\ude1a|\ud83c\ude2f|\ud83c[\ude32-\ude3a]|\ud83c[\ude50-\ude51]|\u203c|\u2049|[\u25aa-\u25ab]|\u25b6|\u25c0|[\u25fb-\u25fe]|\u00a9|\u00ae|\u2122|\u2139|\ud83c\udc04|[\u2600-\u26FF]|\u2b05|\u2b06|\u2b07|\u2b1b|\u2b1c|\u2b50|\u2b55|\u231a|\u231b|\u2328|\u23cf|[\u23e9-\u23f3]|[\u23f8-\u23fa]|\ud83c\udccf|\u2934|\u2935|[\u2190-\u21ff])/
+        );
+
+        if (firstListItem) {
+            newListItem.innerHTML = firstListItem[1];
+            releaseNotesList.appendChild(newListItem);
+        }
+
+        if (secondListItem) {
+            newListItem.innerHTML = secondListItem[1];
+            newSubListItem.appendChild(newListItem);
+            releaseNotesList.lastChild.appendChild(newSubListItem);
+        }
+
+        if (firstListItemEmoji) {
+            newListItem.innerHTML = firstListItemEmoji.input;
+            newListItem.style.listStyleType = "none";
+            newListItem.style.marginLeft = 0;
+            releaseNotesList.appendChild(newListItem);
+        }
+
+        if (secondListItemDot) {
+            newListItem.innerHTML = secondListItemDot[1];
+            newSubListItem.appendChild(newListItem);
+            releaseNotesList.lastChild.appendChild(newSubListItem);
+        }
+
+        if (thirdListItemDot) {
+            newListItem.innerHTML = thirdListItemDot[1];
+            newSubListItem.appendChild(newListItem);
+            releaseNotesList.lastChild.lastChild.appendChild(newSubListItem);
+        }
+
+        if (fourthListItemDot) {
+            newListItem.innerHTML = fourthListItemDot[1];
+            newSubListItem.appendChild(newListItem);
+            releaseNotesList.lastChild.lastChild.lastChild.appendChild(
+                newSubListItem
+            );
+        }
+    });
 }
 </script>
 
@@ -96,7 +142,7 @@ New features:
 ### Detailed changelog
 
 <span id="tos60">Loading changelog...</span>
-<script type="text/javascript">changelog("v6.0.", "tos60");</script>
+<script type="text/javascript">fetchAndRenderChangelog("v6.0.", "tos60");</script>
 
 ## Turris OS 5.4
 
@@ -115,7 +161,7 @@ New features:
 ### Detailed changelog
 
 <span id="tos54">Loading changelog...</span>
-<script type="text/javascript">changelog("v5.4.", "tos54");</script>
+<script type="text/javascript">fetchAndRenderChangelog("v5.4.", "tos54");</script>
 
 ## Turris OS 5.3
 
@@ -134,7 +180,7 @@ New features:
 ### Detailed changelog
 
 <span id="tos53">Loading changelog...</span>
-<script type="text/javascript">changelog("v5.3.", "tos53");</script>
+<script type="text/javascript">fetchAndRenderChangelog("v5.3.", "tos53");</script>
 
 ## Turris OS 5.2
 
@@ -163,7 +209,7 @@ New features:
 ### Detailed changelog
 
 <span id="tos52">Loading changelog...</span>
-<script type="text/javascript">changelog("v5.2.", "tos52");</script>
+<script type="text/javascript">fetchAndRenderChangelog("v5.2.", "tos52");</script>
 
 ## Turris OS 5.1
 
@@ -190,7 +236,7 @@ New features:
 ### Detailed changelog
 
 <span id="tos51">Loading changelog...</span>
-<script type="text/javascript">changelog("v5.1.", "tos51");</script>
+<script type="text/javascript">fetchAndRenderChangelog("v5.1.", "tos51");</script>
 
 
 ## Turris OS 5.0
@@ -214,7 +260,7 @@ New features:
 ### Detailed changelog
 
 <span id="tos50">Loading changelog...</span>
-<script type="text/javascript">changelog("v5.0.", "tos50");</script>
+<script type="text/javascript">fetchAndRenderChangelog("v5.0.", "tos50");</script>
 
 ## Turris OS 4
 
@@ -245,4 +291,4 @@ New features:
 ### Detailed changelog
 
 <span id="tos4">Loading changelog...</span>
-<script type="text/javascript">changelog("v4.", "tos4");</script>
+<script type="text/javascript">fetchAndRenderChangelog("v4.", "tos4");</script>
