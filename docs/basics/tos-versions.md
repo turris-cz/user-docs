@@ -92,6 +92,8 @@ These are Turris OS versions flashed in factory and routers they were flashed to
 | 4.0.0             | Turris Mox (late campaign SD cards and early distribution)       |
 | 4.0.1             | Turris Mox (late 2019 distribution) and Turris Omnia (CZ11NIC23) |
 | 5.1.0             | Turris Shield                                                    |
+| 6.0.0-alpha1      | Turris MOX Wi-Fi 6                                               |
+| 6.0.0-alpha3      | Turris Omnia Wi-Fi 6                                             |
 
 [^1]: Turris 1.x were originally sent out with Turris OS versions before 3.0 but
   because of DNS root key rollover there was a need to force update factory
