@@ -11,7 +11,7 @@ MIMO and 3×3 MIMO 2.4/5 GHz Wi-Fi, Bluetooth.
 
 ## About
 
-{! include-markdown 'hw/mox/sets/generic-mox.md' !}
+{! include-markdown './generic-mox.md' !}
 
 The Power Wi-Fi set is used to provide WiFi signal or increase its range. It is
 suitable for purely wireless networks. Unlike with Pocket Wi-Fi, with the Power
@@ -27,7 +27,7 @@ Wi-Fi add-on (SDIO)](../addons.md#wi-fi-sdio) and [MOX Wi-Fi add-on
 The MOX Power Wi-Fi configuration can be significantly expanded with
 accessories. But there are many reasons to fall in love:
 
-{% set conf = 'ASBW' !}
+{% set conf = 'ASBW' %}
 
-{! include-markdown 'feature-list.md' !}
+{! include-markdown './feature-list.md' !}
 

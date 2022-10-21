@@ -4,11 +4,11 @@ competency: novice
 ---
 # DNS settings in Foris
 
-{%
+{!
   include-markdown "../../reforis/dns/reforis-dns.md"
   start="<!--what-is-dns-start-->"
   end="<!--what-is-dns-end-->"
-%}
+!}
 
 
 ## DNS in Foris

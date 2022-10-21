@@ -22,8 +22,8 @@ factory-reset and cannot, unfortunately, be trusted before the first visit to
 the page and it is recommended to **add a permanent exception in your browser**
 for the certificate to be trusted in future connections.
 
-{%
+{!
   include-markdown "../../reforis/https/https.md"
   start="<!--access-https-start-->"
   end="<!--access-https-end-->"
-%}
+!}

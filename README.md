@@ -209,11 +209,11 @@ special marks (replace `NAME` by the real name of this part):
 It the destination page, insert an inclusion mark like this:
 
 ```
-{%
+{!
   include-markdown "SOURCE.md"
   start="<!-NAME-start-->"
   end="<!--NAME-end-->"
-%}
+!}
 ```
 
 Replace `NAME` by the name meant above and `SOURCE.md` by the path to

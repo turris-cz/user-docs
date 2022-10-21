@@ -48,7 +48,7 @@ to your computer as well as connect to the internet.
 
 ### Before you start
 
-{! include-markdown 'basics/first-setup/mox-first-setup-warning.md' !}
+{! include-markdown './mox-first-setup-warning.md' !}
 
 
 ### Setup

@@ -94,11 +94,11 @@ There are also two fields that can be used for Wi-Fi tuning:
   [documentation page](../../../hw/wifi.md)
   about Wi-Fi coverage.
 
-{%
+{!
   include-markdown "../../../hw/wifi.md"
   start="<!--wheather-radars-start-->"
   end="<!--wheather-radars-end-->"
-%}
+!}
 
 ![Wi-Fi advanced settings](wifi-advanced.png)
 

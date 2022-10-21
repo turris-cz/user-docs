@@ -11,7 +11,7 @@ slot
 
 ## About
 
-{! include-markdown 'hw/mox/sets/generic-mox.md' !}
+{! include-markdown './generic-mox.md' !}
 
 This set consists of [MOX A (Basic)](../modules/a.md), a power source and a
 microSD card, representing the basic building block of the modular solution
@@ -21,7 +21,7 @@ add-on (SDIO), the result is a Wi-Fi router with Bluetooth support.
 The MOX Start set is just the beginning. But there are many reasons to fall in
 love:
 
-{% set conf = 'A' !}
+{% set conf = 'A' %}
 
-{! include-markdown 'feature-list.md' !}
+{! include-markdown './feature-list.md' !}
 

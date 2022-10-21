@@ -4,19 +4,19 @@ competency: intermediate
 ---
 # Storage plugin
 
-{%
+{!
   include-markdown "../../reforis/storage-plugin/storage-plugin.md"
   start="<!--storage-general-start-->"
   end="<!--storage-general-end-->"
-%}
+!}
 
 ## First setup
 
-{%
+{!
   include-markdown "../../reforis/storage-plugin/storage-plugin.md"
   start="<!--storage-first-start-->"
   end="<!--storage-first-end-->"
-%}
+!}
 
 Once the external storage is inserted, inside the tab Storage in Foris, select where your persistent
 data should be stored and press the _Format & Set_ button.
