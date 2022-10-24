@@ -30,10 +30,9 @@ of separate plugins which can be optionally installed.
 
 ## Previous version Foris
 
-At this time, the previous version of the interface called Foris still exists.
-It offers some features not implemented in reForis yet. However, the new version
-provides features which have not been ever included in Foris. In the future,
-Foris is going to be completely replaced by reForis.
+Turris OS versions before 6.0 contained the previous administration interface
+Foris too. It has been completely replaced by reForis in newer versions
+of Turris OS.
 
 ## Technologies
 

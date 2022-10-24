@@ -33,4 +33,6 @@ Foris does not include all features. The only case when Foris
 is necessary is Turris OS 3.x where reForis is not (and will not be)
 available.
 
-In the future, Foris is going to be completely replaced by reForis.
+!!! important
+    Since Turris OS 6.0, Foris has been completely replaced by
+    [reForis](../reforis/intro.md).
