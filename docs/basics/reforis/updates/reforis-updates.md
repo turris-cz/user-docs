@@ -14,8 +14,8 @@ be warned that this might weaken the security of your router and network
 in case flaws in the software are found.
 
 If automatic updates are enabled they are downloaded and installed as
-soon as possible (in two-hour windows six times a day with random delays
-to spread the load of the update servers). These updates may be delayed
+soon as possible. Each device checks for updates every two hours (with random
+delays to spread the load of the update servers). These updates may be delayed
 and/or manually approved.
 
 Some updates require restarts. These restarts are delayed (three days by

@@ -60,7 +60,7 @@ This one is not available on [Turris Shield](../hw/shield/shield.md).
 ### How do the automatic updates work?
 
 Turris routers check our servers for possible availability of a new update
-every four hours (with some variability to spread the load of the update
+every two hours (with some variability to spread the load of the update
 servers and speed-up the update process). If a new Turris OS version
 - newer than the currently used one - is available, the router will download
 and install it.
@@ -69,8 +69,9 @@ After that, an automatic restart of the router will be planned according to
 the settings (usually at night after three days). You can restart the router
 earlier at a moment when you do not mind a current Internet connection loss.
 
-If you use delayed updates or approvals, we suggest configuring sending
-notifications to your e-mail to be in the loop about updates.
+Updates may be delayed or manually approved. If you use delayed updates or
+approvals, we suggest configuring sending notifications to your e-mail to be
+in the loop about updates.
 
 ### What I want to re-flash my router with the latest version?
 
