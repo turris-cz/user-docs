@@ -22,7 +22,7 @@ automatically.
 There are currently three applications always present:
 
 * Foris – the legacy simple configuration interface
-* [ReForis](reforis/intro.md) – the redesigned simple configuration interface
+* [reForis](reforis/intro.md) – the redesigned simple configuration interface
 * [LuCI](luci/luci.md) – the OpenWrt advanced configuration interface
 
 ![Landing page with default applications](landing-page.png)

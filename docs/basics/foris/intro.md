@@ -17,7 +17,7 @@ configuration step by step.
 
 ## When to use Foris and reForis
 
-ReForis is the new router administration interface. It is much more
+reForis is the new router administration interface. It is much more
 flexible and based on modern technologies. Currently, we recommend
 to use [reForis](../reforis/intro.md) on all Turris device with
 Turris OS 5.x by default.

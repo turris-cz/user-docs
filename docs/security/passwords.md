@@ -52,7 +52,7 @@ Select _Administration → Password_ in the menu. Write the current
 password and the new password. The new password should be
 [strong](https://en.wikipedia.org/wiki/Password_strength#Guidelines_for_strong_passwords).
 
-![ReForis password dialog](reforis-password.png)
+![reForis password dialog](reforis-password.png)
 
 ### System passwords
 
