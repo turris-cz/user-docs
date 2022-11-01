@@ -82,8 +82,8 @@ assumes that your LAN uses 192.168.1.0/24 as its address range):
 
 ```
 [web]
-    allow connections from = 192.168.1.*
-    allow dashboard from = 192.168.1.*
+    allow connections from = localhost 192.168.1.*
+    allow dashboard from = localhost 192.168.1.*
 ```
 
 The first parameter limits general access to Netdata. Only addresses
