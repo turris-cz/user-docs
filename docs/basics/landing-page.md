@@ -17,11 +17,10 @@ until the time limit expires and the default application is opened
 automatically.
 
 !!! info
-    In Turris OS 5.2, the default application is reForis.
+    Since Turris OS 5.2, the default application is reForis.
 
-There are currently three applications always present:
+There are currently two applications always present:
 
-* Foris – the legacy simple configuration interface
 * [reForis](reforis/intro.md) – the redesigned simple configuration interface
 * [LuCI](luci/luci.md) – the OpenWrt advanced configuration interface
 
