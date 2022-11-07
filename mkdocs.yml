@@ -131,13 +131,6 @@ nav:
     - 'First steps after setup': 'basics/first-setup/after-setup.md'
 - Software:
     - 'Landing page': 'basics/landing-page.md'
-    - Sentinel:
-        - Introduction: 'basics/sentinel/intro.md'
-        - Dynamic Firewall: 'basics/sentinel/dynfw.md'
-        - Threat Detection: 'basics/sentinel/threat-detection.md'
-        - Setup: 'basics/sentinel/setup.md'
-        - Setup on Shield: 'basics/sentinel/setup-shield.md'
-        - HaaS: 'basics/sentinel/haas.md'
     - reForis:
         - About: 'basics/reforis/intro.md'
         - 'Secure access': 'basics/reforis/https/https.md'
@@ -154,10 +147,13 @@ nav:
             - Updates: 'basics/reforis/updates/reforis-updates.md'
         - 'Factory reset': 'basics/reforis/factory-reset/factory-reset.md'
         - Storage: 'basics/reforis/storage-plugin/storage-plugin.md'
-    - LuCI:
-        - Introduction: 'basics/luci/luci.md'
-        - Static IP: 'basics/luci/static-dhcp/static-dhcp.md'
-        - VLAN: 'basics/luci/vlan/luci-vlan.md'
+    - Sentinel:
+        - Introduction: 'basics/sentinel/intro.md'
+        - Dynamic Firewall: 'basics/sentinel/dynfw.md'
+        - Threat Detection: 'basics/sentinel/threat-detection.md'
+        - Setup: 'basics/sentinel/setup.md'
+        - Setup on Shield: 'basics/sentinel/setup-shield.md'
+        - HaaS: 'basics/sentinel/haas.md'
     - Applications:
         - 'NetMetr': 'basics/apps/netmetr.md'
         - 'Nextcloud': 'geek/nextcloud/nextcloud.md'
@@ -168,12 +164,16 @@ nav:
         - 'Sentinel': 'basics/apps/sentinel.md'
         - 'Atlas probe': 'basics/apps/atlas.md'
     - Advanced:
+        - LuCI:
+            - Introduction: 'basics/luci/luci.md'
+            - Static IP: 'basics/luci/static-dhcp/static-dhcp.md'
+            - VLAN: 'basics/luci/vlan/luci-vlan.md'
         - 'LXC': 'geek/lxc/lxc.md'
         - 'Netboot': 'basics/apps/netboot.md'
         - 'Schnapps': 'geek/schnapps/schnapps.md'
         - 'Btrfs migration': 'geek/btrfs_turris1x.md'
         - 'Netdata': 'geek/netdata/netdata.md'
-    - Legacy:
+    - Deprecated:
         - Foris:
             - About: 'basics/foris/intro.md'
             - 'Secure access': 'basics/foris/https/https.md'
