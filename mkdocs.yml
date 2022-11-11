@@ -110,7 +110,7 @@ markdown_extensions:
     - mdlightbox
     - meta
     - admonition
-    - cell_row_span
+    - mdx_spanner
     - extra
     - pymdownx.details
     - pymdownx.superfences

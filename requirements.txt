@@ -13,6 +13,6 @@ pymdown-extensions
 pillow
 cairosvg
 # other extensions: forks
-git+https://github.com/turris-cz/cell_row_span.git
+git+https://gitlab.com/aleksan4eg/mdx_spanner.git
 git+https://github.com/turris-cz/markdown-jinja.git
 git+https://github.com/turris-cz/markdown-lightbox.git
