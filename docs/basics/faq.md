@@ -328,11 +328,11 @@ Between LAN and WAN ports, it is possible that the speed is lower than it should
 be. There were many improvements in the Linux kernel available since version
 5.8. We are using the same LTS kernel versions as OpenWrt.
 
-| OpenWrt version  | Turris OS version  | LTS kernel |
-| :--------------- |:------------------:| ----------:|
-| OpenWrt 19.07    | Turris OS 5.x      |  4.14.x    |
-| OpenWrt 21.02    | Turris OS 6.x      |  5.4.x     |
-| Daily snapshots (upcoming, not announced yet) | Turris OS 7.x  |  5.10.x |
+| OpenWrt version                               | Turris OS version | LTS OpenWrt kernel | LTS Turris kernel |
+|-----------------------------------------------|:-----------------:|-------------------:|-------------------|
+| OpenWrt 21.02                                 |   Turris OS 6.x   |                5.4 | 5.15              |
+| OpenWrt 22.03                                 |   Turris OS 7.x   |               5.10 | 5.15              |
+| Daily snapshots (upcoming, not announced yet) |   Turris OS 8.x   |               5.15 | 5.15              |
 
 ## Erratum
 
