@@ -63,6 +63,16 @@ there are several parameters to be configured:
 * **Send news** – If you check this checkbox, we will send you messages about
   new features and other essential things about the Turris project.
 
+!!! important
+    If you want to use the Turris mail infrastructure please do not set
+    an e-mail address that is forwarded/redirected to another address. As we
+    use antispam technologies like
+    [SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework),
+    [DKIM](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail), and
+    [DMARC](https://en.wikipedia.org/wiki/DMARC) the notification messages need
+    not to be delivered. Mailing lists are usually safe but it depends on
+    specific implementation and/or configuration.
+
 ### Custom mail server
 
 It's necessary to set additional parameters to use this option:

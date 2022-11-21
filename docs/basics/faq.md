@@ -320,6 +320,17 @@ does not work as expected.
 In that case, please follow [Creating issues article](../geek/contributing/issues.md),
 but keep in mind that we support only changes done in reForis.
 
+### I do not receive e-mail notifications
+
+Please check whether your e-mail address has been entered correctly.
+Do not use an address that is forwarded (or redirected) to another address;
+use the target address directly instead. We use antispam technologies like
+[SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework),
+[DKIM](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail), and
+[DMARC](https://en.wikipedia.org/wiki/DMARC). These technologies are
+incompatible with simple e-mail forwarding. Mailing lists are usually
+safe but it depends on specific implementation and/or configuration.
+
 ## Known bugs
 
 ### Turris MOX / Turris Shield is not capable to route more than 450 Mbps
