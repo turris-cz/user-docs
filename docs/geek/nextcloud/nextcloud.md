@@ -110,3 +110,10 @@ unless you are sure what you are doing.
 Also, bear in mind that if you are using Nextcloud from our repositories, **you
 shouldn't update the Nextcloud core manually**, as that would get overwritten by
 the next update. So update just your extra apps and leave the core to us.
+
+## Troubleshooting
+
+### I cannot log in
+
+If you logged in with https once, the next http login will not work. This can
+be solved by always using https or by clearing the browser cookies.
