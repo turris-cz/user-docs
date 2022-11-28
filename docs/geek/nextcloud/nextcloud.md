@@ -117,3 +117,11 @@ the next update. So update just your extra apps and leave the core to us.
 
 If you logged in with https once, the next http login will not work. This can
 be solved by always using https or by clearing the browser cookies.
+
+### I forgot my password
+
+Resetting the Nextcloud password is currently only possible from CLI.
+
+```
+sudo -u nobody php-cli /srv/www/nextcloud/occ user:resetpassword <username>
+```
