@@ -22,14 +22,15 @@ From [UCI docs](https://openwrt.org/docs/guide-user/base-system/uci):
 > The abbreviation UCI stands for Unified Configuration Interface and is a system to centralize the configuration of
 OpenWrt services.
 
-## How is it different from Foris?
+## How is it different from reForis?
 
-Turris team has decided to develop its own web administration interface due to complexity of the existing LuCI interface
-for basic users. Thus, came into being Foris, which is a simplified interface for administration
-requirements of Turris routers. It has been created in order to provide users with a simple and extensible administration
-and network configuration tool.
+The Turris team has decided to develop its own web administration interface
+due to complexity of the existing LuCI interface for basic users. Thus, came
+into being Foris, which was a simplified interface for administration
+requirements of Turris routers. It has been created in order to provide users
+with a simple and extensible administration and network configuration tool.
 
-Although, there is a set of advanced administration requirements which are only possible to get done with LuCI. Such as
-
-- [static IP addresses assignment](static-dhcp/static-dhcp.md)
-- [VLAN configuration](vlan/luci-vlan.md)
+Foris has been later replaced by its successor reForis that is much more
+flexible and extensible. Foris is no longer available since Turris OS 6.0.
+Although reForis continuously receives new features, there is a set of advanced
+administration requirements which are only possible to get done with LuCI.
