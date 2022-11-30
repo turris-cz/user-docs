@@ -28,19 +28,19 @@ and correcting releases.
 There are multiple ways how you can find out version of Turris OS running in your
 router. Few well advised ways are described here.
 
-### In Foris web interface
+### In reForis web interface
 Navigate to router's web interface (by default
-[http://192.168.1.1](http://192.168.1.1)). You should be greeted with list of web
-services running on router, please choose Foris. Next enter your password if
-requested. This brings you to Foris interface. In left menu column click on
-_ABOUT_ and look for field _Turris OS version_.
+[http://192.168.1.1](http://192.168.1.1)). You should be greeted with list of
+web services running on router, please choose reForis. Next enter your password
+if requested. This brings you to the reForis interface. In left menu column
+click on _ABOUT_ and look for the _Turris OS version_ field.
 
 !!!info
     You might be greeted with first setup guide instead of list of web services.
     In such case you have to configure your router first. Please see appropriate
     __First setup__ section in this documentation.
 
-![Foris About](foris-about-version.png)
+![reForis About](reforis-about-version.png)
 
 ### In Luci web interface
 Navigate to router's web interface and choose Luci. Enter your password if

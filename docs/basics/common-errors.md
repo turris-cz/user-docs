@@ -55,10 +55,10 @@ cable is the safest test.
 Our routers comes with [Knot Resolver](https://www.knot-resolver.cz) which is
 validating and caching DNS resolver. Some ISPs break DNSSEC and therefor some
 DNS queries will fail. If you experience troubles resolving domain names, try
-various settings in [DNS tab in Foris](foris/dns/foris-dns.md). Most notably
-you can disable forwarding and rely on your router resolving everything itself,
-or you can forward to some DNS resolver with **DNS over TLS** like CZ.NIC,
-Cloudflare, Google.
+various settings in [DNS tab in reForis](reforis/dns/reforis-dns.md). Most
+notably you can disable forwarding and rely on your router resolving everything
+itself, or you can forward to some DNS resolver with **DNS over TLS** like
+CZ.NIC, Cloudflare, Google.
 
 ### Nothing works
 
@@ -71,9 +71,10 @@ anybody noticing if somebody trips over it when moving furniture or for
 example by a pet.
 
 You can check whether your router has a network link (is connected to some
-powered up device) in section _Network Interfaces_ in Foris. The ones with a
-checkmark are connected to some powered up devices. This does **not** mean
-that cable is alright, but that at least it is somehow connected and working.
+powered up device) in the _Network Settings → Interfaces_ section in reForis.
+The ones with a checkmark are connected to some powered up devices. This does
+**not** mean that cable is alright, but that at least it is somehow connected
+and working.
 
 ![Interfaces](interfaces.png)
 
@@ -97,9 +98,9 @@ Factory reset using rescue mode on both Turris
 
 #### Misconfigured WAN
 
-Double check your WAN settings in [Foris](foris/wan/foris-wan.md) to make sure
-it corresponds the recommended settings from your ISP and do WAN test from
-within the Foris.
+Double check your WAN settings in [reForis](reforis/wan/reforis-wan.md) to make
+sure it corresponds the recommended settings from your ISP and do WAN test from
+within the reForis.
 
 ## Additional accessory doesn't work
 
@@ -144,11 +145,11 @@ the cover part back to its place.
 
 Make sure that your Turris MOX does not contain any media to boot from. Also
 make sure that your other router has _MOX netboot_ package list enabled in
-_Updater_ tab in Foris. Last but not least, booting over the network works
-only via the Ethernet connector on MOX A and after the first boot, only with
-the router it is paired with. Pairing is lost on factory reset of controlling
-router. To make sure your MOX is not paired with already, use [Factory
-reset](../hw/mox/rescue-modes.md#rollback-to-factory-reset).
+the _Package Management → Packages_ tab in reForis. Last but not least,
+booting over the network works only via the Ethernet connector on MOX A and
+after the first boot, only with the router it is paired with. Pairing is
+lost on factory reset of controlling router. To make sure your MOX is not
+paired with already, use [Factory reset](../hw/mox/rescue-modes.md#rollback-to-factory-reset).
 
 ## Problems with reForis in Safari browser
 
