@@ -10,8 +10,8 @@ system storage. It holds both the Turris OS itself and the created data. But
 if you want to use applications which need to save larger amounts of data you
 can use an external storage device.
 
-The same applies to Turris 1.0 and 1.0 as well. Turris MOX (and Turris Shield)
-uses a microSD card instead but it has very similar properties like the
+The same applies to Turris 1.0 and 1.1 as well. Turris MOX (and Turris Shield)
+uses a microSD card instead, but it has properties very similar to the
 soldered flash memory.
 
 !!! tip
