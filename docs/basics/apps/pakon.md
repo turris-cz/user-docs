@@ -12,7 +12,7 @@ view and filter records.
 
 ## Details
 
-PaKon utilizes [Suricata](https://suricata-ids.org/) – IDS/IPS solution. Part
+PaKon utilizes [Suricata](https://suricata.io/) – IDS/IPS solution. Part
 of Suricata is **Deep Packet Inspection (DPI)**, which is being used. Suricata
 does the heavy lifting of analyzing raw network traffic and provides
 processed information (about flows, DNS requests and responses, HTTP, TLS
