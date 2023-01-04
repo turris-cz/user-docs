@@ -57,7 +57,6 @@ plugins:
         fill: "#00a2e2"
   - search:
       lang: [en]
-      prebuild_index: False
   - git-revision-date-localized:
       type: timeago
       enable_creation_date: true
