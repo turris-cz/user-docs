@@ -2,10 +2,11 @@
 # the documentation.
 #
 # To build it you have to run in the repository root:
-#   docker build -t registry.nic.cz/turris/user-docs -f .DockerFile .
+#   docker build -t registry.nic.cz/turris/user-docs .
 # With a built container, you need to log in to GitLab first.
 # Use a generated authentication token for this purpose (never use your password).
-#   docker login registry.nic.cz
+# https://gitlab.nic.cz/help/user/packages/container_registry/index.md#authenticate-with-the-container-registry
+#   docker login registry.nic.cz -u <username> -p <token>
 # Then you can push the built container to GitLab with:
 #   docker push registry.nic.cz/turris/user-docs
 # Logout from the GitLab server when done:
