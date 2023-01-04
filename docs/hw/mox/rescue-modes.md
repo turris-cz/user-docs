@@ -77,7 +77,16 @@ Here is the example of MOX communication.
 
 !!! tip
     You can follow the video guide to see how it works.
-    <video width="640" height="480" controls><source src="/hw/mox/MOX-reflash.mp4" type="video/mp4"></video>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jID8TjExX-U"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        >
+    </iframe>
 
 
 ## Rescue Modes
