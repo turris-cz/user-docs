@@ -100,7 +100,7 @@ extra:
     - icon: fontawesome/brands/gitlab
       link: https://gitlab.nic.cz/turris
     - icon: fontawesome/brands/github
-      link: https://github.com/CZ-NIC
+      link: https://github.com/turris-cz
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/turris_cz
 
