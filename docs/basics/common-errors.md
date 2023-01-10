@@ -158,3 +158,20 @@ problems with an eternal loop in reForis (it loads again and again). There
 is a workaround which can resolve it. Go to _Settings → Safari → Advanced
 → Experimental Features_ and enable _NSURLSession WebSocket_. Then refresh
 the reForis page.
+
+## It is not possible to save any settings in reForis ("Timeout error occurred.")
+
+Displaying reforis pages works fine, but it is not possible to save any
+changes. It always ends with the error banner "Timeout error occurred."
+
+You might encounter this behavior since Turris OS version 6.0, in conjunction
+with antivirus software that has "HTTPS scanning" feature enabled.
+
+We have observed such behavior in products of following antivirus software vendors:
+
+* Avast
+* Avg
+* ESET
+
+A workaround is to either add an exception for your router (IP address, domain)
+or disable "HTTPS scanning" feature completely in antivirus software.
