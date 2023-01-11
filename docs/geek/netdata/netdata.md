@@ -20,7 +20,7 @@ How it looks:
 ![netdata system overview](netdata.jpg)
 
 !!! tip
-    Here is also a [live demo](https://london.my-netdata.io/).
+    Here is also a [live demo](https://london3.my-netdata.io/).
 
 ## Installation of Netdata
 
