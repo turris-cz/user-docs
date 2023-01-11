@@ -117,6 +117,43 @@ various repositories with additional packages like
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
 
+## Turris OS 6.2
+
+Turris OS 6.2 is based on top of [OpenWrt
+21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
+patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md) and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* Redesigned WebApps
+* Syncthing integration
+
+### Detailed changelog
+
+<span id="tos62">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v6.2.", "tos62");</script>
+
+## Turris OS 6.1
+
+Turris OS 6.1 is based on top of [OpenWrt
+21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
+patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md) and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* VLAN support for WAN interface in reForis
+* Credentials (username, password) support in OpenVPN reForis client
+* Nextcloud updated to 23.0.11 and uses PHP 8
+
+### Detailed changelog
+
+<span id="tos61">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v6.1.", "tos61");</script>
+
 ## Turris OS 6.0
 
 Turris OS 6.0 is based on top of [OpenWrt
