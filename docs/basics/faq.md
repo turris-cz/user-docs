@@ -337,7 +337,7 @@ safe but it depends on specific implementation and/or configuration.
 
 Between LAN and WAN ports, it is possible that the speed is lower than it should
 be. There were many improvements in the Linux kernel available since version
-5.8. We are using the same LTS kernel versions as OpenWrt.
+5.8.
 
 | OpenWrt version                               | Turris OS version | LTS OpenWrt kernel | LTS Turris kernel |
 |-----------------------------------------------|:-----------------:|-------------------:|-------------------|
