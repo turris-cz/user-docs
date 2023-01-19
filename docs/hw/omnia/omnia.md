@@ -84,3 +84,4 @@ is no longer available.
 * [Schematics for Turris Omnia CZ11NIC20](CZ11NIC20-schematics.pdf)
 * [Schematics for Turris Omnia CZ11NIC13](CZ11NIC13-schematics.pdf)
 * [Diplexers (Wi-Fi signal mixers) – source files](diplexers-source-v1.zip)
+* [Wi-Fi 6 Upgrade kit installation guide (CZ,EN)](Wi-Fi_6_upgrade_kit_installation_manual.pdf)
