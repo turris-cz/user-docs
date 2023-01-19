@@ -359,4 +359,4 @@ which could improve the reboot behavior.
 
 The provided firmware from NXP for chipset 88W8997 has limitation that it is
 possible to create only 4 SSIDs and have a maximum of 8 concurrent clients
-connected to them.
+connected to them. It does not support WPA3 mode.
