@@ -34,7 +34,7 @@ function renderChangelog(changelog, element) {
         <h5>Date of release</h5>
         <p>${releaseDate.toString()}</p>
         <h5>Sources</h5>
-        <p>Available on <a target="_blank" href="https://gitlab.nic.cz/turris/os/build/tree/${releaseVersion}">Gitlab</a>.</p>
+        <p>Available on <a target="_blank" href="https://gitlab.nic.cz/turris/os/build/tree/${releaseVersion}">GitLab</a>.</p>
         <h5>Release notes</h5>
         <ul id="release-notes-${releaseVersion}"></ul>`;
 

@@ -43,4 +43,4 @@ and most of the functionality is done via [React](https://reactjs.org/) using
 The interface is modular, supporting various plugins that can be installed over
 the time by user to broaden the possibilities of what they ca do with their
 router. You can find sources of the reForis base as well as it's modules in our
-[Gitlab](https://gitlab.nic.cz/turris/reforis).
+[GitLab](https://gitlab.nic.cz/turris/reforis).

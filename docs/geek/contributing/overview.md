@@ -25,7 +25,7 @@ report your problems by [support channels](../../basics/support.md).
 
 Note that forum is good place to get help with debugging but is not an issue
 tracker. Don't be afraid to fill in issue in any repository on our
-[Gitlab](https://gitlab.nic.cz/turris) or with our upstream
+[GitLab](https://gitlab.nic.cz/turris) or with our upstream
 [OpenWrt](https://openwrt.org/bugs).
 
 !!! tip
