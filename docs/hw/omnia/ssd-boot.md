@@ -57,18 +57,25 @@ mkfs.btrfs /dev/sda1
 ```
 10. Create a mount point a mount the partition on it:
 ```shell
-mkdir /mnt/ssd && mount /dev/sda1 /mnt/ssd`.
+mkdir /mnt/ssd && mount /dev/sda1 /mnt/ssd
 ```
 11. Create a Btrfs subvolume for the root directory:
 ```shell
 btrfs subvolume create /mnt/ssd/@
 ```
-12. Unpack the backup (see step 1) into `/mnt/ssd/@`
-    (e.g. `cd /mnt/ssd/@ && tar xzf backup.tar.gz`; replace "backup" by
-    the real backup name).
+12. Unpack the backup created in step (1) into the new subvolume:
+
+    For example:
+    ```shell
+    cd /mnt/ssd/@ && tar xzf backup.tar.gz
+    ```
+
+    !!! note
+        Replace "backup.tar.gz" by the real backup file name.
+
 13. Create a symlink to the boot.scr file:
 ```shell
-ln -s @/boot/boot.scr /mnt/ssd
+cd /mnt/ssd && ln -s @/boot/boot.scr .
 ```
 
 ## Updating U-Boot to boot from SSD
