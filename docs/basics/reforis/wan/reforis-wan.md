@@ -163,8 +163,9 @@ networking.
 
 ## Custom MAC address
 
-Some ISP require to use specific
+Some ISPs require to use specific
 [MAC addresses](https://en.wikipedia.org/wiki/MAC_address).
+
 You can check the _Custom MAC address_ checkbox and write the given MAC
 address into the _MAC address_ field. Use hexadecimal format of numbers
 separated by colons (e.g. 00:11:22:33:44:55).
