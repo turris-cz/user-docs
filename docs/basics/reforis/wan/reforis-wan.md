@@ -171,6 +171,16 @@ separated by colons (e.g. 00:11:22:33:44:55).
 
 ![Custom MAC address](custom-mac.png)
 
+## VLAN ID
+
+Some ISPs require to set the VLAN ID.
+
+You can check the _Enable VLAN_ checkbox and enter VLAN ID into the
+_Set the VLAN ID_ field. VLAN ID must be a number in the range between 1 and
+4094.
+
+![WAN VLAN ID](vlan-id.png)
+
 ## Connection test
 
 After you have set the WAN settings you can test the connectivity. Remember to
