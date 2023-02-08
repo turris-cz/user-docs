@@ -4,8 +4,9 @@ competency: advanced
 ---
 # Serial connection
 
-!!! warning
-    This tutorial is mainly for advanced users. You can damage your router if you make a mistake.
+!!! warning 
+    This tutorial is mainly for advanced users. You can damage your router 
+    if you make a mistake.
 
 The router has a serial link which can be used to control the router and
 monitor error reports. It also displays the booting progress and it doesn't
@@ -73,23 +74,38 @@ a micro USB cable and you are ready.
 ## Software
 
 ### UNIX
+In case of UNIX-like systems you can use `screen` or `minicom` to connect to
+your device.
 
-In case of UNIX-like systems you can use `screen` to connect to your device. In
-general, you need to figure out the name of your USB serial port – in case of
+In general, you need to figure out the name of your USB serial port – in case of
 Linux it is usually `/dev/ttyUSB0`, but if you already had some serial device
 (modem, some development board, ...) it might be even higher number. It should
 show up in `dmesg` after connecting the cable.
 
-To be able to connect to it, you will also need enough rights. Depending on
-your system configuration, you might need to add yourself to some group and
-logout/login or setup some `udev` rules. Other option is to try it as root, which
-is not recommended but will most likely work.
+To be able to connect to it, you will also need enough rights. Depending on your
+system configuration, you might need to add yourself to some group and
+logout/login or setup some `udev` rules. Another option is to try it as root,
+which is not recommended but will most likely work.
 
 To connect to the serial port, simply type in your terminal following commands:
 
-`screen /dev/ttyUSB0 115200`
+!!! tip
+    If your serial port is not `/dev/ttyUSB0` or
+    `/dev/cu.usbserial-FTFMEY40`, replace it with the correct path.
 
-If your serial port is not `/dev/ttyUSB0`, replace it with the correct path.
+#### screen
+
+```
+screen /dev/ttyUSB0 115200
+```
+
+#### minicom
+
+For example, in case of macOS:
+
+```
+minicom -D /dev/cu.usbserial-FTFMEY40 -b 115200
+```
 
 ### MS Windows
 
