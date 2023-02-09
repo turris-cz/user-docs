@@ -75,16 +75,23 @@ the _Enable_ checkbox multiple fields are displayed:
 
 There are also two fields that can be used for Wi-Fi tuning:
 
-* **802.11n/ac mode** – There are two specifications used for fast Wi-Fi
-  networks: "n" (both for 2.4 and 5 GHz) and "ac" (5 GHz only). Each
-  of them can use various frequency bandwidths (20 or 40 MHz for "n"
-  and 20 up to 80 MHz for "ac"). The "ac" specification gives much higher
-  speed but is less compatible (older device don't support it) and is more
-  susceptible to interference. Similarly, broader frequency bandwidth means
-  higher speed but also higher susceptibility to inferference. Keep the
-  default values, test your Wi-Fi network and then you can experiment with
-  tuning. If you set _Disabled_ here only the legacy and slow "b/g"
-  specifications will be available.
+* **802.11n/ac/ax mode** – There are multiple specifications for fast
+  Wi-Fi networks supported in reForis:
+
+    | IEEE Standard | 2.4 GHz | 5 GHz | Note                        |
+    | ------------- | --------| ----- | --------------------------- |
+    |  802.11n      | Yes     | Yes   |                             |
+    |  802.11ac     | Yes     |       |                             |
+    |  802.11ax     | Yes     | Yes   | Introduced in Turris OS 6.0 |
+
+    Each of them can use various frequency bandwidths (20 or 40 MHz for "n" and
+    20 up to 80 MHz for "ac"). The "ac" specification gives much higher speed
+    but is less compatible (older device don't support it) and is more
+    susceptible to interference. Similarly, broader frequency bandwidth means
+    higher speed but also higher susceptibility to interference. Keep the
+    default values, test your Wi-Fi network and then you can experiment with
+    tuning. If you set _Disabled_ here only the legacy and slow "b/g"
+    specifications will be available.
 
 * **Channel** – Wi-Fi network can work on various channels (representing
   defined frequencies). The best approach is usually to use "auto" here.
