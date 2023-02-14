@@ -210,6 +210,8 @@ nav:
               - Pocket Wi-Fi: hw/mox/sets/pocketwifi.md
               - Power Wi-Fi: hw/mox/sets/powerwifi.md
               - Classic: hw/mox/sets/classic.md
+              - Power Wi-Fi (legacy): hw/mox/sets/powerwifi_legacy.md
+              - Classic (legacy): hw/mox/sets/classic_legacy.md
           - Modules:
               - MOX A (Basic): hw/mox/modules/a.md
               - MOX B (Extension): hw/mox/modules/b.md

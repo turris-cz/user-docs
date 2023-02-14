@@ -11,6 +11,5 @@ For that you will need the basic set [MOX Start](start.md)
 which you can expand with one or more modules (MOX [B](../modules/b.md),
 [C](../modules/c.md), [D](../modules/d.md), [E](../modules/e.md),
 [F](../modules/f.md) and [G](../modules/g.md)) and
-add-ons ([MOX Wi-Fi add-on (SDIO)](../addons.md#wi-fi-sdio),
-[MOX Wi-Fi add-on (mPCIe)](../addons.md#wi-fi-mpcie) and
-[MOX PoE](../addons.md#poe) add-on).
+add-ons [MOX Wi-Fi add-on (mPCIe)](../addons.md#wi-fi-mpcie) and
+[MOX PoE](../addons.md#poe) add-on) and [Wi-Fi 6 (mPCIe)](../addons.md#wi-fi-6-add-on) add-on.

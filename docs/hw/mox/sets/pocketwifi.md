@@ -3,6 +3,8 @@ board: mox
 ---
 # MOX Pocket Wi-Fi
 
+{! include-markdown './sdio_legacy.md' !}
+
 A basic configuration of the Turris MOX router with Wi-Fi. Marvell Armada 3720
 1 GHz dual core, 512 MB DDR3 RAM, GWAN/GLAN, USB 3.0, microSD slot, 2×2 MIMO
 2.4/5 GHz Wi-Fi, Bluetooth
@@ -27,4 +29,3 @@ accessories. But there are many reasons to fall in love:
 {% set conf = 'AS' %}
 
 {! include-markdown './feature-list.md' !}
-
