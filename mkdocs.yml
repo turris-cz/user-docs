@@ -123,6 +123,9 @@ markdown_extensions:
   - toc:
       permalink: ⚓︎
   - wikilinks
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 # Page tree
 nav:
@@ -137,6 +140,7 @@ nav:
       - Landing page: "basics/landing-page.md"
       - reForis:
           - About: basics/reforis/intro.md
+          - Guide: basics/reforis/guide/index.md
           - Secure access: basics/reforis/https/https.md
           - Network:
               - Wi-Fi: basics/reforis/wifi/reforis-wifi.md

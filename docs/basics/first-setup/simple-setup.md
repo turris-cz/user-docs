@@ -4,9 +4,9 @@ board: omnia, 1.x
 # First setup on Turris 1.X and Omnia
 
 Both Turris 1.X and Omnia were produced in several batches and the actual
-system you are starting from depends on which batch your router is from. Also as
-part of updates some old factory images were updated therefor depending on
-whether your router was online and updating, you might start from entirely
+system you are starting from depends on which batch your router is from.
+Also as part of updates some old factory images were updated therefor depending
+on whether your router was online and updating, you might start from entirely
 different version as well.
 
 But regardless of the image you are starting from, the basics are the same.
@@ -40,17 +40,21 @@ and bug fixes wouldn't be installed.
     Web UI might become temporarly unavailable. That is part of normal process.
     Do not reboot your router, do not disconnect it from power supply.
 
-Once update finishes, you will be redirected to the new reForis Guide and guided
-through the rest of the setup.
+Once update finishes, you will be redirected to the new reForis Guide and
+guided through the rest of the setup.
 
 !!! tip
 	There is also a way to configure Turris Omnia over Wi-Fi by using
 	[a configuration file and a USB drive](./ethernetless.md).
 
 !!! tip
-    On Turris Omnia, you can download the latest [medkit](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz) and [flash your router
-    via USB](../../hw/omnia/rescue-modes.md#re-flash-router) and therefore
-    significantly decrease update time.
+    On Turris Omnia, you can download the latest
+    [medkit](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz) and
+    [flash your router via USB](../../hw/omnia/rescue-modes.md#re-flash-router)
+    and therefore significantly decrease update time.
+
+You can follow this tutorial on
+[reForis first steps](../reforis/guide/index.md) guide.
 
 After your router is fully set up you can start setting up additional services.
 For some inspiration, you might want to check some
