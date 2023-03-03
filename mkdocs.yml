@@ -230,6 +230,7 @@ nav:
       - Omnia:
           - About: hw/omnia/omnia.md
           - Revisions: hw/omnia/revisions.md
+          - Add-ons: hw/omnia/add-ons/index.md
           - Boot from SSD: hw/omnia/ssd-boot.md
           - GPIO: hw/omnia/gpio.md
       - Shield:
