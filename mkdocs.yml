@@ -164,6 +164,7 @@ nav:
           - HaaS: "basics/sentinel/haas.md"
       - Applications:
           - NetMetr: "basics/apps/netmetr.md"
+          - LibreSpeed: "basics/apps/librespeed/index.md"
           - Nextcloud: "geek/nextcloud/nextcloud.md"
           - OpenVPN server: "basics/apps/openvpn-server/openvpn.md"
           - OpenVPN client: "basics/apps/openvpn-client/openvpn.md"
