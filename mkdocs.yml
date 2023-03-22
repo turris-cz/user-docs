@@ -163,7 +163,6 @@ nav:
           - Setup on Shield: "basics/sentinel/setup-shield.md"
           - HaaS: "basics/sentinel/haas.md"
       - Applications:
-          - NetMetr: "basics/apps/netmetr.md"
           - LibreSpeed: "basics/apps/librespeed/index.md"
           - Nextcloud: "geek/nextcloud/nextcloud.md"
           - OpenVPN server: "basics/apps/openvpn-server/openvpn.md"
@@ -191,6 +190,7 @@ nav:
               - DNS: basics/foris/dns/foris-dns.md
               - Guest network: basics/foris/guest-network/guest-network.md
               - Storage: basics/foris/storage-plugin/storage-plugin.md
+          - NetMetr: "basics/apps/netmetr.md"
       - OS versions:
           - Versions: basics/tos-versions.md
           - Changelog: basics/changelog.md

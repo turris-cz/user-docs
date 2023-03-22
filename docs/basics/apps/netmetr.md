@@ -14,6 +14,10 @@ measurements and especially measurements of other participants. All data
 (excluding personal data) and source codes are released on the Open Source
 principle.
 
+!!! warning
+    NetMetr has been deprecated and will not be available in the future
+    versions of Turris OS. Please use [LibreSpeed](../librespeed/) instead.
+
 ## Installation & first run
 
 To use NetMetr on a Turris device proceed in these steps:
