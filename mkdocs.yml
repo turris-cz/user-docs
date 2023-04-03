@@ -231,10 +231,13 @@ nav:
           - About: hw/omnia/omnia.md
           - Revisions: hw/omnia/revisions.md
           - Boot from SSD: hw/omnia/ssd-boot.md
+          - GPIO: hw/omnia/gpio.md
       - Shield:
           - About: hw/shield/shield.md
           - Screenshots: hw/shield/screenshots.md
-      - Turris 1.X: hw/turris-1x/turris-1x.md
+      - Turris 1.X:
+          - About: hw/turris-1x/turris-1x.md
+          - GPIO: hw/turris-1x/gpio.md
       - Wi-Fi coverage: hw/wifi.md
   - Troubleshooting:
       - Common errors: basics/common-errors.md
