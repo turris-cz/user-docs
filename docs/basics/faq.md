@@ -345,6 +345,20 @@ be. There were many improvements in the Linux kernel available since version
 | OpenWrt 22.03                                 |   Turris OS 7.x   |               5.10 | 5.15              |
 | Daily snapshots (upcoming, not announced yet) |   Turris OS 8.x   |               5.15 | 5.15              |
 
+### Wi-Fi cards are reported as unassigned on the Interfaces page in reForis
+
+_Present since: Turris OS 6.0_
+
+Even when Wi-Fi interfaces are properly configured on the _Network Settings_ → _Wi-Fi_
+page, they are displayed in the "Unassigned" group on the _Interfaces_ page in reForis.
+
+Although this discrepancy between the displayed state of the Wi-Fi interfaces on
+different reForis pages is confusing, this is just a visual representation bug
+on the _Interfaces_ page. Properly configured Wi-Fi interfaces should work fine
+regardless of it.
+
+![Interfaces](reforis-interfaces-wifi-unassigned-tos-6.png)
+
 ## Erratum
 
 ### Turris MOX / Turris Shield: reboot issue
