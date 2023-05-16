@@ -5,8 +5,8 @@ competency: advanced
 # Btrfs migration on Turris 1.x routers
 
 !!! warning
-    This article is for [Turris 1.x routers](../hw/turris-1x/turris-1x.md)
-    running on old [Turris OS 3.x](../basics/tos-versions.md) version.
+    This article is for [Turris 1.x routers](../../hw/turris-1x/turris-1x.md)
+    running on old [Turris OS 3.x](../../basics/tos-versions.md) version.
     It's intention is to make it possible to easily use the latest major version
     of Turris OS version.
 
@@ -14,7 +14,7 @@ Btrfs is the default filesystem on Turris Omnia and Turris MOX while Turris 1.x
 routers were using at first JFFS2 and these days UBIFS. In the recent versions, we
 added the possibility to use the Btrfs filesystem for our first routers. It has
 various advantages like providing backups via snapshots by using tool
-[Schnapps](../geek/schnapps/schnapps.md) for managing snapshots. However, while
+[Schnapps](../../geek/schnapps/schnapps.md) for managing snapshots. However, while
 you can use the RESET button to rollback to previous snapshots on Turris Omnia, this
 is not possible on Turris 1.x routers, yet.
 
@@ -22,7 +22,7 @@ is not possible on Turris 1.x routers, yet.
 
 You will need:
 
-* a [Turris 1.0 or Turris 1.1](../hw/turris-1x/turris-1x.md) router,
+* a [Turris 1.0 or Turris 1.1](turris-1x.md) router,
 * a microSD card or USB flash drive with at least 8 GB free storage,
 * a screwdriver.
 
@@ -104,7 +104,7 @@ the migration.
     and will have to configure everything from scratch.
 
 If you will run one by the following commands, it will download the medkit from the
-[HBS branch](../geek/testing.md), import the medkit as the factory snapshot and
+[HBS branch](../../geek/testing.md), import the medkit as the factory snapshot and
 reset to the factory defaults using the latest version of Turris OS. Reboot will do
 its thing that you will boot from the factory image.
 
@@ -133,7 +133,7 @@ storage thus it can't be used on an SD card. You have to instead manually perfor
 factory reset that is native for other Turris routers.
 
 If you will run one by one the following commands, it will download the medkit
-from the [HBS branch](../geek/testing.md), import the medkit as the factory
+from the [HBS branch](../../geek/testing.md), import the medkit as the factory
 snapshot and reset to the factory defaults using the latest version of Turris
 OS. Reboot will do its thing that you will boot from the factory image.
 

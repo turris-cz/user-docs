@@ -87,6 +87,7 @@ plugins:
         hw/mox/sets/feature_list.md: hw/mox/sets/feature-list.md
         hw/mox/sets/generic_mox.md: hw/mox/sets/generic-mox.md
         hw/omnia/rescue_modes.md: hw/omnia/rescue-modes.md
+        geek/btrfs_turris1x.md: hw/turris-1x/btrfs_migration.md
   - minify:
       minify_html: true
       htmlmin_opts:
@@ -179,7 +180,6 @@ nav:
           - LXC: "geek/lxc/lxc.md"
           - Netboot: "basics/apps/netboot.md"
           - Schnapps: "geek/schnapps/schnapps.md"
-          - Btrfs migration: "geek/btrfs_turris1x.md"
           - Netdata: "geek/netdata/netdata.md"
       - Deprecated:
           - Foris:
@@ -239,6 +239,7 @@ nav:
       - Turris 1.X:
           - About: hw/turris-1x/turris-1x.md
           - GPIO: hw/turris-1x/gpio.md
+          - Btrfs migration: hw/turris-1x/btrfs_migration.md
       - Wi-Fi coverage: hw/wifi.md
   - Troubleshooting:
       - Common errors: basics/common-errors.md
