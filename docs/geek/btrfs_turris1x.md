@@ -23,7 +23,7 @@ is not possible on Turris 1.x routers, yet.
 You will need:
 
 * a [Turris 1.0 or Turris 1.1](../hw/turris-1x/turris-1x.md) router,
-* a microSD card with at least 8 GB free storage,
+* a microSD card or USB flash drive with at least 8 GB free storage,
 * a screwdriver.
 
 ### Preparation of Turris 1.0 routers
@@ -53,6 +53,15 @@ cord into the router.
 
 ![RAM module without RAM and inserted SD card](turris1x-without-ram.jpg)
 
+### Inserting USB flash drive
+
+You can also boot from USB flash drive. But do so, you have put the flash drive
+into one of the rear USB ports (those that are USB 2.0 only).
+
+To make your USB recognizable by the tools, you have to label the partition
+present on your drive `turris-destroy`. Then the scripts will be able to find
+it and as name suggests, destroy all the data residing on it.
+
 ### Installing package
 
 Before you are able to install any packages using LuCI/SSH, you need to update
@@ -65,13 +74,13 @@ opkg install turris-btrfs
 
 It does nothing by itself, so it is safe to install.
 
-#### Formatting microSD card
+#### Formatting new storage
 
 The next step is to execute the `btrfs_migrate` command, which is a script that will
-make sure that you want to really want to wipe all the data on the microSD card and
-afterward it will format the card to Btrfs. Then it will copy all the current content on
-the NAND (internal storage) to the microSD card and set the U-boot environment to boot
-from the microSD card.
+make sure that you want to really want to wipe all the data on selected storage
+device and afterward it will format it to Btrfs. Then it will copy all the
+current content on the NAND (internal storage) to the microSD card and set the
+U-boot environment to boot from the removable device.
 
 After the script is done, you will get a notification to reboot your router.
 
@@ -79,15 +88,19 @@ To check if you are booting from the microSD card, you can run the command `moun
 grep btrfs` to verify that there is something like `/dev/mmcblk0p2 on / **type
 btrfs**`. If it is there, the migration was successful.
 
-### When happens if you remove the microSD card
+In case of USB flash drive, the command will stay the same - `mount | grep btrfs` - but
+the output will change to contain something like `/dev/sda2 on / **type
+btrfs**`. If it is there, the migration was successful.
+
+### When happens if you remove the microSD card or USB drive
 
 Turris boots from the NAND (internal storage) in the same state as before
 the migration.
 
-### How to have Turris OS 5.x+ from Turris OS 3.x
+### How to have Turris OS 6.x+ from Turris OS 3.x
 
 !!! warning
-    By following this 5.x migration howto, you will loose your current settings
+    By following this 6.x migration howto, you will loose your current settings
     and will have to configure everything from scratch.
 
 If you will run one by the following commands, it will download the medkit from the
