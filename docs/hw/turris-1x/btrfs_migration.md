@@ -6,7 +6,7 @@ competency: advanced
 
 !!! warning
     This article is for [Turris 1.x routers](../../hw/turris-1x/turris-1x.md)
-    running on old [Turris OS 3.x](../../basics/tos-versions.md) version.
+    running on an old [Turris OS 3.x](../../basics/tos-versions.md) version.
     It's intention is to make it possible to easily use the latest major version
     of Turris OS version.
 
@@ -55,7 +55,7 @@ cord into the router.
 
 ### Inserting USB flash drive
 
-You can also boot from USB flash drive. But do so, you have put the flash drive
+You can also boot from a USB flash drive. But do so, you have put the flash drive
 into one of the rear USB ports (those that are USB 2.0 only).
 
 To make your USB recognizable by the tools, you have to label the partition
@@ -77,7 +77,7 @@ It does nothing by itself, so it is safe to install.
 #### Formatting new storage
 
 The next step is to execute the `btrfs_migrate` command, which is a script that will
-make sure that you want to really want to wipe all the data on selected storage
+make sure that you want to really want to wipe all the data on the selected storage
 device and afterward it will format it to Btrfs. Then it will copy all the
 current content on the NAND (internal storage) to the microSD card and set the
 U-boot environment to boot from the removable device.
@@ -88,7 +88,7 @@ To check if you are booting from the microSD card, you can run the command `moun
 grep btrfs` to verify that there is something like `/dev/mmcblk0p2 on / **type
 btrfs**`. If it is there, the migration was successful.
 
-In case of USB flash drive, the command will stay the same - `mount | grep btrfs` - but
+In case of the USB flash drive, the command will stay the same - `mount | grep btrfs` - but
 the output will change to contain something like `/dev/sda2 on / **type
 btrfs**`. If it is there, the migration was successful.
 
