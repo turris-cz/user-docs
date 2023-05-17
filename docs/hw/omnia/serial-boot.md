@@ -33,10 +33,8 @@ Or you can get the binary for x86-64 CPU from
 [our repository](https://repo.turris.cz/omnia/nor_fw/x86_64/).
 
 !!! warning
-    For example, the version of `kwboot` in the current
-    Ubuntu is older than required version. In such case, you will need to
-    download the binary (for x86-64 CPU only) from our repository as mentioned.
-    Save it to your working directory and flag it as ``runable``:
+    To use the binary from our repository, download it to your working directory
+    and flag it as ``runnable``:
 
     ```
     chmod +x kwboot
