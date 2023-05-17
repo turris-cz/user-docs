@@ -80,7 +80,7 @@ The next step is to execute the `btrfs_migrate` command, which is a script that 
 make sure that you want to really want to wipe all the data on the selected storage
 device and afterward it will format it to Btrfs. Then it will copy all the
 current content on the NAND (internal storage) to the microSD card and set the
-U-boot environment to boot from the removable device.
+U-Boot environment to boot from the removable device.
 
 After the script is done, you will get a notification to reboot your router.
 
