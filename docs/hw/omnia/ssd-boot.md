@@ -35,6 +35,12 @@ competency: expert
 
 1. Backup the current filesystem by creating and exporting a snapshot.
    See the [Schnapps documentation page](../../geek/schnapps/schnapps.md).
+
+    !!! note
+        If you no longer can access your eMMC or you want to start fresh,
+        you can use the [medkit](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz)
+        instead of a backup of your eMMC.
+
 2. Find out the size of the system partition (e.g. via `df`; the partition is
    named `mmcblk0p1`).
 3. Install `cfdisk` if not yet installed:
@@ -57,7 +63,7 @@ mkfs.btrfs /dev/sda1
 ```
 10. Create a mount point a mount the partition on it:
 ```shell
-mkdir /mnt/ssd && mount /dev/sda1 /mnt/ssd
+mkdir -p /mnt/ssd && mount /dev/sda1 /mnt/ssd
 ```
 11. Create a Btrfs subvolume for the root directory:
 ```shell
@@ -67,15 +73,22 @@ btrfs subvolume create /mnt/ssd/@
 
     For example:
     ```shell
-    cd /mnt/ssd/@ && tar xzf backup.tar.gz
+    tar -C /mnt/ssd/@ -xvzf backup.tar.gz
     ```
+    Where you need to replace `backup.tar.gz` with the actual name of your backup.
 
-    !!! note
-        Replace "backup.tar.gz" by the real backup file name.
+    Or if you want to start from scratch:
+    ```shell
+    wget -O - https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz | tar -C /mnt/ssd/@ -xvzf -
+    ```
 
 13. Create a symlink to the boot.scr file:
 ```shell
 cd /mnt/ssd && ln -s @/boot/boot.scr .
+```
+14. Leave the directory and unmount the drive
+```shell
+cd && umount /mnt/ssd
 ```
 
 ## Updating U-Boot to boot from SSD
