@@ -108,15 +108,15 @@ boot_targets=mmc0 scsi0 usb0 pxe dhcp
 ```shell
 setenv boot_targets scsi0 mmc0 usb0 pxe dhcp
 ```
-5. Try to boot using the new values: `run distro_bootcmd`.
+5. Try to boot using the new values: `run distro_bootcmd`
 6. After booting, run the `mount` command to display what is actually mounted.
    It should look like:
 ```
 /dev/sda1 on / type btrfs (rw,noatime,ssd,space_cache,commit=5,subvolid=257,subvol=/@)
 ```
 7. If it is OK you can repeat the step 4 and then write the environment
-   values permanently by running `saveenv`.
-8. Reboot your router by `run distro_bootcmd`.
+   values permanently by running `saveenv`
+8. Reboot your router by `run distro_bootcmd`
 
 !!! info
     The `boot_prefixes` variable specifies where to search for the boot
