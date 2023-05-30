@@ -124,21 +124,14 @@ setenv boot_targets scsi0 mmc0 usb0 pxe dhcp
     `boot_targets` defines the boot sequence (`scsi0` means the first
     virtual SCSI device which is presented by the SSD here).
 
-## Configuring Schnapps
+## Creating factory image
 
-Schnapps expects that your root device is on eMMC. To convince it otherwise,
-you need to create the configuration file and specify where your root
-filesystem resides:
+The last thing to do is to create a factory image so you have something to return
+to if you run into troubles. Starting from Turris OS 6.3.3, schnapps has a
+command to do that.
 
-1. Connect to you router via SSH and log in.
-2. Change the Schnapps configuration by running:
-```shell
-echo 'ROOT_DEV="/dev/sda1"' > /etc/schnapps/config
-```
-3. Create the initial snapshot:
-```shell
-schnapps create "Initial version on SSD"
-```
+You just need to run `schnapps update-factory` and after it finishes, you can
+use the _Factory reset_ button in reForis and the `schnapps rollback factory` command.
 
 !!! caution
     You should avoid using the LuCI mount plugin as it tries to unmount all
