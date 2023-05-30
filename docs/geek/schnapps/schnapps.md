@@ -172,6 +172,52 @@ mounts two snapshots (you can mount as many snapshots as you want). The mounted 
 changes don't apply to any other snapshots. You can, for example, mount a snapshot, modify its files and then roll back
 to that snapshot to apply your changes.
 
+### Preparing for risky configuration
+
+From time to time you may want to try some potentially risky reconfiguration
+that could cut you out of the router. And sometimes, you need to do it even
+remotely. For this use-case, we have a special workflow in Schnapps that will
+help you to recover if things go sideways.
+
+Before starting the risky operation, call
+
+```
+schnapps savepoint 15
+```
+
+This will commit the current state of the router as a snapshot and it will
+start a fifteen minutes timer (changing the number will change the number of
+minutes, if you leave it out, the default is ten minutes). If everything goes
+well and the new configuration works, you can subsequently call
+
+```
+schnapps commit
+```
+
+This will cancel the timer and remove the original snapshot. If you don't
+manage to `commit` in time, the state of your router will be rolled back to the
+snapshot created at the start of your endeavour and the rebooted. You will have
+a _rollback_ snapshot to inspect, but your router should be back in the state
+that you can connect to it and give it another try.
+
+### Updating factory image
+
+As we constantly release new versions, it makes sense to update even the
+factory image from time to time. That way, if you need to rollback all the way
+to the factory image, you don't have to start with something really old.
+Schnapps can help you keep your factory image up to date. All you need to do is
+to run the following command and it will download and update your factory image.
+
+```
+schnapps update-factory
+```
+
+!!! tip
+    It is a good idea to update your factory snapshot after each major update.
+    The configuration might change quite a lot between major versions and while we
+    try to migrate everything, it is better to avoid the need to migrate
+    anything altogether.
+
 ### Export and import
 
 You can export your snapshot to create a media kit (*medkit*) which can be simply backed up or copied to another
