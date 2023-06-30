@@ -117,6 +117,24 @@ various repositories with additional packages like
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
 
+## Turris OS 6.3
+
+Turris OS 6.3 is based on top of [OpenWrt
+21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
+patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md) and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* Syncthing and Transmission WebApps now use Turris Auth
+* LibreSpeed reForis plugin for measuring network speed replacing Netmetr
+
+### Detailed changelog
+
+<span id="tos63">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v6.3.", "tos63");</script>
+
 ## Turris OS 6.2
 
 Turris OS 6.2 is based on top of [OpenWrt
