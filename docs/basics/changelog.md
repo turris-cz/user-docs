@@ -122,7 +122,7 @@ commit hashes the release is built from.
 Turris OS 6.3 is based on top of [OpenWrt
 21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
 patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
-Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md) and
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
 [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
 
 New features:
@@ -140,7 +140,7 @@ New features:
 Turris OS 6.2 is based on top of [OpenWrt
 21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
 patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
-Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md) and
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
 [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
 
 New features:
@@ -158,7 +158,7 @@ New features:
 Turris OS 6.1 is based on top of [OpenWrt
 21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
 patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
-Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md) and
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
 [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
 
 New features:
@@ -177,7 +177,7 @@ New features:
 Turris OS 6.0 is based on top of [OpenWrt
 21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
 patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
-Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md) and
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
 [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
 
 New features:
@@ -204,7 +204,7 @@ New features:
 Turris OS 5.4 is based on top of [OpenWrt
 19.07](https://openwrt.org/releases/19.07/start) with our feed and a few
 patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
-Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md) and
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
 [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
 
 New features:
@@ -223,7 +223,7 @@ New features:
 Turris OS 5.3 is based on top of [OpenWrt
 19.07](https://openwrt.org/releases/19.07/start) with our feed and a few
 patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
-Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md) and
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
 [Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
 
 New features:
