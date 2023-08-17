@@ -283,12 +283,15 @@ The simplest operation is the upload of one snapshot. Currently, these remote re
 * **[Nextcloud](https://en.wikipedia.org/wiki/Nextcloud)** – basically the same as WebDAV but with simpler
 specification for Nextcloud servers; use if you have a Nextcloud server
 * **[SSHFS](https://en.wikipedia.org/wiki/SSHFS)** – use for any SSH-capable server (e.g. almost any Linux machine)
+* **Local** or **File** – for locally mounted external drive, `upload` is the same as `export`, but `sync` makes sense
 
 Look at some examples:
 ```
 schnapps upload 8 webdav://user:password@my.webdav.server/ /snapshots
 schnapps upload nextcloud:/user:password@my.nextcloud.server/snapshots/
 schnapps upload 8 ssh://my.webdav.server/ /snapshots
+schnapps upload 8 local://mnt/ext/
+schnapps upload 8 file://mnt/ext/
 ```
 The first command uploads the snapshot numbered 8 to the specified WebDAV server to the specified directory.
 The user credentials are incorporated into the URL. The second example is similar but it uploads the current file
