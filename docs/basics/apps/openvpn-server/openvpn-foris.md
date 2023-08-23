@@ -6,11 +6,11 @@ competency: novice
 
 !!! tip
     It's generally better to the OpenVPN server via the
-    [reForis web interface](openvpn.md). This page is intended for information
+    [reForis web interface](./openvpn.md). This page is intended for information
     only.
 
 {!
-  include-markdown "openvpn.md"
+  include-markdown "./openvpn.md"
   start="<!--what-is-openvpn-start-->"
   end="<!--what-is-openvpn-end-->"
 !}
@@ -97,7 +97,7 @@ a public address (a 1:1 NAT is used or the OpenVPN port is forwarded through the
 download the client configuration files.**
 
 {!
-  include-markdown "openvpn.md"
+  include-markdown "./openvpn.md"
   start="<!--openvpn-client-side-start-->"
   end="<!--openvpn-client-side-end-->"
 !}

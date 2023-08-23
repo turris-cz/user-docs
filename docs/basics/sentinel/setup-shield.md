@@ -27,17 +27,17 @@ Notably you can select which threat detection tools you want to use or you can
 install HaaS which is **not** configured by default.
 
 {!
-  include-markdown "setup.md"
+  include-markdown "./setup.md"
   start="<!--threat-det-reforis-start-->"
   end="<!--threat-det-reforis-end-->"
 !}
 {!
-  include-markdown "setup.md"
+  include-markdown "./setup.md"
   start="<!--haas-reforis-start-->"
   end="<!--haas-reforis-end-->"
 !}
 {!
-  include-markdown "setup.md"
+  include-markdown "./setup.md"
   start="<!--isp-start-->"
   end="<!--isp-end-->"
 !}
