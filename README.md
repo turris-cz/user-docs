@@ -24,6 +24,33 @@ Run the following `pip3` command in the cloned repository to install it easily.
 pip3 install --user -r requirements.txt
 ```
 
+### Error externally managed environment
+
+If you run into this error due to your distribution adopting [PEP 668 - Marking Python base environments as "externally managed"](https://peps.python.org/pep-0668/)
+
+```bash
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+python3-xyz, where xyz is the package you are trying to
+install.
+...
+```
+
+Use venv
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Then run the following command
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
 ### Run mkdocs
 
 Once you have a cloned out directory with documentation, you can either render
