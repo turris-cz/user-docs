@@ -122,7 +122,7 @@ In the following video the download (via `git`) and compilation of `mox-imager`
 sources, and execution of steps 1-5 from previous section is shown:
 
 <video style="width:100%" controls>
-  <source src="../serial-boot-booting-broken-board.mp4" type="video/mp4">
+  <source src="https://static.turris.com/docs/omnia/serial-boot-booting-broken-board.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
@@ -214,6 +214,6 @@ YMODEM protocol. This text shows how to do this with `minicom`.
    `uboot` image.
 
 <video style="width:100%" controls>
-  <source src="../serial-boot-uploading-images-uart.mp4" type="video/mp4">
+  <source src="https://static.turris.com/docs/omnia/serial-boot-uploading-images-uart.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>

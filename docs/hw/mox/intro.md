@@ -44,7 +44,7 @@ modules, typically available on conferences and through our distributors. If
 you prefer one simple document explaining MOX over complex and detailed
 documentation, you can download it here.
 
-[MOX Brochure](MOX-Brochure.pdf)
+[MOX Brochure](https://static.turris.com/docs/mox/MOX-Brochure.pdf)
 
 ## Related documentation
 

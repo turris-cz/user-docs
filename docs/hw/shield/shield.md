@@ -73,11 +73,11 @@ setup and additional opensource software, take a look at MOX or Omnia.
 
 ## Available documents
 
- * [Declaration of Conformity](Shield-DoC.pdf)
- * [Official datasheet](shield-datasheet.pdf)
- * [Official printed manual](shield-manual.pdf)
+ * [Declaration of Conformity](https://static.turris.com/docs/shield/Shield-DoC.pdf)
+ * [Official datasheet](https://static.turris.com/docs/shield/shield-datasheet.pdf)
+ * [Official printed manual](https://static.turris.com/docs/shield/shield-manual.pdf)
 
 Schematics for modules that Turris Shield consists of are available:
 
- * [MOX A](../mox/Turris-Mox-A.pdf)
- * [MOX C](../mox/Turris-Mox-C.pdf)
+ * [MOX A](https://static.turris.com/docs/shield//mox/Turris-Mox-A.pdf)
+ * [MOX C](https://static.turris.com/docs/shield//mox/Turris-Mox-C.pdf)

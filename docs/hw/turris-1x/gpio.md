@@ -5,7 +5,7 @@ competency: expert
 # GPIO (general purpose input-output ports)
 
 GPIO ports are ports that can be controlled by a user program. Their location
-and numbering on the board can be found [here](turris_pinout-v1_2.pdf).
+and numbering on the board can be found [here](https://static.turris.com/docs/turris-1x/turris_pinout-v1_2.pdf).
 
 Maximum electrical characteristics of GPIO ports:
 
@@ -22,7 +22,7 @@ Maximum electrical characteristics of GPIO ports:
 
 The first step to use this library is to import and initialize it. The library
 is initialized in the _BCM_ mode where port numbers correspond to their
-designations on the chip. This is the same as on the [pinout picture](turris_pinout-v1_2.pdf).
+designations on the chip. This is the same as on the [pinout picture](https://static.turris.com/docs/turris-1x/turris_pinout-v1_2.pdf).
 
 {!
   include-markdown "../omnia/gpio.md"

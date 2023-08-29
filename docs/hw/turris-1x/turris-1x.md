@@ -34,11 +34,11 @@ are connected to a fully manageable switch as shown on the picture bellow.
 
 ## Various documentation files
 
-* [Printed manual (Czech)](turris-uzivatelska-prirucka.pdf)
-* [Description of connectors and DIP switches for Turris 1.0](turris10-pinout.pdf)
-* [Block diagram for Turris 1.0](turris10-block-diagram.png)
-* [Complete HW documentation for Turris 1.0](CZ-NIC-Router-TURRIS-version-1.zip)
-* [Complete HW documentation for Turris 1.1](CZ-NIC-Router-TURRIS-version-1-1.zip)
+* [Printed manual (Czech)](https://static.turris.com/docs/turris-1x/turris-uzivatelska-prirucka.pdf)
+* [Description of connectors and DIP switches for Turris 1.0](https://static.turris.com/docs/turris-1x/turris10-pinout.pdf)
+* [Block diagram for Turris 1.0](https://static.turris.com/docs/turris-1x/turris10-block-diagram.png)
+* [Complete HW documentation for Turris 1.0](https://static.turris.com/docs/turris-1x/CZ-NIC-Router-TURRIS-version-1.zip)
+* [Complete HW documentation for Turris 1.1](https://static.turris.com/docs/turris-1x/CZ-NIC-Router-TURRIS-version-1-1.zip)
 * [STM32F0 Power Control firmware](https://gitlab.nic.cz/turris/hw/turris_power_control)
 * [Lattice CPLD firmware](https://gitlab.nic.cz/turris/hw/turris_cpld)
-* [Description of CPLD registers](turris-CPLD-registers.pdf)
+* [Description of CPLD registers](https://static.turris.com/docs/turris-1x/turris-CPLD-registers.pdf)

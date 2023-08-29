@@ -142,25 +142,25 @@ The Moxtet system uses a standard PCIe connector, but with different signals.
 
 For all MOX modules we also provide schematics
 
- * [MOX A](Turris-Mox-A.pdf)
- * [MOX B](Turris-Mox-B.pdf)
- * [MOX C](Turris-Mox-C.pdf)
- * [MOX D](Turris-Mox-D.pdf)
- * [MOX E](Turris-Mox-E.pdf)
- * [MOX F](Turris-Mox-F.pdf)
- * [MOX G](Turris-Mox-G.pdf)
- * [MOX SDIO WiFi](Turris-Mox-SDIO-WIFI.pdf)
- * [MOX PoE](Turris-Mox-PoE.pdf)
+ * [MOX A](https://static.turris.com/docs/mox/Turris-Mox-A.pdf)
+ * [MOX B](https://static.turris.com/docs/mox/Turris-Mox-B.pdf)
+ * [MOX C](https://static.turris.com/docs/mox/Turris-Mox-C.pdf)
+ * [MOX D](https://static.turris.com/docs/mox/Turris-Mox-D.pdf)
+ * [MOX E](https://static.turris.com/docs/mox/Turris-Mox-E.pdf)
+ * [MOX F](https://static.turris.com/docs/mox/Turris-Mox-F.pdf)
+ * [MOX G](https://static.turris.com/docs/mox/Turris-Mox-G.pdf)
+ * [MOX SDIO WiFi](https://static.turris.com/docs/mox/Turris-Mox-SDIO-WIFI.pdf)
+ * [MOX PoE](https://static.turris.com/docs/mox/Turris-Mox-PoE.pdf)
 
 ## NVMe adapter documents
 
 The following manufacturing documents pertain to the adapter intended for
 NVMe disks in B and G modules.
 
- * [PCB assembly layout](nvme-adapter/CZ28NIC02_Assembly.PDF)
- * [Part references](nvme-adapter/CZ28NIC0200.xlsx)
- * [Various manufacturing definitions](nvme-adapter/CZ28NIC0200.xlsx)
+ * [PCB assembly layout](https://static.turris.com/docs/mox/nvme-adapter/CZ28NIC02_Assembly.PDF)
+ * [Part references](https://static.turris.com/docs/mox/nvme-adapter/CZ28NIC0200.xlsx)
+ * [Various manufacturing definitions](https://static.turris.com/docs/mox/nvme-adapter/CZ28NIC0200.xlsx)
 
 ## Declaration of Conformity
 
-Turris MOX adheres to EU legislation. You can get download [Declaration of Conformity](MOX-DoC.pdf).
+Turris MOX adheres to EU legislation. You can get download [Declaration of Conformity](https://static.turris.com/docs/mox/MOX-DoC.pdf).
