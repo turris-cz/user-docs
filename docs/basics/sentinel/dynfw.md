@@ -79,3 +79,9 @@ the address to the list or remove it.
 We prepared a simplified
 [example client](https://gitlab.nic.cz/turris/sentinel/dynfw-example-client)
 to demonstrate how the protocol works in more detail.
+
+!!! important
+    The dynamic firewall data is provided under the [Creative Commons
+    Attribution-NonCommercial-ShareAlike 4.0 International
+    license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+    (CC BY-NC-SA 4.0). Please adhere its terms whenever you use the data.
