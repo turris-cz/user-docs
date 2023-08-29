@@ -16,7 +16,7 @@ principle.
 
 !!! warning
     NetMetr has been deprecated and will not be available in the future
-    versions of Turris OS. Please use [LibreSpeed](../librespeed/) instead.
+    versions of Turris OS. Please use [LibreSpeed](librespeed/index.md) instead.
 
 ## Installation & first run
 

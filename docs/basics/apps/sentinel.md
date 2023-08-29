@@ -12,7 +12,7 @@ router with dynamic firewall. If you seek more details check [Sentinel comprehen
 
 !!! tip
     Turris Sentinel is installed out of the box on [Turris
-    Shield](../../models/#turris-shield). There is no need to configure it.
+    Shield](../../hw/shield/shield.md). There is no need to configure it.
 
 To use Sentinel on Turris device just have to follow the instructions in the
 [setup guide](../sentinel/setup.md).
