@@ -51,8 +51,7 @@ opkg update && opkg install cfdisk
 ```shell
 cfdisk /dev/sda
 ```
-5. If no partition table exists it asks for a new one (its type should be
-   `DOS`).
+5. If no partition table exists, it asks for a new one (partition table `GPT` is recommended).
 6. Delete all old partitions (if any).
 7. Create a new primary partition. Its size must be at least the same as the
    original (eMMC) partition has (see above). Mark this partition as bootable.
