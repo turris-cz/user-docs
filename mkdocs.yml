@@ -176,6 +176,7 @@ nav:
               - Introduction: "basics/luci/luci.md"
               - Static IP: "basics/luci/static-dhcp/static-dhcp.md"
               - VLAN: "basics/luci/vlan/luci-vlan.md"
+          - LTE connection: "geek/lte/index.md"
           - LXC: "geek/lxc/lxc.md"
           - Netboot: "basics/apps/netboot.md"
           - Schnapps: "geek/schnapps/schnapps.md"
