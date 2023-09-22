@@ -48,7 +48,7 @@ the microSD card slowly and without using force.
 
 ![RAM module with inserted RAM](turris1x-with-ram.jpg)
 
-If the card is in it is place, you can now put back the RAM, top cover and plug the power
+If the card is in it's place, you can now put back the RAM, top cover and plug the power
 cord into the router.
 
 ![RAM module without RAM and inserted SD card](turris1x-without-ram.jpg)
@@ -79,7 +79,7 @@ To check if you are booting from the microSD card, you can run the command `moun
 grep btrfs` to verify that there is something like `/dev/mmcblk0p2 on / **type
 btrfs**`. If it is there, the migration was successful.
 
-### When happens if you remove the microSD card
+### What happens if you remove the microSD card
 
 Turris boots from the NAND (internal storage) in the same state as before
 the migration.
