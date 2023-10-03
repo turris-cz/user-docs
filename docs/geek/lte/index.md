@@ -7,54 +7,52 @@ competency: advanced
 
 !!! warning
     This manual is intended to be used with the modem we provide in retail as
-    a part of the LTE kit. In case you use any other modem ePCIe card this
-    might not apply.
+    a part of the LTE kit or as a part of Omnia 4G. In case you use any other
+    modem PCIe card, this might not apply.
 
-## Prerequisties
+## Dependencies
 
-### Support packages and drivers
+To be able to use the modem, various extra packages are needed. Once you have your
+modem in, _updater_ will automatically recognize it, and it will install all
+necessary packages in the next update.
 
-For the modem to work, we first need to install drivers and utilities.
+## Setup
 
-| Component             | Description                                                                       |
-|-----------------------|-----------------------------------------------------------------------------------|
-| kmod-usb-net-qmi-wwan | QMI WWAN driver for Qualcomm MSM based 3G and LTE modems.                         |
-| libqmi                | Helper library talk to QMI enabled modems. Add qmi-utils for extra utilities.     |
-| uqmi                  | Command line tool for controlling mobile broadband modems using the QMI-protocol. |
+If your SIM card does not require a PIN, starting with Turris OS 6.4.3, your
+modem should be configured automatically. If it requires PIN or if
+autodetection fails for some reason, you can configure your modem manually in
+LuCI.
 
-We can do it simply in CLI (via ssh) using the following commands:
+### Manual setup
 
-```shell
-opkg update
-opkg install kmod-usb-net-qmi-wwan libqmi uqmi luci-proto-qmi
-```
+The modem can be configured in section _Network_/_Interfaces_. The autodetection script
+should create a `GSM` interface there. You can also create it manually by
+clicking on the `Add new interface` button. Name it `gsm`, and as a protocol, select
+`ModemManager`.
 
-## UCi setup
+![Creating gsm interface](lte_creation.png)
 
-First we need to determine if the settings are on place.
+The next step should be to put it into the `wan` firewall zone. This can be done in
+_Firewall Settings_ tab in the following dialog.
 
-```shell
-uci show network.LTE
-```
+![Firewall settings](lte_firewall_settings.png)
 
-Standard settings (common for most configurations)
+To prevent conflicts with wired internet access, it also makes sense to
+configure a different `metric`. This can be done in _Advanced Settings_ tab. There,
+you need to fill in the _Use gateway metric_ option and set it to something higher
+than 1024 (which is a default metric). A reasonable value is, for example, 2048.
+Setting it to a higher number means that other interfaces would be preferred if
+available.
 
-```shell
-network.LTE=interface
-network.LTE.pincode='0000'
-network.LTE.proto='qmi'
-network.LTE.device='/dev/cdc-wdm0'
-network.LTE.auth='none'
-network.LTE.apn='internet'
-network.LTE.pdptype='ipv4'
-```
+![Metric settings](lte_advanced_settings.png)
 
-The setting ``network.LTE.apn`` depends on your mobile network operator.
+### SIM and operator settings
 
-### Footnote
+You might need to change some configuration even if the automatic setup succeeded.
+You can do so in _General Settings_ when configuring the `gsm` interface. If
+your SIM card requires a PIN, you have to enter it here manually. Also, automatic
+configuration might guess wrong some other settings like _APN_ or
+authentication. These settings depend on your mobile network operator and might
+even vary based on your plan. You can change all those settings here.
 
-Some mobile operators require additional authentication setup with
-
-- auth type (NONE/PAP/CHAP)
-- username
-- password
+![General settings](lte_general_settings.png)
