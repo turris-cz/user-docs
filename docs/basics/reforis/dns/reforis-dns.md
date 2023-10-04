@@ -125,6 +125,14 @@ secret you can use DoT/TLS instead.
     a [summary table](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Public+Resolvers)
     with links to particular privacy policies.
 
+!!! warning
+    We cannot guarantee the functionality of third-party DNS forwarders.
+    Various problems have been encountered, for example, broken DNSSEC
+    (missing or expired signatures, etc.) or slow responses. If you
+    have such troubles, please try to choose another forwarder before
+    reporting the problems to us.
+
+
 ### Custom forwarder
 
 If none of the predefined forwarders fits your needs there is also
