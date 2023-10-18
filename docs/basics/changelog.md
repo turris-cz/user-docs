@@ -32,7 +32,7 @@ function renderChangelog(changelog, element) {
         element.innerHTML += `
         <h4 id="${releaseVersion}">${message[0].replace("release", "")}</h4>
         <h5>Date of release</h5>
-        <p>${releaseDate.toString()}</p>
+        <p>${releaseDate.toDateString()}</p>
         <h5>Sources</h5>
         <p>Available on <a target="_blank" href="https://gitlab.nic.cz/turris/os/build/tree/${releaseVersion}">GitLab</a>.</p>
         <h5>Release notes</h5>
