@@ -73,6 +73,10 @@ afterward it will format the card to Btrfs. Then it will copy all the current co
 the NAND (internal storage) to the microSD card and set the U-boot environment to boot
 from the microSD card.
 
+```
+btrfs_migrate
+```
+
 After the script is done, you will get a notification to reboot your router.
 
 To check if you are booting from the microSD card, you can run the command `mount |
