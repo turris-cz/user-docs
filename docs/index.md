@@ -43,6 +43,11 @@ up-to-date. We offer updates for all of our devices, which not only address
 discovered issues but also add new features. These updates can even be installed
 automatically for your convenience.
 
+We are committed to providing long-term support for our devices for as long as the
+Linux kernel continues to support them. For instance, our initial router, Turris 1.X,
+which was a part of the Turris security research program launched in 2013, is still
+supported after a decade.
+
 ### Turris Sentinel
 
 Our [Sentinel](https://docs.turris.cz/basics/sentinel/intro/) security project,
