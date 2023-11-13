@@ -1,26 +1,27 @@
 # What is Turris project?
 
-Turris project encompasses both software and hardware development efforts aiming
-to provide open and secure routers. Devices that can be truly yours and you can
-trust in.
+Turris project aims to provide open and secure routers through a combination of
+software and hardware development. These devices are designed to be truly yours
+and provide a high level of trust.
 
 !!! important
-    This documentation applies primarily to Turris OS version 4.0 and newer. You
-    might still be running Turris OS 3 and in that case you can find old official
-    documentation [on community wiki](https://wiki.turris.cz/doc/en/howto/start).
-    More info about Turris OS versions can also be found
-    [here](basics/tos-versions.md).
+    Turris OS version 4.0 and above is the primary target of this documentation.
+    If you are still using version 3 of Turris OS, you can access the old official
+    documentation on the [community wiki](https://wiki.turris.cz/doc/en/howto/start).
+    For more information on Turris OS versions, please visit the designated
+    [webpage](https://docs.turris.cz/basics/tos-versions/).
 
 ## Openness
 
-Our devices come with open source firmware. You can check what is running on
-your router line-by-line, see what we changed or you can even contribute
-yourself. All sources are available on our
-[GitLab](https://gitlab.nic.cz/turris). You get full root account on your device
-and you can do whatever you want with it. We are not locking you out.
+Our devices feature open-source firmware that provides full accessibility to users.
+You have the option to review the code line-by-line, view the changes that we made,
+or even contribute your own modifications. Each device's source code is freely
+available on our [GitLab](https://gitlab.nic.cz/turris). In addition, you will
+receive a full root account, giving you the freedom to customize your device as you
+wish. Rest assured that we will not restrict your access in any way.
 
-Apart from software, you'll get full schematics for your device so you can check
-out how we put it together.
+Along with the software, you get full schematics for your device to see how we
+built it.
 
 ## Security
 
@@ -28,24 +29,24 @@ We consider security as one of our main focus areas.
 
 ### Safe defaults
 
-The first step in security is setting up your unique password. Therefore we don't
-enable internet connection unless a user sets a password. We don't provide any
-defaults and you have to come with your own. We also encourage protecting your
-Wi-Fi with a password and we provide you with an easy way to create separate
-network for devices you don't trust. Last but not least, our devices come with
-DNSSEC validation enabled by default.
+Setting up a unique password is the initial step in ensuring security. Thus, we do
+not allow internet connection without a user-defined password. We do not offer any
+defaults and require users to create their passwords. We also recommend that you
+password-protect your Wi-Fi, and we make it easy to create a separate network for
+untrusted devices. Lastly, our devices come with DNSSEC validation enabled by
+default for added security.
 
 ### Updates
 
-No software is ever perfect. To keep up with a new security standards and to fix
-existing bugs and vulnerabilities, you need your router up to date all the time.
-We provide updates for all our devices to fix discovered issues but also to
-provide new features. Those updates can be even installed automatically.
+To maintain optimal security and functionality, it is important to keep your router
+up-to-date. We offer updates for all of our devices, which not only address
+discovered issues but also add new features. These updates can even be installed
+automatically for your convenience.
 
 ### Turris Sentinel
 
-To get even further, we provide an easy way to participate in our security
-project [Sentinel](basics/sentinel/intro.md) by using firewall monitoring or
-detecting attack attempts. The information gathered about possible attackers is
-analyzed and outputs are shared with the security community. The firewall on
-your router is updated with a greylist based on our findings.
+Our [Sentinel](https://docs.turris.cz/basics/sentinel/intro/) security project,
+which monitors firewalls and detects attempted attacks, is an easy way to improve
+your security. We analyze information about potential attackers and share the
+results of our analysis with the security community. We update your router's
+firewall with a greylist based on our findings.
