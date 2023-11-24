@@ -182,6 +182,7 @@ nav:
           - Schnapps: "geek/schnapps/schnapps.md"
           - Btrfs migration: "geek/btrfs_turris1x.md"
           - Netdata: "geek/netdata/netdata.md"
+          - Firmware update: "geek/nor-update/nor-update.md"
       - Deprecated:
           - Foris:
               - About: basics/foris/intro.md
