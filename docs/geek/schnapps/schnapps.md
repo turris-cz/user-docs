@@ -114,7 +114,8 @@ schnapps cleanup
 schnapps cleanup --compare
 ```
 The first command deletes all snapshots which are older than the numbers specified in `/etc/config/schnapps`
-(see below). The second one also deletes the snapshots which contain no changes to the previous ones.
+(see below). The second one also deletes all snapshots before the last one with no changes between them
+(only the last snapshot from a group of identical ones is retained).
 
 ### Rolling back
 
