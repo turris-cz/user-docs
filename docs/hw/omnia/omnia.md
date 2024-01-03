@@ -72,9 +72,20 @@ is no longer available.
 
 ![Turris Omnia WiFi 6](omnia_WiFi6.jpg)
 
+## Turris Omnia 4G
+
+This router comes equipped with a Quectel EP06 LTE card. After inserting a SIM
+card with no PIN, this device can connect you to the Internet via the **CAT 6 LTE**
+card or use it as a backup for your main connectivity.
+
+![Turris Omnia 4G](omnia_4G.jpg)
+
+
 ## Various documentation files
 
 * [Declaration of Conformity](Omnia-DoC.pdf)
+* [Official datasheet for Turris Omnia 4G](omnia-4G-datasheet.pdf)
+* [Official datasheet for Turris NO Wi-Fi](omnia-no-wifi-datasheet.pdf)
 * [Official datasheet for Turris Omnia Wi-Fi 6](omnia-wifi6-datasheet.pdf)
 * [Official datasheet for Turris Omnia 2020](omnia2020-datasheet.pdf)
 * [Official datasheet for Turris Omnia 2019](omnia2019eu-datasheet.pdf)
