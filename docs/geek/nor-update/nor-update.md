@@ -5,12 +5,31 @@ competency: advanced
 # Firmware update on Turris devices
 
 We offer automatic updates for Turris OS, but what is not automatically
-updated is the U-Boot (the bootloader), rescue system and MCU firmware on our devices. However, there have been a lot
-of improvements made to the firmware since these devices were first released.
+updated is the U-Boot (the bootloader), rescue system, and MCU firmware on our
+devices. However, there have been a lot of improvements made to the firmware
+since these devices were first released.
 
 Sometimes users experience issues with their devices due to outdated firmware.
 This guide is intended to assist users in updating their device's firmware.
+
 ## Firmware update
+
+### Through reForis
+
+From Turris OS 6.5, we introduced a way to update the firmware of your Turris
+device through reForis.
+
+!!! Warning
+    This feature is marked experimental as it is meant for testing at the moment.
+
+Automatic updates can be turned on as a package via
+*Package Management* -> *Packages*
+
+![reForis firmware update](nor_packages.png)
+
+![reForis firmware update checked](nor_packages_checked.png)
+
+### Through CLI
 
 !!! warning
     Ensure your device stays plugged in through out this whole process of
