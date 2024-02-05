@@ -235,6 +235,7 @@ nav:
           - Add-ons: hw/omnia/add-ons/index.md
           - Boot from SSD: hw/omnia/ssd-boot.md
           - GPIO: hw/omnia/gpio.md
+          - MCU: hw/omnia/mcu.md
       - Shield:
           - About: hw/shield/shield.md
           - Screenshots: hw/shield/screenshots.md
