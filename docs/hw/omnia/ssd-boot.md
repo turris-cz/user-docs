@@ -35,6 +35,9 @@ competency: expert
 
 1. Backup the current filesystem by creating and exporting a snapshot.
    See the [Schnapps documentation page](../../geek/schnapps/schnapps.md).
+   ```shell
+   schnapps export -c /tmp/backup.tar.gz
+   ```
 
     !!! note
         If you no longer can access your eMMC or you want to start fresh,
@@ -51,7 +54,8 @@ opkg update && opkg install cfdisk
 ```shell
 cfdisk /dev/sda
 ```
-5. If no partition table exists, it asks for a new one (partition table `GPT` is recommended).
+5. If no partition table exists, it asks for a new one (partition table `GPT`
+   or `dos` is recommended).
 6. Delete all old partitions (if any).
 7. Create a new primary partition. Its size must be at least the same as the
    original (eMMC) partition has (see above). Mark this partition as bootable.
@@ -72,7 +76,7 @@ btrfs subvolume create /mnt/ssd/@
 
     For example:
     ```shell
-    tar -C /mnt/ssd/@ -xvzf backup.tar.gz
+    tar -C /mnt/ssd/@ -xvzf /tmp/backup.tar.gz
     ```
     Where you need to replace `backup.tar.gz` with the actual name of your backup.
 
