@@ -21,6 +21,8 @@ competency: expert
     Because it's a complex operation (which includes many steps) you can
     utilize our [video guide](https://www.youtube.com/watch?v=71_M2N3ga7s).
 
+![Turris Omnia with an SSD installed](omnia-ssd.jpg)
+
 ## Device detection
 
 1. Plug your Omnia to the power supply.
