@@ -81,7 +81,7 @@ card or use it as a backup for your main connectivity.
 ![Turris Omnia 4G](omnia_4G.jpg)
 
 
-### Manuals 
+## Manuals
 
 * [Original printed manual](https://static.turris.com/docs/omnia/omnia-manual-en.pdf)
 * [Wi-Fi 6 Upgrade kit installation guide (CZ,EN)](https://static.turris.com/docs/omnia/Wi-Fi_6_upgrade_kit_installation_manual.pdf)
@@ -89,9 +89,26 @@ card or use it as a backup for your main connectivity.
 
 ## Datasheets
 
-* [Official datasheet for Turris Omnia 4G](https://static.turris.com/docs/omnia/omnia-4G-datasheet.pdf)
-* [Official datasheet for Turris NO Wi-Fi](https://static.turris.com/docs/omnia/omnia-no-wifi-datasheet.pdf)
-* [Official datasheet for Turris Omnia Wi-Fi 6](https://static.turris.com/docs/omnia/omnia-wifi6-datasheet.pdf)
+### Omnia Wi-Fi 6
+
+* [Official datasheet – English](https://secure.nic.cz/files/Turris-web/Omnia/Omnia_wifi6_datasheet_EN.pdf)
+* [Official datasheet – German](https://secure.nic.cz/files/Turris-web/Omnia/Omnia_wifi6_datasheet_DE.pdf)
+* [Official datasheet – Czech](https://secure.nic.cz/files/Turris-web/Omnia/Omnia_wifi6_datasheet_CS.pdf)
+
+### Omnia 4G
+
+* [Official datasheet – English](https://secure.nic.cz/files/Turris-web/Omnia/Turris_Omnia_4G_datasheet_EN.pdf)
+* [Official datasheet – German](https://secure.nic.cz/files/Turris-web/Omnia/Turris_Omnia_4G_datasheet_DE.pdf)
+* [Official datasheet – Czech](https://secure.nic.cz/files/Turris-web/Omnia/Turris_Omnia_4G_datasheet_CS.pdf)
+
+### Omnia No Wi-Fi
+
+* [Official datasheet – English](https://secure.nic.cz/files/Turris-web/Omnia/Omnia_NO_wifi_datasheet_EN.pdf)
+* [Official datasheet – German](https://secure.nic.cz/files/Turris-web/Omnia/Omnia_NO_wifi_datasheet_DE.pdf)
+* [Official datasheet – Czech](https://secure.nic.cz/files/Turris-web/Omnia/Omnia_NO_wifi_datasheet_CS.pdf)
+
+### Legacy
+
 * [Official datasheet for Turris Omnia 2020](https://static.turris.com/docs/omnia/omnia2020-datasheet.pdf)
 * [Official datasheet for Turris Omnia 2019](https://static.turris.com/docs/omnia/omnia2019eu-datasheet.pdf)
 
