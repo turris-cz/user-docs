@@ -81,18 +81,31 @@ card or use it as a backup for your main connectivity.
 ![Turris Omnia 4G](omnia_4G.jpg)
 
 
-## Various documentation files
+### Manuals 
 
-* [Declaration of Conformity](https://static.turris.com/docs/omnia/Omnia-DoC.pdf)
+* [Original printed manual](https://static.turris.com/docs/omnia/omnia-manual-en.pdf)
+* [Wi-Fi 6 Upgrade kit installation guide (CZ,EN)](https://static.turris.com/docs/omnia/Wi-Fi_6_upgrade_kit_installation_manual.pdf)
+
+
+## Datasheets
+
 * [Official datasheet for Turris Omnia 4G](https://static.turris.com/docs/omnia/omnia-4G-datasheet.pdf)
 * [Official datasheet for Turris NO Wi-Fi](https://static.turris.com/docs/omnia/omnia-no-wifi-datasheet.pdf)
 * [Official datasheet for Turris Omnia Wi-Fi 6](https://static.turris.com/docs/omnia/omnia-wifi6-datasheet.pdf)
 * [Official datasheet for Turris Omnia 2020](https://static.turris.com/docs/omnia/omnia2020-datasheet.pdf)
 * [Official datasheet for Turris Omnia 2019](https://static.turris.com/docs/omnia/omnia2019eu-datasheet.pdf)
-* [Original printed manual](https://static.turris.com/docs/omnia/omnia-manual-en.pdf)
-* [3D model of Turris Omnia PCB](https://static.turris.com/docs/omnia/omnia-step3d.zip)
+
+
+## Various documentation files
+
+### Schematics
+
 * [Schematics for Turris Omnia CZ11NIC23](https://static.turris.com/docs/omnia/CZ11NIC23-schematics.pdf)
 * [Schematics for Turris Omnia CZ11NIC20](https://static.turris.com/docs/omnia/CZ11NIC20-schematics.pdf)
 * [Schematics for Turris Omnia CZ11NIC13](https://static.turris.com/docs/omnia/CZ11NIC13-schematics.pdf)
+
+### Other documents
+
+* [Declaration of Conformity](https://static.turris.com/docs/omnia/Omnia-DoC.pdf)
+* [3D model of Turris Omnia PCB](https://static.turris.com/docs/omnia/omnia-step3d.zip)
 * [Diplexers (Wi-Fi signal mixers) – source files](https://static.turris.com/docs/omnia/diplexers-source-v1.zip)
-* [Wi-Fi 6 Upgrade kit installation guide (CZ,EN)](https://static.turris.com/docs/omnia/Wi-Fi_6_upgrade_kit_installation_manual.pdf)
