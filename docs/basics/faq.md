@@ -112,6 +112,16 @@ drive, take a look at specific articles for
 - [Turris Omnia](../hw/omnia/rescue-modes.md#re-flash-router)
 - [Turris MOX](../hw/mox/rescue-modes.md#re-flash-router)
 
+### What are the differences between Turris OS and OpenWrt?
+
+Turris OS is a Linux distribution based on OpenWrt. It has multiple features
+over OpenWrt, like automatic updates, notifications, snapshots, and much more.
+It offers a more straightforward web interface (reForis) that allows you
+to configure Turris devices easily. It contains [Sentinel](sentinel/intro.md),
+a unique security system that detects various types of attacks and can block
+malicious IP addresses in a few seconds. Simply put, Turris OS attempts to be
+more user-friendly and secure than OpenWrt.
+
 ### Can I use plain OpenWrt without Turris additions?
 
 In principle, yes, because we send the modifications to the Linux kernel and
