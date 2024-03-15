@@ -73,6 +73,12 @@ in your current working directory and that your serial line is _ttyUSB0_.
 
 4. get ready to interrupt the booting process as described below
 
+!!! note
+    Close all other console connections to the router while booting. If you
+    have another serial console open and attached to the `/dev/ttyUSB0`, the
+    upload of the boot image will be very slow and will not be able to get
+    uploaded in time.
+
 If everything works well, you should see the U-Boot being transferred to your
 Omnia and once done, you'll see U-Boot prompt and you can use that to recover
 your device.
