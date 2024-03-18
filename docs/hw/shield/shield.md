@@ -31,8 +31,7 @@ Turris Shield.
 Other features readily available include support for DNSSEC, OpenVPN (both
 [server](../../basics/apps/openvpn-server/openvpn.md) and
 [client](../../basics/apps/openvpn-client/openvpn.md)) or for example automatic
-notification of newly connected devices. Shield contains
-the [NetMetr](../../basics/apps/netmetr.md) application too.
+notification of newly connected devices.
 
 ## Shield vs. MOX
 
@@ -79,5 +78,5 @@ setup and additional opensource software, take a look at MOX or Omnia.
 
 Schematics for modules that Turris Shield consists of are available:
 
- * [MOX A](https://static.turris.com/docs/shield//mox/Turris-Mox-A.pdf)
- * [MOX C](https://static.turris.com/docs/shield//mox/Turris-Mox-C.pdf)
+ * [MOX A](https://static.turris.com/docs/mox/Turris-Mox-A.pdf)
+ * [MOX C](https://static.turris.com/docs/mox/Turris-Mox-C.pdf)
