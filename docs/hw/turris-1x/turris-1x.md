@@ -36,7 +36,7 @@ are connected to a fully manageable switch as shown on the picture bellow.
 
 * [Printed manual (Czech)](https://static.turris.com/docs/turris-1x/turris-uzivatelska-prirucka.pdf)
 * [Description of connectors and DIP switches for Turris 1.0](https://static.turris.com/docs/turris-1x/turris10-pinout.pdf)
-* [Block diagram for Turris 1.0](https://static.turris.com/docs/turris-1x/turris10-block-diagram.png)
+* [Block diagram for Turris 1.0](turris10-block-diagram.png)
 * [Complete HW documentation for Turris 1.0](https://static.turris.com/docs/turris-1x/CZ-NIC-Router-TURRIS-version-1.zip)
 * [Complete HW documentation for Turris 1.1](https://static.turris.com/docs/turris-1x/CZ-NIC-Router-TURRIS-version-1-1.zip)
 * [STM32F0 Power Control firmware](https://gitlab.nic.cz/turris/hw/turris_power_control)
