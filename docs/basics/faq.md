@@ -141,11 +141,16 @@ and then fill a token in reForis. For more details, take a look at
 
 This is created and maintained by CZ.NIC.
 
-### NetMetr
+### LibreSpeed
 
-[NetMetr](https://www.netmetr.cz/cs/) is a tool to measure connection speed.
-It is available to install in [reForis](../basics/apps/netmetr.md), where you
-can see speed results.
+[LibreSpeed](apps/librespeed/index.md) is a too to measure Internet
+connection speed. It automatically selects the best available
+measurement server worldwide. We provide our own server located
+in the Czech Republic (where another server is available too; it
+is managed by [CESNET][https://www.cesnet.cz/]).
+
+!!! notice
+    LibreSpeed is currently not available for Turris 1.x devices.
 
 ### OpenVPN
 
@@ -160,6 +165,12 @@ troubleshoot all GNU/Linux distributions for their issues and help to fix them.
 It requires knowledge to configure it on an external device to avoid unnecessary
 writes to the internal storage to prevent it to be worn out. Also, you need to
 be familiar with using SSH.
+
+### NetMetr
+
+[NetMetr](https://www.netmetr.cz/) was another tool to measure connection
+speed. It has been discontinued and superseded by LibreSpeed.
+
 
 ## Turris Sentinel
 

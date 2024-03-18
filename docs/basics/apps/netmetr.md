@@ -4,6 +4,11 @@ competency: novice
 ---
 # NetMetr
 
+!!! warning
+    NetMetr has been discontinued and is no longer available. Please use
+    [LibreSpeed](librespeed/index.md) instead. The following text is only
+    for your information.
+
 ## What is NetMetr?
 
 NetMetr is a tool for measuring the actual quality of Internet access services,
@@ -14,9 +19,6 @@ measurements and especially measurements of other participants. All data
 (excluding personal data) and source codes are released on the Open Source
 principle.
 
-!!! warning
-    NetMetr has been deprecated and will not be available in the future
-    versions of Turris OS. Please use [LibreSpeed](librespeed/index.md) instead.
 
 ## Installation & first run
 
@@ -47,13 +49,12 @@ instead it uses a few minute random wait to load balance the server.
 ## Collected data
 
 NetMetr server stores your measurements linked to the device so that you can
-view all the past measurements on its [website](https://www.netmetr.cz/en/my.html).
+view all the past measurements on its website.
 To view your results you have to enter *Sync code* which is displayed at
 the NetMetr reForis tab.
 
 All the data are – after proper anonymization – also shared on NetMetr
-[map](https://www.netmetr.cz/en/map.html) and as an
-[open data](https://www.netmetr.cz/en/open-data.html).
+map and as an open data.
 
 !!! tip
     NetMetr can be used in Foris as well. Its user interface is very similar
