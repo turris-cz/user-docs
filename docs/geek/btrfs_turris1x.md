@@ -129,13 +129,13 @@ snapshot and reset to the factory defaults using the latest version of Turris
 OS. Reboot will do its thing that you will boot from the factory image.
 
 ```
-opkg update
-opkg install wget
+opkg update && opkg install wget
+
 cd /tmp
 wget https://repo.turris.cz/hbs/medkit/turris1x-medkit-latest.tar.gz
+
 schnapps import -f turris1x-medkit-latest.tar.gz
-schnapps mount factory
-turris1x-btrfs-kernel-install /mnt/snapshot-@factory
 schnapps rollback factory
+
 reboot
 ```
