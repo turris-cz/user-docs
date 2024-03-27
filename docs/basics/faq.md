@@ -369,6 +369,10 @@ use the target address directly instead. We use antispam technologies like
 incompatible with simple e-mail forwarding. Mailing lists are usually
 safe but it depends on specific implementation and/or configuration.
 
+E-mail notifications may also break if you move an already-used
+microSD card to another device. If you want to reuse such a card,
+[prepare](../../hw/mox/microsd/) it beforehand.
+
 ## Known bugs
 
 ### Turris MOX / Turris Shield is not capable to route more than 450 Mbps
