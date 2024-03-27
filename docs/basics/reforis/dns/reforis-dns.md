@@ -108,7 +108,9 @@ secret you can use DoT/TLS instead.
   service provider.
 
 * [Google](https://en.wikipedia.org/wiki/Google_Public_DNS) is a well-known
-  and ubiquitous Internet company.
+  and ubiquitous Internet company. **Currently, we strongly discourage using
+  this forwarder because it is
+  [seriously broken](https://issuetracker.google.com/issues/299255571).**
 
 * Quad9 Filtered is a forwarder which blocks domains with malicious content
   (like phishing or malware). It is provided by
