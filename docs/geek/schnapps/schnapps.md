@@ -219,6 +219,13 @@ schnapps update-factory
     try to migrate everything, it is better to avoid the need to migrate
     anything altogether.
 
+Use this command to display which Turris OS version is currently in the factory
+image:
+
+```
+schnapps factory-version
+```
+
 ### Export and import
 
 You can export your snapshot to create a media kit (*medkit*) which can be simply backed up or copied to another
