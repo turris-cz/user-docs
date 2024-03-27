@@ -74,3 +74,11 @@ umount /mnt/turris
 ```
 
 Now you have a micro SD card with the latest medkit.
+
+!!! warning
+    Never use a card from one device directly in another, even if
+    these devices contain the same modules. Always prepare
+    it according to the above instructions before use. If you simply move
+    the already-used card to another device, you may encounter issues like
+    broken reForis, various network problems, or the inability to send
+    notifications.
