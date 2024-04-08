@@ -117,6 +117,24 @@ various repositories with additional packages like
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
 
+## Turris OS 7.0
+
+Turris OS 7 is based on the top of [OpenWrt 22.03](https://openwrt.org/releases/22.03/start)
+with our feed and a few patches. It supports [Turris MOX](../hw/mox/intro.md),
+[Turris Omnia](../hw/omnia/omnia.md) and and [Turris 1.x](../hw/turris-1x/turris-1x.md)
+routers.
+
+In 7.0, we are still using `iptables` for the firewall while the upstream is moving
+towards `nftables`. We decided to stick with it to limit the amount of changes
+in the new release.
+
+Apart from that, Turris OS 7.0 is the first one to use [staging updates](faq.md#what-are-the-staging-updates).
+
+### Detailed changelog
+
+<span id="tos70">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v7.0.", "tos70");</script>
+
 ## Turris OS 6.5
 
 Turris OS 6.5 is based on top of [OpenWrt

@@ -73,6 +73,33 @@ Updates may be delayed or manually approved. If you use delayed updates or
 approvals, we suggest configuring sending notifications to your e-mail to be
 in the loop about updates.
 
+### What are the _staging updates_?
+
+Releases of Turris OS starting from 7.0 are using a staging updates mechanism.
+Although we do automatic updates, we can distribute those over a longer period
+of time. When the update will be actually installed on the router is decided
+randomly during each release.
+
+If you are one of the routers held back, you will see the following message
+when running `pkgupdate` from CLI.
+
+```
+There is a newer version available, but update is scheduled after another XYZ
+hours. If you want the latest and greatest all the time, switch to one of the
+development branches.
+```
+
+How many roll-outs are there and which routers will be part of which batch is
+determined during the release. But individual routers are assigned to batches
+randomly, so if you are in the last batch of people to receive the particular
+update, there is a high chance, that the next time, you will get update sooner.
+
+On top of default behaviour, Turris can also decide not to stage any particular
+update (for example in case of severe security issue), or update just the
+release that people are updating into while keeping the routers waiting for the
+update on the same version (just in case new release needs fixup before
+everybody hits the problem).
+
 ### What I want to re-flash my router with the latest version?
 
 If you somehow end up that the router is not working after some configuration,
