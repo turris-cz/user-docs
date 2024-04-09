@@ -8,9 +8,6 @@ stages:
     - build
     - pages
 
-before_script:
-        - apt update && apt -y install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
-
 test-compilation:
     stage: test
     script:

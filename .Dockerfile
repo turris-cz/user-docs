@@ -20,6 +20,7 @@ RUN \
   apt-get -y install --no-install-recommends \
     python3-pip python3-setuptools python3-wheel \
     git wget \
+    libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev \
     && \
   apt-get clean
 
