@@ -11,7 +11,7 @@
 #   docker push registry.nic.cz/turris/user-docs
 # Logout from the GitLab server when done:
 #   docker logout registry.nic.cz
-FROM debian:bullseye
+FROM debian:bookworm
 
 ENV HOME=/root
 
@@ -26,7 +26,7 @@ RUN \
 ADD requirements.txt /requirements.txt
 
 RUN \
-  pip3 install --requirement /requirements.txt && \
+  pip3 install --break-system-packages --requirement /requirements.txt && \
   rm /requirements.txt
 
 CMD [ "bash" ]

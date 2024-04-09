@@ -52,9 +52,9 @@ extra_css:
 # Plugins
 plugins:
   - social:
-      cards_font: Roboto
-      cards_color:
-        fill: "#00a2e2"
+      cards_layout_options:
+        font_family: Roboto
+        background_color: "#00a2e2"
   - search:
       lang: [en]
   - git-revision-date-localized:
@@ -124,8 +124,8 @@ markdown_extensions:
       permalink: ⚓︎
   - wikilinks
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 # Page tree
 nav:
