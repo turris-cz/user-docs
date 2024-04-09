@@ -1,6 +1,6 @@
 mkdocs
 # theme
-mkdocs-material>=8.0.0
+mkdocs-material>=9.0.0,<10.0.0
 # extensions
 mkdocs-git-revision-date-localized-plugin
 mkdocs-redirects
