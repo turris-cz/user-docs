@@ -12,6 +12,11 @@ useful especially when you want to make some experiments with your Turris.
 Export/import of snapshots and remote snapshots can be used to back up/restore
 the system on your device.
 
+!!! tip
+    If you only want to create or delete snapshots or roll back to some of
+    them, you can utilize the [snapshot](../../../basics/reforis/snapshots/snapshots/)
+    feature in reForis.
+
 !!! warning
     Schnapps is not available on Turris Shield.
 
