@@ -155,6 +155,7 @@ nav:
               - Password: "basics/reforis/password/password.md"
               - Region and Time: "basics/reforis/region/region.md"
               - Notifications: "basics/reforis/notifications/reforis-notifications.md"
+              - Maintenance: "basics/reforis/maintenance/maintenance.md"
               - Hostname: "basics/reforis/hostname/hostname.md"
               - Diagnostics: "basics/reforis/diagnostics/diagnostics.md"
               - Snapshots: "basics/reforis/snapshots/snapshots.md"
