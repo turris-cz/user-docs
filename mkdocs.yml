@@ -150,6 +150,7 @@ nav:
               - Interfaces: basics/reforis/interfaces/interfaces.md
               - Guest Network: basics/reforis/guest-network/guest-network.md
           - Administration:
+              - Password: "basics/reforis/password/password.md"
               - Region and Time: "basics/reforis/region/region.md"
               - Notifications: "basics/reforis/notifications/reforis-notifications.md"
               - Hostname: "basics/reforis/hostname/hostname.md"
