@@ -17,7 +17,7 @@ A basic configuration of the Turris MOX router with Wi-Fi. Marvell Armada 3720
 
 This set consists of the [MOX A (Basic) module](../modules/a.md), a power
 source, a microSD card and the [MOX Wi-Fi add-on
-(SDIO)](../addons.md#wifi-sdio). It is used to provide WiFi signal or increase
+(SDIO)](../addons.md#wi-fi-sdio). It is used to provide WiFi signal or increase
 its range and is suitable for purely wireless networks. You can choose between
 2.4GHz and 5GHz Wi-Fi. If you want to use the faster 5GHz or 5GHz and 2.4GHz
 Wi-Fi (for legacy devices) at the same time, choose the [MOX Power
