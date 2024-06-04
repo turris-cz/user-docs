@@ -22,7 +22,7 @@ server (owned by CZ.NIC association) located in one of our datacenters.
 
 The HaaS server, powered by Cowrie, is a full-fledged honeypot. As well, it is
 able to record the user/password combination (like
-[Minipots](intro.md#minipot) do) and in addition it is able to simulate a real
+[Minipots](intro.md) do) and in addition it is able to simulate a real
 device and record the executed commands.
 
 A big advantage is that your router stays safe all the time because all

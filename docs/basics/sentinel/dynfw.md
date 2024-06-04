@@ -43,7 +43,7 @@ The official dynamic firewall client is intended to run on Turris routers.
 It automatically subscribes to DynFW server public interface to obtain the most
 recent list of attackers and its updates. It could be installed together with
 all other Sentinel components using
-[reForis package management tab](intro.md#how-to-set-up-data-collection).
+[reForis package management tab](intro.md).
 The more detailed info about the application itself could be found in its code
 [repository](https://gitlab.nic.cz/turris/sentinel/dynfw-client).
 
