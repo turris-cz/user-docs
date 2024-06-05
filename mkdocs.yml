@@ -152,6 +152,7 @@ nav:
           - Administration:
               - Notifications: "basics/reforis/notifications/reforis-notifications.md"
               - Hostname: "basics/reforis/hostname/hostname.md"
+              - Diagnostics: "basics/reforis/diagnostics/diagnostics.md"
           - Factory reset: "basics/reforis/factory-reset/factory-reset.md"
           - Package Management:
               - Updates: "basics/reforis/updates/reforis-updates.md"
