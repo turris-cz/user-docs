@@ -56,3 +56,16 @@ upgrade to 4.X first. Turris Omnia Wi-Fi 6 has preinstalled Turris OS 6.X.
 This revision is manufactured only with Wi-Fi and 2GB of RAM, the same as
 CZ11NIC20. It also may feature blue buttons instead of black ones in several
 batches.
+
+
+## CZ11NIC33
+
+Marked as Omnia Wi-Fi 6, Omnia NO Wi-Fi, and Omnia 4G in retail.
+
+It is the third revamp of the Turris Omnia board.
+
+The user's most notable change is the SIM slot; the new one is much more
+durable. There are also several minor hardware improvements.
+
+This revision comes preinstalled with Turris OS 6.X. The newer series,
+equipped with the MKL MCU chips, has preinstalled Turris OS 7.X.
