@@ -27,6 +27,7 @@ Available reset modes:
 * 5 LEDs: Unsecure SSH on 192.168.1.1 (Omnia 2019 and newer)
 * 6 LEDs: Flash from the internet (Omnia 2019 and newer)
 * 7 LEDs: Rescue shell
+* 10 LEDs: Enable RAM compatibility mode (only new U-Boot)
 
 !!! tip
     Release the reset button immediately after the required number of LEDs
@@ -206,3 +207,19 @@ If you accidentally enter this mode you may reset the router by briefly
 pressing the reset button. You can do this only in this particular mode. Do not
 reset the router in mode 2-4!
 
+## Enable RAM compatibility mode
+
+!!! warning
+    This option is available only for routers with the latest U-Boot. That means
+    `nor-update` was run in Turris OS 7.0.3 or later. Or that you installed
+    support for the 5G kit.
+
+10 LEDs (Power, 0, 1, 2, 3, 4, WAN, PCI1, PCI2, PCI3)
+
+This mode doesn't touch your filesystem. It only decreases the frequency the RAM
+chips are using, which means better compatibility. You might need it if your
+router has troubles with DDR training or if it is randomly crashing with
+memory-related errors.
+
+This could be reverted by running the command `omnia-eeprom set ddr_speed 1600K` on
+your router.
