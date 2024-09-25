@@ -59,16 +59,24 @@ are kept for 4 weeks**, but we have plans to adjust this in the future.
 
 ## Installation
 
-### Foris
+### reForis
 
-By default, you can find Foris available at IP address <http://192.168.1.1>,
-after logging in, go to Updater tab. Check there Pakon, click on button _Save
-and update_ and wait a while until all packages are successfully installed.
-When they are, you will get a notification about that.
+By default, you can find reForis available at IP address <http://192.168.1.1>;
+after logging in, go to _Package Management_ and then _Packages_. Enable Pakon
+there, click on the button _Save and update_, and wait a while until all packages
+are successfully installed. When they are, you will get a notification about
+that.
 
-If everything is installed in Foris menu, you will see _Pakon_ tab.
+If everything is installed and you will go to the web interface of your router,
+you will see the option to go to the _Pakon_ web interface.
 
-![Screenshot of Foris Pakon tab](pakon.png)
+![Screenshot of the router homescreen with Pakon app being available](pakon_app.png)
+
+After you select the _Pakon_ web interface, you will see a log of network
+activity that went through the router. You can browse, filter, or even
+export it as CSV file.
+
+![Screenshot of Pakon web interface](pakon.png)
 
 ### CLI
 
