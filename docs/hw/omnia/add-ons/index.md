@@ -21,6 +21,8 @@ maximum of 300 Mb/s downlink and 50 Mb/s uplink speeds.
 
 ![Turris Omnia LTE kit](turris-omnia-lte-upgrade-kit.jpg)
 
+![Turris Omnia board with LTE kit](turris-omnia-lte-board.jpg)
+
 You will find the guide on how to setup the LTE connection
 over [here](../../../geek/lte/index.md).
 
