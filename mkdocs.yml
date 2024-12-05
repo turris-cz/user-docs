@@ -103,6 +103,8 @@ extra:
       link: https://github.com/turris-cz
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/turris_cz
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@turris
   analytics:
     provider: matomo
     site_id: 67
