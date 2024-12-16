@@ -26,28 +26,6 @@ maximum of 300 Mb/s downlink and 50 Mb/s uplink speeds.
 You will find the guide on how to setup the LTE connection
 over [here](../../../geek/lte/index.md).
 
-## Turris Omnia 5G kit
-
-!!! info
-    It is not yet possible to setup 5G in the reForis GUI. However you can
-    use the manual below to set it up.
-
-!!! warning
-    Due to the number of antennas, Turris Omnia 5G kit is not compatible with
-    Turris Omnia Wi-Fi 6.
-
-In order to use 5G, you need to equip your Omnia with a 5G modem. However,
-most 5G cards use four antennas and an M.2 slot. Therefore Turris Omnia
-5G kit contains a new top cover (and is **NOT compatible with Turris Omnia Wi-Fi
-6**) and an M.2 to mPCIe adapter as well. It is based on the M.2 card with the modem
-chip Quectel RM500U-EA, so it is a sub-6GHz 5G module optimized for IoT/eMBB/URLLC
-applications. With the 3GPP Release 15/Release 16 technology, it supports both
-5G NSA and SA modes and is backward compatible with 4G/3G networks.
-
-![Turris Omnia 5G kit](../5g-kit.jpg)
-
-You will find the guide on how to setup the 5G kit over [here](../5g.md).
-
 ## Turris Omnia Wi-Fi 6 upgrade kit
 
 !!! info
@@ -80,9 +58,21 @@ antennas, longer pigtails, and an extra antenna.
 
 ![Turris Omnia 5G upgrade kit](turris-omnia-5g-upgrade-kit.jpg)
 
+!!! info
+    It is not yet possible to set up 5G in the reForis GUI. However, you can
+    use the manual below to set it up.
+
+!!! warning
+    Due to the hardware limitations, one of the USB 3.0 ports on your Omnia
+    needs to be rerouted to the internal slot for the 5G kit to work properly. It is
+    done completely in software as part of the setup, but you will lose one of
+    the ports.
+
 This kit is based on the M.2 Quectel RM500U-EA 5G modem card, which provides
 maximum data rates of 2.6 Gb/s downlink and 1 Gb/s uplink. As all Turris Omnia
 revisions up until the 2020 revision feature only mPCIe slots, the upgrade kit
-includes an mPCIe reduction to the M.2 B key. The kit also features four antennas,
-four pigtails (9.5 cm, 11.5 cm, 14.5 cm, and 20.5 cm), a cooler cube, a modem
-riser, and a case cover with holes for additional antennas.
+includes an mPCIe adapter to the M.2 B key. The kit also features four antennas,
+four pigtails (9.5 cm, 11.5 cm, 14.5 cm, and 20.5 cm), a cooler cube, and a
+case cover with holes for additional antennas.
+
+You will find the guide on how to se tup the 5G kit over [here](../5g.md).
