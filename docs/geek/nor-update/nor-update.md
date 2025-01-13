@@ -58,3 +58,9 @@ nor-update
         U-Boot or rescue system and it is going to be updated.
 
 3. Reboot is required after running the firmware update
+
+!!! important
+    The update may cause the LEDs to be switched off. In order to
+    turn them back on, press the front LED button. If it fails or
+    you want a special setup, log into LuCI, go to the *System* →
+    *LED Configuration* page, and configure the LEDs there.
