@@ -26,8 +26,8 @@ the internal [eMMC](https://en.wikipedia.org/wiki/MultiMediaCard#eMMC) flash sto
 external storage such as an USB HDD or SSD. Read the [Storage plugin](../../basics/foris/storage-plugin/storage-plugin.md) page for more information how to do it.
 
 !!! danger
-        Operating LXC on the internal flash storage may lead to rapid degradation and eventually to failure of the storage.
-        This may void your warranty.
+    Operating LXC on the internal flash storage may lead to rapid degradation and eventually to failure of the storage.
+    This may void your warranty.
 
 ## LXC packages
 
@@ -119,7 +119,7 @@ release (e.g. `xenial`), and architecture (`armhf`). Then it will download the c
 The new container will be named "test".
 
 !!! tip
-        A common mistake is a typo in architecture. It is `armv7l` (arm seven el) instead of `armv71` (arm seventy-one).
+    A common mistake is a typo in architecture. It is `armv7l` (arm seven el) instead of `armv71` (arm seventy-one).
 
 ```
 lxc-start -n test
