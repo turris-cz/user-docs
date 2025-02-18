@@ -235,6 +235,7 @@ nav:
           - Btrfs migration: geek/btrfs_turris1x.md
           - Netdata: geek/netdata/netdata.md
           - Firmware update: geek/nor-update/nor-update.md
+          - SSH access: geek/ssh-access/ssh-access.md
       - Deprecated:
           - Foris:
               - About: basics/foris/intro.md
