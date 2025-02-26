@@ -1,0 +1,172 @@
+WEBVTT
+
+00:02.880 --> 00:04.880
+First, we need to remove all the screws
+
+00:40.400 --> 00:43.720
+Now the second set of screws on the opposite side
+
+01:38.360 --> 01:42.240
+Let's open up the router by slightly pulling to the front
+
+01:42.280 --> 01:45.240
+and then lifting the top cover
+
+01:50.520 --> 01:52.520
+Here is the slot for SIM card
+
+01:58.360 --> 02:06.160
+In this particular model, we need to remove Wi-Fi card to access it
+
+02:07.000 --> 02:12.960
+Other revisions might have easier access to the SIM slot
+
+02:13.800 --> 02:18.920
+But lifting Wi-Fi card is enough, no need to disconnect the pigtails
+
+02:20.680 --> 02:27.960
+Now it is the time to insert the SIM card
+
+02:29.160 --> 02:34.120
+Make sure it doesn't require a PIN code beforehand ;-)
+
+02:40.000 --> 02:43.440
+SIM is now properly placed in the holder
+
+02:43.480 --> 02:48.480
+We can now return the Wi-Fi card where it belongs
+
+02:48.880 --> 02:54.760
+and put in the screws
+
+03:17.960 --> 03:21.080
+Now it's time to put in mPCIe -> M.2 adapter
+
+03:22.880 --> 03:27.640
+First we need to remove the screws that are already there
+
+03:37.640 --> 03:42.440
+Insert the adapter
+
+03:46.080 --> 03:53.000
+And also the aluminum riser
+
+03:54.800 --> 04:03.040
+And screw everything together
+
+04:43.600 --> 04:46.600
+Let's prepare the 5G card
+
+04:46.960 --> 04:53.280
+It needs to be in contact with the case because of cooling
+
+04:53.280 --> 05:00.800
+We peel of the cover of the aluminum block
+
+05:04.120 --> 05:11.120
+And glue it to the 5G card (next to M.2 connector)
+
+05:19.120 --> 05:24.160
+We insert the card into the adapter
+
+05:24.200 --> 05:32.200
+and secure it there with the plastic pin
+
+05:33.360 --> 05:37.560
+We will no longer need the old top cover
+
+05:38.920 --> 05:40.920
+Let's prepare the new one
+
+05:41.880 --> 05:45.800
+It has two extra holes
+
+05:53.800 --> 05:59.920
+We will start with the longest pigtail
+
+06:11.720 --> 06:15.720
+It goes to the right side of the cover
+
+06:18.800 --> 06:21.840
+Add the pad
+
+06:21.880 --> 06:26.080
+and the nut
+
+06:39.960 --> 06:43.640
+Now we need the second shortest pigtail
+
+06:54.960 --> 06:59.880
+And we will put it to the second hole in the top cover
+
+07:24.040 --> 07:28.960
+Now we need to remove rubber plugs from the case
+
+07:32.320 --> 07:36.120
+It might require some force ;-)
+
+07:55.160 --> 08:02.080
+Now we will insert the longer pigtail
+
+08:09.600 --> 08:15.680
+It goes to the hole further away from 5G card
+
+08:47.240 --> 08:51.160
+Notice that the holes are D shaped
+
+09:02.880 --> 09:08.000
+So is the connector on the pigtail
+
+09:11.840 --> 09:17.960
+It helps to secure it in place
+
+09:28.960 --> 09:33.840
+But it is still better to use a wrench ;-)
+
+09:33.880 --> 09:38.160
+Even for pigtails on the lower part of the case
+
+09:42.600 --> 09:48.080
+Now it is the time to connect the other ends of the pigtails to the 5G card
+
+09:48.120 --> 09:52.800
+We will start with the ones on the bottom part of the case
+
+10:31.920 --> 10:36.760
+Now the harder part - the upper cover
+
+11:30.240 --> 11:36.320
+Once secure, make sure that the case can be closed
+
+11:40.720 --> 11:48.680
+And peel of the protective cover from the aluminum block on the 5G card
+
+11:52.320 --> 11:55.840
+And let's put the case back together
+
+11:55.880 --> 12:01.040
+Start slightly to the front and carefully push it back
+
+12:01.080 --> 12:07.120
+Make sure the LEDs are aligned with the holes in the case
+
+12:09.720 --> 12:13.640
+before pushing it all the way back
+
+12:17.760 --> 12:21.880
+Now it's a time to put all the screws back
+
+13:32.080 --> 13:35.560
+Try not to loose any ;-)
+
+14:02.760 --> 14:13.880
+I said don't loose them :-)
+
+14:28.000 --> 14:32.480
+That's better ;-)
+
+15:02.040 --> 15:06.120
+The last part - 5G antennas
+
+15:59.480 --> 16:03.320
+And we are done with the hardware setup :-)
