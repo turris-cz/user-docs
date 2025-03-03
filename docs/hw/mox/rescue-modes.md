@@ -78,16 +78,11 @@ Here is the example of MOX communication ("blink" means a single blink).
 !!! tip
     You can follow the video guide to see how it works.
 
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/jID8TjExX-U"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        >
-    </iframe>
-
+    <video controls width="795">
+	<source src="https://static.turris.com/docs/mox/mox-reset.mp4" type="video/mp4">
+	<source src="https://static.turris.com/docs/mox/mox-reset.mpeg" type="video/mpeg">
+	<source src="https://static.turris.com/docs/mox/mox-reset.webm" type="video/webm">
+    </video>
 
 ## Rescue Modes
 
