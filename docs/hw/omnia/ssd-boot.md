@@ -19,7 +19,13 @@ competency: expert
 
 !!! tip
     Because it's a complex operation (which includes many steps) you can
-    utilize our [video guide](https://www.youtube.com/watch?v=71_M2N3ga7s).
+    utilize our video guide:
+
+    <video controls width="795">
+	<source src="https://static.turris.com/docs/omnia/omnia-ssd.mp4" type="video/mp4">
+	<source src="https://static.turris.com/docs/omnia/omnia-ssd.mpeg" type="video/mpeg">
+	<source src="https://static.turris.com/docs/omnia/omnia-ssd.webm" type="video/webm">
+    </video>
 
 ![Turris Omnia with an SSD installed](omnia-ssd.jpg)
 
