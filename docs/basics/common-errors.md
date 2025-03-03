@@ -129,9 +129,14 @@ ask for help with debugging it on our [forum](https://forum.turris.cz).
 If your MOX or Shield cannot boot it may be caused by an improperly inserted
 microSD card. The card is accessible after removing the plastic cover
 part located at the side with the USB port on the A module. The cover part
-can be carefully removed using fingertips (see
-the [video](https://www.youtube.com/watch?v=yL8Rpo0Wshc)) or eventually
+can be carefully removed using fingertips (see the video below) or eventually
 a thin plastic sheet.
+
+<video controls width="825">
+    <source src="https://static.turris.com/docs/mox/mox-modularity.mp4" type="video/mp4">
+    <source src="https://static.turris.com/docs/mox/mox-modularity.mpeg" type="video/mpeg">
+    <source src="https://static.turris.com/docs/mox/mox-modularity.webm" type="video/webm">
+</video>
 
 The card should be locked up tightly and cannot be possible to remove it by
 gentle pull. If the card is released try to push it gently into the slot. It
