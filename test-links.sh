@@ -51,7 +51,7 @@ running || {
 }
 
 # Crawl through links on the local website
-wget --no-verbose --rejected-log=rejected --spider --recursive --page-requisites --level=inf --no-directories "http://localhost:$PORT/"
+wget --no-verbose --rejected-log=rejected --spider --recursive --page-requisites --level=inf --no-directories "http://localhost:$PORT/" 2>&1 | grep -v "unlink: No such file or directory"
 
 # If the --remote flag is provided, check remote links
 if [ -n "$REMOTE" ]; then
