@@ -51,6 +51,7 @@ theme:
     - navigation.top
     - navigation.footer
     - toc.follow
+    - content.tooltips
   font: false
   favicon: theme/img/favicon.ico
   logo: theme/img/turris-logo.svg
