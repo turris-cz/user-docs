@@ -55,8 +55,26 @@ wget --no-verbose --rejected-log=rejected --spider --recursive --page-requisites
 
 # If the --remote flag is provided, check remote links
 if [ -n "$REMOTE" ]; then
+    EXCEPTIONS=(
+        'turris.local' 
+        'localhost'
+        '127.0.0.1'
+        '192.168.1.1'
+        'x.com/turris_cz' # Has protection against crawlers
+        'forum.turris.cz/u/' # Turris forum user profiles, some of them are private and thus returns 404 error
+        'torguard.net/knowledgebase.php' # Has protection against crawlers
+        'sourceforge.net/p/raspberry-gpio-python' # Has protection against crawlers
+        'gitlab.nic.cz/turris/os/build/tree/.*release.name.*' # Legacy URL
+        'gitlab.nic.cz/turris/os/build/tree/\$%7BreleaseVersion%7D' # Used in a script to fetch the release version
+        'gitlab.nic.cz/turris/user-docs/-/raw/' # Used in a documentation to fetch the raw content, there is a limitation in the GitLab API
+        'gitlab.nic.cz/-/ide/' # Used in a documentation to edit the content in GitLab Web IDE
+    )
+
+    # Join the exceptions into a single pattern
+    EXCEPTIONS_PATTERN=$(IFS='|'; echo "${EXCEPTIONS[*]}")
+
     # Filter and prepare the list of URLs to check
-    tail -n +2 rejected | cut -f 2 | grep -v -E '(turris.local|gitlab.nic.cz/turris/os/build/tree/.*release.name.*|192.168.1.1|127.0.0.1|localhost)' | sort -u | sed -e 's|%3A|:|g' > todo
+    tail -n +2 rejected | cut -f 2 | grep -v -E "(${EXCEPTIONS_PATTERN})" | sort -u | sed -e 's|%3A|:|g' > todo
     
     # Set pipefail option to catch errors in the pipeline
     set -o pipefail
