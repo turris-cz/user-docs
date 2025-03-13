@@ -67,7 +67,7 @@ plugins:
   - social:
       cards_layout_options:
         font_family: Roboto
-        background_color: "#00a2e2"
+        background_color: black
   - search:
       lang: [en]
   - git-revision-date-localized:
