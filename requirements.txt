@@ -9,7 +9,7 @@ mkdocs-minify-plugin
 markdown-toc
 markdown-extra
 pymdown-extensions
-# mkdocs-material: social cards dependancies
+# mkdocs-material: social cards dependencies
 pillow
 cairosvg
 # other extensions: forks
