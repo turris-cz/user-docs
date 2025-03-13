@@ -51,7 +51,7 @@ running || {
 }
 
 # Crawl through links on the local website
-wget --no-verbose --rejected-log=rejected --spider --recursive --page-requisites --level=inf --no-directories --delete-after "http://localhost:$PORT/"
+wget --no-verbose --rejected-log=rejected --spider --recursive --page-requisites --level=inf --no-directories "http://localhost:$PORT/"
 
 # If the --remote flag is provided, check remote links
 if [ -n "$REMOTE" ]; then
@@ -61,6 +61,6 @@ if [ -n "$REMOTE" ]; then
     # Set pipefail option to catch errors in the pipeline
     set -o pipefail
     
-    # Check the URLs in the todo list
-    wget --no-verbose --spider --input-file=todo --no-directories --delete-after --user-agent="$USER_AGENT" 2>&1 | tee log
+    # Check the remote URLs
+    wget --no-verbose --spider --input-file=todo --no-directories --delete-after --tries=3 --waitretry=5 --timeout=30 --user-agent="$USER_AGENT" 2>&1 | tee log
 fi
