@@ -4,6 +4,7 @@ set -e
 PORT=8001
 PID=""
 REMOTE=""
+USER_AGENT="Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0"
 
 # Check if the --remote flag is provided
 if [ "$1" == "--remote" ]; then
@@ -61,5 +62,5 @@ if [ -n "$REMOTE" ]; then
     set -o pipefail
     
     # Check the URLs in the todo list
-    wget --no-verbose --spider --input-file=todo --no-directories --delete-after --user-agent="Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0" 2>&1 | tee log
+    wget --no-verbose --spider --input-file=todo --no-directories --delete-after --user-agent="$USER_AGENT" 2>&1 | tee log
 fi
