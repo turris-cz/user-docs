@@ -49,6 +49,7 @@ theme:
   features:
     - navigation.instant
     - navigation.top
+    - navigation.footer
     - toc.follow
   font: false
   favicon: theme/img/favicon.ico
