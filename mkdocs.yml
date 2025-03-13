@@ -24,16 +24,27 @@ theme:
   name: material
   custom_dir: docs/theme
   palette:
-    - media: "(prefers-color-scheme: light)"
+    - media: "(prefers-color-scheme)"
+      primary: custom
+      accent: custom
       scheme: turris
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: custom
+      accent: custom
+      scheme: turris
+      toggle:
+        icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
+      primary: custom
+      accent: custom
       scheme: slate
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+        icon: material/brightness-4
+        name: Switch to system preference
   language: en
   features:
     - navigation.instant
