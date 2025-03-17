@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -7,66 +7,66 @@
 
 /* Turris color theme */
 [data-md-color-scheme="turris"] {
-    /* Primary color shades */
-    --md-primary-fg-color: #262626;
-    --md-primary-fg-color--light: #3d3d3d;
-    --md-primary-fg-color--dark: #141414;
-    --md-primary-bg-color: rgb(255, 255, 255);
-    --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  /* Primary color shades */
+  --md-primary-fg-color: #262626;
+  --md-primary-fg-color--light: #3d3d3d;
+  --md-primary-fg-color--dark: #141414;
+  --md-primary-bg-color: rgb(255, 255, 255);
+  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
 
-    /* Accent color shades */
-    --md-accent-fg-color: hsla(197, 100%, 40%, 1);
-    --md-accent-fg-color--dark: hsla(197, 100%, 32%, 1);
-    --md-accent-fg-color--transparent: hsla(197, 100%, 40%, 0.1);
-    --md-accent-bg-color: hsla(0, 0%, 100%, 1);
-    --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
-    --md-typeset-a-color: var(--md-accent-fg-color);
+  /* Accent color shades */
+  --md-accent-fg-color: hsla(197, 100%, 40%, 1);
+  --md-accent-fg-color--dark: hsla(197, 100%, 32%, 1);
+  --md-accent-fg-color--transparent: hsla(197, 100%, 40%, 0.1);
+  --md-accent-bg-color: hsla(0, 0%, 100%, 1);
+  --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-typeset-a-color: var(--md-accent-fg-color);
 }
 
 [data-md-color-scheme="slate"] {
-    --md-hue: 220; /* [0, 360] */
-    /* Primary color shades */
-    --md-primary-fg-color: #262626;
-    --md-primary-fg-color--light: #3d3d3d;
-    --md-primary-fg-color--dark: #141414;
-    --md-primary-bg-color: rgb(255, 255, 255);
-    --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-hue: 220; /* [0, 360] */
+  /* Primary color shades */
+  --md-primary-fg-color: #262626;
+  --md-primary-fg-color--light: #3d3d3d;
+  --md-primary-fg-color--dark: #141414;
+  --md-primary-bg-color: rgb(255, 255, 255);
+  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
 
-    /* Accent color shades */
-    --md-accent-fg-color: hsla(197, 100%, 40%, 1);
-    --md-accent-fg-color--dark: hsla(197, 100%, 32%, 1);
-    --md-accent-fg-color--transparent: hsla(197, 100%, 40%, 0.1);
-    --md-accent-bg-color: hsla(0, 0%, 100%, 1);
-    --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
-    --md-typeset-a-color: var(--md-accent-fg-color);
+  /* Accent color shades */
+  --md-accent-fg-color: hsla(197, 100%, 40%, 1);
+  --md-accent-fg-color--dark: hsla(197, 100%, 32%, 1);
+  --md-accent-fg-color--transparent: hsla(197, 100%, 40%, 0.1);
+  --md-accent-bg-color: hsla(0, 0%, 100%, 1);
+  --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-typeset-a-color: var(--md-accent-fg-color);
 }
 
 /* Link styles on hover */
 .md-typeset a:hover,
 .md-nav__item a.md-nav__link--active:hover {
-    color: var(--md-accent-fg-color--dark);
+  color: var(--md-accent-fg-color--dark);
 }
 
 /* Center images & add shadows */
 .md-typeset img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .md-typeset img:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* Dim image brightness in Slate theme (Dark mode) */
 [data-md-color-scheme="slate"] .md-typeset img {
-    filter: brightness(0.9);
+  filter: brightness(0.9);
 }
 
 :root {
-  --md-admonition-icon--cli-alt: url('../img/cli.svg');
+  --md-admonition-icon--cli-alt: url("../img/cli.svg");
 }
 
 .md-typeset .admonition.cli-alt,
@@ -86,131 +86,131 @@
 }
 
 .metadata a.badge {
-    color: #fff;
+  color: #fff;
 }
 
 [data-md-color-scheme="slate"] .metadata a.badge {
-    color: hsla(var(--md-hue), 75%, 95%, 1);
+  color: hsla(var(--md-hue), 75%, 95%, 1);
 }
 
 .metadata span.badge {
-    cursor: help;
+  cursor: help;
 }
 
 .badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 70%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    border-radius: 0.25rem;
-    cursor: pointer;
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 70%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  cursor: pointer;
 }
 
 /* Labels: Devices */
 .badge-shield {
-    color: #fff;
-    background-color: #438bca;
+  color: #fff;
+  background-color: #438bca;
 }
 
 .badge-shield:hover {
-    background-color: #2d6a9f;
+  background-color: #2d6a9f;
 }
 
 .badge-mox {
-    color: #fff;
-    background-color: #343a40;
+  color: #fff;
+  background-color: #343a40;
 }
 
 .badge-mox:hover {
-    background-color: #1d2124;
+  background-color: #1d2124;
 }
 
 [data-md-color-scheme="slate"] .badge-mox {
-    background-color: #1d2124;
+  background-color: #1d2124;
 }
 
 [data-md-color-scheme="slate"] .badge-mox:hover {
-    background-color: #343a40;
+  background-color: #343a40;
 }
 
 .badge-omnia {
-    color: #fff;
-    background-color: #00a2e2;
+  color: #fff;
+  background-color: #00a2e2;
 }
 
 .badge-omnia:hover {
-    background-color: #0075a3;
+  background-color: #0075a3;
 }
 
 .badge-turris {
-    color: #fff;
-    background-color: #ce1126;
+  color: #fff;
+  background-color: #ce1126;
 }
 
 .badge-turris:hover {
-    color: #fff;
-    background-color: #970c1c;
+  color: #fff;
+  background-color: #970c1c;
 }
 
 /* Labels: Competency levels */
 .badge-novice {
-    color: #fff;
-    background-color: #54b445;
+  color: #fff;
+  background-color: #54b445;
 }
 
 .badge-novice:hover {
-    background-color: #449438;
+  background-color: #449438;
 }
 
 .badge-intermediate {
-    color: #fff;
-    background-color: #efd000;
+  color: #fff;
+  background-color: #efd000;
 }
 
 .badge-intermediate:hover {
-    background-color: #b89f00;
+  background-color: #b89f00;
 }
 
 .badge-advanced {
-    color: #fff;
-    background-color: #f89217;
+  color: #fff;
+  background-color: #f89217;
 }
 
 .badge-advanced:hover {
-    background-color: #da7b07;
+  background-color: #da7b07;
 }
 
 .badge-expert {
-    color: #fff;
-    background-color: #e64f3b;
+  color: #fff;
+  background-color: #e64f3b;
 }
 
 .badge-expert:hover {
-    color: #fff;
-    background-color: #d9321c;
+  color: #fff;
+  background-color: #d9321c;
 }
 
 .md-source-file {
-    margin: 1em 0;
-    display: flex;
-    justify-content: space-between;
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .md-source-file__fact {
-    margin-right: 0.6rem;
+  margin-right: 0.6rem;
 }
 .md-source-file__fact {
-    align-items: center;
-    color: var(--md-default-fg-color--light);
-    display: inline-flex;
-    font-size: .68rem;
-    gap: 0.3rem;
+  align-items: center;
+  color: var(--md-default-fg-color--light);
+  display: inline-flex;
+  font-size: 0.68rem;
+  gap: 0.3rem;
 }
 
 .md-source-file__fact svg {
-    width: 0.9rem;
+  width: 0.9rem;
 }
