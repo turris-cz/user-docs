@@ -7,8 +7,8 @@ competency: intermediate
 RIPE Atlas is a global network of probes that measures connectivity and
 reachability across the Internet in real-time. These probes are mostly run by
 volunteers. If you host probe you will receive credits (see more about
-[credit system](https://atlas.ripe.net/docs/credits/)) which can be later used
-for running your own measurements on the RIPE Atlas network.
+[credit system](https://atlas.ripe.net/docs/getting-started/credits)) which
+can be later used for running your own measurements on the RIPE Atlas network.
 
 This document describes steps that you have to follow to connect your router as
 a probe to the RIPE Atlas network.
