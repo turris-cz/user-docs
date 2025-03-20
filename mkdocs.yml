@@ -284,3 +284,14 @@ nav:
           - Omnia: hw/omnia/serial-boot.md
       - Support: basics/support.md
   - FAQ: basics/faq.md
+
+not_in_nav: |
+  /basics/highlights.md
+  /basics/first-setup/cables.md
+  /basics/first-setup/mox-cpu-only.md
+  /basics/first-setup/mox-first-setup-warning.md
+  /basics/apps/openvpn-server/openvpn-foris.md
+  /hw/mox/sets/feature-list.md
+  /hw/mox/sets/generic-mox.md
+  /hw/mox/sets/sdio_legacy.md
+  /hw/omnia/5g.md
