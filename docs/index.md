@@ -17,6 +17,9 @@ and provide a high level of trust.
     For more information on Turris OS versions, please visit the designated
     [webpage](https://docs.turris.cz/basics/tos-versions/).
 
+[Visit our website](https://www.turris.com/){ .md-button .md-button--primary }
+[Subscribe to our newsletter](https://mailing-turris.nic.cz/){ .md-button }
+
 ## Openness
 
 Our devices feature open-source firmware that provides full accessibility to users.
