@@ -47,7 +47,11 @@ theme:
         name: Switch to system preference
   language: en
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
     - navigation.instant
+    - navigation.instant.progress
     - navigation.top
     - navigation.footer
     - toc.follow

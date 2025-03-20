@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Frequently asked questions
 
 ## Turris OS and updates
@@ -62,8 +67,9 @@ This one is not available on [Turris Shield](../hw/shield/shield.md).
 Turris routers check our servers for possible availability of a new update
 every two hours (with some variability to spread the load of the update
 servers and speed-up the update process). If a new Turris OS version
+
 - newer than the currently used one - is available, the router will download
-and install it.
+  and install it.
 
 After that, an automatic restart of the router will be planned according to
 the settings (usually at night after three days). You can restart the router
@@ -171,7 +177,7 @@ a system log management tool.
 
 [Honeypot as a Service](https://haas.nic.cz/) is a public service, which can be
 used on any device with a public IPv4 address. It uses the SSH protocol to catch
-attackers  and provide you details, what credentials they used and what they
+attackers and provide you details, what credentials they used and what they
 were trying to do. To be able to use it, you need to register on their website
 and then fill a token in reForis. For more details, take a look at
 [dedicated article](../basics/sentinel/haas.md) for this feature.
@@ -207,7 +213,6 @@ be familiar with using SSH.
 
 [NetMetr](https://www.netmetr.cz/) was another tool to measure connection
 speed. It has been discontinued and superseded by LibreSpeed.
-
 
 ## Turris Sentinel
 
@@ -392,7 +397,7 @@ be. There were many improvements in the Linux kernel available since version
 5.8.
 
 | OpenWrt version                               | Turris OS version | LTS OpenWrt kernel | LTS Turris kernel |
-|-----------------------------------------------|:-----------------:|-------------------:|-------------------|
+| --------------------------------------------- | :---------------: | -----------------: | ----------------- |
 | OpenWrt 21.02                                 |   Turris OS 6.x   |                5.4 | 5.15              |
 | OpenWrt 22.03                                 |   Turris OS 7.x   |               5.10 | 5.15              |
 | Daily snapshots (upcoming, not announced yet) |   Turris OS 8.x   |               5.15 | 5.15              |

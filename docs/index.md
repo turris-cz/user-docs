@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # What is Turris project?
 
 Turris project aims to provide open and secure routers through a combination of
