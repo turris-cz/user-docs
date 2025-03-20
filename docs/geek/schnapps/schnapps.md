@@ -14,7 +14,7 @@ the system on your device.
 
 !!! tip
     If you only want to create or delete snapshots or roll back to some of
-    them, you can utilize the [snapshot](../../../basics/reforis/snapshots/snapshots/)
+    them, you can utilize the [snapshot](../../basics/reforis/snapshots/snapshots.md)
     feature in reForis.
 
 !!! warning

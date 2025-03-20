@@ -51,7 +51,7 @@ but it can be changed in the future.
 
 ### In reForis
 
-See the [Password](../../basics/reforis/password/password/) page in
+See the [Password](../basics/reforis/password/password.md) page in
 the _reForis Administration_ section for more information.
 
 ## Other ways (system password)

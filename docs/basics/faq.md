@@ -386,7 +386,7 @@ safe but it depends on specific implementation and/or configuration.
 
 E-mail notifications may also break if you move an already-used
 microSD card to another device. If you want to reuse such a card,
-[prepare](../../hw/mox/microsd/) it beforehand.
+[prepare](../hw/mox/microsd.md) it beforehand.
 
 ## Known bugs
 

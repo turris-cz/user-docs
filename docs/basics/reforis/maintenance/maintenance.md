@@ -25,12 +25,12 @@ required to log in again.
 
 The factory reset is the last chance how to "repair" your device if something
 in the software goes wrong. In most cases, it's better to roll back to
-one of the [available snapshots](../../snapshots/snapshots/). But if it isn't
+one of the [available snapshots](../snapshots/snapshots.md). But if it isn't
 enough, you can restore the factory state.
 
 This reset will remove any changes made to the devices, including all created
 or modified files and settings. After finishing this process, you will start
-with the [initial guide](../../guide/).
+with the [initial guide](../guide/index.md).
 
 !!! notice
     Factory reset will not wipe any existing snapshots and it will actually
@@ -55,7 +55,7 @@ are stored in a RAM disk that is cleared on each reboot. If you want to keep
 your logs for investigation of problems, etc., you need to enable their
 retention.
 
-To enable this feature, you need to configure the [Storage plugin](../../storage-plugin/storage-plugin/)
+To enable this feature, you need to configure the [Storage plugin](../storage-plugin/storage-plugin.md)
 first (and save the logs to an external storage).
 
 !!! info

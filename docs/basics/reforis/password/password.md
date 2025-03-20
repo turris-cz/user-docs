@@ -10,7 +10,7 @@ administration (LuCI and CLI). They can be set on the _Administration
 → Password_ page.
 
 !!! tip
-    See the [Passwords](../../../../security/passwords/) page to get more
+    See the [Passwords](../../../security/passwords.md) page to get more
     information about passwords in Turris OS.
 
 ## Password for reForis
