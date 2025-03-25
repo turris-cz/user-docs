@@ -141,12 +141,14 @@ method for restoring the operating system image.
     to reflash the card itself.
 
 Download the latest version of Turris MOX image from
-<https://repo.turris.cz/hbs/medkit/mox-medkit-latest.tar.gz>. Save the
-file `mox-medkit-latest.tar.gz` to USB flash drive or micro SD card to the root
-directory. The Turris MOX router supports following filesystems: **ext4, Btrfs
-and FAT32**. You can also download and put alongside `md5`, `sha256` or `sig`
-file from the same URL. Rescue mode will then verify the tarball first before
-flashing it. Connect the USB flash/insert the micro SD card to the Turris MOX
+[the repository](https://repo.turris.cz/hbs/medkit/mox-medkit-latest.tar.gz).
+Save the file `mox-medkit-latest.tar.gz` to USB flash drive or micro SD card
+to the root directory. The Turris MOX router supports following filesystems:
+**ext4, Btrfs and FAT32**. You can also download and put alongside the
+[sha256](https://repo.turris.cz/hbs/medkit/mox-medkit-latest.tar.gz.sha256)
+or [sig](https://repo.turris.cz/hbs/medkit/mox-medkit-latest.tar.gz.sig)
+file. Rescue mode will then verify the tarball first before flashing it.
+Connect the USB flash/insert the micro SD card to the Turris MOX
 router and use rescue mode mode 4.
 
 The Turris MOX router will rewrite content of the micro SD card with the system
