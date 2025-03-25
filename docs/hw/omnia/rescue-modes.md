@@ -119,12 +119,14 @@ want to avoid long upgrades during initial setup, please use the following
 method for restoring the operating system image.
 
 Download the latest version of Turris Omnia's system image from
-<https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz>. Save the
-file `omnia-medkit-latest.tar.gz` to USB flash drive to the root directory. The
-Turris Omnia router supports following filesystems: _ext4, Btrfs, XFS and
-FAT32_. You can also download and put alongside `md5` or `sha256` file from the
-same URL. Connect the USB flash to the Turris Omnia router and use reset
-button to select mode 4 (4 LEDs).
+[the repository](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz).
+Save the file `omnia-medkit-latest.tar.gz` to USB flash drive to the root
+directory. The Turris Omnia router supports following filesystems: _ext4, Btrfs,
+XFS and FAT32_. You can also download and put alongside the
+[sha256](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz.sha256)
+or [sig](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz.sig)
+file. Connect the USB flash to the Turris Omnia router and use reset button
+to select mode 4 (4 LEDs).
 
 The Turris Omnia router will rewrite internal eMMC storage with the system
 image from the USB flash drive.
