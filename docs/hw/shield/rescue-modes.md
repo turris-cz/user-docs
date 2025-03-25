@@ -33,4 +33,8 @@ Shield has several differences:
    snapshot will be used for rollback.
 4. A specific filesystem image for re-flash is used instead of the MOX one.
    Download it from
-   <https://repo.turris.cz/hbs/medkit/mox-medkit-contract-shield-latest.tar.gz>.
+   [the repository](https://repo.turris.cz/hbs/medkit/mox-medkit-contract-shield-latest.tar.gz).
+   You can also download and put alongside the
+   [sha256](https://repo.turris.cz/hbs/medkit/mox-medkit-contract-shield-latest.tar.gz.sha256)
+   or [sig](https://repo.turris.cz/hbs/medkit/mox-medkit-contract-shield-latest.tar.gz.sig)
+   file.
