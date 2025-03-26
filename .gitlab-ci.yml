@@ -1,12 +1,13 @@
 image: "$CI_REGISTRY_IMAGE"
 
 stages:
+  - build-docker
   - build
   - test
   - pages
 
 build-docker-image:
-  stage: build
+  stage: build-docker
   image: docker:git
   services:
     - docker:dind

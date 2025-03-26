@@ -18,7 +18,7 @@ and provide a high level of trust.
     [webpage](https://docs.turris.cz/basics/tos-versions/).
 
 [Visit our website](https://www.turris.com/){ .md-button .md-button--primary }
-[Subscribe to our newsletter](https://mailing-turris.nic.cz/){ .md-button }
+[Subscribe to our newsletter](https://mailing-turris.nic.cz/){ .md-button .md-button--secondary }
 
 ## Openness
 

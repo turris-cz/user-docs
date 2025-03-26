@@ -3,6 +3,7 @@ mkdocs
 mkdocs-material>=9.0.0,<10.0.0
 # extensions
 mkdocs-git-revision-date-localized-plugin
+mkdocs-git-committers-plugin-2
 mkdocs-redirects
 mkdocs-include-markdown-plugin>=3.6.0
 mkdocs-minify-plugin
