@@ -1,0 +1,55 @@
+<!--
+    Copyright (c) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+
+    This is free software, licensed under the GNU General Public License v3.
+    See /LICENSE for more information.
+-->
+
+{% extends "base.html" %}
+
+<!-- Custom front matter -->
+{% block extrahead %}
+
+<!-- Determine title -->
+{% set title = config.site_name %}
+{% if page and page.title and not page.is_homepage %}
+    {% set title = config.site_name ~ " - " ~ page.title | striptags %}
+{% endif %}
+
+<!-- Extra stylesheets -->
+<link rel="stylesheet" href="{{ base_url }}/css/lightbox.css"/>
+
+<!-- Fediverse credits -->
+<meta name="fediverse:creator" content="@turris@fosstodon.org"/>
+<link rel="me" href="https://fosstodon.org/@turris"/>
+{% endblock %}
+
+<!-- Announcement -->
+{% block announce %}
+For updates follow us on 
+<a href="https://fosstodon.org/@turris" target="_blank">
+    <span class="twemoji mastodon">
+        {% include ".icons/fontawesome/brands/mastodon.svg" %} 
+    </span>
+    <strong>Fosstodon</strong>
+</a> or 
+<a href="https://x.com/turris_cz" target="_blank">
+    <span class="twemoji x-twitter">
+        {% include ".icons/fontawesome/brands/x-twitter.svg" %} 
+    </span>
+    <strong>X</strong>
+</a>.
+{% endblock %}
+
+<!-- Analytics -->
+{% block analytics %}
+    {{ super() }}
+    {% include "partials/integrations/analytics/matomo.html" %}
+{% endblock %}
+
+<!-- Theme-related JavaScript -->
+{% block scripts %}
+    {{ super() }}
+    <!-- Extra JavaScript -->
+    <script src="{{ base_url }}/js/lightbox-plus-jquery.min.js"></script>
+{% endblock %}
