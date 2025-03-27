@@ -275,6 +275,10 @@ span.badge:focus {
   color: rgb(238, 238, 238);
 }
 
+.md-typeset .discourse {
+  color: rgb(255, 255, 255);
+}
+
 .md-banner strong {
   color: var(--md-footer-fg-color);
 }
