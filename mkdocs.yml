@@ -58,7 +58,9 @@ theme:
     - content.tooltips
     - content.action.edit
     - content.action.view
-  font: false
+  font:
+    text: Roboto
+    code: Roboto Mono
   favicon: img/favicon.ico
   logo: img/turris-logo.svg
   icon:
@@ -77,6 +79,8 @@ watch:
 
 # Plugins
 plugins:
+  - privacy:
+      enabled: !ENV [CI, false]
   - git-committers:
       enabled: !ENV [CI, false]
       gitlab_hostname: !ENV CI_SERVER_HOST
