@@ -75,4 +75,4 @@ includes an mPCIe adapter to the M.2 B key. The kit also features four antennas,
 four pigtails (9.5 cm, 11.5 cm, 14.5 cm, and 20.5 cm), a cooler cube, and a
 case cover with holes for additional antennas.
 
-You will find the guide on how to se tup the 5G kit over [here](../5g.md).
+You can [use the guide](../5g.md) on how to set up the 5G kit.
