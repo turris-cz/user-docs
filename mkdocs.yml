@@ -314,6 +314,7 @@ nav:
 # Exclude pages from navigation
 not_in_nav: |
   /basics/highlights.md
+  /basics/changelog-archive.md
   /basics/first-setup/cables.md
   /basics/first-setup/mox-cpu-only.md
   /basics/first-setup/mox-first-setup-warning.md
