@@ -238,7 +238,7 @@ It the destination page, insert an inclusion mark like this:
 ```
 {!
   include-markdown "SOURCE.md"
-  start="<!-NAME-start-->"
+  start="<!--NAME-start-->"
   end="<!--NAME-end-->"
 !}
 ```
