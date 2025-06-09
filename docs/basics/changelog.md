@@ -117,6 +117,25 @@ various repositories with additional packages like
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
 
+## Turris OS 7.2
+
+Turris OS 7.2 is based on the top of [OpenWrt 22.03](https://openwrt.org/releases/22.03/start)
+with our feed and a few patches. It supports [Turris MOX](../hw/mox/intro.md),
+[Turris Omnia](../hw/omnia/omnia.md) and [Turris 1.x](../hw/turris-1x/turris-1x.md)
+routers.
+
+New features:
+
+* Port forwarding integrated into reForis WebUI
+* Add link to the documentation (reForis)
+* Diagnostics - add mwan3, watchcat and nftables information to help debugging LTE/5G
+* New package to play sounds over the serial port
+
+### Detailed changelog
+
+<span id="tos72">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v7.2.", "tos72");</script>
+
 ## Turris OS 7.1
 
 Turris OS 7.1 is based on the top of [OpenWrt 22.03](https://openwrt.org/releases/22.03/start)
