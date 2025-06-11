@@ -17,7 +17,7 @@ _Morce_ is currently just a plugin and integration of
 [Snort3](https://www.snort.org/snort3). It contains an init script that handles
 downloading and integration of publicly available community rule sets from
 [Snort](https://www.snort.org/downloads#rules) and [Emerging
-threads](https://doc.emergingthreats.net) as well as appropriately starting
+threats](https://doc.emergingthreats.net) as well as appropriately starting
 Snort itself.
 
 The plugin that is used with snorts handles notification about discovered threats.
