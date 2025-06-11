@@ -142,7 +142,7 @@ New features:
 
 Turris OS 7.1 is based on the top of [OpenWrt 22.03](https://openwrt.org/releases/22.03/start)
 with our feed and a few patches. It supports [Turris MOX](../hw/mox/intro.md),
-[Turris Omnia](../hw/omnia/omnia.md) and and [Turris 1.x](../hw/turris-1x/turris-1x.md)
+[Turris Omnia](../hw/omnia/omnia.md) and [Turris 1.x](../hw/turris-1x/turris-1x.md)
 routers.
 
 TOS 7.1 is the first version that uses `nftables` instead of `iptables`.
@@ -162,7 +162,7 @@ New features:
 
 Turris OS 7 is based on the top of [OpenWrt 22.03](https://openwrt.org/releases/22.03/start)
 with our feed and a few patches. It supports [Turris MOX](../hw/mox/intro.md),
-[Turris Omnia](../hw/omnia/omnia.md) and and [Turris 1.x](../hw/turris-1x/turris-1x.md)
+[Turris Omnia](../hw/omnia/omnia.md) and [Turris 1.x](../hw/turris-1x/turris-1x.md)
 routers.
 
 In 7.0, we are still using `iptables` for the firewall while the upstream is moving
