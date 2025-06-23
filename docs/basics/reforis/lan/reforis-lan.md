@@ -75,6 +75,9 @@ which hostnames they have and when those leases expire.
 
 ![DHCP clients](dhcp-clients.png)
 
+You can use the _Search_ field to search for specific devices or the
+_Columns_ pull-down menu to choose which columns to display in the list.
+
 ## Turris as a computer
 
 In this role, the LAN interface acts similarly to the WAN one. The main
@@ -98,11 +101,53 @@ the _DHCP hostname_ field.
 
 ![DHCP configuration](computer-dhcp.png)
 
+#### Static DHCP leases
+
+If you need to access a LAN device via its IP address, a static DHCP lease
+is the best practice. There are two ways how to set it:
+
+* Make an existing lease static
+* Add a new static lease
+
+##### Static lease from existing one
+
+![Set static](set-static.png)
+
+Find the lease you want to make static and press the _Set Static_ button.
+A dialog will appear. You can modify the fields and then press the _Save_
+button.
+
+- _Hostname_: The hostname for the given device
+- _IPv4 address_: The IPv4 to be statically assigned
+- _MAC address_: The device MAC address
+
+![Set static lease](static-lease.png)
+
+##### New static lease
+
+You can also create a new static lease for a device, that is not displayed
+in the list of DHCP clients. Simply press the _Add static lease_ button.
+The dialog is the same as in the previous case, but it is empty before
+being filled in.
+
+![Empty static lease dialog](lease-empty.png)
+
+!!! important
+    You need to write the MAC address carefully. Otherwise, it will not work
+    without any warnings.
+
+#### How to edit or delete static lease
+
+Click on the vertical ellipsis on the right side of the given item in the
+client list. A menu will appear, where you can choose _Edit_ to edit the
+lease or _Delete_ to delete the lease (without any confirmation).
+
+![Edit or delete static lease](edit-delete-lease.png)
+
 ### Static IP address
 
-This mode is the default because your Turris should have a fixed address to be
-easily accessed (this can be accomplished by some DHCP servers too but it is
-more complex).
+Although it is recommended to use static DHCP leases for static IPv4 addresses,
+it is also possible to define such addresses directly.
 
 * _IP address_ (mandatory) – it's something like 192.168.5.122.
 * _Network mask_ (mandatory) – something like 255.255.255.0.
