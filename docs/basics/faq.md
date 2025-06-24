@@ -431,3 +431,22 @@ which could improve the reboot behavior.
 The provided firmware from NXP for chipset 88W8997 has limitation that it is
 possible to create only 4 SSIDs and have a maximum of 8 concurrent clients
 connected to them. It does not support WPA3 mode.
+
+## Security
+
+### How to report security issues and vulnerabilities
+
+Security issues and vulnerabilities should not be made public until they can
+be properly fixed. Therefore we discourage the use of the standard ways
+utilized for regular bugs and problems.
+
+The recommended way is the following:
+
+1. Write an e-mail message containing as many details as possible (at least
+   the Turris OS version, device, affected component including its version,
+   and the problem description of course.
+2. Encrypt the message with our GnuPG [security public key](https://www.turris.cz/security-gpg-key.pub).
+3. Send the message to [security@turris.cz](mailto:security@turris.cz).
+
+You can find all of the related information in the standard
+[security file](https://www.turris.cz/.well-known/security.txt).
