@@ -101,30 +101,53 @@ secret you can use DoT/TLS instead.
     DNS over TLS keeps DNS traffic in secret but is a bit slower than the
     standard DNS communication.
 
-* [CZ.NIC](https://www.nic.cz/) is the Czech national domain registry operator
+* **[CZ.NIC](https://www.nic.cz/)** is the Czech national domain registry operator
   (and the creator of your Turris).
 
-* [Cloudflare](https://en.wikipedia.org/wiki/Cloudflare) is a world-wide cloud
+* **DNS4EU Protective resolution** is one of the forwarders publicly provided in
+  [DNS4EU Public Service](https://www.joindns4.eu/learn/dns4eu-public-service-launched).
+  DNS4EU is a free, privacy-focused, and secure DNS service intended to protect
+  citizens across the European Union. It is operated by [Whalebone](https://www.whalebone.io/)
+  and utilizes [Knot Resolver](https://www.knot-resolver.cz/) developed by CZ.NIC.
+  This specific forwarder contains protection against fraudulent and malicious
+  content.
+
+* **DNS4EU Protective resolution with child protection** is another DNS4EU
+  forwarder. In addition to the protections mentioned above, it also protects
+  children against sexual content, violence, or drugs.
+
+* **DNS4EU Protective resolution with ad blocking** works like the first DNS4EU
+  forwarder, but in addition, it hides advertisements on websites.
+
+* **DNS4EU Protective resolution with child protection & ad blocking** combines
+  the two above protection measures.
+
+* **DNS4EU Unfiltered resolution** is the option for users who are confident
+  about security and who look for fast, reliable, and anonymized resolution
+  services.
+
+* **[Cloudflare](https://en.wikipedia.org/wiki/Cloudflare)** is a world-wide cloud
   service provider.
 
-* [Google](https://en.wikipedia.org/wiki/Google_Public_DNS) is a well-known
+* **[Google](https://en.wikipedia.org/wiki/Google_Public_DNS)** is a well-known
   and ubiquitous Internet company. **Currently, we strongly discourage using
   this forwarder because it is
   [seriously broken](https://issuetracker.google.com/issues/299255571).**
 
-* Quad9 Filtered is a forwarder which blocks domains with malicious content
+* **Quad9 Filtered** is a forwarder which blocks domains with malicious content
   (like phishing or malware). It is provided by
   [Quad9](https://en.wikipedia.org/wiki/Quad9), a non-profit organization
   dedicated to secure DNS services.
 
-* Quad9 Unfiltered is also forwarder by [Quad9](https://en.wikipedia.org/wiki/Quad9)
+* **Quad9 Unfiltered** is also forwarder by [Quad9](https://en.wikipedia.org/wiki/Quad9)
   but without blocking malicious domains. Use it if you encounter problems
   with blocking legitimate content by the Quad Filtered forwarder.
 
 !!! important
     Information about privacy and data processing on CZ.NIC ODVR servers
-    [is here](https://www.nic.cz/odvr/). The other servers are listed in
-    a [summary table](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Public+Resolvers)
+    [is here](https://www.nic.cz/odvr/). DNS4EU information and terms are
+    on the [website](https://www.joindns4.eu/for-public) of the service.
+    The other servers are listed in a [summary table](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Public+Resolvers)
     with links to particular privacy policies.
 
 !!! warning
