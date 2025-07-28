@@ -234,6 +234,7 @@ nav:
           - Netboot: basics/apps/netboot.md
           - Schnapps: geek/schnapps/schnapps.md
           - Btrfs migration: geek/btrfs_turris1x.md
+          - Turris 1.x SD card migration: geek/turris1x-sdcard-migration.md
           - Netdata: geek/netdata/netdata.md
           - Firmware update: geek/nor-update/nor-update.md
           - SSH access: geek/ssh-access/ssh-access.md
