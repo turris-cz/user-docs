@@ -104,6 +104,15 @@ secret you can use DoT/TLS instead.
 * **[CZ.NIC](https://www.nic.cz/)** is the Czech national domain registry operator
   (and the creator of your Turris).
 
+* **Quad9 Filtered** is a forwarder which blocks domains with malicious content
+  (like phishing or malware). It is provided by
+  [Quad9](https://en.wikipedia.org/wiki/Quad9), a non-profit organization
+  dedicated to secure DNS services.
+
+* **Quad9 Unfiltered** is also forwarder by [Quad9](https://en.wikipedia.org/wiki/Quad9)
+  but without blocking malicious domains. Use it if you encounter problems
+  with blocking legitimate content by the Quad Filtered forwarder.
+
 * **DNS4EU Protective resolution** is one of the forwarders publicly provided in
   [DNS4EU Public Service](https://www.joindns4.eu/learn/dns4eu-public-service-launched).
   DNS4EU is a free, privacy-focused, and secure DNS service intended to protect
@@ -133,15 +142,6 @@ secret you can use DoT/TLS instead.
   and ubiquitous Internet company. **Currently, we strongly discourage using
   this forwarder because it is
   [seriously broken](https://issuetracker.google.com/issues/299255571).**
-
-* **Quad9 Filtered** is a forwarder which blocks domains with malicious content
-  (like phishing or malware). It is provided by
-  [Quad9](https://en.wikipedia.org/wiki/Quad9), a non-profit organization
-  dedicated to secure DNS services.
-
-* **Quad9 Unfiltered** is also forwarder by [Quad9](https://en.wikipedia.org/wiki/Quad9)
-  but without blocking malicious domains. Use it if you encounter problems
-  with blocking legitimate content by the Quad Filtered forwarder.
 
 !!! important
     Information about privacy and data processing on CZ.NIC ODVR servers
