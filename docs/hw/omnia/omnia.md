@@ -121,8 +121,14 @@ card or use it as a backup for your main connectivity.
 * [Schematics for Turris Omnia CZ11NIC20](https://static.turris.com/docs/omnia/CZ11NIC20-schematics.pdf)
 * [Schematics for Turris Omnia CZ11NIC13](https://static.turris.com/docs/omnia/CZ11NIC13-schematics.pdf)
 
+### Declaration of Conformity
+
+* [Turris Omnia Wi-Fi 6](https://static.turris.com/docs/omnia/doc-omnia-wifi6.pdf)
+* [Turris Omnia 4G](https://static.turris.com/docs/omnia/doc-omnia-4g.pdf)
+* [Turris Omnia No Wi-Fi](https://static.turris.com/docs/omnia/doc-omnia-nowifi.pdf)
+* [Turris Omnia 2020](https://static.turris.com/docs/omnia/Omnia-DoC.pdf)
+
 ### Other documents
 
-* [Declaration of Conformity](https://static.turris.com/docs/omnia/Omnia-DoC.pdf)
 * [3D model of Turris Omnia PCB](https://static.turris.com/docs/omnia/omnia-step3d.zip)
 * [Diplexers (Wi-Fi signal mixers) – source files](https://static.turris.com/docs/omnia/diplexers-source-v1.zip)
