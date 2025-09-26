@@ -13,13 +13,7 @@ But regardless of the image you are starting from, the basics are the same.
 You need to connect your computer to LAN port on your Turris router (see the
 labels on the back of your router).
 
-!!! caution
-    You may also use your LAN to interconnect the computer and the router.
-    But ensure that there is no (other) DHCP server in the LAN as it would
-    interfere with the one in your router. There is no password during
-    initial setup. To eliminate potential security risks, setup your router
-    first, go through the update procedure and connect other untrusted devices
-    only afterwards.
+{! include-markdown './no-password.md' !}
 
 {! include-markdown './cables.md' !}
 

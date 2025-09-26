@@ -179,6 +179,7 @@ nav:
       - MOX: basics/first-setup/mox-first-setup.md
       - Shield: basics/first-setup/shield-first-setup.md
       - Turris 1.X and Omnia: basics/first-setup/simple-setup.md
+      - Omnia NG: basics/first-setup/omnia-ng.md
       - Ethernetless configuration: basics/first-setup/ethernetless.md
       - First steps after setup: basics/first-setup/after-setup.md
   - Software:
