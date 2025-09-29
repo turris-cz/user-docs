@@ -19,7 +19,7 @@ You will need:
 
 ### Flashing system on microSD card
 This step can be done on any Linux-running computer with an internet connection. This means you can also
-use your Turris 1.x router itself, if you choose to do so, skip to the [Inserting a microSD card](#inserting-microsd-card)
+use your Turris 1.x router itself, if you choose to do so, skip to the [Inserting a microSD card](#inserting-a-microsd-card)
 step and come back after you insert the microSD card into your router.
 
 Insert the microSD card into a computer running Linux. Open a terminal and
