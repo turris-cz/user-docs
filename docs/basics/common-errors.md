@@ -181,3 +181,32 @@ We have observed such behavior in products of following antivirus software ven
 
 A workaround is to either add an exception for your router (IP address, domain)
 or disable "HTTPS scanning" feature completely in antivirus software.
+
+## Weak wireless signal
+
+If you moved the position of wireless cards in Turris Omnia, we suggest
+double-checking if you connected pigtails correctly to diplexers (those small green
+boards). There are two connectors. One is for 2.4 GHz and the second one is
+for 5.6 GHz.
+
+It is also possible that you experience connection drops when using the 2.4 GHz
+frequency; this one shares the frequency with Bluetooth, and that is
+simply overcrowded these days in urban areas. You can try to use different
+bands or even a Wi-Fi analyzer. We suggest looking at a dedicated article to
+improve [Wi-Fi coverage](../hw/wifi.md) and, if it is possible, to use the 5 GHz
+frequency on devices that support it.
+
+## I do not receive e-mail notifications
+
+Please check whether your e-mail address has been entered correctly.
+Do not use an address that is forwarded (or redirected) to another address;
+use the target address directly instead. We use antispam technologies like
+[SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework),
+[DKIM](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail), and
+[DMARC](https://en.wikipedia.org/wiki/DMARC). These technologies are
+incompatible with simple e-mail forwarding. Mailing lists are usually
+safe, but it depends on specific implementation and/or configuration.
+
+E-mail notifications may also break if you move an already-used
+microSD card to another device. If you want to reuse such a card,
+[prepare](../hw/mox/microsd.md) it beforehand.

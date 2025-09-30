@@ -300,7 +300,6 @@ nav:
           - GPIO: hw/turris-1x/gpio.md
       - Wi-Fi coverage: hw/wifi.md
   - Troubleshooting:
-      - Common errors: basics/common-errors.md
       - Rescue modes:
           - MOX: hw/mox/rescue-modes.md
           - Omnia: hw/omnia/rescue-modes.md
@@ -312,7 +311,15 @@ nav:
           - MOX: hw/mox/serial-boot.md
           - Omnia: hw/omnia/serial-boot.md
       - Support: basics/support.md
-  - FAQ: basics/faq.md
+  - FAQ:
+      - Hardware:
+          - Generic: basics/hardware-faq.md
+          - MOX: basics/mox-faq.md
+          - Omnia: basics/omnia-faq.md
+          - Shield: basics/shield-faq.md
+          - Turris 1.X: basics/turris-1x-faq.md
+      - Turris OS: basics/os-faq.md
+      - Common errors: basics/common-errors.md
 
 # Exclude pages from navigation
 not_in_nav: |

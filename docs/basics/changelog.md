@@ -169,7 +169,7 @@ In 7.0, we are still using `iptables` for the firewall while the upstream is mov
 towards `nftables`. We decided to stick with it to limit the amount of changes
 in the new release.
 
-Apart from that, Turris OS 7.0 is the first one to use [staging updates](faq.md#what-are-the-staging-updates).
+Apart from that, Turris OS 7.0 is the first one to use [staging updates](os-faq.md#what-are-the-staging-updates).
 
 ### Detailed changelog
 
