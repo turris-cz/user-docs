@@ -303,6 +303,7 @@ nav:
       - Rescue modes:
           - MOX: hw/mox/rescue-modes.md
           - Omnia: hw/omnia/rescue-modes.md
+          - Omnia NG: hw/omnia-ng/rescue-modes.md
           - Shield: hw/shield/rescue-modes.md
           - Turris 1.X: hw/turris-1x/factory-reset.md
       - MOX MicroSD: hw/mox/microsd.md
@@ -316,8 +317,8 @@ nav:
           - Generic: basics/hardware-faq.md
           - MOX: basics/mox-faq.md
           - Omnia: basics/omnia-faq.md
+          - Omnia NG: basics/omnia-ng-faq.md
           - Shield: basics/shield-faq.md
-          - Turris 1.X: basics/turris-1x-faq.md
       - Turris OS: basics/os-faq.md
       - Common errors: basics/common-errors.md
 
@@ -325,9 +326,11 @@ nav:
 not_in_nav: |
   /basics/highlights.md
   /basics/changelog-archive.md
+  /basics/see-also-faq.md
   /basics/first-setup/cables.md
   /basics/first-setup/mox-cpu-only.md
   /basics/first-setup/mox-first-setup-warning.md
+  /basics/first-setup/no-password.md
   /basics/apps/openvpn-server/openvpn-foris.md
   /hw/mox/sets/feature-list.md
   /hw/mox/sets/generic-mox.md
