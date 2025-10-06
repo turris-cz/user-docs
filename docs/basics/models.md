@@ -29,7 +29,7 @@ available to read [here](../hw/turris-1x/turris-1x.md).
 The first commercial Turris router. Originally crowdfunded on
 [Indiegogo](https://www.indiegogo.com/projects/turris-omnia-hi-performance-open-source-router#/)
 with different case colors. Raised more than $1.2M and shortly after the
-campain entered retail sales.
+campaign entered retail sales.
 
 It uses dual-core ARMv7 CPU Marvell Armada 385 at 1.6 GHz with 2 GB RAM.
 You can see more details on the [separate page](../hw/omnia/omnia.md).
@@ -61,3 +61,14 @@ It uses dual-core ARMv8 CPU Marvell Armada 3720 with 512 MB RAM. You can
 read more about Turris Shield on the [separate page](../hw/shield/shield.md).
 
 ![Turris Shield](../hw/shield/shield.png)
+
+## Turris Omnia NG
+
+Next generation of turris Omnia. Building on top of Turris Omnia's success, Omnia
+NG targets the same customers and use-cases as the original Omnia. Just with
+more powerful hardware.
+
+It uses a quad-core ARMv8 CPU Qualcomm IPQ 9574 with 2 GB RAM. You can see more
+details on the [separate page](../hw/omnia-ng/omnia-ng.md).
+
+![Turris Omnia NG](../hw/omnia-ng/omnia-ng.png)
