@@ -17,6 +17,22 @@ mention all the possible devices that you can connect to the USB ports. We
 choose to ship the power supply strong enough to handle all those cases and
 still have some breathing space.
 
+### Why only 8GB eMMC? I need more storage!
+
+Omnia NG comes with an 8GB irreplaceable eMMC. It is and will be for the foreseeable
+future enough for Turris OS and should be good enough for most of our users. If
+you need more space or faster storage, you can easily place an NVMe drive in one
+of the M.2 slots. Omnia NG can even boot directly from it.
+
+## Why only 2GB of RAM?
+
+Although we would like to have more breathing space as well, 2GB are the best
+we could reasonably do. Our platform of choice uses a 32-bit memory
+controller and is thus very limited in this regard. Unfortunately, at the time
+of design, there was no other SoC available that would offer comparable network
+performance, support more RAM and still would fall into the same price-point
+ballpark. And from the routing perspective, it is more than enough.
+
 ### My display is broken, it keeps turning off
 
 There is a screen saver mode enabled by default on the display. The display has a
