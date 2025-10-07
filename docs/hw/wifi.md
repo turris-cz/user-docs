@@ -172,8 +172,8 @@ according to their antennas and Wi-Fi interfaces. Thus if one device works
 it needn't mean that another device will work too.
 
 !!! info
-    If you use both Wi-Fi ranges (2.4 GHz and 5 GHz) you can encounter that
-    they behave differently. The 5 GHz range can reach shorter distances but
-    is usually less interfered by networks in the neighborhood or other
-    sources (and thus it's more reliable). On the other hand, older devices
-    don't support it.
+    You can encounter that different Wi-Fi ranges (2.4 GHz, 5 GHz, and
+    6 GHz) behave differently. Higher frequencies can reach shorter
+    distances, but they are usually less interfered by networks in
+    the neighborhood or other sources (and thus they are more reliable).
+    On the other hand, older devices don't support it.
