@@ -54,7 +54,7 @@ and bug fixes wouldn't be installed.
     [medkit](https://repo.turris.cz/hbs/medkit/omnia-ng-medkit-latest.tar.gz) and
     [flash your router via USB](../../hw/omnia-ng/rescue-modes.md#re-flash-router)
     or update your factory image
-    [directly from the internet](../../hw/omnia-ng/rescue-modes.md##flash-from-the-internet).
+    [directly from the internet](../../hw/omnia-ng/rescue-modes.md#flash-from-the-internet).
     This will significantly decrease the update time and will get you the latest
     features right a way.
 
