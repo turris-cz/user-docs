@@ -292,6 +292,8 @@ nav:
           - Boot from SSD: hw/omnia/ssd-boot.md
           - GPIO: hw/omnia/gpio.md
           - MCU: hw/omnia/mcu.md
+      - Omnia NG:
+          - About: hw/omnia-ng/omnia-ng.md
       - Shield:
           - About: hw/shield/shield.md
           - Screenshots: hw/shield/screenshots.md
