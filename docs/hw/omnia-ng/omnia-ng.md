@@ -16,6 +16,7 @@ There are three M.2 slots with different keys that provide options for upgrades.
 ### M.2 M
 
 This slot is meant to be used for an NVMe SSD. It supports either 30mm or 42mm ones.
+It contains a PCI Express 3.0 2x bus.
 
 ### M.2 B
 
