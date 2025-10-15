@@ -4,8 +4,8 @@ board: omnia-ng
 
 # First setup on Omnia NG
 
-Omnia NG has multiple ports. Four Ethernet ports (TH0-ETH3) and two SFP ports
-(SFP0-SFP1). In factory default settings, you can connect your internet uplink
+Omnia NG has multiple ports. Four Ethernet ports (ETH0–ETH3) and two SFP ports
+(SFP0–SFP1). In factory default settings, you can connect your internet uplink
 to either ETH0 or SFP0.
 
 {! include-markdown './no-password.md' !}
