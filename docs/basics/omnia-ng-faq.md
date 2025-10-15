@@ -31,6 +31,22 @@ of design, there was no other SoC available that would offer comparable network
 performance, support more RAM and still would fall into the same price-point
 ballpark. And from the routing perspective, it is more than enough.
 
+## Why does Omnia NG have soldered in 2.4 GHz Wi-Fi?
+
+We wanted to provide support for all three bands (2.4GHz, 5GHz and 6GHz);
+there are only so many PCIe lanes, and there is no tri-band tri-concurrent Wi-Fi
+card. In Omnia, we solved it by picking two mPCIe slots for Wi-Fi and depending
+on whether you needed SSD or LTE, you shuffled the cards around.
+
+Unfortunately, with moving to M.2, those slots have specific keys, making the
+shuffling of the cards impossible. Luckily, our SoC of choice provided an option
+to add a 2.4GHz radio that doesn't occupy any PCIe lane. And on top of that,
+the extra costs of this radio were negligible.
+
+That is why we opted for it. Once tri-band tri-concurrent Wi-Fi 8 cards come
+out, you can disable the 2.4GHz onboard card and you can still replace the
+Wi-Fi 7 (pricey) card.
+
 ## My display is broken, it keeps turning off
 
 There is a screen saver mode enabled by default on the display. The display has a
