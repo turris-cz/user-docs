@@ -60,3 +60,7 @@ card, this time **Noni 56M2-B** based on the **QCN-6274** chipset, which provide
 ### Schematics
 
 * [Schematics for Turris Omnia NG CZ66NIC11](https://static.turris.com/docs/omnia-ng/CZ66NIC11.pdf)
+
+### Declaration of Conformity
+
+* [DoC for Turris Omnia NG](https://static.turris.com/docs/omnia-ng/DoC_Omnia_NG_RTROM04-NG_signed.pdf)
