@@ -313,6 +313,7 @@ nav:
       - Serial boot:
           - MOX: hw/mox/serial-boot.md
           - Omnia: hw/omnia/serial-boot.md
+      - FAQ: basics/common-errors.md
       - Support: basics/support.md
   - FAQ:
       - Hardware:

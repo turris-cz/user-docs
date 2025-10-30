@@ -2,7 +2,7 @@
 
 ## Supported devices
 
-## SFP
+### SFP
 
 All of those, which fulfill the
 [SFP standard](https://www.snia.org/technology-communities/sff/specifications),
@@ -24,7 +24,7 @@ which can be found in our [community documentation](https://wiki.turris.cz/doc/e
 Anyone can register there, log in, and then add their own SFP module, which
 they tried.
 
-## miniPCIe Wi-Fi cards
+### miniPCIe Wi-Fi cards
 
 You can find many mini PCIe Wi-FI cards, which you can use in Turris routers,
 but they need to be supported in OpenWrt and the Linux kernel. We tested the
@@ -39,7 +39,7 @@ following mini PCIe Wi-Fi cards, which we support.
 - AsiaRF AW7915-NPD 2x2 (Wi-Fi 6, DBDC) since Turris OS 6.0
 - AsiaRF AW7916-NPD (Wi-Fi 6E, DBDC) requires LTS kernel 5.15
 
-## Cellular network (LTE/5G)
+### Cellular network (LTE/5G)
 
 We support LTE components, which we were selling as an LTE pack. We have
 a good experience with the LTE model Quectel EP06. The whole pack, including
