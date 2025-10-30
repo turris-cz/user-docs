@@ -4,9 +4,7 @@ board: omnia-ng
 
 # Frequently asked questions about Turris Omnia NG
 
-## Hardware
-
-### Why 90W power source, is Omnia NG power hungry?
+## Why 90W power source, is Omnia NG power hungry?
 
 Turris Omnia NG comes with a 90W power source. But the real power consumption is
 typically much less. With all three Wi-Fis enabled, it is typically around 10W.
@@ -17,7 +15,7 @@ mention all the possible devices that you can connect to the USB ports. We
 choose to ship the power supply strong enough to handle all those cases and
 still have some breathing space.
 
-### Why only 8GB eMMC? I need more storage!
+## Why only 8GB eMMC? I need more storage!
 
 Omnia NG comes with an 8GB irreplaceable eMMC. It is and will be for the foreseeable
 future enough for Turris OS and should be good enough for most of our users. If
@@ -33,7 +31,7 @@ of design, there was no other SoC available that would offer comparable network
 performance, support more RAM and still would fall into the same price-point
 ballpark. And from the routing perspective, it is more than enough.
 
-### My display is broken, it keeps turning off
+## My display is broken, it keeps turning off
 
 There is a screen saver mode enabled by default on the display. The display has a
 limited lifetime. It is more than the warranty period, so we could keep it on
