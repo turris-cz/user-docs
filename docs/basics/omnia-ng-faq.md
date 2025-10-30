@@ -67,4 +67,10 @@ In the default setup, you can decrease the brightness of the LEDs by pressing th
 button on the back of your Turris Omnia NG. Not the reset button, the other
 one.
 
+## My SFP/Wi-Fi card/USB dongle worked on Omnia but doesn't work on NG!
+
+When we do the initial support for the device, we make sure that everything
+shipped with the device work. But it might take some extra time to integrate
+all the backports and fixes we did for our other devices.
+
 {! include-markdown './see-also-faq.md' !}
