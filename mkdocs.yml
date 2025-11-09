@@ -323,6 +323,7 @@ nav:
           - Omnia NG: basics/omnia-ng-faq.md
           - Shield: basics/shield-faq.md
       - Turris OS: basics/os-faq.md
+      - Migration: geek/router-migration.md
       - Common errors: basics/common-errors.md
 
 # Exclude pages from navigation

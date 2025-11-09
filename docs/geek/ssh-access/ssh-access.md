@@ -1,5 +1,5 @@
 ---
-board: omnia, 1.x, mox
+board: omnia-ng, omnia, 1.x, mox
 competency: advanced
 ---
 # Access to the router via SSH
