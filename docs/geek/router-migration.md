@@ -7,7 +7,7 @@ competency: advanced
 
 There is no automatic tool to migrate everything to your new router. But
 there are several things that can be easily migrated via
-[SSH](./ssh-access/) to get you up and running in no time.
+[SSH](ssh-access/ssh-access.md) to get you up and running in no time.
 
 !!! warning
     Before migrating your settings, make sure that both of your routers are
