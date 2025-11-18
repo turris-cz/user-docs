@@ -18,8 +18,8 @@ for the certificate to be trusted in future connections.
 ## About warnings
 
 !!! warning
-    Do not blindly skip untrusted certificate errors. There are there for a
-    good reason and might be indication of an attack attempt.
+    Do not blindly skip untrusted certificate errors. They are there for a
+    good reason and might be an indication of an attack attempt.
 
 Generally, if a warning is displayed on the web page where you happen to be,
 **do not proceed!** It is possible that someone simply misconfigured the web
