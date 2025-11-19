@@ -58,9 +58,9 @@ can wake it up with a press of a button.
 ## I don't see my 6 GHz Wi-Fi
 
 6GHz Wi-Fi has many restrictions depending on the region you are in. To be
-able to use it, make sure that you set your [reforis/region/region.md](region
-in reForis) right and that you are using a channel allowed in your region. If
-uncertain, set the channel to auto.
+able to use it, make sure that you set your [region in
+reForis](reforis/region/region.md) right and that you are using a channel
+allowed in your region. If uncertain, set the channel to auto.
 
 Another limitation of the 6GHz band is that WPA3 is mandatory, as well as
 the _Protected Management Frame_ feature. So make sure your security settings are
