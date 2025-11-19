@@ -55,6 +55,17 @@ all the time. But we expect our devices to last much longer than our
 warranty period. So we choose to turn it off when you are not using it. You
 can wake it up with a press of a button.
 
+## I don't see my 6 GHz Wi-Fi
+
+6GHz Wi-Fi has many restrictions depending on the region you are in. To be
+able to use it, make sure that you set your [reforis/region/region.md](region
+in reForis) right and that you are using a channel allowed in your region. If
+uncertain, set the channel to auto.
+
+Another limitation of the 6GHz band is that WPA3 is mandatory, as well as
+the _Protected Management Frame_ feature. So make sure your security settings are
+compatible as well.
+
 ## I'm missing two screws on each side of my Omnia NG
 
 There are two spare holes on the sides of every Turris Omnia NG case. Those are
