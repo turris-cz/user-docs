@@ -1,6 +1,6 @@
 mkdocs
 # theme
-mkdocs-material>=9.5.0,<10.0.0
+mkdocs-material>=9.5.0,<9.7
 # extensions
 mkdocs-git-revision-date-localized-plugin
 mkdocs-git-committers-plugin-2

@@ -1,27 +1,9 @@
 image: "$CI_REGISTRY_IMAGE"
 
 stages:
-  - build-docker
   - build
   - test
   - pages
-
-build-docker-image:
-  stage: build-docker
-  image: docker:git
-  services:
-    - docker:dind
-  before_script:
-    - docker info
-    - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY -u $CI_REGISTRY_USER --password-stdin
-  script:
-    - docker build -t "$CI_REGISTRY_IMAGE" -f .Dockerfile .
-    - docker push "$CI_REGISTRY_IMAGE"
-  rules:
-    - if: '$CI_COMMIT_BRANCH == "master"' # Run on master branch
-    - if: "$CI_COMMIT_MESSAGE =~ /build-docker/" # Run if commit message contains "build-docker"
-  tags:
-    - dind
 
 test-compilation:
   stage: test

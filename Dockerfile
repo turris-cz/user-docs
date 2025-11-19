@@ -11,20 +11,21 @@
 #   docker push registry.nic.cz/turris/user-docs
 # Logout from the GitLab server when done:
 #   docker logout registry.nic.cz
-FROM debian:bookworm
+FROM alpine:3.22
 
 ENV HOME=/root
 
 RUN \
-  apt-get update && \
-  apt-get -y install --no-install-recommends \
-    python3-pip python3-setuptools python3-wheel \
-    git wget \
-    libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev \
-    && \
-  apt-get clean
+  apk update && \
+  apk add \
+    py3-pip py3-setuptools py3-wheel \
+    git wget bash \
+    cairo-dev freetype-dev libffi-dev jpeg-dev libpng-dev zlib-dev \
+    tzdata
 
 ADD requirements.txt /requirements.txt
+
+RUN ln -s /usr/share/zoneinfo/Europe/Prague /etc/localtime
 
 RUN \
   pip3 install --break-system-packages --requirement /requirements.txt && \
