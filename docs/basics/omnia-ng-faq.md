@@ -57,10 +57,10 @@ can wake it up with a press of a button.
 
 ## I want to use shorter NVMe/LTE
 
-We intentionally put the M.2 plastic holder into the far most holes. Those can
-be used right away for installing the longer cards without need to remove the
+We intentionally put the M.2 plastic holder into the farthest holes. Those can
+be used right away for installing the longer cards without the need to remove the
 main board. If you want to install a shorter card, you can simply get another
-holder and install it to the other hole without removing the main board.
+holder and install it in the other hole without removing the main board.
 
 ## I don't see my 6 GHz Wi-Fi
 
