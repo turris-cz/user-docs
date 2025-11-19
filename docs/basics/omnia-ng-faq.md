@@ -55,6 +55,13 @@ all the time. But we expect our devices to last much longer than our
 warranty period. So we choose to turn it off when you are not using it. You
 can wake it up with a press of a button.
 
+## I want to use shorter NVMe/LTE
+
+We intentionally put the M.2 plastic holder into the far most holes. Those can
+be used right away for installing the longer cards without need to remove the
+main board. If you want to install a shorter card, you can simply get another
+holder and install it to the other hole without removing the main board.
+
 ## I don't see my 6 GHz Wi-Fi
 
 6GHz Wi-Fi has many restrictions depending on the region you are in. To be
