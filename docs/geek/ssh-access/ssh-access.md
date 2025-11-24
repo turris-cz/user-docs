@@ -13,8 +13,8 @@ terminal-based and utilizes the [Secure Shell Protocol](https://en.wikipedia.org
 
 To access the terminal interface you need to have the root password set
 first. This password can be set in the _Advanced Administration Password_
-section, on the _Administration_ → [_Password_](../../../basics/reforis/password/password/)
-tab (or on the first screen during the [first setup guide](../../../basics/reforis/guide/)).
+section, on the _Administration_ → [_Password_](../../basics/reforis/password/password.md)
+tab (or on the first screen during the [first setup guide](../../basics/reforis/guide/index.md)).
 
 !!! important
     Always use strong passwords! Consult the

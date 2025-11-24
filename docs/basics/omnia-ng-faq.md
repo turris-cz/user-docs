@@ -66,7 +66,7 @@ holder and install it in the other hole without removing the main board.
 
 6GHz Wi-Fi has many restrictions depending on the region you are in. To be
 able to use it, make sure that you set your [region in
-reForis](reforis/region/region.md) right and that you are using a channel
+reForis](./reforis/region/region.md) right and that you are using a channel
 allowed in your region. If uncertain, set the channel to auto.
 
 Another limitation of the 6GHz band is that WPA3 is mandatory, as well as
