@@ -12,6 +12,7 @@ Turris OS software is being released as a fixed set of packages for given versio
 | 5.x.y                   | 19.07                       | 4.6.2020   | 19.10.2022         | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield) |
 | 6.x.y                   | 21.02                       | 19.10.2022 | 9.4.2024           | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield) |
 | 7.x.y                   | 22.03                       | 9.4.2024   | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield) |
+| 9.x.y                   | 24.10                       | 9.4.2024   | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield), [Omnia NG](models.md#turris-omnia-ng) |
 
 For more detailed list of changes and versions history please see
 [changelog](changelog.md).
@@ -95,6 +96,7 @@ These are Turris OS versions flashed in factory and routers they were flashed to
 | 5.1.0             | Turris Shield                                                    |
 | 6.0.0-alpha1      | Turris MOX Wi-Fi 6                                               |
 | 6.0.0-alpha3      | Turris Omnia Wi-Fi 6                                             |
+| 9.0.0             | Turris Omnia NG                                                  |
 
 [^1]: Turris 1.x were originally sent out with Turris OS versions before 3.0 but
   because of DNS root key rollover there was a need to force update factory

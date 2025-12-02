@@ -119,6 +119,31 @@ various repositories with additional packages like
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
 
+## Turris OS 9.0
+
+Turris OS 9.0 is based on the top of [OpenWrt 24.10](https://openwrt.org/releases/24.10/start)
+with our feed and a few patches. It supports [Turris MOX](../hw/mox/intro.md),
+[Turris Omnia](../hw/omnia/omnia.md), [Turris Omnia NG](../hw/omnia-ng/omnia-ng.md) and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* Support for Turris Omnia NG
+* Add OpenWrt video feed
+
+### Detailed changelog
+
+<span id="tos90">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v9.0.", "tos90");</script>
+
+## Turris OS 8.0
+
+Turris OS 8.0 was meant to be based on [OpenWrt
+23.05](https://openwrt.org/releases/23.05/start), but due to the long process
+of migrating to `nftables` in Turris OS 7.1 and overall much more mature state
+of [OpenWrt 24.10](https://openwrt.org/releases/24.10/start), this release was
+skipped.
+
 ## Turris OS 7.2
 
 Turris OS 7.2 is based on the top of [OpenWrt 22.03](https://openwrt.org/releases/22.03/start)
