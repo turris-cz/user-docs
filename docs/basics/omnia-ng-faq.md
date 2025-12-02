@@ -59,8 +59,9 @@ can wake it up with a press of a button.
 
 We intentionally put the M.2 plastic holder into the farthest holes. Those can
 be used right away for installing the longer cards without the need to remove the
-main board. If you want to install a shorter card, you can simply get another
-holder and install it in the other hole without removing the main board.
+main board. If you want to install a shorter card, you can simply [get another
+holder](https://ecom.cz/eshop/detail/83735-PU-ULCOG2-5-1-6-CERNA) and install
+it in the other hole without removing the main board.
 
 ## I don't see my 6 GHz Wi-Fi
 
