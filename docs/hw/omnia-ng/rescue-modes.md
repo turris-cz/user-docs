@@ -6,7 +6,7 @@ board: omnia-ng
 The Turris Omnia NG router has a reset button on its back panel. When you press
 and immediately release the reset button, the router resets and boots into
 ordinary Turris OS ([mode 1](#standard-reboot)). To enter other reboot modes,
-press and hold D-Pad in any direction while pressing the reset button, and wait
+press the reset button and hold the D-Pad in any direction, and wait
 for a rescue mode image to show up on the display.
 
 ![Rescue Mode splash screen](rescue.png)
@@ -27,7 +27,7 @@ Available modes:
 !!! warning
     When the indication LEDs turn red, it means that some highly sensitive
     operation is in process and data may be corrupted if it is interrupted. Try
-    not to reset the router during the process or you might end up with corrupted
+    not to reset the router during the process or you might end up with a corrupted
     filesystem. That one can be fixed using [mode 4](#re-flash-router) or
     with [mode 6](#re-flash-router), but with complete data loss.
 
