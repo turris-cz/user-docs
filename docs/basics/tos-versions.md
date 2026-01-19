@@ -12,7 +12,7 @@ Turris OS software is being released as a fixed set of packages for given versio
 | 5.x.y                   | 19.07                       | 4.6.2020   | 19.10.2022         | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield) |
 | 6.x.y                   | 21.02                       | 19.10.2022 | 9.4.2024           | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield) |
 | 7.x.y                   | 22.03                       | 9.4.2024   | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield) |
-| 9.x.y                   | 24.10                       | 9.4.2024   | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield), [Omnia NG](models.md#turris-omnia-ng) |
+| 9.x.y                   | 24.10                       | 28.11.2025 | -                  | [Turris 1.x](models.md#turris-1x), [Omnia](models.md#turris-omnia), [Mox](models.md#turris-mox), [Shield](models.md#turris-shield), [Omnia NG](models.md#turris-omnia-ng) |
 
 For more detailed list of changes and versions history please see
 [changelog](changelog.md).
