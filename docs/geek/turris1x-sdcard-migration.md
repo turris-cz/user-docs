@@ -4,60 +4,95 @@ competency: advanced
 ---
 # Migrating the system to a microSD card on Turris 1.x routers
 
-This guide walks you through creating a new system that runs fully from a microSD card; the
-onboard memory chips are not utilized. The new system will run the newest Turris OS
-and U-Boot.
+This guide details creating a system that runs entirely from a microSD
+card, bypassing the onboard NAND memory. The target system will run the
+latest version of Turris OS and U-Boot.
 
 ## Requirements
 
 You will need:
 
 * a [Turris 1.0 or Turris 1.1](../hw/turris-1x/turris-1x.md) router,
-* a microSD card with at least 8 GB free storage,
+* a microSD card with at least 8 GB capacity,
 * an internet connection,
-* a screwdriver.
+* a PH1 screwdriver,
+* a Linux-running computer (tested on Ubuntu 24.04, 25.10, and Debian 13),
+* a microSD card reader
 
-### Flashing system on microSD card
-This step can be done on any Linux-running computer with an internet connection. This means you can also
-use your Turris 1.x router itself, if you choose to do so, skip to the [Inserting a microSD card](#inserting-a-microsd-card)
-step and come back after you insert the microSD card into your router.
+!!! tip
+    If you do not have a Linux system, you can create a
+    bootable USB drive using Linux by following the [Ubuntu USB creation guide](https://documentation.ubuntu.com/desktop/en/latest/how-to/create-a-bootable-usb-stick/)
+    to run the required script.
 
-Insert the microSD card into a computer running Linux. Open a terminal and
-run the [microSD card formatting script](https://gitlab.nic.cz/turris/misc/-/blob/master/turris1x-sd/turris1xsdimg)
-as an argument, passing it the microSD device path (e.g., `/dev/mmcblk0`). The script has to be run with root privileges
-because it formats the disk.
+## Flashing the microSD card
+
+Insert the microSD card into the Linux computer and install the necessary
+dependencies.
+
 ```bash
-cd /tmp
-wget https://gitlab.nic.cz/turris/misc/-/raw/master/turris1x-sd/turris1xsdimg -O turris1xsdimg && chmod +x turris1xsdimg
-./turris1xsdimg /dev/mmcblk0
+sudo apt update && sudo apt install wget curl
 ```
 
-### Inserting a microSD card
+Download the [microSD card formatting script](https://gitlab.nic.cz/turris/misc/-/blob/master/turris1x-sd/turris1xsdimg)
+into a temporary directory.
 
-You will need to unplug the router from the power supply. You need to unscrew a
-few screws from the top cover of the router to remove it. The microSD card slot is
-located underneath the RAM slot. Very cautiously remove the RAM from its slot by
-pressing the clips on both sides, and the RAM should pop out by itself. Then you can insert
-the microSD card slowly and without using force.
+```bash
+cd /tmp && wget https://gitlab.nic.cz/turris/misc/-/raw/master/turris1x-sd/turris1xsdimg -O turris1xsdimg && chmod +x turris1xsdimg
+```
 
-![RAM module with inserted RAM](turris1x-with-ram.jpg)
+!!! warning
+    Check the correct device path to the microSD card. Running the
+    script on the wrong disk will result in permanent data loss. Verify
+    the path using `lsblk` or `fdisk -l`.
 
-If the card is in its place, you can now put back the RAM, top cover, and plug the power
-cord into the router.
+    ```bash
+    lsblk
+    ```
+
+    The microSD card typically appears as `/dev/sdx` or `/dev/mmcblkx`.
+
+Execute the script, passing the path to your microSD card.
+
+```bash
+sudo ./turris1xsdimg /dev/path/to/microSDcard
+```
+
+Once the script completes, remove the microSD card and proceed to the
+next step.
+
+### Installing the microSD card
+
+1. Disconnect the router from the power source.
+2. Remove the four screw securing the top panel and lift it off.
+3. The microSD card slot is located underneath the RAM module.
+4. Release the RAM module by pressing the metal clips on both ends of the slot simultaneously. The RAM will pop up.
+5. Insert the microSD card into the slot gently until fully seated.
 
 ![RAM module without RAM and inserted SD card](turris1x-without-ram.jpg)
 
-### Switch boot location to microSD card
-Turn off your Turris 1.x router. Locate the `SW1` switch on your router and change its state to `011010`.
-After you turn on your router again, you should boot into the new system on the microSD card.
+Reinstall the RAM module by pressing it down until the clips snap into place.
+
+![RAM module with inserted RAM](turris1x-with-ram.jpg)
+
+### Switching the boot location
+
+Locate the `SW1` switch on the router board and set the state to `011010`.
 
 ![SW1 switch in state 011010](turris1x-sw1-011010.png)
 
-To verify that the system is running from the microSD card, run the `mount` command and check its output.
+Connect the power supply. The router will now boot into the new system
+on the microSD card.
 
-You should see this in the output:
+Follow the [initial configuration guide](https://docs.turris.cz/basics/reforis/guide/)
+to set up the router.
 
-```
+#### Verification
+
+To confirm the system is running from the microSD card, execute the
+`mount` command and verify the output.
+
+```bash
 /dev/mmcblk0p1 on / type btrfs
 ```
 
+If this entry is present, the migration was successful.
