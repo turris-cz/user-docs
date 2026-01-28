@@ -4,63 +4,74 @@ competency: advanced
 ---
 # Firmware update on Turris devices
 
-We offer automatic updates for Turris OS, but what is not automatically
-updated is the U-Boot (the bootloader), rescue system, and MCU firmware on our
-devices. However, there have been a lot of improvements made to the firmware
-since these devices were first released.
+!!! warning
+    This feature is currently experimental and intended for testing
+    purposes.
 
-Sometimes users experience issues with their devices due to outdated firmware.
-This guide is intended to assist users in updating their device's firmware.
+While Turris OS updates automatically, the U-Boot bootloader, rescue
+system, and the MCU firmware do not. These low-level components have received
+significant improvements since the initial hardware release. This guide
+explains how to update them manually to resolve issues caused by outdated
+firmware.
+
+!!! danger
+    Older [revisions of Turris Omnia](../../hw/omnia/revisions.md), such
+    as the CZ11NIC13, are susceptible to RAM training issues with newer
+    U-Boot versions. Updating the U-Boot environment on these devices
+    may result in a boot loop.
 
 ## Firmware update
 
-### Through reForis
+!!! warning
+    Ensure the device remains powered on throughout the entire update
+    process. [Recovery from a failed firmware update](../../hw/omnia/serial-boot.md)
+    is difficult.
 
-From Turris OS 6.5, we introduced a way to update the firmware of your Turris
-device through reForis.
+### Via reForis
 
-!!! Warning
-    This feature is marked experimental as it is meant for testing at the moment.
+Starting with Turris OS 6.5, you can update the device firmware directly
+through the reForis interface.
 
-Automatic updates can be turned on as a package via
-*Package Management* -> *Packages*
+To enable automatic firmware updates in reForis:
+
+Navigate to *Package Management* → *Packages*.
 
 ![reForis firmware update](nor_packages.png)
 
+And check the relevant firmware update packages.
+
 ![reForis firmware update checked](nor_packages_checked.png)
 
-### Through CLI
+### Via CLI
 
-!!! warning
-    Ensure your device stays plugged in through out this whole process of
-    update. Recovering from failed firmware update is not impossible, but
-    it can be very difficult.
+Install the `turris-nor-update` package.
 
-1. Install the `turris-nor-update` package.
-```
+```bash
 opkg update && opkg install turris-nor-update
 ```
-2. Run the utility
-```
+
+Run the utility.
+
+```bash
 nor-update
 ```
 
-    !!! note
-        Utility's expected output reads something like this:
-        ```
-        Verifying /dev/mtd0 against secure-firmware.bin
-        1705eb30f3e7795d0805e97134515d91 - /dev/mtd0
-        e12a263c63bd9860cff844763e81e56b - secure-firmware.bin
-        Failed
-        ```
-        In multiple instances. Do not worry about this output.
-        The `Failed` in this output means, that you had an outdated
-        U-Boot or rescue system and it is going to be updated.
+!!! note
+    You may see a verification failure in the output:
 
-3. Reboot is required after running the firmware update
+    ```bash
+    Verifying /dev/mtd0 against secure-firmware.bin
+    1705eb30f3e7795d0805e97134515d91 - /dev/mtd0
+    e12a263c63bd9860cff844763e81e56b - secure-firmware.bin
+    Failed
+    ```
+
+    A `Failed` status indicates that your current U-Boot or rescue system
+    is outdated and requires updating. This is expected behavior.
+
+Reboot the device to complete the firmware update.
 
 !!! important
-    The update may cause the LEDs to be switched off. In order to
-    turn them back on, press the front LED button. If it fails or
-    you want a special setup, log into LuCI, go to the *System* →
-    *LED Configuration* page, and configure the LEDs there.
+    The update may disable the LEDs. To restore them, press the front
+    LED button. If this fails or you require custom behavior, configure
+    the LEDs via *System* → *LED Configuration* in LuCI.
