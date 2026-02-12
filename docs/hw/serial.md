@@ -62,6 +62,19 @@ Cable, TTL-232R-RPI.
 
 ![Serial cable connected to Turris Omnia](serial-link-omnia.jpg)
 
+### Turris Omnia NG
+
+To access the serial link, you need to remove the top cover by unscrewing
+6 screws (3 on each side of the router), removing the D-pad button by carefully
+pulling it out, and lifting the top cover first at the rear part of the device
+and sliding it out towards the front to avoid the D-pad stick at the front.
+The serial pins are in the middle of the left side of the board, right next to
+the CPU and RAM cover. Connect the USB TTL serial adapter as shown in the
+picture – from top to bottom, the colors of the pins should be black (GND),
+green (RX), and red (TX).
+
+![Serial cable connected to Turris Omnia](serial-link-ng.jpg)
+
 ### Turris 1.X
 
 Turris 1.0 and 1.1 have the easiest access to the serial port. They already
