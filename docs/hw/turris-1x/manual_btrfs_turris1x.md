@@ -2,11 +2,11 @@
 board: 1.x
 competency: advanced
 ---
-# Btrfs migration on Turris 1.x routers
+# Manual Btrfs migration on Turris 1.x routers
 
 !!! warning
-    This article is for [Turris 1.x routers](../hw/turris-1x/turris-1x.md)
-    running on old [Turris OS 3.x](../basics/tos-versions.md) version.
+    This article is for [Turris 1.x routers](./turris-1x.md)
+    running on old [Turris OS 3.x](../../basics/tos-versions.md) version.
     Its intention is to make it possible to easily use the latest stable
     version of Turris OS.
 
@@ -17,13 +17,13 @@ competency: advanced
 Btrfs is the default filesystem on Turris Omnia and Turris MOX while Turris 1.x
 routers were using JFFS2 and UBIFS later. In the past, we switched to the Btrfs
 filesystem, which has various advantages, like providing backups via snapshots
-managed by our tool [Schnapps](../geek/schnapps/schnapps.md).
+managed by our tool [Schnapps](../../geek/schnapps/schnapps.md).
 
 ## Requirements
 
 You will need:
 
-* a [Turris 1.0 or Turris 1.1](../hw/turris-1x/turris-1x.md) router,
+* a [Turris 1.0 or Turris 1.1](./turris-1x.md) router,
 * a microSD card with at least 8 GB free storage,
 * a PH1 screwdriver,
 * a microUSB cable,
@@ -237,7 +237,7 @@ If you see this output, the migration has been succesful:
 ## Installing the latest Turris OS
 
 By running the following commands, you will download the medkit (system image)
-from the stable [HBS branch](../geek/testing.md).
+from the stable [HBS branch](../../geek/testing.md).
 
 ```bash
 cd /tmp && curl -k -O https://repo.turris.cz/hbs/medkit/turris1x-medkit-latest.tar.gz

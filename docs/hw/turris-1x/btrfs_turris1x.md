@@ -12,7 +12,7 @@ latest version of Turris OS and U-Boot.
 
 You will need:
 
-* a [Turris 1.0 or Turris 1.1](../hw/turris-1x/turris-1x.md) router,
+* a [Turris 1.0 or Turris 1.1](./turris-1x.md) router,
 * a microSD card with at least 8 GB capacity,
 * an internet connection,
 * a PH1 screwdriver,

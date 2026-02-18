@@ -234,8 +234,6 @@ nav:
           - LXC: geek/lxc/lxc.md
           - Netboot: basics/apps/netboot.md
           - Schnapps: geek/schnapps/schnapps.md
-          - Btrfs migration: geek/btrfs_turris1x.md
-          - Turris 1.x SD card migration: geek/turris1x-sdcard-migration.md
           - Netdata: geek/netdata/netdata.md
           - Firmware update: geek/nor-update/nor-update.md
           - SSH access: geek/ssh-access/ssh-access.md
@@ -300,6 +298,8 @@ nav:
       - Turris 1.X:
           - About: hw/turris-1x/turris-1x.md
           - GPIO: hw/turris-1x/gpio.md
+          - Btrfs migration: hw/turris-1x/btrfs_turris1x.md
+          - Manual Btrfs migration: hw/turris-1x/manual_btrfs_turris1x.md
       - Wi-Fi coverage: hw/wifi.md
   - Troubleshooting:
       - Rescue modes:

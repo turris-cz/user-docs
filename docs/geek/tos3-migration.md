@@ -108,7 +108,7 @@ Considerations for advanced users:
 
 !!! warning
     Do not attept to migrate Turris 1.x unless you are running on [Btrfs with SD
-    card](../geek/btrfs_turris1x.md). You are going to run out of storage space and
+    card](../hw/turris-1x/btrfs_turris1x.md). You are going to run out of storage space and
     factory reset would be the only option then.
 
 To start migration you have to have at least Turris OS 3.11.19 installed on your

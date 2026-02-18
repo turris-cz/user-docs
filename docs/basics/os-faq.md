@@ -111,7 +111,7 @@ you can use snapshots and rollback to the previous state by using schnapps tool.
 If you want to start over or simply use re-flash your router by using USB flash
 drive, take a look at specific articles for
 
-- [Turris 1.x](../geek/btrfs_turris1x.md#how-to-perform-factory-reset-medkit)
+- [Turris 1.x](../hw/turris-1x/btrfs_turris1x.md#how-to-perform-factory-reset)
 - [Turris Omnia](../hw/omnia/rescue-modes.md#re-flash-router)
 - [Turris MOX](../hw/mox/rescue-modes.md#re-flash-router)
 
