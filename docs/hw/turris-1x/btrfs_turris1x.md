@@ -96,3 +96,22 @@ To confirm the system is running from the microSD card, execute the
 ```
 
 If this entry is present, the migration was successful.
+
+## How to perform a factory reset
+
+The factory reset button on Turris 1.x works only on the internal storage,
+thus it does not work in this scenario. You have to manually perform the
+factory reset instead.
+
+!!! note
+    Before performing the factory reset, it might be useful to update the
+    factory image to the latest version of TOS.
+    You can achieve this either [via reForis](../../geek/nor-update/nor-update.md#via-reforis)
+    checking the *Factory image* package. Or [via Schnapps](../../geek/schnapps/schnapps.md#updating-factory-image).
+
+You can perform the factory reset either [via reForis](../../basics/reforis/factory-reset/factory-reset.md)
+or [via Schnapps](../../geek/schnapps/schnapps.md) by running this command:
+
+```bash
+schnapps rollback factory
+```

@@ -6,7 +6,7 @@ competency: advanced
 
 !!! warning
     This article is for [Turris 1.x routers](./turris-1x.md)
-    running on old [Turris OS 3.x](../../basics/tos-versions.md) version.
+    running on the old [Turris OS 3.x](../../basics/tos-versions.md) version.
     Its intention is to make it possible to easily use the latest stable
     version of Turris OS.
 
