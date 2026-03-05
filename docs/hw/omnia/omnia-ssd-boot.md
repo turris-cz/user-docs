@@ -2,20 +2,46 @@
 board: omnia
 competency: expert
 ---
-# Booting Turris Omnia from mSATA SSD
+# Booting Turris Omnia from an mSATA SSD
+
+This guide details creating a system that runs entirely from an mSATA
+SSD drive, bypassing the onboard NAND memory. The target system can
+either be a backup of your current system or a clean version of Turris OS.
 
 !!! warning
-    This guide is only for Omnia 2019 or newer. For older series, please
-    install the `turris-nor-update `package and run the `nor-update` command
-    from CLI or update your NOR via [Serial cable](serial-boot.md#nor-recovery).
+      This guide is only for Omnia 2019 or newer. For older series, please
+      install the `turris-nor-update `package and run the `nor-update` command
+      from CLI or update your NOR via [serial cable](serial-boot.md#nor-recovery).
+
+      After setting up boot from SSD, you should avoid using the LuCI
+      mount plugin as it tries to unmount all external drives including
+      your SSD, and that would break your system until a reboot.
+
+!!! notice
+      After setting up boot from SSD, parts of the rescue modes will not
+      be usable, like reverting to the previous snapshot and factory
+      reset. You can still manage your snapshots manually using
+      [schnapps](../../geek/schnapps/schnapps.md).
+
+## Requirements
+
+* a [Turris Omnia](./omnia.md) router,
+* an mSATA SSD drive,
+* an Internet connection,
+* a PH2 and PH1 screwdriver,
+* a [serial console cable](../serial.md)
 
 ## Hardware installation
 
-1. Ensure that your Omnia isn't plugged to the power supply.
-2. Move the PCIe cards one position to the SIM card slot.
-3. Insert your mSATA SSD to the remaining slot (the one which is close to
-   the heatsink (CPU)) as is the only one, which supports also mSATA interface
-   together with mini PCIe.
+1. Make sure your Omnia is not connected to the power supply.
+2. Unscrew the six PH2 screws securing the top cover.
+3. Remove the top cover by sliding it out towards the front of the
+   device, in order to avoid damaging the LED light pipes.
+4. Move the already present PCIe cards by one position towards the SIM
+   card slot.
+5. Insert your mSATA SSD into the remaining slot (the one which is
+   closest to the heatsink of the CPU), as it is the only one that
+   supports the mSATA interface.
 
 !!! tip
     Because it's a complex operation (which includes many steps) you can
@@ -31,129 +57,133 @@ competency: expert
 
 ## Device detection
 
-1. Plug your Omnia to the power supply.
-2. Connect to the router via SSH and log in.
-3. Check whether the new SSD can be detected: `ls /dev/sd*` It should display
-   `/dev/sda`.
+1. Plug your Omnia into the power supply.
+2. Connect to the router via SSH, or [via a serial console](../serial.md#turris-omnia).
+3. Check whether the new SSD can be detected:
+   ```bash
+   fdisk -l | grep "sd"
 
-!!! notice
-    If the SSD has been already partitioned you can see those partitions too.
-
-## Preparation of SSD
-
-1. Backup the current filesystem by creating and exporting a snapshot.
-   See the [Schnapps documentation page](../../geek/schnapps/schnapps.md).
-   ```shell
-   schnapps export -c /tmp/backup.tar.gz
+   # It should display info about the disk:
+   Disk /dev/sda: 238.47 GiB, 256060514304 bytes, 500118192 sectors
    ```
 
-    !!! note
-        If you no longer can access your eMMC or you want to start fresh,
-        you can use the [medkit](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz)
-        instead of a backup of your eMMC.
+## Preparation of the SSD
 
-2. Find out the size of the system partition (e.g. via `df`; the partition is
-   named `mmcblk0p1`).
-3. Install `cfdisk` if not yet installed:
-```shell
-opkg update && opkg install cfdisk
-```
-4. Run `cfdisk` now:
-```shell
-cfdisk /dev/sda
-```
-5. If no partition table exists, it asks for a new one (partition table `GPT`
-   or `dos` is recommended).
-6. Delete all old partitions (if any).
-7. Create a new primary partition. Its size must be at least the same as the
-   original (eMMC) partition has (see above). Mark this partition as bootable.
-8. Write the changes by `Write` and leave `cfdisk` by `Quit`.
-9. Create a filesystem on the new partition:
-```shell
-mkfs.btrfs /dev/sda1
-```
-10. Create a mount point a mount the partition on it:
-```shell
-mkdir -p /mnt/ssd && mount /dev/sda1 /mnt/ssd
-```
-11. Create a Btrfs subvolume for the root directory:
-```shell
-btrfs subvolume create /mnt/ssd/@
-```
-12. Unpack the backup created in step (1) into the new subvolume:
+!!! notice
+      If you can no longer access your eMMC, or if you simply want to
+      start with a clean system, you can use a [medkit](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz).
+      Instead of backing up your system in step 1, skip to step 2.
 
-    For example:
-    ```shell
-    tar -C /mnt/ssd/@ -xvzf /tmp/backup.tar.gz
-    ```
-    Where you need to replace `backup.tar.gz` with the actual name of your backup.
+1. Backup the current filesystem by creating and exporting a [snapshot](../../geek/schnapps/schnapps.md).
+   ```bash
+   schnapps export -c /tmp/backup.tar.gz
+   ```
+2. Run `fdisk` to partition the SSD.
+   ```bash
+   fdisk /dev/nvme0n1
+   ```
+3. Create a new `dos` or `GPT` partition table by typing `o` or `g`.
+4. Create a new primary partition by typing `n`. Its size must be at
+   least the same as the original one present on the eMMC (e.g., 8 GB).
+5. Write the changes by typing `w`.
+6. Create a filesystem on the new partition:
+   ```bash
+   mkfs.btrfs /dev/sda1
+   ```
+7. Create a mount point and mount the partition on it:
+   ```bash
+   mkdir -p /mnt/ssd && mount /dev/sda1 /mnt/ssd
+   ```
+8. Create a Btrfs subvolume for the root directory:
+   ```bash
+   btrfs su cr /mnt/ssd/@
+   ```
+9. If you created a backup in step 1, unpack it into the new subvolume:
+   ```bash
+   tar -C /mnt/ssd/@ -xvzf /tmp/backup.tar.gz
+   ```
+   Or if you are starting with a clean system, unpack a current medkit
+   into the new subvolume:
+   ```bash
+   wget -O - https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz | tar -C /mnt/ssd/@ -xvzf -
+   ```
+10. Create a symlink to the boot.scr file:
+   ```bash
+   cd /mnt/ssd && ln -s @/boot/boot.scr .
+   ```
+11. Leave the directory and unmount the SSD:
+   ```bash
+   cd && umount /mnt/ssd
+   ```
 
-    Or if you want to start from scratch:
-    ```shell
-    wget -O - https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz | tar -C /mnt/ssd/@ -xvzf -
-    ```
+## Updating U-Boot to boot from the SSD
 
-13. Create a symlink to the boot.scr file:
-```shell
-cd /mnt/ssd && ln -s @/boot/boot.scr .
-```
-14. Leave the directory and unmount the drive
-```shell
-cd && umount /mnt/ssd
-```
+In order to boot from the SSD prepared in the previous steps, you need
+to modify the U-Boot environment.
 
-## Updating U-Boot to boot from SSD
+1. Connect to your Omnia [via a serial console](../serial.md#turris-omnia).
+2. Reboot the device and start pressing `Enter` repeatedly until the
+   U-Boot prompt appears:
+   ```bash
+   =>
+   ```
+3. Run `printenv` to check the original `boot_targets` environment variable:
+   ```bash
+   printenv boot_targets
 
-To boot from SSD prepared in previous step, you need to modify the U-Boot
-environment.
+   # The output:
+   boot_targets=mmc0 scsi0 usb0 pxe dhcp
+   ```
+4. Set the variable, so that NVMe is preferred over eMMC for the next boot:
+   ```bash
+   setenv boot_targets scsi0 mmc0 usb0 pxe dhcp
+   ```
+   You are setting this environment variable temporarily for this boot
+   only, so you won't get stuck with an unbootable device.
+5. Boot to the system on the SSD:
+   ```bash
+   run distro_bootcmd
+   ```
+6. After the system boots up, run the `mount` command to display what is
+   actually mounted:
+   ```bash
+   mount
 
-1. Connect to your router via a [serial cable](../serial.md).
-2. Reboot your the router and immediately press _Enter_ repeatedly until
-   the U-Boot prompt “=>” appears.
-3. Run `printenv` to check how the environment variables are set. Its output
-   should look like:
-```shell
-boot_targets=mmc0 scsi0 usb0 pxe dhcp
-```
-4. Set the variables to their new values for the next boot:
-```shell
-setenv boot_targets scsi0 mmc0 usb0 pxe dhcp
-```
-5. Try to boot using the new values: `run distro_bootcmd`
-6. After booting, run the `mount` command to display what is actually mounted.
-   It should look like:
-```
-/dev/sda1 on / type btrfs (rw,noatime,ssd,space_cache,commit=5,subvolid=257,subvol=/@)
-```
-7. If it is OK you can repeat the step 4 and then write the environment
-   values permanently by running `saveenv`
-8. Reboot your router by `run distro_bootcmd`
+   # The output should look like this:
+   /dev/sda1 on / type btrfs (rw,noatime,ssd,discard=async,space_cache=v2,commit=5,subvolid=256,subvol=/@)
+   ```
+7. If everything went well, rerun the `setenv` command from step 4 and
+   then write the environment variable permanently by running:
+   ```bash
+   saveenv
+   ```
+8. Reboot your device by:
+   ```bash
+   run distro_bootcmd
+   ```
+
+!!! notice
+      In case of an update of the U-Boot and its environment in one of
+      our future releases, your setup could be overriden and hence you
+      would need to repeat the above steps to configure the U-Boot again.
 
 !!! info
-    The `boot_prefixes` variable specifies where to search for the boot
-    directory (which is located on the `@` subvolume now) whereas
-    `boot_targets` defines the boot sequence (`scsi0` means the first
-    virtual SCSI device which is presented by the SSD here).
+      The `boot_prefixes` variable specifies where to search for the
+      boot directory (which is located on the `@` subvolume now),
+      whereas `boot_targets` defines the boot sequence,
 
-## Creating factory image
+## Creating a factory image
 
-The last thing to do is to create a factory image so you have something to return
-to if you run into troubles. Starting from Turris OS 6.3.3, schnapps has a
-command to do that.
+The last thing to do is to create a factory image, so you have something
+to return to if you run into trouble.
 
-You just need to run `schnapps update-factory` and after it finishes, you can
-use the _Factory reset_ button in reForis and the `schnapps rollback factory` command.
-
-!!! caution
-    You should avoid using the LuCI mount plugin as it tries to unmount all
-    external drives including your SSD and that would break your system till
-    the reset. Also, there is a possibility that at some point we will update
-    U-Boot and its environment in one of our future releases. This might
-    override your setup and you would need to repeat the above steps to
-    configure U-Boot again. Additionally, the most of the recovery options
-    using the reset button will not work - reverting to the previous snapshot
-    or factory reset. You can still manage your snapshots manually using
-    `schnapps` if you set it up correctly.
+You just need to run:
+```bash
+schnapps update-factory
+```
+To rollback to the factory version, use the *Factory reset* button in
+[reForis](../../basics/reforis/maintenance/maintenance.md#factory-reset)
+or the `schnapps rollback factory` command.
 
 ## Credits
 
