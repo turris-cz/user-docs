@@ -30,7 +30,7 @@ Insert the microSD card into the Linux computer and install the necessary
 dependencies.
 
 ```bash
-sudo apt update && sudo apt install wget curl
+sudo apt update && sudo apt install wget curl btrfs-progs
 ```
 
 Download the [microSD card formatting script](https://gitlab.nic.cz/turris/misc/-/blob/master/turris1x-sd/turris1xsdimg)
