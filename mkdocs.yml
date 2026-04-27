@@ -292,7 +292,7 @@ nav:
           - MCU: hw/omnia/mcu.md
       - Omnia NG:
           - About: hw/omnia-ng/omnia-ng.md
-          - Add-ons: hw/omnia-ng/addons.md
+          - Add-ons: hw/omnia-ng/add-ons.md
           - Boot from SSD: hw/omnia-ng/omnia-ng-ssd-boot.md
       - Shield:
           - About: hw/shield/shield.md
