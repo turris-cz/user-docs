@@ -80,7 +80,7 @@ either be a backup of your current system or a clean version of Turris OS.
    ```
 2. Run `fdisk` to partition the SSD.
    ```bash
-   fdisk /dev/nvme0n1
+   fdisk /dev/sda
    ```
 3. Create a new `dos` or `GPT` partition table by typing `o` or `g`.
 4. Create a new primary partition by typing `n`. Its size must be at
@@ -134,7 +134,8 @@ to modify the U-Boot environment.
    # The output:
    boot_targets=mmc0 scsi0 usb0 pxe dhcp
    ```
-4. Set the variable, so that NVMe is preferred over eMMC for the next boot:
+4. Set the variable, so that SCSI (the mSATA drive) is preferred over 
+   eMMC for the next boot:
    ```bash
    setenv boot_targets scsi0 mmc0 usb0 pxe dhcp
    ```
