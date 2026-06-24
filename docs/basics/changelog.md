@@ -119,6 +119,24 @@ various repositories with additional packages like
 In our repositories, all releases are tagged and you can read specific git
 commit hashes the release is built from.
 
+## Turris OS 9.1
+
+Turris OS 9.1 is based on the top of [OpenWrt 24.10](https://openwrt.org/releases/24.10/start)
+with our feed and a few patches. It supports [Turris MOX](../hw/mox/intro.md),
+[Turris Omnia](../hw/omnia/omnia.md), [Turris Omnia NG](../hw/omnia-ng/omnia-ng.md) and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* Updated kernel and acceleration modules for Turris Omnia NG
+* Knot Resolver 6 – run using the manager
+* Webapps integration of Adguard Home
+
+### Detailed changelog
+
+<span id="tos91">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v9.1.", "tos91");</script>
+
 ## Turris OS 9.0
 
 Turris OS 9.0 is based on the top of [OpenWrt 24.10](https://openwrt.org/releases/24.10/start)
