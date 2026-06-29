@@ -15,7 +15,7 @@ fi
 cleanup() {
     # Kill the mkdocs server if it's running
     [ -z "$PID" ] || kill "$PID"
-    
+
     # Check for any failed links in the log
     if [ "$(grep -v '200 OK$' log | wc -l)" -gt 0 ]; then
         echo "---------------"
@@ -24,7 +24,7 @@ cleanup() {
         echo
         grep -B 1 -v '200 OK$' log
     fi
-    
+
     # Remove temporary files
     rm -f rejected todo log
 }
@@ -56,7 +56,7 @@ wget --no-verbose --rejected-log=rejected --spider --recursive --page-requisites
 # If the --remote flag is provided, check remote links
 if [ -n "$REMOTE" ]; then
     EXCEPTIONS=(
-        'turris.local' 
+        'turris.local'
         'localhost'
         '127.0.0.1'
         '192.168.1.1'
@@ -77,10 +77,10 @@ if [ -n "$REMOTE" ]; then
 
     # Filter and prepare the list of URLs to check
     tail -n +2 rejected | cut -f 2 | grep -v -E "(${EXCEPTIONS_PATTERN})" | sort -u | sed -e 's|%3A|:|g' > todo
-    
+
     # Set pipefail option to catch errors in the pipeline
     set -o pipefail
-    
+
     # Check the remote URLs
     wget --no-verbose --spider --input-file=todo --no-directories --delete-after --tries=3 --waitretry=5 --timeout=30 --user-agent="$USER_AGENT" 2>&1 | tee log
 fi
