@@ -68,6 +68,8 @@ if [ -n "$REMOTE" ]; then
         'gitlab.nic.cz/turris/os/build/tree/\$%7BreleaseVersion%7D' # Used in a script to fetch the release version
         'gitlab.nic.cz/turris/user-docs/-/raw/' # Used in a documentation to fetch the raw content, there is a limitation in the GitLab API
         'gitlab.nic.cz/-/ide/' # Used in a documentation to edit the content in GitLab Web IDE
+        'www.indiegogo.com' # Has protection against crawlers
+        'www.raspberrypi.com' # Has protection against crawlers
     )
 
     # Join the exceptions into a single pattern
