@@ -72,3 +72,16 @@ It uses a quad-core ARMv8 CPU Qualcomm IPQ 9574 with 2 GB RAM. You can see more
 details on the [separate page](../hw/omnia-ng/omnia-ng.md).
 
 ![Turris Omnia NG](../hw/omnia-ng/omnia-ng.png)
+
+### Turris Omnia NG Wired
+
+Turris Omnia NG Wired is a secure, high-performance router for the next
+generation of networking. It is based on the same hardware as Turris Omnia NG
+and it is perfect for the cases where no Wi-Fi is necessary.
+
+It does not contain the Wi-Fi 7 card; you can utilize the given M.2 E slot for
+your purposes or install the [Wi-Fi 7 Upgrade Kit](../hw/omnia-ng/addons.md).
+There are also no antennas for the on-board Wi-Fi adapter (if you
+want to use the adapter, you will need the [Wi-Fi 6 Upgrade Kit](../hw/omnia-ng/addons.md)).
+
+![Turris Omnia NG Wired](../hw/omnia-ng/omnia-ng-wired.png)
