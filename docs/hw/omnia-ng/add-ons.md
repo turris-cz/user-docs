@@ -45,7 +45,7 @@ pad on top of the heatsink**. Also, make sure that you **remove the blue cover**
 from the pad before application. Mount the pigtails into the case and connect them
 with cables to the card, and **secure the cables** on the card with the attached plastic
 clip. Insert SIM card that doesn't require PIN into SIM0 slot and install
-support for %G kit from package lists in reForis.
+support for 5G kit from package lists in reForis.
 
 ![5G kit](addons/5G_kit.jpg)
 
