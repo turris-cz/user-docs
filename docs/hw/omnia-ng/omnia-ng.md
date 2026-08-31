@@ -3,11 +3,18 @@ board: omnia-ng
 ---
 # Turris Omnia NG
 
-Turris Omnia NG is our new powerful SOHO router. It is based on **Qualcomm IPQ
+**Turris Omnia NG** is our new powerful SOHO router. It is based on **Qualcomm IPQ
 9574 CPU** - quad-core ARMv8 (Cortex A-73) running at **2.2 GHz**. It has **two
-gigs of RAM**. It uses an **8 GB eMMC** as its main storage.
+gigs of RAM**. It uses an **8 GB eMMC** as its main storage. It is equipped by
+a **Wi-Fi 7** card and an on-board **Wi-Fi 6** adapter.
 
 ![Turris Omnia NG](omnia-ng.png)
+
+**Turris Omnia NG Wired** is a new powerful SOHO router for the cases when
+you don't need to use the Wi-Fi. Instead, you can utilize the given M.2 E
+slot for your purposes.
+
+![Turris Omnia NG Wired](omnia-ng-wired.png)
 
 ## M.2 slots
 
@@ -28,7 +35,8 @@ This slot supports either 42mm or 52mm cards.
 ### M.2 E
 
 This slot is in the default configuration occupied by a **Noni 56M2-B Wi-Fi 7** card. 
-This supports either 42mm or 52mm cards.
+This supports either 42mm or 52mm cards. **Turris Omnia NG Wired** has this slot
+free for your purposes (the Wi-Fi 7 card is not equipped).
 
 ![Turris Omnia NG insides](omnia-ng-inside.jpg)
 
@@ -49,13 +57,26 @@ Every Omnia NG has an onboard **2,4 GHz Wi-Fi 6** card based on **Qualcomm QCN
 card, this time **Noni 56M2-B** based on the **QCN-6274** chipset, which provides
 **Wi-Fi 7** on both **5 and 6 GHz**.
 
+Omnia NG Wired does not contain any operational Wi-Fi adapters. You can install
+a compatible Wi-Fi card (e.g. our [Wi-Fi 7 Upgrade Kit](add-ons.md)) if you need
+this feature on your device. It is also possible to use the [Wi-Fi 6 Upgrade Kit](add-ons.md)
+to utilize the on-board Wi-Fi 6 adapter.
+
 ## Documents
 
 ### Datasheets
 
+#### Turris Omnia NG
+
 * [Official datasheet – English](https://static.turris.com/docs/omnia-ng/Turris_Omnia_NG_datasheet_EN.pdf)
 * [Official datasheet – German](https://static.turris.com/docs/omnia-ng/Turris_Omnia_NG_datasheet_DE.pdf)
 * [Official datasheet – Czech](https://static.turris.com/docs/omnia-ng/Turris_Omnia_NG_datasheet_CS.pdf)
+
+#### Turris Omnia NG Wired
+
+* [Official datasheet – English](https://static.turris.com/docs/omnia-ng-wired/Turris_Omnia_NG_Wired_datasheet_EN.pdf)
+* [Official datasheet – German](https://static.turris.com/docs/omnia-ng-wired/Turris_Omnia_NG_Wired_datasheet_DE.pdf)
+* [Official datasheet – Czech](https://static.turris.com/docs/omnia-ng-wired/Turris_Omnia_NG_Wired_datasheet_CS.pdf)
 
 ### Schematics
 
