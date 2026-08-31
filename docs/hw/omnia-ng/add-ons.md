@@ -52,3 +52,31 @@ support for 5G kit from package lists in reForis.
 The kit contains a 5G card Quectel RM500UEA, four 5G antennas, two 15cm MHF4-SMA
 pigtails, two 20cm MHF4-SMA pigtails, four plastic pigtail holders, a plastic
 clip to secure MHF-4 connectors, a aluminium heatsink, and two thermal pads.
+
+## LTE Kit
+
+The LTE Kit contains everything you need (except a SIM card) to get 4G/LTE
+connectivity on your router. There is a neoway N723-EA card, two antennas,
+two pigtails, two plastic pigtail holders, and an aluminium heatsink.
+
+![LTE Kit](addons/lte_kit.jpg)
+
+Insert the card into a M.2 slot, glue the heatsink on top of the card, and mount
+the pigtails into the case and connect them with cables to the card. Insert
+a SIM card that doesn't require PIN into the SIM0 slot and install
+support for the LTE Kit from the package lists in reForis.
+
+## SFP+ Kit
+
+This kit allows you to utilize the SFP ports on your Omnia NG or Omnia NG Wired
+to connect it into a 10Gbps metallic network (with RJ45 connectors and Cat 6A
+cables). It contains an RTROM01-RTSF-10G module that is capable to switch
+between 1G / 2.5G / 5G / 10 Gbps data rates.
+
+!!! important
+    Remember that the maximum cable length depends to the data rate. The limit
+    is 100m for 1Gbps, but only 30m for 10Gbps.
+
+![SPF+ Kit](addons/spf_kit1.jpg)
+
+![SPF+ Kit](addons/spf_kit2.jpg)
