@@ -327,6 +327,7 @@ nav:
       - Turris OS: basics/os-faq.md
       - Migration: geek/router-migration.md
       - Common errors: basics/common-errors.md
+  - Data Act: basics/data-act.md
 
 # Exclude pages from navigation
 not_in_nav: |
