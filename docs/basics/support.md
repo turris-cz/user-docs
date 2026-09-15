@@ -67,6 +67,12 @@ may be available but they don't persist reboots.
 
 ![reForis: Reports to download](reforis-diagnostics-reports.png)
 
+!!! warning
+    The diagnostics data may contain sensitive information. Don't allow it
+    to be publicly available, e.g. on the forum or in GitLab issues.
+    Use it only for communication to our support or for your internal
+    purposes.
+
 #### If you can't find the diagnostics
 
 In that case, your router is, for some reason, stuck in some old version of the
