@@ -14,7 +14,7 @@ faster.
  * Use one thread per problem. Don't mix many issues into one e-mail/issue/forum post
  * Clearly state what router you have and whether you have made any HW alterations.
  * Don't forget to mention the version of your _Turris OS_! (_reForis → About_)
- * If you have logs, include them. But be aware that those **might contain
+ * If you have diagnostics, include them. But be aware that those **might contain
    sensitive data**.
 
 ### Obtaining the serial number
@@ -38,24 +38,26 @@ serial number (S/N, SN). You can obtain it using one of these ways:
 
 ![Label on MOX bus slot](shield-serial-board.jpg)
 
-## Getting logs
+## Getting diagnostics
 
 !!! warning
     If you come across any error and it is possible not to reboot the router,
-    **please don't reboot it** before collecting the logs. All logs are saved in
-    the router memory and they will be erased if you reboot.
+    **please don't reboot it** before collecting the diagnostics (or system
+    logs). All this data is saved in the router memory and it will be erased
+    if you reboot.
 
-If you just rebooted the router, let it gather some data first. Logs from a
-freshly rebooted router, which have been downloaded before the occurrence of
-the error, usually don't help us to identify the cause of the error.
+If you just rebooted the router, let it gather some data first. Diagnostics
+from a freshly rebooted router, which have been downloaded before
+the occurrence of the error, usually don't help us to identify the cause of
+the error.
 
 ### Using reForis
 
 If you use the _reForis_ interface to maintain your router, you can use it to
-generate logs using _Administration → Diagnostics_ page. The modules, which
-are usually the most interesting are `disk-full`, `messages`, `dns`,
-`installed` and `network`. If the nature of the problem suggests that other
-modules could also be useful, you can check them.
+generate the necessary data using the _Administration → Diagnostics_ page.
+The modules, which are usually the most interesting are `disk-full`, `messages`,
+`dns`, `installed` and `network`. If the nature of the problem suggests that
+other modules could also be useful, you can check them.
 
 ![reForis: Diagnostics](reforis-diagnostics-modules.png)
 
