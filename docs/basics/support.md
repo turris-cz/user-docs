@@ -96,7 +96,9 @@ diagnostics script.
     ```
 
 !!! warning
-    If you use some older version of Turris OS, the `turris-diagnostics` command may not be present. In this case, you will need to run the apropriate shell script manually:
+    If you use some older version of Turris OS, the `turris-diagnostics`
+    command may not be present. In this case, you will need to run
+    the apropriate shell script manually:
     ```shell
     root@192.168.1.1:~$ /usr/share/diagnostics/diagnostics.sh | gzip > /tmp/diag.gz
     ```
