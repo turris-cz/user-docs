@@ -11,12 +11,14 @@ investigate and resolve your problems.
 
 !!! important
     If you come across any error and it is possible not to reboot the router,
-    please **don’t reboot it** before collecting the logs. All logs are saved in
-    the router memory, and they will be erased if you reboot.
+    please **don’t reboot it** before collecting the diagnostics (or system
+    logs). All this data is saved in the router memory, and it will be erased
+    if you reboot.
 
-If you just rebooted the router, let it gather some data first. Logs from
-a freshly rebooted router, which have been downloaded before the occurrence
-of the error, usually don’t help us to identify the cause of the error.
+If you just rebooted the router, let it gather some data first. Diagnostics
+from a freshly rebooted router, which have been downloaded before
+the occurrence of the error, usually don’t help us to identify the cause of
+the error.
 
 ## How to get information
 
@@ -32,6 +34,12 @@ When done, you can press _Download_ to download the report. Multiple reports
 may be available, but they don’t persist over reboots.
 
 ![Available reports](reports.png)
+
+!!! warning
+    The diagnostics data may contain sensitive information. Don't allow it
+    to be publicly available, e.g. on the forum or in GitLab issues.
+    Use it only for communication to our support or for your internal
+    purposes.
 
 ### If you can’t find the diagnostics
 
