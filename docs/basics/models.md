@@ -80,8 +80,8 @@ generation of networking. It is based on the same hardware as Turris Omnia NG
 and it is perfect for the cases where no Wi-Fi is necessary.
 
 It does not contain the Wi-Fi 7 card; you can utilize the given M.2 E slot for
-your purposes or install the [Wi-Fi 7 Upgrade Kit](../hw/omnia-ng/add-ons.md).
+your purposes or install the [Wi-Fi 7 Upgrade Kit](../hw/omnia-ng/add-ons.md#wi-fi-7-upgrade-kit).
 There are also no antennas for the on-board Wi-Fi adapter (if you
-want to use the adapter, you will need the [Wi-Fi 6 Upgrade Kit](../hw/omnia-ng/add-ons.md)).
+want to use the adapter, you will need the [Wi-Fi 6 Upgrade Kit](../hw/omnia-ng/add-ons.md#wi-fi-6-upgrade-kit)).
 
 ![Turris Omnia NG Wired](../hw/omnia-ng/omnia-ng-wired.png)
