@@ -174,15 +174,10 @@ If this worked you are now connected to the Internet.
 Now you need to get the latest certificates in order to install the Btrfs
 migration script from the repo.
 
-Download the certificates package:
-```bash
-cd /tmp && curl -k -O https://repo.turris.cz/hbs/turris1x/packages/base/ca-certificates_20250419-r1_all.ipk
-```
-
-And install them:
-```bash
-opkg install ./ca-certificates_20250419-r1_all.ipk
-```
+1. Search for `ca-certificates_*` package in the
+    [package repository](https://repo.turris.cz/hbs/turris1x/packages/base/).
+2. Download it using `cd /tmp && curl -k -O <link-to-file>`.
+3. Install it using `opkg install ./<file-name>`.
 
 ## Installing the Btrfs migration script
 
