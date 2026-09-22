@@ -106,9 +106,9 @@ These are Turris OS versions flashed in factory and routers they were flashed to
   and that was 3.7.3. This version was used to migrate from previous updater to
   updater-ng. With factory update to 3.8.5 it is no longer relevant.
 
-### Deprecation of `project.turris.cz`
+### Termination of `project.turris.cz`
 
-Old versions of Turris OS (up to 3.x) supported the [project.turris.cz](https://project.turris.cz)
+Old versions of Turris OS (up to 3.x) supported the `project.turris.cz`
 portal. It provided information about threats detected by users' routers using
 the old data collection system [Ucollect](https://doc.turris.cz/doc/en/howto/collect).
 
@@ -118,6 +118,5 @@ new versions of Turris OS (4.0 and newer) are **no longer compatible** with
 the mentioned portal. You can find various threat statistics on our new web
 [Sentinel:view](https://view.sentinel.turris.cz/).
 
-The `project.turris.cz` portal itself has been archived and is available only
-as a static website. No new data from routers is processed here; all historical
-data has been dropped.
+The `project.turris.cz` portal itself was being operated as a static archive
+for a few years and then terminated.
