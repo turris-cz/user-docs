@@ -302,17 +302,25 @@ specification for Nextcloud servers; use if you have a Nextcloud server
 
 Look at some examples:
 ```
-schnapps upload 8 webdav://user:password@my.webdav.server/ /snapshots
-schnapps upload nextcloud:/user:password@my.nextcloud.server/snapshots/
+schnapps upload 8 webdav://my.webdav.server/ /snapshots
+schnapps upload nextcloud:/my.nextcloud.server/snapshots/
 schnapps upload 8 ssh://my.webdav.server/ /snapshots
 schnapps upload 8 local://mnt/ext/
 schnapps upload 8 file://mnt/ext/
 ```
-The first command uploads the snapshot numbered 8 to the specified WebDAV server to the specified directory.
-The user credentials are incorporated into the URL. The second example is similar but it uploads the current file
-system state and the target directory is a part of the URL. The third command uses SSHFS and the user credentials
-are omitted (it logs in as the current user and authenticates he/she by the key which must be preconfigured in
-`/etc/config/schnapps` or `~/.ssh/config` or added to the running `ssh-agent`).
+The first command uploads the snapshot numbered 8 to the specified WebDAV server
+to the specified directory. The second example is similar but it uploads
+the current file system state and the target directory is a part of the URL.
+The third command uses SSHFS. There are also two commands that "upload"
+the snapshot locally.
+
+!!! warning
+    Never use credentials (user names and passwods) as parts of URLs.
+    They may leak to other local users, because command line parameters
+    are exposed via information about processes. Use configuration files
+    instead, see below. For SSH, key authentication and use of
+    [ssh-agent](https://en.wikipedia.org/wiki/Ssh-agent)
+    is strongly encouraged.
 
 !!! important
 	SSH URLs can be specified with relative or absolute paths (e.g. `ssh://my.webdav.server:/upload` is absolute
