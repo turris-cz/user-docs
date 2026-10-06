@@ -2,75 +2,90 @@
 board: mox, omnia, 1.x
 competency: intermediate
 ---
-# RIPE Atlas Probes
+# RIPE Atlas probes
 
 RIPE Atlas is a global network of probes that measures connectivity and
-reachability across the Internet in real-time. These probes are mostly run by
-volunteers. If you host probe you will receive credits (see more about
+reachability across the Internet in real time. These probes are mostly run by
+volunteers. If you host a probe you will receive credits (see more about
 [credit system](https://atlas.ripe.net/docs/getting-started/credits)) which
-can be later used for running your own measurements on the RIPE Atlas network.
+can be later used to run your own measurements on the RIPE Atlas network.
 
-This document describes steps that you have to follow to connect your router as
+This document describes the steps that you have to follow to connect your router as
 a probe to the RIPE Atlas network.
+
+## RIPE Atlas account
+
+Before configuring your probe, you need a user account.
+If you don't have one, go to the [RIPE Atlas website](https://atlas.ripe.net/)
+and create an account.
 
 ## Installation
 
 To install the probe, go to the _reForis_ menu _Package Management → Packages_
 and select _RIPE Atlas SW Probe_.
 
-After that, you have to connect to your router via SSH and start the `atlas`
-service.
+After that, you have to connect to your router via SSH and follow the remaining
+steps.
 
-Enable and run the daemon by these commands:
-```
-/etc/init.d/atlas enable
-/etc/init.d/atlas start
-```
+## Getting keys
 
-Probe communicates with Atlas servers via an SSH tunnel. The SSH key is
-generated after the first run of probe daemon.
-
-After starting daemon, run `get_key` command to get the generated SSH public
-key. You'll need this key to register your probe under your account on RIPE website.
+The first step is to generate a key pair. In contrast to the older
+versions, the current version 5130 doesn't need to do it explicitly.
+Simply start the probe daemon with the following command:
 
 ```
-/etc/init.d/atlas get_key
+/etc/init.d/ripe-atlas start
 ```
 
-It takes a few seconds to generate the key.
+This generates a new SSH key pair and saves it to the `/etc/ripe-atlas`
+directory.
 
-## Probe Registration
+## Probe registration
 
-To register your probe you have to have account on [RIPE website](https://access.ripe.net/registration).
+Run the `/etc/init.d/ripe-atlas get_key` command to display your public key.
+Go to the [RIPE Atlas website](https://atlas.ripe.net/apply/swprobe),
+log in (if you haven't done so before) and register your probe. All you need
+is the public key and the locality of the probe.
 
-Once you are logged to your account on [RIPE website](https://access.ripe.net/registration),
-fill the form on this [link](https://atlas.ripe.net/apply/swprobe/).
-Into form's field _Public Key_ copy the key obtained by `get_key` command.
+## Final steps
 
-See [RIPE Atlas Service Terms and Conditions](https://www-static.ripe.net/static/rnd-ui/atlas/media/legal/RIPEAtlasServiceTermsandConditionsV2.0.pdf),
-if you agree with this, check it and click to the _Submit your application_
-button.
+After the registration, enable the daemon with this command:
+
+```
+/etc/init.d/ripe-atlas enable
+```
+
+You can ensure that your probe is running with the
+`/etc/init.d/ripe-atlas status` command.
 
 ## Configuration
 
-The configuration is located in `/etc/config/atlas`. It contains only one
-boolean option `rxtxrpt` that defines whether we want to send interface traffic
-statistics as probe measurement result.
+The configuration is located in `/etc/config/ripe-atlas`. It contains only a few
+options:
 
-## Probe ID and Measurement
+- `enabled` - whether the probe is enabled (0/1)
+- `mode` - operation mode (`prod` for production, `test` for testing, and `dev`
+  for development)
+- `log_stderr` – whether to log to the standard error output (0/1)
+- `log_stdout` – whether to log to the standard output (0/1)
+- `rxtxrpt` – whether to send interface traffic statistics as the probe
+  measurement results (0/1)
 
-After probe registration you should receive an e-mail with
-Subject __Your new RIPE Atlas software probe is created__, where you can find
-your Probe ID and link for managing your probe.
+## Probe ID and measurement
+
+After probe registration, you should receive an e-mail with
+__Important information about your new RIPE Atlas software probe__ as its
+subject (it may change, of course). In it you can find your Probe ID and
+the link to manage your probe.
 
 You can also use this command to get the probe ID:
 
 ```
-/etc/init.d/atlas probeid
+/etc/init.d/ripe-atlas probeid
 ```
 
-Measurement of your probe is accessible via the web
-(where __<ID>__ is your probe ID).
+The measurement of your probe is accessible via the web (where __<ID>__ is
+the ID of your probe).
 
 ```
 https://atlas.ripe.net/measurements/<ID>/
