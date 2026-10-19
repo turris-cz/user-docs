@@ -6,7 +6,7 @@ board: omnia
 ## Omnia platform
 
 Turris Omnia platform is a starting point for any of our powerful SOHO routers.
-It is based on **Marvel Armada 385 CPU** - dual-core armv7 running at **1.6 GHz**.
+It is based on **Marvell Armada 385 CPU** - dual-core armv7 running at **1.6 GHz**.
 The current version has **two gigs of RAM**. It uses as main storage **8 GB eMMC**.
 There are three miniPCIe slots that provide options for upgrades. One comes with
 a SIM card slot.
