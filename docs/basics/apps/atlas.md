@@ -37,7 +37,7 @@ Simply start the probe daemon by the following command:
 /etc/init.d/ripe-atlas start
 ```
 
-It generates a new SSH key pair and saves it into the `/etc/ripe-atlas`
+This generates a new SSH key pair and saves it into the `/etc/ripe-atlas`
 directory.
 
 ## Probe registration
