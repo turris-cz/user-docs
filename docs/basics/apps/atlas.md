@@ -15,9 +15,9 @@ a probe to the RIPE Atlas network.
 
 ## RIPE Atlas account
 
-Before you start to configure your probe, you need to have a user account.
-If you don't have one, please go to the [RIPE Atlas website](https://atlas.ripe.net/)
-and register there.
+Before configuring your probe, you need a user account.
+If you don't have one, go to the [RIPE Atlas website](https://atlas.ripe.net/)
+and create an account.
 
 ## Installation
 
