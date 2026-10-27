@@ -27,55 +27,49 @@ and select _RIPE Atlas SW Probe_.
 After that, you have to connect to your router via SSH and perform
 all necessary steps.
 
-## Generating keys
+## Getting keys
 
-The first step is to generate a key pair. Open the `/etc/config/atlas` file
-in an editor and enter your RIPE Atlas account username (usually your
-e-mail address), for example:
+The first step is to generate a key pair. In constrast to the older
+versions, the current version 5130 doesn't need to do it explitly.
+Simply start the probe daemon by the following command:
 
 ```
-config atlas 'common'
-        option log_stderr '1'
-        option log_stdout '0'
-        option rxtxrpt '1'
-        option username 'user@example.com'
+/etc/init.d/ripe-atlas start
 ```
 
-Then run `/etc/init.d/atlas create_key`. It generates a new SSH key pair
-and saves it into the `/etc/atlas` directory.
+It generates a new SSH key pair and saves it into the `/etc/ripe-atlas`
+directory.
 
 ## Probe registration
 
-Run the `/etc/init.d/atlas get_key` command to display your public key.
-Go to the [RIPE Atlas website](https://atlas.ripe.net/register/swprobe)
-and register your probe (you must be logged in, of course). All you need
+Run the `/etc/init.d/ripe-atlas get_key` command to display your public key.
+Go to the [RIPE Atlas website](https://atlas.ripe.net/apply/swprobe),
+log in (if you haven't done it before) and register your probe. All you need
 is the public key and the locality of the probe.
 
 ## Final steps
 
-After the registration, enable and run the daemon with these commands:
+After the registration, enable the daemon with these commands:
 
 ```
-/etc/init.d/atlas enable
-/etc/init.d/atlas start
+/etc/init.d/ripe-atlas enable
 ```
 
 You can ensure that your probe is running by the
-`/etc/init.d/atlas status` command.
-
-!!! note
-    These instructions are also present in the `/etc/atlas/atlas.readme` file.
+`/etc/init.d/ripe-atlas status` command.
 
 ## Configuration
 
-The configuration is located in `/etc/config/atlas`. It contains only a few
+The configuration is located in `/etc/config/ripe-atlas`. It contains only a few
 options:
 
-- `log_stderr` – whether to log to the standard error output (boolean)
-- `log_stdout` – whether to log to the standard output (boolean)
-- `rxtxrpt` – whether to send interface traffic statistics as the probe measurement
-  results (boolean)
-- `username` – the RIPE Atlas username (see above, text)
+- `enabled` - whether the probe is enabled (0/1)
+- `mode` - operation mode (`prod` for production, `test` for testing, and `dev`
+  for development)
+- `log_stderr` – whether to log to the standard error output (0/1)
+- `log_stdout` – whether to log to the standard output (0/1)
+- `rxtxrpt` – whether to send interface traffic statistics as the probe
+  measurement results (0/1)
 
 ## Probe ID and measurement
 
@@ -87,7 +81,7 @@ the link for managing your probe.
 You can also use this command to get the probe ID:
 
 ```
-/etc/init.d/atlas probeid
+/etc/init.d/ripe-atlas probeid
 ```
 
 The measurement of your probe is accessible via the web (where __<ID>__ is
