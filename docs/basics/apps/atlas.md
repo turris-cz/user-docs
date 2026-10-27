@@ -24,8 +24,8 @@ and create an account.
 To install the probe, go to the _reForis_ menu _Package Management → Packages_
 and select _RIPE Atlas SW Probe_.
 
-After that, you have to connect to your router via SSH and perform
-all necessary steps.
+After that, you have to connect to your router via SSH and follow the remaining
+steps.
 
 ## Getting keys
 
