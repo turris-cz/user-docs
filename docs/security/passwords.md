@@ -16,8 +16,8 @@ In general, Turris OS has two distinct classes of passwords:
 * user-related passwords for other purposes (e.g., LuCI and SSH), i.e., system
   passwords.
 
-These passwords are set separately, but Foris and reForis can set the same
-password for Foris/reForis and the `root` user (see below).
+These passwords are set separately, but reForis can set the same
+password for reForis and the `root` user (see below).
 
 Unlike some other routers, Turris has no default nor hard-coded passwords.
 The reForis password is originally set in the first start guide.

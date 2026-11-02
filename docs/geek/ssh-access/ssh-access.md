@@ -52,7 +52,7 @@ package usually contains some package for `sftp` as well.
   your connection to the router (for example connected directly to the router
   via cable or there is no other device in the network).
 3. The program will ask you for the root password. Put there a password, which
-  you set in the Foris web interface.
+  you set in the reForis web interface.
 
 The whole process should look like this:
 

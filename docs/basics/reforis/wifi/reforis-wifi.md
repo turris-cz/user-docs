@@ -109,7 +109,7 @@ To keep the guest traffic away from the normal one, you can enable guest
 Wi-Fi networks. Each of such network shares the most settings with the given
 normal Wi-Fi network but has its own SSID and password. Users connected
 to the guest network can't communicate with devices in the LAN nor with
-the router itself (ie. can't use reForis, Foris, LuCI nor SSH) but they
+the router itself (ie. can't use reForis, LuCI nor SSH) but they
 can access the Internet.
 
 ![Guest Wi-Fi](guest.png)

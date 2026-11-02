@@ -54,8 +54,7 @@ are kept for 4 weeks**, but we have plans to adjust this in the future.
     will lead to it getting worn out and damaged soon. To get the most out of
     PaKon, it’s best to get either an external drive or even an internal SSD.
     To setup this external drive easily, use the Storage plugin (in
-    [reForis](../../basics/reforis/storage-plugin/storage-plugin.md)
-    or [Foris](../../basics/foris/storage-plugin/storage-plugin.md)).
+    [reForis](../../basics/reforis/storage-plugin/storage-plugin.md).
 
 ## Installation
 

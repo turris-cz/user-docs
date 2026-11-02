@@ -17,8 +17,7 @@ setup from scratch on every boot from the controlling device.
 
 On the controlling router, you need to install _Turris MOX network boot_
 package list from the _Updater_ tab. This will provide everything necessary
-to boot up your MOX and a new tab in Foris user interface _Managed Devices →
-Netboot_ to control them easily.
+to boot up your MOX.
 
 It will also set up everything needed to boot MOXes over the network – enables
 _TFTP_ in _Dnsmasq_, downloads the latest image, generate keys and prepare
@@ -26,14 +25,14 @@ everything.
 
 !!! tip
     If you would like to boot Turris MOX from Turris 1.0/1.1,
-    you will need to have `srv` mounted by _Storage plugin_ in Foris
+    you will need to have `srv` mounted by _Storage plugin_ in reForis
     or boot from microSD card.
 
 ## Pairing MOX with other Turris router
 
 To pair your MOX with controlling router, connect them directly by Ethernet
 cable and make sure that there is no micro SD card in MOX. Power it on and wait
-for incoming request to show up in Foris web interface. You might need to
+for incoming request to show up in the reForis web interface. You might need to
 refresh your browser. Once you see a pairing request, verify that the serial number
 matches the one on MOX and accept the pairing request. When it is done, MOX will boot
 up and save the pairing information. From then on, it will always try to boot
@@ -54,7 +53,7 @@ pattern (two fast blinks followed by a longer pause).
 
 ### CLI
 
-Apart from using Foris UI, you can also use `netboot-manager` script on
+Apart from using reForis UI, you can also use `netboot-manager` script on
 your controlling router. The most important operation is pairing your MOX. When
 MOX starts booting, it sends pairing request, you can list the state of pairing
 by issuing `netboot-manager list` command and you can accept any of the

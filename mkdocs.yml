@@ -237,16 +237,6 @@ nav:
           - Netdata: geek/netdata/netdata.md
           - Firmware update: geek/nor-update/nor-update.md
           - SSH access: geek/ssh-access/ssh-access.md
-      - Deprecated:
-          - Foris:
-              - About: basics/foris/intro.md
-              - Secure access: basics/foris/https/https.md
-              - WAN: basics/foris/wan/foris-wan.md
-              - LAN: basics/foris/lan/foris-lan.md
-              - DNS: basics/foris/dns/foris-dns.md
-              - Guest network: basics/foris/guest-network/guest-network.md
-              - Storage: basics/foris/storage-plugin/storage-plugin.md
-          - NetMetr: basics/apps/netmetr.md
       - OS versions:
           - Versions: basics/tos-versions.md
           - Changelog: basics/changelog.md
@@ -338,7 +328,6 @@ not_in_nav: |
   /basics/first-setup/mox-cpu-only.md
   /basics/first-setup/mox-first-setup-warning.md
   /basics/first-setup/no-password.md
-  /basics/apps/openvpn-server/openvpn-foris.md
   /hw/mox/sets/feature-list.md
   /hw/mox/sets/generic-mox.md
   /hw/mox/sets/sdio_legacy.md

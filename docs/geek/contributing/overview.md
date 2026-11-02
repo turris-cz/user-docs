@@ -69,7 +69,7 @@ writing and modifying articles.
 
 ## Translate web interface
 Turris base language is English and most of the Turris tools are not localized.
-The only exception is Foris/reForis web interface and [LuCI](../../basics/luci/luci.md).
+The only exception is reForis web interface and [LuCI](../../basics/luci/luci.md).
 
 You can help by translating strings from English to your native language (or any
 language you know). We use [Weblate](https://weblate.org/) for that purpose.

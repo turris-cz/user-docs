@@ -102,8 +102,7 @@ places.
 
 We would love your help with these sections:
 
-  * **reForis** – main language interface for web administration of Turris (it
-    supersedes the older Foris)
+  * **reForis** – main language interface for web administration of Turris
   * **reForis: Data Collection Plugin** – plugin for Sentinel dynamic firewall
   * **reForis: Diagnostics Plugin** – plugin for Turris diagnostics
   * **reForis: Netboot Plugin** – plugin for booting over networks

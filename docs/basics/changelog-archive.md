@@ -147,7 +147,7 @@ Missing features:
 New features:
 
 * [Nextcloud](../geek/nextcloud/nextcloud.md) integration
-* multiple drives support in [Storage plugin](foris/storage-plugin/storage-plugin.md)
+* multiple drives support in Storage plugin
 
 ### Detailed changelog
 

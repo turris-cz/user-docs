@@ -23,7 +23,7 @@ collected from recorded attacks. From that moment onward, you are good to go
 and can connect to the Internet.
 
 Turris Shield is also the first device to feature reForis user interface by
-default. It does not contain [LuCI](../../basics/luci/luci.md) nor Foris.
+default. It does not contain [LuCI](../../basics/luci/luci.md).
 Automatic updates are enabled by default as is
 [Turris Sentinel](../../basics/sentinel/intro.md) - key feature of
 Turris Shield.
