@@ -178,3 +178,24 @@ available in OpenWrt.
 !!! warning
     Whenever you are contacting us via e-mail, be sure that the total size of all
     attachments won't exceed the size 14MB.
+
+### Security issues
+
+If you find a security issue or vulnerability, you can report it via our
+security e-mail address [security@turris.cz](mailto:security@turris.cz).
+We strongly recommend to encrypt your message using our
+[public GnuPG key](https://www.turris.cz/security-gpg-key.pub). We also publish
+the essential information via a
+[standard](https://en.wikipedia.org/wiki/Security.txt)-based
+[security.txt](https://www.turris.cz/.well-known/security.txt) file according
+to [RFC 9116](https://www.rfc-editor.org/info/rfc9116/).
+
+The following directions should be applied ot all security-related reports:
+
+- Always mention the Turris OS version, kernel version, and package version
+  (if applicable, of course).
+- Precisely describe the problem itself as well as the attack vector(s).
+- If you detect the problem via artificial intelligence (AI), always check
+  by yourself whether it is really relevant.
+- Please provide us a reasonable amount of time to fix the problem before
+  making it public.
