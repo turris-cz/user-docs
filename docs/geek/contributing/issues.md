@@ -9,6 +9,11 @@ below to allow us to work fast and keep maximum quality.
 
 Issues are preferably created in our [GitLab](https://gitlab.nic.cz/).
 
+!!! important
+    Due to increased spam activity, self sign-up on our GitLab instance
+    has been disabled. If you want to create an issue there, please
+    contact us on [admin@turris.cz](mailto:admin@turris.cz).
+
 ## Generic rules for creating issues
 
 * Before you start creating an issue, please look whether someone else
