@@ -6,11 +6,11 @@ competency: intermediate
 
 RIPE Atlas is a global network of probes that measures connectivity and
 reachability across the Internet in real time. These probes are mostly run by
-volunteers. If you host probe you will receive credits (see more about
+volunteers. If you host a probe you will receive credits (see more about
 [credit system](https://atlas.ripe.net/docs/getting-started/credits)) which
-can be later used for running your own measurements on the RIPE Atlas network.
+can be later used to run your own measurements on the RIPE Atlas network.
 
-This document describes steps that you have to follow to connect your router as
+This document describes the steps that you have to follow to connect your router as
 a probe to the RIPE Atlas network.
 
 ## RIPE Atlas account
@@ -29,33 +29,33 @@ steps.
 
 ## Getting keys
 
-The first step is to generate a key pair. In constrast to the older
-versions, the current version 5130 doesn't need to do it explitly.
-Simply start the probe daemon by the following command:
+The first step is to generate a key pair. In contrast to the older
+versions, the current version 5130 doesn't need to do it explicitly.
+Simply start the probe daemon with the following command:
 
 ```
 /etc/init.d/ripe-atlas start
 ```
 
-This generates a new SSH key pair and saves it into the `/etc/ripe-atlas`
+This generates a new SSH key pair and saves it to the `/etc/ripe-atlas`
 directory.
 
 ## Probe registration
 
 Run the `/etc/init.d/ripe-atlas get_key` command to display your public key.
 Go to the [RIPE Atlas website](https://atlas.ripe.net/apply/swprobe),
-log in (if you haven't done it before) and register your probe. All you need
+log in (if you haven't done so before) and register your probe. All you need
 is the public key and the locality of the probe.
 
 ## Final steps
 
-After the registration, enable the daemon with these commands:
+After the registration, enable the daemon with this command:
 
 ```
 /etc/init.d/ripe-atlas enable
 ```
 
-You can ensure that your probe is running by the
+You can ensure that your probe is running with the
 `/etc/init.d/ripe-atlas status` command.
 
 ## Configuration
@@ -75,8 +75,8 @@ options:
 
 After probe registration, you should receive an e-mail with
 __Important information about your new RIPE Atlas software probe__ as its
-subject (it may change, of course). There you can find your Probe ID and
-the link for managing your probe.
+subject (it may change, of course). In it you can find your Probe ID and
+the link to manage your probe.
 
 You can also use this command to get the probe ID:
 
