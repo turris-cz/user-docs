@@ -190,7 +190,7 @@ the essential information via a
 [security.txt](https://www.turris.cz/.well-known/security.txt) file according
 to [RFC 9116](https://www.rfc-editor.org/info/rfc9116/).
 
-The following directions should be applied ot all security-related reports:
+The following directions should be applied to all security-related reports:
 
 - Always mention the Turris OS version, kernel version, and package version
   (if applicable, of course).
