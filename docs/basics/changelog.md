@@ -3,17 +3,22 @@
 async function fetchAndRenderChangelog(releaseVersion, changelogSpanId) {
     const element = document.getElementById(changelogSpanId);
 
-    const response = await fetch(
-        `https://gitlab.nic.cz/api/v4/projects/turris%2fos%2fbuild/repository/tags/?search=${releaseVersion}`
-    );
+    try {
+        const response = await fetch(
+            `https://gitlab.nic.cz/api/v4/projects/turris%2fos%2fbuild/repository/tags/?search=${releaseVersion}`
+        );
 
-    if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        renderChangelog(data, element);
+    } catch (error) {
+        console.error(`Failed to load changelog for ${releaseVersion}:`, error);
+        element.innerHTML = "<p>Changelog is currently unavailable.</p>";
     }
-
-    const data = await response.json();
-
-    renderChangelog(data, element);
 }
 
 function renderChangelog(changelog, element) {
@@ -27,7 +32,6 @@ function renderChangelog(changelog, element) {
         const release = changelog[i];
         const message = release.message.split("\n");
         const releaseVersion = release.name;
-        console.log(releaseVersion);
         const releaseDate = new Date(release.commit.created_at);
 
         element.innerHTML += `
