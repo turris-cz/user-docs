@@ -20,7 +20,7 @@ function renderChangelog(changelog, element) {
     element.innerHTML = "";
 
     if (changelog.length === 0) {
-        element.innerHTML += `<p>There is no detailed changelog yet.<p>`;
+        element.innerHTML += `<p>There is no detailed changelog yet.</p>`;
     }
 
     for (let i in changelog) {
