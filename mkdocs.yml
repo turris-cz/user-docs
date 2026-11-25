@@ -326,7 +326,6 @@ nav:
           - Shield: basics/shield-faq.md
       - Turris OS: basics/os-faq.md
       - Migration: geek/router-migration.md
-      - Common errors: basics/common-errors.md
   - Data Act: basics/data-act.md
 
 # Exclude pages from navigation
