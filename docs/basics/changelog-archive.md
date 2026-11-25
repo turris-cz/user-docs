@@ -5,6 +5,128 @@
 !}
 
 
+## Turris OS 6.5
+
+Turris OS 6.5 is based on top of [OpenWrt
+21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
+patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* Option to update the firmware to the latest version
+* Support for new features in MCU firmware
+* Support for pref64 (RFC 8781)
+* Aggregated notifications and ignore list in Morce
+* OpenSSH upgraded to 9.6p1
+
+### Detailed changelog
+
+<span id="tos65">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v6.5.", "tos65");</script>
+
+## Turris OS 6.4
+
+Turris OS 6.4 is based on top of [OpenWrt
+21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
+patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* Add support for Neoway N75-EA, Quectel EP06 and Sierra Wireless WP7607
+* Nextcloud now uses the upstream updating solution which automatically
+  updates it to the last Nextcloud version
+
+### Detailed changelog
+
+<span id="tos64">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v6.4.", "tos64");</script>
+
+## Turris OS 6.3
+
+Turris OS 6.3 is based on top of [OpenWrt
+21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
+patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* Syncthing and Transmission WebApps now use Turris Auth
+* LibreSpeed reForis plugin for measuring network speed replacing Netmetr
+
+### Detailed changelog
+
+<span id="tos63">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v6.3.", "tos63");</script>
+
+## Turris OS 6.2
+
+Turris OS 6.2 is based on top of [OpenWrt
+21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
+patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* Redesigned WebApps
+* Syncthing integration
+
+### Detailed changelog
+
+<span id="tos62">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v6.2.", "tos62");</script>
+
+## Turris OS 6.1
+
+Turris OS 6.1 is based on top of [OpenWrt
+21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
+patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* VLAN support for WAN interface in reForis
+* Credentials (username, password) support in OpenVPN reForis client
+* Nextcloud updated to 23.0.11 and uses PHP 8
+
+### Detailed changelog
+
+<span id="tos61">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v6.1.", "tos61");</script>
+
+## Turris OS 6.0
+
+Turris OS 6.0 is based on top of [OpenWrt
+21.02](https://openwrt.org/releases/21.02/start) with our feed and a few
+patches. It supports [Turris MOX](../hw/mox/intro.md), [Turris
+Omnia](../hw/omnia/omnia.md), [Turris Shield](../hw/shield/shield.md), and
+[Turris 1.x](../hw/turris-1x/turris-1x.md) routers.
+
+New features:
+
+* Morce (integrated IDS)
+* Wi-Fi 6 cards supported
+* Turris Auth (login gateway)
+* Parental control (PaKon) now has a separate page
+* New LEDs driver for all routers
+* Dashboard in LuCI
+* NetMetr supports measurement with IPv6 address
+* Improved support for Turris 1.x routers
+    * New Device Tree
+    * PowerPC SPE utilized – should improve performance
+    * Knot Resolver by default
+
+### Detailed changelog
+
+<span id="tos60">Loading changelog...</span>
+<script type="text/javascript">fetchAndRenderChangelog("v6.0.", "tos60");</script>
+
 ## Turris OS 5.4
 
 Turris OS 5.4 is based on top of [OpenWrt
